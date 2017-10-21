@@ -1,0 +1,385 @@
+% Template for Masterarbeit, Universität Bielefeld, Lehrstuhl Ökonometrie.
+%
+% Dieses Template kann als Grundlage für die Erstellung einer Masterarbeit verwendet werden.
+% 2.4.2014, Dietmar Bauer, Bielefeld. 
+%
+
+\documentclass[llncs,twoside,openright,12pt]{report}
+
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage[dvips]{graphics}
+\usepackage{pgf}
+\usepackage[dcucite]{harvard}
+\usepackage{multicol}
+\usepackage[german,english]{babel}
+
+
+\usepackage[scaled]{helvet}
+
+
+%\bibliographystyle{harvard} % change this for alternative citation options. 
+
+\usepackage{fancyhdr}
+
+% set up page size. 
+\sloppy
+%\setlength{\textheight}{630pt}
+\setlength{\textwidth}{15cm}
+\setlength{\oddsidemargin}{42pt}
+\setlength{\evensidemargin}{-22pt}
+
+
+%\setlength{\headrulewidth}{0.4pt}
+%\setlength{\footrulewidth}{0.4pt}
+
+
+
+\makeatletter
+
+\def\@makechapterhead#1{%
+  \vspace*{10\p@}%
+%  {\parindent \z@ \centering \reset@font
+  {\parindent \z@ \reset@font        
+		\par\nobreak
+        \vspace*{2\p@}%
+        {\Huge \bfseries \thechapter\quad #1\par\nobreak}
+        \par\nobreak
+        \vspace*{2\p@}%
+    \vskip 40\p@
+    %\vskip 100\p@
+  }}
+\def\@makeschapterhead#1{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \reset@font
+        \par\nobreak
+        \vspace*{2\p@}%
+        {\Huge \bfseries #1\par\nobreak}
+        \par\nobreak
+        \vspace*{2\p@}%
+    \vskip 40\p@
+  }}
+\makeatother
+
+
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\fancyhead{} % clear all fields
+
+%\fancyhead[LO,RE]{\thepage}
+
+
+
+%\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\renewcommand{\footrulewidth}{-0.4pt} %untere Trennlinie
+
+%\lhead 
+
+\begin{document}
+
+\newcommand{\eqref}[1]{(\ref{#1})}
+
+% define appearance of theorems and the like. 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{rem}{\it Bemerkung}[section]
+\newtheorem{cor}{Korollar}[section]
+
+\newenvironment{proof}{{\tt BEWEIS:}}{$\Box$\\}
+\newenvironment{definition}[1]{\vspace{0.5cm} \hspace{0.5cm} \begin{minipage}{13cm} {\sc Definition (#1)}  \begin{sf}}{\end{sf} \end{minipage} \vspace{.7cm}}
+\newenvironment{notlist}{\setlength{\columnsep}{1cm} \begin{multicols}{2}\begin{list}{}{\setlength{\itemsep}{0pt}%
+		\setlength{\labelwidth}{12pt}%
+		\setlength{\leftmargin}{20pt}}}{\end{list}\end{multicols}}
+
+% Title page!!!!!
+\thispagestyle{empty}
+\begin{center}
+
+\Huge{Universit\"at Bielefeld} \\
+
+
+%Lehrstuhl \"Okonometrie\\
+\vspace{.5cm}
+\Large{Fakult\"at f\"ur Wirtschaftswissenschaften} 
+
+\vspace{1cm}
+
+\large{{\bf Masterarbeit}} 
+\vspace{0.2cm}
+
+\normalsize{im Studiengang Wirtschaftswissenschaften}
+
+\vspace{1cm}
+
+\large{zum Thema:} 
+
+
+\vspace{0.5cm}
+{\bf Formatvorlage f\"ur Masterarbeiten}
+
+
+
+
+\vspace{1cm}
+
+vorgelegt von \\
+\vspace{0.5cm}
+
+{\bf Vorname Nachname}\\
+\vspace{0.5cm}
+
+\begin{tabular}{ll}
+Matrikel-Nr:  & XY\\
+Anschrift:  & (freiwillig)
+\end{tabular}
+%\vspace{1.5cm}
+
+%ausgef\"uhrt zum Zwecke der Erlangung des akademischen Grades Master der XY (M.Sc.) 
+
+\vspace{1cm}
+
+\begin{tabular}{ll} 
+1. Pr\"ufer/in  & Prof. Dr. Dietmar Bauer (Lehrstuhl \"Okonometrie)\\
+2. Pr\"ufer/in  & Prof. Dr. XY  (Lehrstuhl ZZ)
+\end{tabular}
+
+\end{center}
+
+\vspace{2cm}
+Bielefeld, im Monat, Jahr
+
+
+\newpage
+
+\thispagestyle{empty}
+\vspace*{1cm}
+
+
+\newpage
+
+\pagenumbering{roman}
+
+
+\selectlanguage{german}
+\begin{center}
+\bf{Kurzfassung}
+\end{center}
+
+Hier kommt die Kurzfassung hin. Sie beantwortet die folgenden Fragen: 
+
+\begin{itemize}
+	\item Was ist das Thema der Arbeit?
+	\item Wieso ist das interessant?
+	\item F\"ur wen ist das interessant?
+	\item Wieso kann die Frage gerade jetzt beantwortet werden?
+	\item Was ist der Beitrag der Arbeit? Was ist anders, jetzt, da die Arbeit fertig ist?
+	\item Welche weiteren Fragen entstanden während der Arbeit? In welche Richtung könnte die Forschung weitergehen?
+\end{itemize} 
+
+\vspace{2cm}
+
+\begin{center}
+\bf{Danksagung}
+\end{center}
+
+Hier ist Platz daf\"ur, sich bei Eltern, Freunden etc. zu bedanken, sofern das gewünscht ist. Etwaige F\"ordergeber nicht vergessen.   
+
+\newpage
+%\selectlanguage{english} % If the thesis is written in English. 
+% \begin{center}
+% \bf{Abstract}
+% \end{center}
+% Same as above but in English.
+% \newpage
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+
+
+\chapter{Einleitung und Motivation} 
+\fancyhead[LE,RO]{\thechapter \quad \leftmark}
+\pagenumbering{arabic}
+
+Dieses Template stellt einen Vorschlag zur Formatierung der Masterarbeit dar. Es gibt keine Verpflichtung, sich exakt daran zu halten. Einzige Ausnahme dieser Regel sind die erste und die letzte Seite, die mit den Pr\"ufungs\"amtern Mathematik und Wirtschaftwissenschaften akkordiert sind und jeweils deren Anforderungen erf\"ullen. 
+Der Rest dieses Dokuments gibt Ihnen eine Anleitung zur Form des Textes sowie Vorschl\"age zum Inhalt und der Strukturierung der Arbeit. 
+
+
+Hier folgt dann die Einleitung und die Motivation der Arbeit. 
+
+Die Einleitung soll Antworten auf folgende Bereiche geben:
+\begin{enumerate}
+	\item Was ist das Thema? Welches neue Wissen wird angestrebt?
+	\item Wieso ist das relevant? Was ist anders, wenn das Projekt geendet hat?
+	\item Ist das Wissen schon bekannt? Was fehlt noch?
+	\item Wieso wird das jetzt behandelt und nicht schon früher?
+ \end{enumerate}
+
+Daraus ergibt sich zum Beispiel folgende Struktur: 
+
+\begin{itemize}
+	\item Fragestellung: Frage 1.
+	\item Motivation: Frage 2. 
+	\item Einordnung in die Literatur: Antwort auf Frage 3+4.
+	\item Beitrag: Frage 1-3.
+	\item Organisation der Arbeit: Gliederung, welche Kapitel sind enthalten und was wird jeweils behandelt.  
+\end{itemize}
+
+\chapter{Hauptteil} 
+
+Der Hauptteil mit allen Analysen und Dokumentationen. 
+
+Typischer Aufbau eines Manuskripts mit empirischem Hintergrund:
+\begin{itemize}
+\item Detaillierte Problemstellung
+\item Daf\"ur verwendete Daten
+\item Beschreibung der angewandten Methoden
+\item Anwendung der Methoden auf die Daten: Ergebnisse.
+\item Diskussion der Ergebnisse.
+\end{itemize}
+
+Bei methodischen Arbeiten entfallen die Daten und die Anwendung wird durch die Herleitung der methodischen Innovationen ersetzt. 
+
+\section{Formatvorgaben}
+Diese Vorlage dient als Grundger\"ust. Im Folgenden werden Vorschl\"age zur Formatierung gemacht, 
+die nicht unbedingt eingehalten werden m\"ussen. 
+
+
+\subsection{Zitate}
+Alle in der Arbeit verwendeten Fakten und Zahlen m\"ussen belegt 
+werden. Informationen, die aus der Literatur entnommen sind, m\"
+ussen zitiert werden. Dabei soll der Harvard-Stil zur Referenzierung 
+verwendet werden. 
+\\
+Als Beispiel der gewünschten Zitierart wird der Zitierstil im Journalartikel \cite{Bauer_Wagner_ET_2012} verwendet. 
+Ein Beispiel f\"ur ein Buchzitat ist das Buch \cite{HanDei}, als Demonstration eines Konferenzbeitrages dient \cite{BauDeiSchcdc98}. 
+
+
+\subsection{Formeln}
+Formeln, auf die im sp\"ateren Dokument referenziert werden, werden nummeriert:
+%
+\begin{equation} 
+\hat \beta = (X'X)^{-1} X'Y
+\end{equation}
+%
+Das gilt auch f\"ur mehrzeilige Formeln, auf die sp\"ater Bezug genommen wird:
+%
+\begin{eqnarray}
+\hat \beta & = & (X'X)^{-1} X'Y = (X'X)^{-1}X'(X\beta_0 + E) \\
+& = & \beta_0 +  (X'X)^{-1} X'E \label{eq:dev}
+\end{eqnarray}
+%
+Formeln, die sp\"ater nicht wieder verwendet werden, auf die nicht referenziert wird, m\"ussen auch keine Nummern bekommen.
+Aus~\eqref{eq:dev} folgt: 
+%
+$$
+\hat \beta- \beta_0 = (X'X)^{-1} X'E
+$$
+%
+Die Nummerierung folgt idealerweise dem Muster (Kapitel.Nummer).
+
+\subsection{Abbildungen}
+Jede Abbildung\footnote{Nachdem Grafiken in LaTeX sogenannte Floats sind, werden sie dorthin gestellt, wo sie am besten passen. Die Optionen beim Figureumfeld k\"onnen ein wenig steuern, dass die Abbildung nahe an ihrer Beschreibung im Text pr\"asentiert werden. Hiermit haben Sie auch gleich ein Muster f\"ur eine Fu"snote.} 
+bekommt eine Unterschrift zur Beschreibung und eine Nummer, die ebenfalls nach dem Muster 'Kapitel.Abbildung' aufgebaut ist. 
+So bekommt etwa die Abbildung~\ref{fig:ACF} als erste Abbildung in Kapitel 2 die Nummer 2.1. \\
+Die Bildunterschrift sollte genung Information enthalten, dass die Abbildung auch ohne das Lesen des gesamten Textes erfasst werden kann. 
+
+
+
+
+\subsection{Tabellen} 
+Tabellen erhalten \"ahnlich wie Abbildungen eine Nummer und eine Unterschrift. Tabelle~\ref{tab:tab1} dient nur Demonstrationszwecken.
+Abwandlungen der Tabellen und Zellenformatierung sind zul\"assig. Wesentlich ist hierbei immer die Lesbarkeit und intuitive Erfassbarkeit des Tabelleninhaltes. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c||cc|}
+\hline
+\hline 
+ & Spalte 1 & Spalte 2 \\ \hline 
+ Zeile 1 & 0 & 1 \\
+ Zeile 2 & 2 & 3 
+ \\
+\hline\hline
+\end{tabular}
+\caption{Irgendwelche Zahlen zur Demonstration einer Tabelle.} \label{tab:tab1}
+\end{center}
+\end{table}
+
+
+
+
+\chapter{Zusammenfassung und Ausblick}
+
+Zusammenfassung, Ausblick und weiterer Forschungsbedarf. 
+
+\begin{itemize}
+\item Was haben wir durch die Arbeit gelernt?
+\item Welche neuen Erkenntnisse stehen damit zur Verf\"ugung?
+\item Wof\"ur kann man die brauchen? 
+\item Welche Anwendungen können mit Hilfe des neuen Wissens realisiert werden?
+\item Welche Fragen wirft die Arbeit auf?
+\item Was fehlt noch, damit diese neuen Fragen beantwortet werden k\"onnen?
+\end{itemize}
+
+%\chapter{Literatur}
+\begin{thebibliography}{xx}
+
+\harvarditem[Bauer {\em et al.}]{Bauer {\em et al.}}{1998}{BauDeiSchcdc98}
+Bauer, Dietmar, Deistler, Manfred  und Scherrer, Wolfgang (1998). User Choices in Subspace Algorithms.  In: {\em Proceedings of the Conference on Decision and Control {CDC'98}}, Tampa, Florida, USA. Paper Nr. W07-7
+  
+\harvarditem[Bauer und Wagner]{Bauer und Wagner}{2012}{Bauer_Wagner_ET_2012}
+Bauer, Dietmar und Wagner, Martin (2012). A canonical form for unit root processes in the state space framework. 
+{\em Econometric Theory}, {\bf 6}, 1313--1349.
+ 
+\harvarditem{Hannan und Deistler}{1988}{HanDei} Hannan, Edward und
+Deistler, Manfred: 1988, {\em The Statistical Theory of Linear
+Systems}, John Wiley, New York.
+
+\end{thebibliography} 
+
+\newpage
+
+\appendix 
+\chapter{Appendix}
+
+In den Appendix werden Anh\"ange ausgelagert, die den Lesefluss im 
+Hauptteil der Arbeit sprengen w\"urden. Beispiele daf\"ur sind 
+Tabellen mit Daten, Codeteile, Abbildungen, die der Vollst\"andigkeit halber eingebaut sind. 
+
+\section{Datenappendix}
+Der Appenix kann Unterabschnitte enthalten. 
+
+\section{Glossar}
+Auch ein Glossar kann hier stehen. 
+
+
+\selectlanguage{german}
+\chapter*{Versicherung}
+
+{\bf Name:} Nachname 
+
+\vspace{.5cm}
+
+\noindent {\bf Vorname:} Vorname 
+
+\vspace{2cm}
+
+
+Ich versichere, dass ich diese Masterarbeit selbst\"andig verfasst und keine anderen als die angegebenen Quellen benutzt habe. \\
+Die den benutzten Quellen w\"ortlich oder inhaltlich entnommenen Stellen habe ich als solche kenntlich gemacht. \\
+Diese Versicherung gilt auch f\"ur alle gelieferten Datens\"atze, Zeichnungen, Skizzen oder grafischen Darstellungen.\\
+gelesen habe.
+
+\vspace{2cm} 
+
+
+\begin{tabular}{lp{2em}l} 
+Bielefeld, den \dategerman \today    && \hspace{4cm} \\\cline{1-1}\cline{3-3} 
+   && Unterschrift 
+\end{tabular}  
+
+
+\end{document}
