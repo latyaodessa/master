@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  21 OCT 2017 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  21 OCT 2017 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -410,18 +410,18 @@ LaTeX Warning: Unused global option(s):
 (./mater.aux)
 \openout1 = `mater.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -489,17 +489,17 @@ e
 \c@lemma=\count117
 \c@rem=\count118
 \c@cor=\count119
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+LaTeX Font Info:    Try loading font information for U+msa on input line 126.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 126.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 132.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 126.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -523,14 +523,14 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/upd
 map/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 172.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
 Missing character: There is no ä in font cmr12!
 Missing character: There is no ö in font cmr12!
 Missing character: There is no ü in font cmr12!
@@ -558,33 +558,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Kapitel 2.
 Missing character: There is no ü in font cmr12!
-
-LaTeX Warning: Citation 'Bauer_Wagner_ET_2012' on page 3 undefined on input lin
-e 256.
-
-
-LaTeX Warning: Citation 'HanDei' on page 3 undefined on input line 257.
-
-
-LaTeX Warning: Citation 'BauDeiSchcdc98' on page 3 undefined on input line 257.
-
-
 [3]
 
-LaTeX Warning: Reference `eq:dev' on page 4 undefined on input line 275.
-
-
-LaTeX Warning: Reference `fig:ACF' on page 4 undefined on input line 286.
-
-
-LaTeX Warning: Reference `tab:tab1' on page 4 undefined on input line 293.
+LaTeX Warning: Reference `fig:ACF' on page 4 undefined on input line 280.
 
 [4] [5] [6
 
 ]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 []\OT1/cmr/bx/n/24.88 3 Zu-sam-men-fas-sung und Aus-
  []
 
@@ -601,15 +584,12 @@ Anhang A.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 10149 strings out of 492995
- 191834 string characters out of 6132703
- 245629 words of memory out of 5000000
- 13461 multiletter control sequences out of 15000+600000
+ 10155 strings out of 492995
+ 191956 string characters out of 6132703
+ 245852 words of memory out of 5000000
+ 13467 multiletter control sequences out of 15000+600000
  14444 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,11n,45p,414b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -623,7 +603,7 @@ al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on mater.pdf (19 pages, 128666 bytes).
+Output written on mater.pdf (19 pages, 128768 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
