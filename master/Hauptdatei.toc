@@ -10,40 +10,51 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Usability and user experience}{5}{subsubsection.2.1.4}
 \contentsline {subsection}{\numberline {2.2}Redesign motivation}{5}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Redesign Process}{5}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Refactoring the User Interface}{7}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Introducing a new User Experience Design}{7}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Services adoption}{7}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}Contemporary N2Sky Architecture}{7}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Conceptual user interface}{7}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Technology Stack}{7}{subsection.2.4}
-\contentsline {section}{\numberline {3}N2Sky Components}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}User Interface Components}{7}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Components Overview}{7}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}User Interface Elements}{7}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Architectural Components}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Continuous Monitoring System}{7}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Monitoring requirements}{7}{subsubsection.3.3.1}
-\contentsline {subsection}{\numberline {3.4}Alerting Management System}{7}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Alerting System Architecture}{7}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Alert Rules}{7}{subsubsection.3.4.2}
-\contentsline {section}{\numberline {4}Functional requirements specification}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}User Roles}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Administration components}{7}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Affected users}{7}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Administration Dashboard}{7}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Openstack Dashboard}{7}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Cloudify Dashboard}{7}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Alerting System}{7}{subsubsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.6}Monitoring System}{7}{subsubsection.4.2.6}
-\contentsline {subsection}{\numberline {4.3}N2Sky Components}{7}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Affected user groups}{7}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}N2Sky Dashboar}{7}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Neural Networks Repository}{7}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}Models Repository}{7}{subsubsection.4.3.4}
-\contentsline {section}{\numberline {5}Tutorial}{7}{section.5}
-\contentsline {section}{\numberline {6}User Cases}{7}{section.6}
-\contentsline {section}{\numberline {7}Developer Guide}{7}{section.7}
-\contentsline {subsection}{\numberline {7.1}Continuous integration}{7}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}API Documentation}{7}{subsection.7.2}
-\contentsline {section}{Literaturverzeichnis}{8}{subsection.7.2}
-\contentsline {section}{Anhang}{9}{section*.4}
+\contentsline {subsubsection}{\numberline {2.2.2}Refactoring the User Interface}{8}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Introducing a new User Experience Design}{9}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Services adoption}{9}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Contemporary User Experience}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Frontend and services}{10}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.4}Modular design}{10}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Technology Stack}{10}{subsection.2.5}
+\contentsline {section}{\numberline {3}N2Sky Components}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}User Interface Components}{11}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Components Overview}{11}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}User Interface Elements}{11}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}N2Sky Services}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Continuous Monitoring System}{11}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Monitoring requirements}{11}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Applying Monitoring}{12}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Integration with N2Sky}{15}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Monitoring dashlet Design}{16}{subsubsection.3.3.4}
+\contentsline {subsection}{\numberline {3.4}Alerting Management System}{17}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Alerting System Architecture}{17}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Alert Rules}{18}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Integration with N2Sky}{19}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Alerting System Design}{19}{subsubsection.3.4.4}
+\contentsline {section}{\numberline {4}Functional requirements specification}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1}User Roles}{19}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Administration components}{21}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Affected users}{21}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Administration Dashboard}{21}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Openstack Dashboard}{21}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Cloudify Dashboard}{21}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Alerting System}{21}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Monitoring System}{21}{subsubsection.4.2.6}
+\contentsline {subsection}{\numberline {4.3}N2Sky Components}{21}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Affected user groups}{21}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}N2Sky Dashboar}{21}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Neural Networks Repository}{21}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Models Repository}{21}{subsubsection.4.3.4}
+\contentsline {section}{\numberline {5}Tutorial}{21}{section.5}
+\contentsline {section}{\numberline {6}User Cases}{21}{section.6}
+\contentsline {section}{\numberline {7}Developer Guide}{21}{section.7}
+\contentsline {subsection}{\numberline {7.1}System configuration}{21}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Setting up the Monitoring System}{21}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Setting up Alert Management System}{22}{subsubsection.7.1.2}
+\contentsline {paragraph}{\nonumberline How to write alerting rules}{23}{section*.4}
+\contentsline {subsection}{\numberline {7.2}Continuous integration}{24}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}API Documentation}{24}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}N2Sky Monitoring System API Documentation}{24}{subsubsection.7.3.1}
+\contentsline {section}{Literaturverzeichnis}{25}{subsubsection.7.3.1}
+\contentsline {section}{Anhang}{26}{section*.5}

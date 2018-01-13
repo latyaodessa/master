@@ -1,0 +1,103 @@
+\section{Developer Guide}\label{Developer Guide}
+
+\subsection{System configuration}\label{System configuration}
+
+\subsubsection{Setting up the Monitoring System}\label{Monitoring System setup}
+
+ In the global configuration is possible to setup scare interval and evaluation interval.global:
+ 
+ \begin{lstlisting}
+  scrape_interval:     15s   evaluation_interval: 15s 
+\end{lstlisting}
+
+Prometheus has to reference on Alert Manager, where messages will be published. 
+ \begin{lstlisting}
+alerting:  alertmanagers:  - static_configs:    - targets:       - localhost:9093
+\end{lstlisting}
+
+Every machine where Prometheus is installed can has its own alerting rules. In general alerting rules are located in the root folder of Prometheus.
+
+ \begin{lstlisting}
+rule_files:   - "alert.rules"   - "node.rules"   - "test.rules"
+\end{lstlisting}
+
+Since there is a need to get more specific data, in N2Sky was decided to user Node Exporter Module. The reference on this module has to be added into configuration
+
+ \begin{lstlisting}
+- job_name: 'node'    scrape_interval: 5s    target_groups:-	targets: ['localhost:9100']
+\end{lstlisting}
+
+Node Exporter Module has no configuration file. Prometheus listen the modules and scrap the data with a defined interval.
+
+For deploying alert manager Docker containers technology is used.
+\hl{TODO}
+
+\subsubsection{Setting up Alert Management System}\label{Setting up Alert Management System}
+
+All configuration of alert manager are written in YAML file. On the beginning SMTP email sender should be configured. This would be used to sending notifications.
+
+ \begin{lstlisting}
+global:  smtp_smarthost: 'localhost:25'  smtp_from: 'alertmanager@example.org'  smtp_auth_username: 'alertmanager'  smtp_auth_password: 'password'
+\end{lstlisting}
+
+It is possible to define multiple Email templates and configure which template need to be loaded on which severe level. In configuration the path to templates need to be defined. 
+
+ \begin{lstlisting}
+templates: -	'/etc/alertmanager/template/*.tmpl'
+\end{lstlisting}
+
+When alerts are consumed they need to be converted using Email template and fired to the particular route. Every route has a receiver. 
+
+ \begin{lstlisting}
+route:group_by: ['alertname', 'cluster', 'service']group_wait: 30sgroup_interval: 5mrepeat_interval: 3h receiver: team-X-mails
+\end{lstlisting}
+
+\begin{description}
+\item[group\_by] Group by label. This way ensures that multiple alerts from difference cluster can be received
+\item[group\_wait] Ensures that multiple alerts can be fired shortly after particular group is received.
+\item[group\_interval] Interval between alert batches.
+\item[Receiver] Unique name of receiver which is defined in configuration. 
+\end{description}
+
+Receiver it is a group of matching by regular expression events.
+
+ \begin{lstlisting}
+  routes:- match_re:      service: ^(foo1|foo2|baz)    receiver: team-X-mails
+\end{lstlisting}
+
+Receiver can be defined by user configuration, it is an email where is alert notification will be send.
+
+ \begin{lstlisting}
+receivers:- name: 'team-X-mails'  email_configs:  - to: 'team-X+alerts@example.org'
+\end{lstlisting}
+
+\paragraph{How to write alerting rules} 
+
+The alerting rules are supporting simple query language, which looks very similar to Sequel Query Language.  There is multiple possibilities how work with a alerting rules. The query language allows to use an expression and as a result to check an attribute of time series. 
+
+ \begin{lstlisting}
+ALERT HighLatency IF api_http_request_latencies_second{quantile="0.7"} > 1 FOR 5m LABELS { severity="critical"} ANNOTATIONS {   summary = "High latency detected ",   description = "over limit? } 
+\end{lstlisting}
+
+Following notations should be considered be creation of alerting rules:
+\begin{itemize}
+\item All queries staring with "ALERT" namespace. After it follows name of alert in this case it is "HighLatency".  
+\item "IF" is a condition "api\_http\_request\_latencies\_second", which based on Prometheus Tool expression.  Set of time series with this expression has one parameter it is "quantile". Reading condition as a whole can be translated in a human language like this: "Send a alert if latency request per second bigger then 0.7". 
+\item "FOR" it is period of time how often this condition should be checked. 
+\item "LABELS" shows a severity level. There are 3 types of severity:
+\begin{itemize} 
+        \item Critical
+        \item Warning
+        \item Page
+     \end{itemize}
+\item Every severity level can be defined on developer needs.
+\item "ANNOTATIONS" shows a readable for human comments. There are two sub sections: summary, which shows a short description of the event and description where detailed information about deviation can be written
+\end{itemize}
+
+For deploying alert manager Docker containers technology is used.
+\hl{TODO}
+
+\subsection{Continuous integration}\label{Continuous integration}
+\subsection{API Documentation}\label{API Documentation}
+\subsubsection{N2Sky Monitoring System API Documentation}\label{N2Sky Monitoring System API Documentation}
+

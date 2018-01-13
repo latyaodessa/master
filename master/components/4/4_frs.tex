@@ -1,0 +1,28 @@
+\section{Functional requirements specification}\label{Functional requirements specification}
+
+\subsection{User Roles}\label{User Roles}
+
+In order to make the N2Sky user interface understandable for arbitrary users as well as professional for advances users, it was decided to separate the user roles. Every user role has own way of interaction with the application:
+
+Every user has some specific area within he works. For example just registered user does not need to know the current environment monitoring information. These restrictions were motivation to create some user roles in order to restrict of grand some functionality of N2Sky.
+
+\begin{itemize}
+\item The contributor is an arbitrary user. Such a user has no necessity in having deep knowledge of the neural network field or know any programming language. The main goal of arbitrary user is to study neural networks within N2Sky. The contributor has an access only to his own dashboard and public available resources on the main application module. He can perform semantic search for available neural network paradigms and use them. He can also train running neural network instances and test them. This user can share his trained neural network by making it public. 
+\item The developer is an expert user, which has enough knowledge and experience to create his own neural network. This user can create neural network paradigms using the ViNNSL schema and publish them on N2Sky. This user can deploy neural networks on the N2Sky environment as well as on his own environment by providing training and testing endpoints. The goal of the developer is the study how his networks will behave with different network structures, input parameters and training data that is provided by other users.
+\item System administrator is a user who has a full access to application including environment management, monitoring and alerting features. Administrator can manage Openstack and Cloudify instances. He also can shadow any N2Sky user to observe the application from shadowed user perspective. Administrator has access to all dashboards in every module.
+\end{itemize}
+
+
+\subsection{Administration components}\label{Administration components}
+\subsubsection{Affected users}\label{Affected users}
+\subsubsection{Administration Dashboard}\label{Administration Dashboard}
+\subsubsection{Openstack Dashboard}\label{Openstack Dashboard}
+\subsubsection{Cloudify Dashboard}\label{Cloudify Dashboard}
+\subsubsection{Alerting System}\label{Alerting System}
+\subsubsection{Monitoring System}\label{Monitoring System}
+
+\subsection{N2Sky Components}\label{N2Sky Components}
+\subsubsection{Affected user groups}\label{Affected user groups 2}
+\subsubsection{N2Sky Dashboar}\label{N2Sky Dashboar}
+\subsubsection{Neural Networks Repository}\label{Neural Networks Repository}
+\subsubsection{Models Repository}\label{Models Repository}
