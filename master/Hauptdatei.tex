@@ -1,0 +1,108 @@
+\documentclass[a4paper,12pt,headsepline]{scrartcl}
+\input{latex_einstellungen/variablen}
+\usepackage{graphicx}
+\usepackage[right]{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fix-cm}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{left=3.5cm, right=2cm, top=2.5cm, bottom=2cm}
+\usepackage{fancybox}
+\usepackage[hyphens,obeyspaces,spaces]{url}
+\usepackage{color}
+\usepackage[bookmarksnumbered,pdftitle={\titleDocument},hyperfootnotes=false]{hyperref} 
+\usepackage{fancyhdr} %Paket laden
+\pagestyle{fancy} %eigener Seitenstil
+
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[L]{\nouppercase{\leftmark}} %Kopfzeile links
+\fancyhead[C]{} %zentrierte Kopfzeile
+\fancyhead[R]{\thepage} %Kopfzeile rechts
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+
+\usepackage{array}
+\bibliographystyle{alphadin}
+\frenchspacing
+\usepackage{setspace}
+\usepackage{capt-of}
+\usepackage{makeidx}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, keywordstyle=\color{black}\bfseries, stringstyle=\ttfamily,showstringspaces=false,basicstyle=\footnotesize,captionpos=b}
+\lstset{language=java}
+
+\makeindex
+
+\usepackage[german]{nomencl}
+\let\abbrev\nomenclature
+
+\renewcommand{\nomname}{aaa}
+\setlength{\nomlabelwidth}{.25\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+\makenomenclature
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+\begin{document}
+\input{latex_einstellungen/trennung}
+
+
+
+\input{components/core/deckblatt}
+
+
+\onehalfspacing
+
+
+\input{components/core/abstract}
+
+\singlespacing
+
+\newpage
+
+%%%% Contents
+\thispagestyle{empty}
+\onehalfspacing
+\tableofcontents
+\newpage
+
+
+\input{components/1_introduction}
+\input{components/2/2_n2sky_architecure}
+\input{components/3_n2ky_components}
+\input{components/4_frs}
+\input{components/5_tutorial}
+\input{components/6_user_cases}
+\input{components/7_developer_guide}
+
+
+
+\onecolumn
+% einfacher Zeilenabstand
+\singlespacing
+% Literaturliste soll im Inhaltsverzeichnis auftauchen
+\newpage
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+% Literaturverzeichnis anzeigen
+\renewcommand\refname{Literaturverzeichnis}
+\bibliography{components/core/bibliography}
+
+
+\onehalfspacing
+% evtl. Anhang
+\newpage
+\addcontentsline{toc}{section}{Anhang}
+\fancyhead[L]{Anhang} %Kopfzeile links
+\input{anhang/anhang}
+
+
+% leere Abschlussseite
+\newpage
+\thispagestyle{empty} % erzeugt Seite ohne Kopf- / Fusszeile
+\section*{ }
+
+\end{document}
