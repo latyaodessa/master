@@ -54,7 +54,7 @@ The common components of Prometheus architecture:
 \begin{description}
 \item[The Prometheus server.] This is the base element in the whole architecture. The server include services which collection, storing and retrieving nodes. The principle is scrapping or pulling. It means that the data fetched with some interval, which can me configured and stored accordantly as a time series. Prometheus support different modules, each module represents some node. The nodes expose these ports that Prometheus uses for retrieving the data. For example in N2Sky we are using Node Exporter Module which gives possibility to collect almost all essential data like CPU, RAM, HDD/SSD etc.
 \item[Push gateway.] There are some nodes, which are not exposing these endpoints. In this case collection of the data throw Push gateway is possible.  Prometheus short-lived jobs are executed to capture the data and convert it to the time series that can be used by Prometheus.
-\item [Alert Manager.] \hl{COPIED!!! !// Prometheus support the module which responsible for alerting in case of deviations. The alerts can be send over multiple channels like SMS, Email etc. More information about alert manager is located in Alert System chapter.}
+\item [Alert Manager.]  Monitoring consist of multiple metrics, each metric can be analysed. It is possible to subscribe to particular metric in order to detect metric behaviour namely metric deviations. Alert Management System used for firing events, it is possible to receive alert notification over multiple channels like Emails, SMS, Push notification etc.
 \end{description}
 
 Metric notation 
@@ -131,10 +131,9 @@ topk( 3, sum(
  )
 \end{lstlisting}
 
-This query looks already complicated, but it is just one of the first examples. 
-\hl{COPIED !!! Building N2Sky user interface was expired by applying easy to use approach. The idea behind is to make user experience more simple to use  }
+This query is already complicated, but it can be extended by multiple new rules and constrains. 
 
-In N2Sky was developed monitoring service, which use micro services approach like in entire application. It was decided to get rid of complex queries and provide some intuitive way of creating metrics. 
+In N2Sky was developed monitoring service, which use microservices approach like in entire application. It was decided to get rid of complex queries and provide some intuitive way of creating metrics. 
 First of all the time range add a complexity. It was decided that the user should give only time interval and step. Lets say the user want to see CPU load for a last hour with a step 30 seconds. It makes creation of metric more intuitive, no more range like "from", "to" and type of ranges. All this can be solved with a one simple request. 
 Second part is a storing of metric. Instead of every time build a query the monitoring service saving requested by user metric. In this case every user will get his own customised metric. 
 The service uses Mongo DB for storing the metric configuration. Every collection has it own schema. When a user make a request to save a metric the schema have to be filled with a requested by user data.
