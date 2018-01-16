@@ -221,8 +221,42 @@ The central concept of the application is to support the \hl{Software as a Servi
 
 \subsubsection{Technology Stack}\label{Technology Stack}
 
-N2Sky today is the cross-platform handy application with a responsive design. The frontend is written on \hl{ReactJS} framework and it is convertible to the React-Native framework. The application is accessible from desktop computers, as well as from mobile devices or  other devices with any operational system. Furthermore, backend has microservices architecture to support scalability. Each one of the microservices is developed on NodeJS server, which implies efficiency and lightweight. This architecture enables its users to freely and easily work with the application without interruptions or waiting until it is completely loaded. 
+N2Sky today is the cross-platform handy application with a responsive design. Create own framework from scratch would be time consuming. To build cross-platform framework just for N2Sky is an absurd. After some research of most popular and common used frontend frameworks following candidates were listed: 
 
+\begin{description}
+\item[Vaadin.] Java framework, which compiles Java code into JavaScript components. Vaadin supports cross-platform application, but not fully. It is possible to wrap an applicaiton into container and deploy it only as an android application.
 
- \hl{TODO}
+\begin{description}
+\item[Benefits.] Easy to develop in Java. Developer does not have to think about JavaScript functionality. There are dozen of predefined components like: buttons, input fields, frames etc. Customisation is also possible. 
+\item[Obstructions.] Deployment process is a blockage process. There is no "hot redeployment" available. Even if developer win some time by build components in Java, he will lose much more time by continuous redeployment. 
+
+Java application need some server which supports JVM, it means that server should have much more memory then some other frameworks, which are written on JavaScript language.  
+\end{description}
+
+\item[ReactJS.]  JavaScript framework, which supports JSX programming language. 
+\begin{description} 
+\item[Benefits.] The main idea is to write HTML code in JavaScript. ReactJS supports hot redeployment.  React-Native extension for this framework, which allows to wrap the whole application mobile as well as desktop application.
+\item[Obstructions.]  Difficult to support a big project. JSX is not a type safe programming language. Exception handling also need to be done by developer.  
+\end{description}
+\item[AngularJS.] JavaScript framework, which supports TypeScript programming language.
+\begin{description} 
+\item[Benefits.] The main idea is to write JavaScript code in HTML.  AngularJS same as ReactJS supports hot redeployment.  It does not have native support for all mobile devices, but is possible to wrap it using IONIC framework. 
+\item[Obstructions.]  AngularJS compiles TypeScript code into JavaScript core and sometimes compilation fails because TypeScript is a new language and it is not fully adopted for browsers. 
+\end{description}
+\end{description}
+ 
+ Vaadin does not fit N2Sky needs, but AngularJS and ReactJS could fit perfectly. Both of this frameworks are written on JavaScript and have big corporations behind: AngularJS was developed by Google and ReactJS was developed by Facebook. Since N2Sky has to support fully cross-platform architecture it was decided to choose ReactJS. With this framework N2Sky has a potential to be multi-platform application in the future. 
+ 
+
+Furthermore, backend has microservices architecture to support scalability. After choosing JavaScript framework for frontend it will make sense to user JavaScript in a backend too, so that server would be small and fast. Each one of the microservices is developed on NodeJS Framework server, which implies efficiency and lightweight. 
+
+N2Sky is a cloud-based system. OpenStack cloud platform supports this approach. Since N2Sky user OpenStack API for administration dashboard, the original OpenStack dashboard was no more needed. Every backend and frontend service is deployed on OpenStack instance. Every instance is absolutely scalable, which allows to find a best enviroment for every service. 
+
+Every OpenStack instance is a server with either Debian or Ubuntu operational system. Every instance as well as OpenStack itself has to be monitored 24/7, that is why there was Monitoring Management System developed. The basis of this system is Prometheus monitoring system, which gives full access to all information of any server were its was installed. Prometheus has an open API, which is used by N2Sky. Using Prometheus there were charts and graphs developed and integrated into N2Sky. Alert Management System, which is a part of N2Sky, is also using  Prometheus API in order to detect deviation and notify on event occurred.
+
+As a database it was decided to choose NoSQL one. There were two NoSQL databases under consideration ElasticSearch and MongoDB. 
+ElasticSearch supports indexes. It is possible to configure index so, that is impossible to insert something which is not mapped by the index.  MongoDB does not user index approach, but MongoDB client supports schema. It was decided to use MongoDB schema and mapped ViNNSL schema to it in order to make it more understandable for other developers. 
+
+For continuous delivery and quick configuration it was decided to use Jenkins Continuous Integration system. In case if the while system will go down it is possible to restore every service with a Jenkins Profiles.
+
 
