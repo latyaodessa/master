@@ -1,8 +1,271 @@
 \section{N2Sky Components}\label{N2Sky Components}
 
+In the concept of N2Sky lies minimalistic and modern design. Dimmed tones of the UI components are used to make end-user to feel like he is using professional expert system. Every component and element was carefully thought out in order to keep the same atmosphere throw the whole application. 
+
 \subsection{User Interface Components}\label{User Interface Components}
-\subsubsection{Components Overview}\label{Components Overview}
+
+Familiar elements and components helps users easier navigate through the application. It is important to have common components and elements and do not mixup all together. Every component and every GUI element should have self-describing purpose. Building user interface components and elements is pretty same as develop some UML digram. It is possible to group common parts and maximise reusability \cite{mod_ui_book}. 
+
+It is important to consider the multiple end-users, devices, platforms as well as environments will be used. Throw heterogeneous context only needed elements has to be displayed. It is necessary to make view prototypes to determine if the particular component comfortable and easy to use \cite{Martinez2017}. 
+
 \subsubsection{User Interface Elements}\label{User Interface Elements}
+
+It is possible to divide all UI elements into groups \cite{intelligent_support}:
+
+\begin{description}
+\item[Input Controls.] Input controls determine user input action. Input actions are keyboard typing or mouse clicking.  Following UI elements are the part of input controls: 
+\begin{itemize}
+\item Checkboxes
+\item Radio buttons 
+\item Dropdown Lists
+\item List boxes
+\item Buttons
+\item Toggles
+\item Text fields
+\item Date field
+\end{itemize}
+\item[Navigational Components.] Navigation between page views. Navigational components includes also some particular request from and to user. Following UI elements are the parts of navigational components:
+\begin{itemize}
+\item Breadcrumb 
+\item Slider
+\item Search field
+\item Pagination
+\item Slider
+\item Tags
+\item Icons
+\end{itemize}
+\item[Informational Components.] This components are addition to workflows. It can help user to perform some actions or they can to inform user, that the action will occur or already occurred. Informational Components contains of following UI elements:
+\begin{itemize}
+\item Tooltips
+\item Icons
+\item Progress bar
+\item Notifications
+\item Message boxes
+\item Modal windows
+\end{itemize}
+\item[Containers.] Containers are components, which are hiding additional information or not focused information, where user need to perform action in order to see it.   
+\begin{itemize}
+\item Accordion
+\item Semihidden elements
+\end{itemize}
+\end{description}
+
+\subsubsection{UI Elements in N2Sky}\label{UI Elements in N2Sky}
+
+N2Sky supports almost all common web user interface elements. Every element was developed in order do be reusable. Since N2Sky supports responsive design, the UI elements should also be responsive. Every UI element is absolute customised. Following UI elements were created:
+
+\begin{description}
+\item[Accordion]  Accordion is a list of items, which is accessible on mouse click. In N2Sky accordion works more like a modal window. With this kind of functionality other data, which surround accordion will not be stretched or squeezed, but will appear on top of elements ``Fig.~\ref{fig:accordion}''.: 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.75]{components/3/components/accordion.png}
+  \caption{Customised N2Sky accordion UI element}
+  \label{fig:accordion}
+\end{center}
+\end{figure}
+
+\item[Buttons.] Idea behind was to make buttons more interactive and understandable to use ``Fig.~\ref{fig:button_inactive}''. Buttons contain caption and icon in SVG format in order to support high quality image in all devices.
+
+Buttons are using on hover animation. When mouse over the button, then button icon slide to the middle to show that action can be performed ``Fig.~\ref{fig:button_active}''. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.55]{components/3/components/button_inactive.png}
+  \caption{Customised N2Sky button UI element}
+  \label{fig:button_inactive}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.55]{components/3/components/button_active.png}
+  \caption{Customised N2Sky button UI element animation}
+  \label{fig:button_active}
+\end{center}
+\end{figure}
+
+\item[Icons.] In N2Sky all icons are in Scalable Vector Graphics (SVG) format. With SVG the icons does not loosing quality in any device \cite{Cagle2005}. Since it is a vector graphic it easy to edit an icon with programming language code. N2Sky Logo, which is represented in ``Fig.~\ref{fig:logo}'',  is also made in SVG format. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.55]{components/3/components/logo.png}
+  \caption{Customised N2Sky logo in SVG format}
+  \label{fig:logo}
+\end{center}
+\end{figure}
+
+Is it possible to import code in some graphical vector editor in order change colour, path (vector graphic itself), metadata etc. Following code demonstrate N2Sky Logo in SVG format. The whole vector path was shortened.
+
+\begin{lstlisting}
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+        "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+     width="266.000000pt" height="267pt" viewBox="0 0 266 267"
+     preserveAspectRatio="xMidYMid meet">
+    <metadata>
+        N2Sky Logo. 2018
+    </metadata>
+    <g transform="translate(0.000000,267.000000) scale(0.100000,-0.100000)"
+       fill="#6b6b6b" stroke="none">
+        <path d="M1302 2638 c-9 -9 -12 -83 -12 -270 0 -245 -1 -259
+-37 -26 -170 21 -63 23 -132 46 -152 52 -23 7 -38 17 -38 27 1
+80 222 90 255 87 284 -2 23 -9 32 -25 34 -27 4 -46 -23 -72 -106 
+-77 -34 -95 -8 -18 -22 -51 -32 -74 -10 -24 -21 -43 -25 -43 -5 0 -30 
+76 -76 118 -100 136 -128 92 -12 -20 -10 -26 101 -219 35 -60 109 
+
+...
+
+-18 74 -40 36 -22 67 -40 70 -40 11 0 253 -152 269 -169 11 -12 15 -27 12 
+-36 26 -103 -14 -32 -19 -60 -35 -62 -35 -3 0 -34 -18 -70 -40 -36 -22 -68
+-40 -70 -40 -3 0 -22 -11 -43 -23 -142 -90 -172 -96 -201 -39 -20 40 -47 168
+-55 268 l-5 61 122 22 c67 13 156 30 197 38 85 16 106 30 95 63 -7 21 -11 22
+-69 16 -33 -4 -88 -10 -121 -15 -178 -26 -178 -26 -170 -1 4 13 21 46 37 74
+57 100 63 116 52 134 -6 9 -22 17 -34 17 -24 0 -47 -33 -130 -180 -75 -132
+-74 -130 -61 -206 6 -38 16 -102 21 -141 6 -40 15 -98 20 -129 6 -30 10 -72
+10 -93 l0 -38 -162 4 c-151 3 -167 5 -212 28 -82 43 -86 57 -86 320 l0 226 38
+34 c21 19 53 47 72 61 19 14 49 39 67 55 17 16 54 47 82 69 60 49 79 79 65
+103 -18 28 -47 25 -84 -10 -20 -18 -52 -45 -72 -60 -20 -15 -42 -34 -50 -41
+-23 -23 -92 -67 -105 -67 -10 0 -13 27 -13 104 0 57 -3 111 -6 120 -7 19 -45
+21 -62 4z"/>
+    </g>
+</svg>
+\end{lstlisting}
+
+\item[Notification messages.] Notification messages are the part of information component. In N2Sky used two types of notification messages: 
+\begin{itemize}
+\item Waring message, which tells, that something goes wrong as it shown in ``Fig.~\ref{fig:notif_warning}''. It can be error in the application as well as user workflow error. 
+\item Informational message that gives information about event which will occur or already occurred as it shown in ``Fig.~\ref{fig:notif_info}''.
+\end{itemize}
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/notif_warning.png}
+  \caption{Customised N2Sky warning message UI element}
+  \label{fig:notif_warning}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/notif_info.png}
+  \caption{Customised N2Sky informational message UI element}
+  \label{fig:notif_info}
+\end{center}
+\end{figure}
+
+\item[Navigation.] In N2Sky user can navigate to another one page or change part of the page view via tabs, navigation buttons and menus. 
+Navigation elements are bind into group of element or UI components. Following navigation component which is shown in ``Fig.~\ref{fig:nav}'', contains navigation elements as well functional icon. 
+\end{description}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/nav.png}
+  \caption{Customised N2Sky navigation UI element}
+  \label{fig:nav}
+\end{center}
+\end{figure}
+
+Navigation bars can contain tabs, buttons, icons and non-functional text. ``Fig.~\ref{fig:nav_bar}'' shows navigation bar an custom table. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/nav_bar.png}
+  \caption{Customised N2Sky navigation bar with a table}
+  \label{fig:nav_bar}
+\end{center}
+\end{figure}
+
+\subsubsection{UI Components in N2Sky}\label{UI Components in N2Sky}
+
+Groups of UI elements form UI components. Components, like elements, are also fully reusable, only context of components is changing. Following custom UI components were developed in N2Sky: 
+
+\begin{description}
+\item[Grid Item Component.] Grid in N2Sky is responsive. It can change positions and size of grid items like it shown in ``Fig.~\ref{fig:grid_item}''. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/grid_item.png}
+  \caption{Responsive N2Sky Grid Item UI comonent}
+  \label{fig:grid_item}
+\end{center}
+\end{figure}
+
+
+Grid item contains following UI element: 
+\begin{description}
+\item[Header. ] Header is the first component on which the user focuses, that is why it should be short, but highlighted. Following UI elements are included: 
+\begin{itemize}
+\item Functional icons-buttons on the left side (optional)
+\item Title of grid item (mandatory)
+\item  Non-functional icons (optional)
+\end{itemize}
+\item[Main context. ] Component, which contains context information. This component can be fully customised. It is possible to put there list of items, plain text or even image.
+ \item[Footer. ] Footer is an optional element and contains only button UI element. 
+\end{description}
+
+\item[Main navigation menu.] Every N2Sky view use main navigation menu, namely menu is injected in abstract view, which is extended by all other view components. Menu has a menu items, which contain caption and an icon. As it was mentioned before, N2Sky has two modules: administration module and main application module. Both modules are represented in menu and menu items visibility depending on logged-in user permission. 
+Menu for arbitrary user is shown in ``Fig.~\ref{fig:menu_user}''  and has following menu items:
+
+\begin{itemize}
+\item Profile 
+\item N2Sky Dashboard
+\item Available neural networks
+\item Models repository
+\end{itemize}
+
+ 
+ \begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/menu_user.png}
+  \caption{N2Sky Main Navigation Menu for arbitrary user}
+  \label{fig:menu_user}
+\end{center}
+\end{figure}
+
+If end-user is a system administrator, he can see additional menu form administration module as is demonstrated in ``Fig.~\ref{fig:menu_admin}'. This menu contains dropdown submenus: 
+
+\begin{itemize}
+\item OpenStack Dashboard
+\item Cloudify Dashboard
+\item Alert System
+\item Dashboards Settings
+\end{itemize}
+
+
+ \begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/menu_admin.png}
+  \caption{N2Sky Main Navigation Menu for system administrator}
+  \label{fig:menu_admin}
+\end{center}
+\end{figure}
+
+\item[Modal windows.] N2Sky use modal windows almost in every view as it shown in ``Fig.~\ref{fig:modal}'. Modals are responsive and touch screen friendly. It has 3 elements:
+\begin{itemize}
+\item Title (mandatory)
+\item Context (mandatory)
+\item Submit button (optional)
+\end{itemize}
+
+ \begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/modal.png}
+  \caption{N2Sky Modal Window UI component}
+  \label{fig:modal}
+\end{center}
+\end{figure}
+
+Modals can be used to represent form as well for informational purposes. When modal is open the background is dunned in order to focus user on modal context. Modal context itself can be fully custom. It is possible to put any UI element in context.
+
+
+
+\end{description}
+
+
 
 \subsection{N2Sky Services}\label{N2Sky Services}
 
@@ -10,7 +273,7 @@
 \hl{TODO}
 \subsubsection{Monitoring requirements}\label{Monitoring requirements}
 
-The base monitoring system is readable and understandable representation of the graph. Graphs allow you to see objects beaning monitored and recognize metric from these objects. 
+The base monitoring system is readable and understandable representation of the graph. Graphs allow you to see objects beaning monitored and recognise metric from these objects. 
 The good monitoring graph gives meaningful description, helps quickly to detect and determine issues via representation. This kind of graph should serve as a motivation for action to solve problems. 
 There are some simple rules, which makes graphing well:
 
