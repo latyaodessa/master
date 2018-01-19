@@ -2,11 +2,195 @@
 
 In the concept of N2Sky lies minimalistic and modern design. Dimmed tones of the UI components are used to make end-user to feel like he is using professional expert system. Every component and element was carefully thought out in order to keep the same atmosphere throw the whole application. 
 
-\subsection{User Interface Components}\label{User Interface Components}
+\subsection{N2Sky Frontend Application}\label{N2Sky Frontend Application}
+
 
 Familiar elements and components helps users easier navigate through the application. It is important to have common components and elements and do not mixup all together. Every component and every GUI element should have self-describing purpose. Building user interface components and elements is pretty same as develop some UML digram. It is possible to group common parts and maximise reusability \cite{mod_ui_book}. 
 
 It is important to consider the multiple end-users, devices, platforms as well as environments will be used. Throw heterogeneous context only needed elements has to be displayed. It is necessary to make view prototypes to determine if the particular component comfortable and easy to use \cite{Martinez2017}. 
+
+\subsubsection{N2Sky Layouts Design}\label{N2Sky Layouts Design}
+
+
+Design of N2Sky layouts was concentrated on principles of User interface design which were described in \cite{gui_layout}: 
+
+\begin{description}
+\item[Organise.]  All UI elements and components has to be ordered and not be chaotic. Randomise position or logically not understandable can confuse the user. 
+\item[Consistency.] There are few types of consistency:
+\begin{itemize}
+\item Internal consistency, when elements are represented on the same place in the familiar components. 
+\item External consistency, when few elements are looking little bit different, but the same functionality. This happens often on different devices, especially on mobile devices.
+\item Real-world consistency, which bring real world symbols into application UI elements.
+\end{itemize}
+\item[Screen Layout.] There are few screen layouts: 
+\begin{itemize}
+\item Grid layout, which organise all components into blocks, like: menus, navigation bars etc. 
+\item Standardise the screen layout, which mostly used on screens with a restrictions.
+\item Group related elements, which is usable for smaller screens.
+\end{itemize}
+
+In N2Sky Grid layout is used since it is possible easily to apply responsive design and reorganise grit items. 
+
+\item[Navigability.] Navigation has to be always on user focus or at least easily to find how where and how to user navigation elements.
+\item[Economize.] Following rules has to be applied: 
+\begin{itemize}
+\item Simplicity
+\item Clarity
+\item Distinctiveness
+\item Emphasis
+\end{itemize}
+\item[Communicate]. The layout has to apply accuracy, typography, symbolism, multiple views to helps user to communicate with the application.
+\end{description}
+
+\subsubsection{N2Sky Fundamental Layout}\label{N2Sky Fundamental Layout}
+
+N2Sky Fundamental Layout is represents basic styling of N2Sky application as it shown in ``Fig.~\ref{fig:layout_basic}''. This layouts applies styling like:
+\begin{itemize}
+\item Colors
+\item Formating
+\item  Fonts
+\item Positioning of elements and components
+\end{itemize}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/layout_basic.png}
+  \caption{N2Sky Fundamental Layout}
+  \label{fig:layout_basic}
+\end{center}
+\end{figure}
+
+Fundamental Layout is a base layout which contains following elements:
+\begin{itemize}
+\item Page view title is a component with a caption and optionally an icon or push-to-action button
+\item Main Content is centred component, which represent primary context. This component is always in focus of user and can contain one or more grid components.
+\item Grid in basic layout represent positioning of elements, which can be displayed inside it. In basic layout in grid component is possible to add any elements. 
+\item Footer is a component which goes across the whole application with a static data. Normally it is contacts and terms and conditions. 
+\end{itemize}
+
+
+\subsubsection{N2Sky Main Layout}\label{N2Sky Main Layout}
+
+N2Sky Main Layout, which is shown in ``Fig.~\ref{fig:layout_main}'',  is extending N2Sky Fundamental Layout. Any changes in basic layout will be automatically reflected in main layout. Following components were added:
+\begin{itemize}
+\item Main Navigation Menu, which displayed as a vertical bar. This component has two states: on mouse over it will be extended and menu items with a caption text and icon will appear, on mouse away from the component only menu items icon will be displayed. 
+\item Menu items are icons with a captions components. Which items will be shown or hidden are depends on user permissions.
+\item Grid items are block components, which can has multiple size, but fixed within one grid. Context of grid item can be customised. 
+\end{itemize}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/layout_main.png}
+  \caption{N2Sky Main Layout}
+  \label{fig:layout_main}
+\end{center}
+\end{figure}
+
+\subsubsection{N2Sky Mobile Layout}\label{N2Sky Mobile Layout}
+
+N2Sky supports mobile devices. For mobile devices the mobile layout was developed as it shown in ``Fig.~\ref{fig:layout_mobile}''
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/layout_mobile.png}
+  \caption{N2Sky Mobile Layout}
+  \label{fig:layout_mobile}
+\end{center}
+\end{figure}
+
+All components context remain the same, but the positioning is changed. All grid items are vertically located and the width of grid items are the same as the device screen size. 
+
+Additionally next to page view title component is Bullet Menu located. The normal desktop view is hidden and instead bullet menu perform the same functionality. On mouse click the menu will appear as a overlay of the current view. 
+
+\subsubsection{N2Sky Page Views}\label{N2Sky Page Views}
+
+As it was mentioned in \autoref{Technology Stack} "Technology Stack", N2Sky frontend application developed on ReactJS framework. Part of ReactJS framework is React-Router, which contains all page views of the application and redirects it accordantly to URL path:
+
+\begin{lstlisting}
+<Provider store={store}>
+	<Router history={browserHistory}>
+		<Route path="/" component={Auth}/>
+		<Route path="/signup" component={Reg}/>
+		<Route component={AbstractDashboardLayout}>
+			<Route path="/cloud" component={DashboardsOverview}/>
+			<Route path="/user/profile" component={UserProfile}/>
+			<Route path="/openstack" 
+				component={OpenStackMainDashboard}/>
+			<Route path="/openstack/project/:id"
+				 component={OpenStackProjectDashboard}/>
+			<Route path="/openstack/server/:projectid/:serverid" 
+				component={ServerDetailsDashboard}/>
+			<Route path="/openstack/vitrage/:templateId" 
+				component={VitrageDetailsView}/>
+			<Route path="/alert" component={AlertDashboard}/>
+		</Route>
+		<Route component={AbstractDashboardLayout}>
+			<Route path="/n2sky" component={N2SkyDashboard}/>
+			<Route path="/n2sky/available"
+				 components={AvailableNetworksOverview}/>
+			<Route path="/n2sky/models" 
+				components={ModelsRepository}/>
+			<Route path="/n2sky/paradigm/create/:projectid" 
+				components={AddNNFromParadigm} readOnly={false}/>
+			<Route path="/n2sky/paradigm/nn/:id" 
+				components={AddNNFromParadigm} readOnly={true}/>
+			<Route path="/n2sky/network/:id" 
+				component={NetworkDetails}/>
+			<Route path="/n2sky/network/:id/test/:model_id"
+				 component={NetworkTestDetails}/>
+			<Route path="/n2sky/project/:id"
+				component={ProjectDashboard}/>
+		</Route>
+	</Router>
+</Provider>
+\end{lstlisting}
+
+Every "Route" is a page view redirector and contains:
+\begin{itemize}
+\item Path, which responsible for URL redirection.
+\item Component, which is a page view itself
+\item Other props, which are optional
+\end{itemize}
+
+As it was mentioned in \autoref{Modular frontend application design} "Modular frontend application design", N2Sky contains of two modules: Administration module and main application module. Both of this modules sharing the same main application layout and having following page views: 
+\begin{itemize}
+\item \textbf{Administration Module:}
+\begin{description}
+\item[Cloud Dashboard View, path: "/cloud".] It is the main dashboard of Administration module, which contains overview dashlets of every modules component.
+\item[OpenStack Dashboard View, path: "/openstack".] This view contains all information about OpenStack and the main control centre of the OpenStack services.
+\item[OpenStack Project, path: "/openstack/project/:id".] Route to the OpenStack project, which contains information about servers, flavours, images etc. of particular project. In path "id" is the id of OpenStack project.
+\item[Server Details View, path: "/openstack/server/:projectid/:serverid".] This view contains information about OpenStack instance. The URL path needs OpenStack project id and the id of the OpenStack instance. 
+\item[Vitrage Details View, path: "/openstack/vitrage/:templateId".] Vitrage it a monitoring service of OpenStack and its instances. This view contains information about this service. The template id is required.
+\item[Alert Management Dashboard View, path: "/alert".]  This view is a dashboard of Alert Management System. This view contains information about alerting rules and alerting events.
+\end{description}
+
+\item \textbf{Main Application Module:}
+\begin{description}
+\item[Authentication View, path: "/".] First page, which user sees, when he loading the application.  Authentication View contains login form.
+\item[Registration View, path: "/signup".] Registration View contains registration form.
+ \item[N2Sky Dashboard, path: "/n2sky".] Main Application Module view is the N2Sky Dashboard. This view contains information about logged in user projects, neural neworks and trained models.  
+\item[Available Networks View, path: "/n2sky/available".] This view is the neural network repository of the N2Sky. It is possible to copy available neural networks to own project.
+\item[Models Repository View, path: "/n2sky/models".] The trained neural network are showed in this view. It is possible to copy published models to own project.
+\item[Neural Network Create View, path: "/n2sky/paradigm/create/:projectid".] This view represents workflow of creation of neural network from existing paradigm. Newly created neural network will be saved in user's project, hence this project id is required.  
+\item[Neural Network Details View, path: "/n2sky/network/:id".] The details of created neural network. It can be as well loggedin user neural network or neural network from other user. User permissions shows visibility level. The networks id is required. 
+\item[Neural Network Test View, path: "/n2sky/network/:id/test/:model\_id".] From this view user can evaluate neural network this his own input parameters. Neural network id and trained model id are required. 
+\item[Project Dashboard View, path: "/n2sky/project/:id".] This view shows the neural networks and models, which were created in particular project. The project id is required.
+\end{description}
+
+
+\end{itemize}
+
+
+
+
+
+
+\subsubsection{N2Sky Dashboards}\label{N2Sky Dashboards}
+
+\subsubsection{Responsive design}\label{Responsive design}
+
+\hl{TODO}
+
 
 \subsubsection{User Interface Elements}\label{User Interface Elements}
 
@@ -270,7 +454,7 @@ Modals can be used to represent form as well for informational purposes. When mo
 \subsection{N2Sky Services}\label{N2Sky Services}
 
 \subsection{Continuous Monitoring System}\label{Continuous Monitoring System}
-\hl{TODO}
+\hl{TODO opishi servici }
 \subsubsection{Monitoring requirements}\label{Monitoring requirements}
 
 The base monitoring system is readable and understandable representation of the graph. Graphs allow you to see objects beaning monitored and recognise metric from these objects. 

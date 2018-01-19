@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  18 JAN 2018 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  19 JAN 2018 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,7 +1029,7 @@ LaTeX Info: Redefining \nameref on input line 61.
 \c@lstlisting=\count125
  (./latex_einstellungen/trennung.tex)
 (./components/core/deckblatt.tex
-<components/core/uni_logo.png, id=248, 1757.56625pt x 478.78876pt>
+<components/core/uni_logo.png, id=276, 1757.56625pt x 478.78876pt>
 File: components/core/uni_logo.png Graphic file (type png)
 
 <use components/core/uni_logo.png>
@@ -1092,7 +1092,7 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  [4] (./components/1_introduction.tex)
 (./components/2/2_n2sky_architecure.tex
-<components/2/old_arch.png, id=338, 682.55pt x 384.43625pt>
+<components/2/old_arch.png, id=373, 682.55pt x 384.43625pt>
 File: components/2/old_arch.png Graphic file (type png)
 
 <use components/2/old_arch.png>
@@ -1107,14 +1107,14 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 42.
  [6 <./components/2/old_arch.png>] [7] [8] [9]
-<components/2/new_arch.png, id=363, 4693.535pt x 3858.415pt>
+<components/2/new_arch.png, id=398, 4693.535pt x 3858.415pt>
 File: components/2/new_arch.png Graphic file (type png)
 
 <use components/2/new_arch.png>
 Package pdftex.def Info: components/2/new_arch.png used on input line 123.
 (pdftex.def)             Requested size: 441.01773pt x 362.49089pt.
  [10 <./components/2/new_arch.png>] [11]
-[12] <components/2/modular_design.png, id=381, 2589.675pt x 1535.7375pt>
+[12] <components/2/modular_design.png, id=416, 2589.675pt x 1535.7375pt>
 File: components/2/modular_design.png Graphic file (type png)
 
 <use components/2/modular_design.png>
@@ -1134,268 +1134,363 @@ Overfull \hbox (2.93558pt too wide) in paragraph at lines 227--228
  []
 
 [14] [15]) (./components/3/3_n2ky_components.tex [16]
-Overfull \hbox (0.59128pt too wide) in paragraph at lines 27--28
+<components/3/components/layout_basic.png, id=443, 2372.865pt x 1598.97375pt>
+File: components/3/components/layout_basic.png Graphic file (type png)
+
+<use components/3/components/layout_basic.png>
+Package pdftex.def Info: components/3/components/layout_basic.png used on input
+ line 57.
+(pdftex.def)             Requested size: 441.01773pt x 297.17181pt.
+ [17]
+<components/3/components/layout_main.png, id=450, 2673.99pt x 1565.85pt>
+File: components/3/components/layout_main.png Graphic file (type png)
+
+<use components/3/components/layout_main.png>
+Package pdftex.def Info: components/3/components/layout_main.png used on input 
+line 83.
+(pdftex.def)             Requested size: 441.01773pt x 258.23463pt.
+
+<components/3/components/layout_mobile.png, id=452, 1830.84pt x 1668.2325pt>
+File: components/3/components/layout_mobile.png Graphic file (type png)
+
+<use components/3/components/layout_mobile.png>
+Package pdftex.def Info: components/3/components/layout_mobile.png used on inpu
+t line 95.
+(pdftex.def)             Requested size: 441.01773pt x 401.83493pt.
+ [18 <./components/3/components/layout_basic.png>]
+Overfull \hbox (20.98697pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (20.98697pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[19 <./components/3/components/layout_main.png>] [20 <./components/3/components
+/layout_mobile.png>]
+Overfull \hbox (14.98691pt too wide) in paragraph at lines 121--122
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (44.98721pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.98715pt too wide) in paragraph at lines 136--137
+[][][][][][][][][][][][][][][][] 
+ []
+
+[21]
+Overfull \hbox (4.15202pt too wide) in paragraph at lines 161--162
+[]\T1/lmr/m/n/12 Route to the Open-Stack
+ []
+
+
+Overfull \hbox (20.05988pt too wide) in paragraph at lines 162--163
+[]\T1/lmr/m/n/12 This view
+ []
+
+
+Overfull \hbox (4.99565pt too wide) in paragraph at lines 164--165
+[]\T1/lmr/m/n/12 This view is a dash-board
+ []
+
+
+Overfull \hbox (9.90305pt too wide) in paragraph at lines 171--172
+[]\T1/lmr/m/n/12 Main Ap-pli-ca-tion Mod-ule view is the N2Sky
+ []
+
+
+Overfull \hbox (5.60742pt too wide) in paragraph at lines 173--174
+[]\T1/lmr/m/n/12 The trained neu-ral net-work
+ []
+
+
+Overfull \hbox (3.30052pt too wide) in paragraph at lines 174--175
+[]
+ []
+
+
+Overfull \hbox (9.4984pt too wide) in paragraph at lines 175--176
+[]\T1/lmr/m/n/12 The de-tails of cre-
+ []
+
+
+Overfull \hbox (21.99442pt too wide) in paragraph at lines 176--177
+[]\T1/lmr/m/n/12 From
+ []
+
+[22]
+Overfull \hbox (13.10365pt too wide) in paragraph at lines 177--178
+[]\T1/lmr/m/n/12 This view shows the neu-
+ []
+
+
+Overfull \hbox (0.59128pt too wide) in paragraph at lines 211--212
 []\T1/lmr/m/n/12 Navigation be-tween page views. Nav-i-ga-tional com-po-nents
  []
 
-[17] <components/3/components/accordion.png, id=412, 378.41376pt x 281.05pt>
+[23] <components/3/components/accordion.png, id=530, 378.41376pt x 281.05pt>
 File: components/3/components/accordion.png Graphic file (type png)
 
 <use components/3/components/accordion.png>
 Package pdftex.def Info: components/3/components/accordion.png used on input li
-ne 62.
+ne 246.
 (pdftex.def)             Requested size: 283.80962pt x 210.78697pt.
 
-<components/3/components/button_inactive.png, id=415, 335.2525pt x 65.24374pt>
+<components/3/components/button_inactive.png, id=533, 335.2525pt x 65.24374pt>
 File: components/3/components/button_inactive.png Graphic file (type png)
 
 <use components/3/components/button_inactive.png>
 Package pdftex.def Info: components/3/components/button_inactive.png used on in
-put line 74.
+put line 258.
 (pdftex.def)             Requested size: 184.38943pt x 35.88416pt.
 
-<components/3/components/button_active.png, id=416, 338.26375pt x 65.24374pt>
+<components/3/components/button_active.png, id=534, 338.26375pt x 65.24374pt>
 File: components/3/components/button_active.png Graphic file (type png)
 
 <use components/3/components/button_active.png>
 Package pdftex.def Info: components/3/components/button_active.png used on inpu
-t line 83.
+t line 267.
 (pdftex.def)             Requested size: 186.04562pt x 35.88416pt.
 
-<components/3/components/logo.png, id=419, 203.76125pt x 120.45pt>
+<components/3/components/logo.png, id=537, 203.76125pt x 120.45pt>
 File: components/3/components/logo.png Graphic file (type png)
 
 <use components/3/components/logo.png>
-Package pdftex.def Info: components/3/components/logo.png used on input line 93
-.
+Package pdftex.def Info: components/3/components/logo.png used on input line 27
+7.
 (pdftex.def)             Requested size: 112.06902pt x 66.2477pt.
- [18 <./components/3/components/accordion.png> <./components/3/components/butto
-n_inactive.png> <./components/3/components/button_active.png>]
-Overfull \hbox (38.36154pt too wide) in paragraph at lines 111--112
+ [24] [25 <./components/3/components/accordion.png> <./components/3/components/
+button_inactive.png> <./components/3/components/button_active.png> <./component
+s/3/components/logo.png>]
+Overfull \hbox (38.36154pt too wide) in paragraph at lines 295--296
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (14.3613pt too wide) in paragraph at lines 121--122
+Overfull \hbox (14.3613pt too wide) in paragraph at lines 305--306
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
 
-Overfull \hbox (20.36136pt too wide) in paragraph at lines 122--123
+Overfull \hbox (20.36136pt too wide) in paragraph at lines 306--307
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
 
-Overfull \hbox (32.36148pt too wide) in paragraph at lines 123--124
+Overfull \hbox (32.36148pt too wide) in paragraph at lines 307--308
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
 
-Overfull \hbox (32.36148pt too wide) in paragraph at lines 124--125
+Overfull \hbox (32.36148pt too wide) in paragraph at lines 308--309
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][] 
  []
 
 
-Overfull \hbox (26.36142pt too wide) in paragraph at lines 125--126
+Overfull \hbox (26.36142pt too wide) in paragraph at lines 309--310
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
 
-Overfull \hbox (20.36136pt too wide) in paragraph at lines 126--127
+Overfull \hbox (20.36136pt too wide) in paragraph at lines 310--311
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
 
-Overfull \hbox (26.36142pt too wide) in paragraph at lines 127--128
+Overfull \hbox (26.36142pt too wide) in paragraph at lines 311--312
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
 
-Overfull \hbox (38.36154pt too wide) in paragraph at lines 128--129
+Overfull \hbox (38.36154pt too wide) in paragraph at lines 312--313
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
 
-Overfull \hbox (20.36136pt too wide) in paragraph at lines 129--130
+Overfull \hbox (20.36136pt too wide) in paragraph at lines 313--314
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (26.36142pt too wide) in paragraph at lines 130--131
+Overfull \hbox (26.36142pt too wide) in paragraph at lines 314--315
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
 
-Overfull \hbox (32.36148pt too wide) in paragraph at lines 131--132
+Overfull \hbox (32.36148pt too wide) in paragraph at lines 315--316
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
-[19 <./components/3/components/logo.png>]
-<components/3/components/notif_warning.png, id=478, 517.935pt x 102.3825pt>
+<components/3/components/notif_warning.png, id=558, 517.935pt x 102.3825pt>
 File: components/3/components/notif_warning.png Graphic file (type png)
 
 <use components/3/components/notif_warning.png>
 Package pdftex.def Info: components/3/components/notif_warning.png used on inpu
-t line 146.
+t line 330.
 (pdftex.def)             Requested size: 336.65375pt x 66.54782pt.
 
-<components/3/components/notif_info.png, id=479, 554.07pt x 86.3225pt>
+<components/3/components/notif_info.png, id=559, 554.07pt x 86.3225pt>
 File: components/3/components/notif_info.png Graphic file (type png)
 
 <use components/3/components/notif_info.png>
 Package pdftex.def Info: components/3/components/notif_info.png used on input l
-ine 154.
+ine 338.
 (pdftex.def)             Requested size: 360.14124pt x 56.10893pt.
-
-<components/3/components/nav.png, id=481, 237.88875pt x 85.31876pt>
+ [26]
+<components/3/components/nav.png, id=602, 237.88875pt x 85.31876pt>
 File: components/3/components/nav.png Graphic file (type png)
 
 <use components/3/components/nav.png>
-Package pdftex.def Info: components/3/components/nav.png used on input line 166
+Package pdftex.def Info: components/3/components/nav.png used on input line 350
 .
 (pdftex.def)             Requested size: 154.62584pt x 55.45651pt.
 
-<components/3/components/nav_bar.png, id=483, 684.5575pt x 157.58875pt>
+<components/3/components/nav_bar.png, id=604, 684.5575pt x 157.58875pt>
 File: components/3/components/nav_bar.png Graphic file (type png)
 
 <use components/3/components/nav_bar.png>
 Package pdftex.def Info: components/3/components/nav_bar.png used on input line
- 176.
+ 360.
 (pdftex.def)             Requested size: 444.95709pt x 102.43146pt.
 
-Overfull \hbox (3.93936pt too wide) in paragraph at lines 176--177
+Overfull \hbox (3.93936pt too wide) in paragraph at lines 360--361
  [] 
  []
 
-<components/3/components/grid_item.png, id=485, 552.0625pt x 401.5pt>
+<components/3/components/grid_item.png, id=606, 552.0625pt x 401.5pt>
 File: components/3/components/grid_item.png Graphic file (type png)
 
 <use components/3/components/grid_item.png>
 Package pdftex.def Info: components/3/components/grid_item.png used on input li
-ne 191.
+ne 375.
 (pdftex.def)             Requested size: 358.83636pt x 260.9719pt.
- [20 <./components/3/components/notif_warning.png> <./components/3/components/n
-otif_info.png> <./components/3/components/nav.png>] [21 <./components/3/compone
+ [27 <./components/3/components/notif_warning.png> <./components/3/components/n
+otif_info.png> <./components/3/components/nav.png>] [28 <./components/3/compone
 nts/nav_bar.png> <./components/3/components/grid_item.png>]
-<components/3/components/menu_user.png, id=504, 323.2075pt x 343.2825pt>
+<components/3/components/menu_user.png, id=623, 323.2075pt x 343.2825pt>
 File: components/3/components/menu_user.png Graphic file (type png)
 
 <use components/3/components/menu_user.png>
 Package pdftex.def Info: components/3/components/menu_user.png used on input li
-ne 223.
+ne 407.
 (pdftex.def)             Requested size: 210.08238pt x 223.13097pt.
-
-<components/3/components/menu_admin.png, id=506, 324.21124pt x 481.8pt>
+ [29 <./components/3/components/menu_user.png>]
+<components/3/components/menu_admin.png, id=632, 324.21124pt x 481.8pt>
 File: components/3/components/menu_admin.png Graphic file (type png)
 
 <use components/3/components/menu_admin.png>
 Package pdftex.def Info: components/3/components/menu_admin.png used on input l
-ine 241.
+ine 425.
 (pdftex.def)             Requested size: 210.7348pt x 313.16628pt.
- [22 <./components/3/components/menu_user.png>]
-<components/3/components/modal.png, id=515, 728.7225pt x 655.44875pt>
+
+<components/3/components/modal.png, id=634, 728.7225pt x 655.44875pt>
 File: components/3/components/modal.png Graphic file (type png)
 
 <use components/3/components/modal.png>
-Package pdftex.def Info: components/3/components/modal.png used on input line 2
-56.
+Package pdftex.def Info: components/3/components/modal.png used on input line 4
+40.
 (pdftex.def)             Requested size: 473.66402pt x 426.03664pt.
 
-Overfull \hbox (32.64629pt too wide) in paragraph at lines 256--257
+Overfull \hbox (32.64629pt too wide) in paragraph at lines 440--441
  [] 
  []
 
-[23 <./components/3/components/menu_admin.png>] [24 <./components/3/components/
+[30 <./components/3/components/menu_admin.png>] [31 <./components/3/components/
 modal.png>]
-Overfull \hbox (1.40378pt too wide) in paragraph at lines 284--285
+Overfull \hbox (1.40378pt too wide) in paragraph at lines 468--469
 []\T1/lmr/m/n/12 Since there are go-ing to be mul-
  []
 
-[25]
-Overfull \hbox (15.23824pt too wide) in paragraph at lines 303--306
+[32]
+Overfull \hbox (15.23824pt too wide) in paragraph at lines 487--490
 \T1/lmr/m/n/12 tool sup-port all re-quested re-quire-ments. One of most in-ter-
 est-ing fea-ture is that Prometheus
  []
 
-<components/3/prometherus_arch.png, id=533, 468.7914pt x 306.9066pt>
+<components/3/prometherus_arch.png, id=652, 468.7914pt x 306.9066pt>
 File: components/3/prometherus_arch.png Graphic file (type png)
 
 <use components/3/prometherus_arch.png>
-Package pdftex.def Info: components/3/prometherus_arch.png used on input line 3
-09.
+Package pdftex.def Info: components/3/prometherus_arch.png used on input line 4
+93.
 (pdftex.def)             Requested size: 441.01773pt x 288.72638pt.
- [26]
-Overfull \hbox (5.54382pt too wide) in paragraph at lines 329--330
+ [33]
+Overfull \hbox (5.54382pt too wide) in paragraph at lines 513--514
 []\T1/lmr/m/n/12 The met-ric nam-ing is al-ways self-described. Re-quested met-
 ric "node_filesystem_avail"
  []
 
-<components/3/monitoring_req.png, id=540, 881.2925pt x 793.96625pt>
+<components/3/monitoring_req.png, id=659, 881.2925pt x 793.96625pt>
 File: components/3/monitoring_req.png Graphic file (type png)
 
 <use components/3/monitoring_req.png>
-Package pdftex.def Info: components/3/monitoring_req.png used on input line 337
+Package pdftex.def Info: components/3/monitoring_req.png used on input line 521
 .
 (pdftex.def)             Requested size: 441.01773pt x 397.32137pt.
- [27 <./components/3/prometherus_arch.png>] [28 <./components/3/monitoring_req.
+ [34 <./components/3/prometherus_arch.png>] [35 <./components/3/monitoring_req.
 png>]
-Overfull \hbox (8.80707pt too wide) in paragraph at lines 355--357
+Overfull \hbox (8.80707pt too wide) in paragraph at lines 539--541
 \T1/lmr/m/n/12 Prometheus sup-ports query lan-guage, which is a key fea-ture fo
 r this tool. The Prometheus
  []
 
-[29] [30] <components/3/alert_arch.png, id=576, 469.2732pt x 239.9364pt>
+[36] [37] <components/3/alert_arch.png, id=696, 469.2732pt x 239.9364pt>
 File: components/3/alert_arch.png Graphic file (type png)
 
 <use components/3/alert_arch.png>
-Package pdftex.def Info: components/3/alert_arch.png used on input line 429.
+Package pdftex.def Info: components/3/alert_arch.png used on input line 613.
 (pdftex.def)             Requested size: 441.01773pt x 225.49997pt.
 
-<components/3/alert_arch_detailed.png, id=578, 469.2732pt x 416.757pt>
+<components/3/alert_arch_detailed.png, id=698, 469.2732pt x 416.757pt>
 File: components/3/alert_arch_detailed.png Graphic file (type png)
 
 <use components/3/alert_arch_detailed.png>
 Package pdftex.def Info: components/3/alert_arch_detailed.png used on input lin
-e 443.
+e 627.
 (pdftex.def)             Requested size: 441.01773pt x 391.68169pt.
- [31 <./components/3/alert_arch.png>] [32 <./components/3/alert_arch_detailed.p
+ [38 <./components/3/alert_arch.png>] [39 <./components/3/alert_arch_detailed.p
 ng>]) (./components/4/4_frs.tex
-<components/4/users.png, id=594, 2080.77374pt x 1671.24374pt>
+<components/4/users.png, id=713, 2080.77374pt x 1671.24374pt>
 File: components/4/users.png Graphic file (type png)
 
 <use components/4/users.png>
 Package pdftex.def Info: components/4/users.png used on input line 11.
 (pdftex.def)             Requested size: 441.01773pt x 354.21019pt.
- [33] [34 <./components/4/users.png>]
+ [40] [41 <./components/4/users.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 33.
 
-[35]
+[42]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 55.
 
 ) (./components/5_tutorial.tex) (./components/6_user_cases.tex)
-(./components/7/7_developer_guide.tex [36]
+(./components/7/7_developer_guide.tex [43]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 19.
- [37] [38]
+ [44] [45]
 Overfull \hbox (50.98727pt too wide) in paragraph at lines 113--114
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1406,18 +1501,18 @@ Overfull \hbox (22.3788pt too wide) in paragraph at lines 119--120
 ch based on Prometheus
  []
 
-[39]) [40] (./Hauptdatei.bbl) [41
+[46]) [47] (./Hauptdatei.bbl) [48
 
-] (./anhang/anhang.tex) [42]
+] (./anhang/anhang.tex) [49]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
- [43]
+ [50]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 
 (./Hauptdatei.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Hauptdatei.out' has not changed.
-(rerunfilecheck)             Checksum: D67C8870CE0ED5CFDB646144B83F77F4;4863.
+(rerunfilecheck)             Checksum: AD38FFA7B88D3C04AFD069B8F9340F1C;5457.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1425,29 +1520,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 12692 strings out of 492995
- 200113 string characters out of 6132703
- 414929 words of memory out of 5000000
- 15720 multiletter control sequences out of 15000+600000
- 63596 words of font info for 50 fonts, out of 8000000 for 9000
+ 12809 strings out of 492995
+ 202372 string characters out of 6132703
+ 415929 words of memory out of 5000000
+ 15778 multiletter control sequences out of 15000+600000
+ 66591 words of font info for 51 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 42i,12n,72p,8858b,1793s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,72p,8858b,1860s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
-e1/public/lm/lmtt12.pfb>
-Output written on Hauptdatei.pdf (43 pages, 1994665 bytes).
+17/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/lm/lmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr1
+2.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
+lm/lmtt12.pfb>
+Output written on Hauptdatei.pdf (50 pages, 2213864 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 236 named destinations out of 1000 (max. 500000)
- 594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 931 PDF objects out of 1000 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 291 named destinations out of 1000 (max. 500000)
+ 665 words of extra memory for PDF output out of 10000 (max. 10000000)
 
