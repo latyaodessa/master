@@ -143,54 +143,6 @@ N2Sky API allows  stackholders:
 Almost everything is available for arbitrary stackholder, except cloud services. In order to cloud service as a service, the user has to install it on his own cloud environment. This approach supports Platform as a Service distribution. Cloud services only for system administrator and for granted users are available. 
 
 
-\subsubsection{N2Sky Services}\label{N2Sky Services}
-
- N2Sky implements microservices architecture. It has 3 main web services as it shown in ``Fig.~\ref{fig:newarch}'' :
- 
-\begin{itemize}
-\item User Management Web Service
-\item Model Repository Web Service
-\item Cloud management Web Service
-\end{itemize}
-
-Every web service use other services which are not exposed to the public. It was made in order to support application encapsulation. Encapsulation of web application helps to prevent security issue. One of the crucial crucial process in N2Sky is the neural network training. This process takes almost all resources of the environment, that is why it is not exposed. Such a processes can be triggered only by web service, which can be blocked if environment is overloaded.
-
-Consider the following web services in details and which processes and services they are encupsulate:  
-
-\begin{description}
-\item[User Management Web Service.]   This web service responsible for permissions and user management and it has its own database. User can authorise in the system and get a session token. Every token is an unique collection of numbers and latin letters. Token is assign to the authorised user and will be save until user is active. If user is not active in the next 3 hours, the session token will disappear. If user still have an active browser session, the authorisation token will be revalidate. If user trying to make some illegal request or behave too active, the authorisation token will be revoked and the system administrator will be notified about this incident. 
-
-Every user encapsulate permission level. There two different types of permissions:
-\begin{itemize}
-\item Administrator permission. It means, that the user has full granted permission throw entire application.
-\item Regular permission. The user has access only for his own as well as public available resources.  
-\end{itemize}
-\item[Model Repository Web Service.]  Model Repository Web Service is the core service of N2Sky. Authorised user can create a new project, add there neural network from chose paradigm or deploy own one. Every newly created project is assign for one user and can not be shared, only system administrator can look up into other users projects. This functionality also limited by User Management Web Service. 
-
-Using this service user can create a neural network from proposed paradigms as well as upload his own neural network in \hl{ViNNSL} format. This functionality exposed via service so that every user can use it either from N2Sky web portal or via HTTP request directly on web service.
-
-There are two services embedded to the Model Repository web service and not exposed:
-
-\begin{description}
-\item[Training service.]  This service provides neural network training functionality. It is not possible to perform training to make direct request on service endpoint. 
-
-In order  to perform training the user has to know training input parameters and type of training file which ca be accepted. This information is stored in ViNNSL schema. 
- 
-Only Model Repository web service can trigger this service after being insured that environment available and ready to perform tests. Training a is long term process, but it does not block an entire application. This service write log data to the instance. Model Repository repository makes a callback to training service in order to check if training is completed. If training still processing, the Model Repository Service will fetch the log data in order to present current training result. User can also decide to stop training process if he is satisfied with the current result.
-
-If user perform training on his own neural network he can also log result about his network and enviroment behaviour. 
-\item[Testing service.] The testing service allows users to evaluate a trained model.  Testing data is described in ViNNSL format. Normally testing is not a long term process, because it is running agains trained neural network model. Since there is absolute freedom by neural network structure customisation, the testing process can be inefficient and could take some resources from the environment. Considering this face it was decided to encapsulate this process too. 
-\end{description}
-
- \item[Cloud management Web Service.]  Cloud web service is originally available only for system administrator. This service can manage OpenStack environment and Cloudify container management system. On every OpenStack instance as we as on OpenStack itself the monitoring management system service is installed. Every monitoring management system has its own metrics configurations and alerting rules. The monitoring service is only exposed via Cloud management web service. 
- 
- Cloud management service supports Platform as a Service distribution. The system administrator can configure the service according to his needs. All rules, including configuration rules for monitoring and alert management systems, can be adjusted on demand.  
-
-
-\end{description}
-
-
-
  
  
 \subsubsection{Modular frontend application design}\label{Modular frontend application design}

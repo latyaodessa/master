@@ -1,4 +1,15 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{wiki:typeface}
+Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
+\newblock [Online; accessed 20-December-2016].
+
+\bibitem{nagios}
+{\sc Anusas-amornkul, T., and Sangrat, S.}
+\newblock Linux server monitoring and self-healing system using nagios.
+\newblock In {\em Mobile Web and Intelligent Information Systems\/} (Cham,
+  2017), M.~Younas, I.~Awan, and I.~Holubova, Eds., Springer International
+  Publishing, pp.~290--302.
 
 \bibitem{Cagle2005}
 {\sc Cagle, K.}
@@ -19,6 +30,18 @@
   Design}.
 \newblock Springer International Publishing, Cham, 2017, pp.~81--106.
 
+\bibitem{mobile_resolution}
+{\sc Morgan, D.}
+\newblock How mobile web traffic has affected screen resolution --- spindogs.
+
+\bibitem{dashboards_book}
+{\sc Patern{\`o}, F., Santoro, C., and Scorcia, A.}
+\newblock Preserving rich user interface state in web applications across
+  various platforms.
+\newblock In {\em Engineering Interactive Systems\/} (Berlin, Heidelberg,
+  2008), P.~Forbrig and F.~Patern{\`o}, Eds., Springer Berlin Heidelberg,
+  pp.~255--262.
+
 \bibitem{mod_ui_book}
 {\sc Pleu{\ss}, A.}
 \newblock Modeling the user interface of multimedia applications.
@@ -27,7 +50,20 @@
   Heidelberg, pp.~676--690.
 
 \bibitem{gui_layout}
-{\sc Regula~Stopper, Rene~Sieber, S. W. O.~S.}
+{\sc Regula~Stopper, R.~S.}
 \newblock {Graphical User Interface} layout and design, 2012.
+
+\bibitem{alert_book}
+{\sc Tai, S., and Rouvellou, I.}
+\newblock Strategies for integrating messaging and distributed object
+  transactions.
+\newblock In {\em Middleware 2000\/} (Berlin, Heidelberg, 2000), J.~Sventek and
+  G.~Coulson, Eds., Springer Berlin Heidelberg, pp.~308--330.
+
+\bibitem{responsive_book}
+{\sc Zeng, Y., Gao, J., and Wu, C.}
+\newblock Responsive web design and its use by an e-commerce website.
+\newblock In {\em Cross-Cultural Design\/} (Cham, 2014), P.~L.~P. Rau, Ed.,
+  Springer International Publishing, pp.~509--519.
 
 \end{thebibliography}

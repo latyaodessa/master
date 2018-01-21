@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Hauptdatei.aux
+The style file: acm.bst
+Database file #1: components/core/bibliography.bib
+I was expecting a `,' or a `}'---line 39 of file components/core/bibliography.bib
+ :   
+ :   year = "2017",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "gui_layout" isn't style-file defined
+--line 160 of file components/core/bibliography.bib
+Warning--to sort, need author or key in wiki:typeface
+Warning--can't use both author and editor fields in Martinez2017
+You've used 11 entries,
+            2253 wiz_defined-function locations,
+            597 strings with 6003 characters,
+and the built_in function-call counts, 4573 in all, are:
+= -- 436
+> -- 197
+< -- 0
++ -- 75
+- -- 63
+* -- 309
+:= -- 681
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 55
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 207
+empty$ -- 395
+format.name$ -- 63
+if$ -- 1020
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 10
+newline$ -- 55
+num.names$ -- 32
+pop$ -- 91
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 165
+stack$ -- 0
+substring$ -- 299
+swap$ -- 82
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 2
+while$ -- 50
+width$ -- 13
+write$ -- 121
+(There was 1 error message)

@@ -187,10 +187,53 @@ As it was mentioned in \autoref{Modular frontend application design} "Modular fr
 
 \subsubsection{N2Sky Dashboards}\label{N2Sky Dashboards}
 
+The purpose of dashboard is to embed business intelligent (BI) objects into single page in order to make an overview of highlighted titles of BI objects \cite{dashboards_book}.
+
+A dashboard has a structure layer upon its dashlets. It is allow the user to manage layout and properties of dashlets. A dashboard is composed by dashlets. Every dashlet contains specific context and data. Dashboard defines: 
+\begin{itemize}
+\item Dashlets to be displayed
+\item The layout of dashboard and positioning of its dashlets
+\item The common context of particular dashlets
+\end{itemize}
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/dashboard_template.png}
+  \caption{N2Sky Dashboard template}
+  \label{fig:dashboard_template}
+\end{center}
+\end{figure}
+
+In ``Fig.~\ref{fig:dashboard_template}'' is shown the typical N2Sky dashboard template. A dashboard in N2Sky has a grid structure. Every dashlet has one of more items. Every item can contain any UI component, but it has to be feet into assigned dashlet without overlays. 
+
+
+
 \subsubsection{Responsive design}\label{Responsive design}
 
-\hl{TODO}
+Since N2Sky is cross-platform application it has to support multiple screen resolutions as well as readability and usability. 
 
+Considering readability first of all the typography has to be mentioned. During development of N2Sky to find the fonts, which will be displayed same and will be readable across multiple devices was a challenge. The typeface \cite{wiki:typeface} properties like latter spacing, width, weight etc were adjusted multiple times. The common problem was to audit how typeface represents on mobile devices and desktop computers \cite{responsive_book}. Even such a standard fonts like "Arial" and "Times New Roman" were looking unreadable on mobile devices as it shown in ``Fig.~\ref{fig:typo}''.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/typo.png}
+  \caption{Difference between sans-serif font Arial (A) and the browser serif font Times New Roman (B) }
+  \label{fig:typo}
+\end{center}
+\end{figure}
+
+The expansion of cross-platform applications brought some freedom to developers and designers. Today is possible to develop an application simultaneously for mobile devices, desktop computers and web browsers. The problem is came, when the mobile and tablet devices manufacturers started to produce devices with a different resolutions. Today versioning of mobile screen resolution came over 1000 devices, but N2Sky was concentrating only on major market players as it shown in ``Fig.~\ref{fig:screen}'' \cite{mobile_resolution}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/screen.png}
+  \caption{Average screen resolution of mobile, tablet and desktop devices on 2017}
+  \label{fig:screen}
+\end{center}
+\end{figure}
+
+N2Sky is focused on mobile and tablet devices, because it is an extensive trand nowadays. 
 
 \subsubsection{User Interface Elements}\label{User Interface Elements}
 
@@ -453,8 +496,121 @@ Modals can be used to represent form as well for informational purposes. When mo
 
 \subsection{N2Sky Services}\label{N2Sky Services}
 
+ N2Sky implements microservices architecture. It has 3 main web services as it shown in ``Fig.~\ref{fig:newarch}'' :
+ 
+\begin{itemize}
+\item User Management Web Service
+\item Model Repository Web Service
+\item Cloud management Web Service
+\end{itemize}
+
+Every web service use other services which are not exposed to the public. It was made in order to support application encapsulation. Encapsulation of web application helps to prevent security issue. One of the crucial crucial process in N2Sky is the neural network training. This process takes almost all resources of the environment, that is why it is not exposed. Such a processes can be triggered only by web service, which can be blocked if environment is overloaded.
+
+Consider the following web services in details and which processes and services they are encupsulate:  
+
+
+\subsubsection{User Management Web Service.}\label{User Management Web Service}   This web service responsible for permissions and user management and it has its own database. User can authorise in the system and get a session token. Every token is an unique collection of numbers and latin letters. Token is assign to the authorised user and will be save until user is active. If user is not active in the next 3 hours, the session token will disappear. If user still have an active browser session, the authorisation token will be revalidate. If user trying to make some illegal request or behave too active, the authorisation token will be revoked and the system administrator will be notified about this incident. 
+
+Every user encapsulate permission level. There two different types of permissions:
+\begin{itemize}
+\item Administrator permission. It means, that the user has full granted permission throw entire application.
+\item Regular permission. The user has access only for his own as well as public available resources.  
+\end{itemize}
+
+ \begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/user_serivice.png}
+  \caption{N2Sky User Management Web Service}
+  \label{fig:user_serivice}
+\end{center}
+\end{figure}
+
+As it shown in ``Fig.~\ref{fig:user_serivice}'' User Management Web Service has following accessible services:
+
+\begin{itemize}
+\item Login with credentials
+\item Register a new user 
+\item Delete user
+\item Update user permissions
+\item Get list of users
+\item Get user by user ID
+\end{itemize}
+ 
+ Detailed information about web service API and API documentation is written in \autoref{API Documentation}
+
+\subsubsection{Model Repository Web Service.}\label{Model Repository Web Service}  Model Repository Web Service is the core service of N2Sky. Authorised user can create a new project, add there neural network from chose paradigm or deploy own one. Every newly created project is assign for one user and can not be shared, only system administrator can look up into other users projects. This functionality also limited by User Management Web Service. 
+
+Using this service user can create a neural network from proposed paradigms as well as upload his own neural network in \hl{ViNNSL} format. This functionality exposed via service so that every user can use it either from N2Sky web portal or via HTTP request directly on web service.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/model_serivce.png}
+  \caption{N2Sky Model Repository Web Service}
+  \label{fig:model_serivce}
+\end{center}
+\end{figure}
+
+As it shown in ``Fig.~\ref{fig:model_serivce}' Model Repository Web Service has following accessible services:
+
+\begin{itemize}
+\item Create neural network from paradigm
+\item Upload developed neural network paradigm
+\item Run/Stop instance of neural network
+\item Publish/Hide neural network 
+\item Create/Update/Delete Project with neural neworks
+\item Get list of neural networks
+\item Get list of projects
+\item Get list of trained models 
+\item Train neural neural network (accessible only for model management service itself)
+\item Evaluate neural network (accessible only for model management service itself)
+\end{itemize}
+
+Detailed information about web service API and API documentation is written in \autoref{API Documentation}
+
+
+There are two services embedded to the Model Repository web service and not exposed:
+
+\begin{description}
+\item[Training service.]  This service provides neural network training functionality. It is not possible to perform training to make direct request on service endpoint. 
+
+In order  to perform training the user has to know training input parameters and type of training file which ca be accepted. This information is stored in ViNNSL schema. 
+ 
+Only Model Repository web service can trigger this service after being insured that environment available and ready to perform tests. Training a is long term process, but it does not block an entire application. This service write log data to the instance. Model Repository repository makes a callback to training service in order to check if training is completed. If training still processing, the Model Repository Service will fetch the log data in order to present current training result. User can also decide to stop training process if he is satisfied with the current result.
+
+If user perform training on his own neural network he can also log result about his network and enviroment behaviour. 
+\item[Testing service.] The testing service allows users to evaluate a trained model.  Testing data is described in ViNNSL format. Normally testing is not a long term process, because it is running agains trained neural network model. Since there is absolute freedom by neural network structure customisation, the testing process can be inefficient and could take some resources from the environment. Considering this face it was decided to encapsulate this process too. 
+\end{description}
+
+\subsubsection{Cloud Management Web Service.}\label{Cloud management Web Service}  Cloud web service is originally available only for system administrator. This service can manage OpenStack environment and Cloudify container management system. On every OpenStack instance as we as on OpenStack itself the monitoring management system service is installed. Every monitoring management system has its own metrics configurations and alerting rules. The monitoring service is only exposed via Cloud management web service. 
+ 
+ Cloud management service supports Platform as a Service distribution. The system administrator can configure the service according to his needs. All rules, including configuration rules for monitoring and alert management systems, can be adjusted on demand.  
+ 
+ 
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/components/cloud_service.png}
+  \caption{N2Sky Cloud Management Web Service}
+  \label{fig:cloud_service}
+\end{center}
+\end{figure}
+
+ 
+ As it shown in ``Fig.~\ref{fig:cloud_service}' Cloud Management Web Service has following accessible services:
+
+\begin{itemize}
+\item Get user's Dashboard settings
+\item Get user's saved metrics (reference to \autoref{Continuous Monitoring System} )
+\item Get OpenStack Services: flavours, servers, networks, images etc.
+\item Create / Update user's OpenStack Dashboard settings
+\end{itemize}
+
+Detailed information about web service API and API documentation is written in \autoref{API Documentation}
+
+
 \subsection{Continuous Monitoring System}\label{Continuous Monitoring System}
-\hl{TODO opishi servici }
+
+In client-server architecture especially for OpenStack cloud platform computer servers are important. Servers could go down, but the system-administrator does not have to work 24/7 in order to monitor the system and wait until some problem occur. A system administrator could use some monitoring tools like Nagios for OpenStack in order to get information about servers state. Monitoring tool can give information about system, network and infrastructure \cite{nagios}. The purpose of the monitoring tool to find some problems and inform the system administrator about some problem occurred. This tool can not solve the problem, but it can gives information what went wrong.
+ 
 \subsubsection{Monitoring requirements}\label{Monitoring requirements}
 
 The base monitoring system is readable and understandable representation of the graph. Graphs allow you to see objects beaning monitored and recognise metric from these objects. 
@@ -571,11 +727,11 @@ Using the time duration with an offset it is possible to get exact metric on dem
 Building query with a Prometheus can bring lots of advantages. For example there is query which use counter with a available node file system metric:
 
 \begin{lstlisting}
-topk( 3, sum(
+	took( 3, sum(
 		 rate(api_http_requests_total{status=500}[1h]
 	) )
- by (endpoint)
- )
+ 	by (endpoint)
+	 )
 \end{lstlisting}
 
 This query is already complicated, but it can be extended by multiple new rules and constrains. 
@@ -595,6 +751,33 @@ Since there are multiple machine and services to monitor there was need to creat
 \end{description}
 
 One of the most important part in application design is to maximise reusability of the components. 
+
+ 
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.65]{components/3/components/monitoring_dashlet.png}
+  \caption{N2Sky Monitoring Dashlet}
+  \label{fig:monitoring_dashlet}
+\end{center}
+\end{figure}
+
+ 
+``Fig.~\ref{fig:monitoring_dashlet}'  shows http request directions in milliseconds metrics. Each dashlet item contains:
+\begin{itemize}
+\item Title, which represents readable and self-described metric name.
+\item Server, which shows to wich instance this metric belongs.
+\item Chart is the monitoring data itself. 
+\item Tooltip, which appear on metric mouse over. Tooltip shows following data:
+\begin{itemize}
+\item Date of particular position.
+\item Name of metric
+\item Instance enviroment 
+\item Handler is a alert manager listener (reference to \autoref{Alerting Management System})
+\item Cron job
+\item Quintile 
+\end{itemize}
+
+\end{itemize}
 
 
 \subsection{Alerting Management System}\label{Alerting Management System}
@@ -617,10 +800,10 @@ To understand how Alert Manager works it is essential to understand the architec
 \end{figure}
 
 This architecture is a typical messaging platform. 
-Messaging Service send messages between multiple clients. It is implement Producer-Consumer Pattern. In the Alert Manager Architecture the role of producer is taken by Prometheus Datacenter. Alert Manager consumes the messages. Consumer knows nothing about producer and just subscribe on event. With this approach it is possible to attach multiple producers. \hl{[Strategies for Integrating Messaging and Distributed Object Transactions https://link.springer.com/chapter/10.1007/3-540-45559-0\_16]}
+Messaging Service send messages between multiple clients. It is implement Producer-Consumer Pattern. In the Alert Manager Architecture the role of producer is taken by Prometheus Datacenter. Alert Manager consumes the messages. Consumer knows nothing about producer and just subscribe on event. With this approach it is possible to attach multiple producers \cite{alert_book}. 
 
 Alerts can be collected in groups by datacenter. It means if an event occurs on multiple machines it can be packed into one notification and fired accordingly. 
-In Prometheus configuration need to be setup only two things: reference on Alert Manager and Alert Rules. When Alert Manager consume an event it just dispatch it via notification ``Fig.~\ref{fig:alert_arch_detailed}''.. 
+In Prometheus configuration need to be setup only two things: reference on Alert Manager and Alert Rules. When Alert Manager consume an event it just dispatch it via notification ``Fig.~\ref{fig:alert_arch_detailed}''..
 
 \begin{figure}[htbp]
 \begin{center}
