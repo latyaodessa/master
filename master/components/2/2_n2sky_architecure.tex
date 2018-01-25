@@ -146,6 +146,35 @@ Almost everything is available for arbitrary stackholder, except cloud services.
  
  
 \subsubsection{Modular frontend application design}\label{Modular frontend application design}
+Maintain large application like N2Sky with monolithic approach is unwieldy. Since N2Sky supports microservices approach in backend it was decided to apply the same solution on frontend.  
+
+Microservices in frontend are small independent web applications, which are consolidated into one application. The main benefits of this approach are:
+\begin{description}
+\item[Maintainability.] It is possible to divide application between different teams. Developers does not event have to have some some knowledge about other parts of the application. 
+\item[Diversity of technologies.] Monolithic approach makes the whole application stick to one framework. Microservices allowing to use any technology without need to rewriting the application.
+\item[Independent deployment.] Every application has some releases periods, every release accompanies with redeployment procedure. There is no need to redeploy the whole application, but just only required components.
+\end{description}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/2/frontend_arch.png}
+  \caption{Microservices approach in frontend application}
+  \label{fig:frontend_arch}
+\end{center}
+\end{figure}
+
+
+Microservices approach in frontend application is shown in ``Fig.~\ref{fig:frontend_arch}''. This breaks entire application into small micro applications.
+
+\begin{description}
+\item[Shell.]  is a top level component, which wraps Components picker and Container for component. It contains application configuration.
+\item[Component picker.] Is a router, which manages the micro applications. 
+\item[Container for Component]. Container, where component will be injected.
+\item[Micro Application]. Independent application, which can be written on any programming language but has to use one of the shards.
+\item[Shards.] Is a code base, which is shared between Micro Applications. Shards can have multiple levels. 
+\end{description}
+ 
+
 The central concept of the application is to support the \hl{Software as a Service (SaaS)} and Platform as a Service (PaaS) distributions.  N2Sky consist of two modules: administration module, main application module as it shown in ``Fig.~\ref{fig:modular_design}''.
 
 \begin{figure}[htbp]

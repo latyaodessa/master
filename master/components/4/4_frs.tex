@@ -1,4 +1,36 @@
 \section{Functional requirements specification}\label{Functional requirements specification}
+Functional requirements specification (FRS) is a document that defines functionality, which application or some parts of application must perform \cite{wiki:frs}. N2Sky is sociotechnical system, meaning that is strongly interacts with humans. 
+
+\subsection{Requirements specifications overview}\label{Requirements specifications overview}
+
+FRS for N2Sky is described in natural language with formal methods in order to establish specifications between development process and end-user consuming. Ever N2Sky module has FRS, which is explicit and points on system functionality. A good FRS must be unambiguous, consistent and correct \cite{frs_1}.  
+ 
+ The formal or semi-formal methods are serving for analysing and validating FRS. The main purpose of  that to limit interpretation errors. The problem occurs when FRS is fully written in natural language, when designers does not have required technical knowledge in order to use other languages. One of  the typical solution is defects detection technics, which require some effort from designer \cite{frs_3}. 
+ 
+In N2Sky some methods and technics were applied in order to make specification clean and clear as possible. Despite that in FRS will be always some parts which are leading to misunderstanding \cite{frs_1}.
+  
+FRS is a part of engineering phase. Following qualities for N2Sky were defined and applied during this phase \cite{frs_4} as it shown in ``Fig.~\ref{fig:frs_req}'' :
+\begin{itemize}
+\item Correct
+\item Unambiguous
+\item Complete
+\item Consistent
+\item Ranked for importance and/or stability
+\item Verifiable
+\item Modifiable
+\item Traceable 
+\end{itemize}
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.75]{components/4/pics/frs_req.jpg}
+  \caption{Applied on N2Sky  Requirement Specification Quialities}
+  \label{fig:frs_req}
+\end{center}
+\end{figure}
+
+
 
 \subsection{User Roles}\label{User Roles}
 
@@ -72,12 +104,32 @@ Contributor                     & \textbf{-}                 & \textbf{+}       
 
 As it was mentioned before System Administrator as well as Moderator has access to N2Sky Main Application Module, but they do not have a main function there. On the other hand all user roles, which are extending consumer can contribute in a N2Sky Main Application Module, except Consumer itself. Consumer has access to all page views on this module, but he has another purpose. 
 
-\subsection{Administration Module Components}\label{Administration components}
+\subsection{Requirements specifications for Administration Module}\label{Administration components}
+
+\subsubsection{General Definition}\label{General Definition AMC}
+
+Administration Module Component (AMC) is an application, which is responsible for managing OpenStack and Cloudify. It has embedded Monitoring System and Alert Management System. AMC is integrated in N2Sky cloud platform in order to support N2Sky environment and services. This component is implementing Platform as a service approach, hence it can be installed on any cloud server. 
+
 \subsubsection{Affected users}\label{Affected users}
+
+The users, who has full knowledge about domain with corespondent permissions or domain owner can has an access to AMC.
+
+In N2Sky only System Administrator has a proper main function in order to manage AMC.
+Following functions are available for System Administrator:
+\begin{itemize}
+\item Mange own dashboard view
+\item Control OpenStack Dashboard and its services
+\item Control Cloudify Dashboard and its services
+\item Manage monitoring charts
+\item Manage alerts and alerting rules
+\item Managet OpenStack instances (servers)
+\item Has an access to dashboards of other users
+\end{itemize}
+
 \subsubsection{Administration Dashboard}\label{Administration Dashboard}
 \subsubsection{Openstack Dashboard}\label{Openstack Dashboard}
 \subsubsection{Cloudify Dashboard}\label{Cloudify Dashboard}
-\subsubsection{Alerting System}\label{Alerting System}
+\subsubsection{Alert System}\label{Alerting System}
 \subsubsection{Monitoring System}\label{Monitoring System}
 
 \subsection{N2Sky Main Application Module Components}\label{N2Sky Components}

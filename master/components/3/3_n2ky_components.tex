@@ -640,8 +640,8 @@ To build continues monitoring system there is need to user a toolkit with an act
 \item Scalable
 \end{itemize}
 
-After researching it was decided to go for Prometheus Monitoring Toolkit. \hl{[1]} This tool support all requested requirements. One of most interesting feature is that Prometheus can be used on any UNIX environment. Since in Openstack multiple instance with a different operational system can be created, Prometheus will match exact our needs. 
-Originally Prometheus was created by SoundCloud team in 2012. \hl{[2]} The core of monitoring application is Prometheus server, which collects time series data from the moment it was executed on environment as it shown in ``Fig.~\ref{fig:prometherus_arch}''. All components are written on Go \hl{[3]} language and support multiple modules for monitoring different environment metrics. 
+After researching it was decided to go for Prometheus Monitoring Toolkit \cite{alert_overview}. This tool support all requested requirements. One of most interesting feature is that Prometheus can be used on any UNIX environment. Since in Openstack multiple instance with a different operational system can be created, Prometheus will match exact our needs. 
+Originally Prometheus was created by SoundCloud team in 2012. The core of monitoring application is Prometheus server, which collects time series data from the moment it was executed on environment as it shown in ``Fig.~\ref{fig:prometherus_arch}''. All components are written on Go language and support multiple modules for monitoring different environment metrics. 
 To understand the nature of Prometheus it is necessary to explain its architecture. 
 
 \begin{figure}[htbp]
@@ -807,33 +807,121 @@ In Prometheus configuration need to be setup only two things: reference on Alert
 
 \begin{figure}[htbp]
 \begin{center}
-  \includegraphics[width=\linewidth]{components/3/alert_arch_detailed.png}
+  \includegraphics[width=\linewidth]{components/3/alert_details.png}
   \caption{Communication within Alerting Management System}
   \label{fig:alert_arch_detailed}
 \end{center}
 \end{figure}
 
+\begin{description}
+\item[API] Alert manager API has only one endpoint, which gives list of events that occurred.
+\begin{lstlisting}
+			/api/v1/alerts
+\end{lstlisting}
+
+As a response the event information is sent \cite{alert_send}.
+ \begin{lstlisting}
+ [
+  {
+    "labels": {
+      "<label>": "<value>"
+    },
+    "annotations": {
+      "<label>": "<value>",
+    },
+    "startsAt": "<date>",
+    "endsAt": "<date>"
+    "generatorURL": "<url>"
+  }
+]
+\end{lstlisting}
+Following response shows timestamp of event, additional information as an annotation and name of event (alert). 
+\item[Silences.] Silences is a commands, which are muting alerts for specific time. It can be configured via web interface. 
+\item[Dispatcher.] Dispatcher is a grouping of alert with a similar nature into single notification. This will be send as a batch to Notification pipeline.
+\item[Notification Pipeline.] Is a pipepline, which consists channel, router and filter. It takes rules from Alert Provider and Silence Provider and alerts from Dispatcher. If notification is ready it can be send. 
+\end{description}
+
+
 \subsubsection{Alert Rules}\label{Alert Rules}
 
 As it was mention one of the main changes in Prometheus setup is to configure the alert rules. Every Prometheus Monitoring Tool can have it own alerting rules, which can be defined. There is also a possibility to reference on some common alerting rule for every monitoring system on every machine. 
+
+ \begin{lstlisting}
+		groups:
+		- name: test
+		  rules:
+		  - alert: Error
+		    expr: job:request_latency_seconds:mean5m
+		    {job="loclhost:5000"} > 0.5
+		    for: 5m
+		    labels:
+		      severity: page
+		    annotations:
+		      summary: latency
+\end{lstlisting}
+
+Following example of alerting rules shows the typical alerting rule. Most important parts are expression, which is applied on Monitoring System and severity level.  More details about creation of alerting rules is located in Development Guide chapter "Setting up Alert Management System" \autoref{Setting up Alert Management System}.
+
 Alerting rules are instructions to the monitoring system it can be user as well for alerting as for recording. 
+
 Recording rules allows to pre-compute frequently needed expressions or expressions, which are resource or time consuming.  These rules are saving result in a new set of time series. It is like indexing this data, so that prevent expansive I/O methods. 
 The rules are being executed sequentially with a predefined interval. 
 With a alerting rules it is possible to define alert namely deviation by particular expression from Prometheus Tool and its exports (modules). It allows building an alert even on combined query. 
+
 In case if Alert Manager is not available all alerts are saving into buffer. As soon Alert Manager online all events will be fired sequentially. 
+
+
 
 \subsubsection{Integration with N2Sky}\label{Integration with N2Sky Alerting}
 
 Alerting System is represented as a module in N2Sky. 
 Alerting Client is the additional configuration upon Prometheus Monitoring System. When Prometheus will be executed it should have reference on Alerting System and its rules. 
 Since the client should be installed on each OpenStack instance it was integrated into image snapshot. When the new instance will be spawned with a OpenStack snapshot, the client will be automatically executed there.  
-Alerting Client fire alerts depending on configured rules. The rules can be created via user interface. Every alert has its severity level. Depending on it the fired events will be represented differently: 
-?	Saverity 
 
-\hl{TODO}
-
+Alerting Client fire alerts depending on configured rules. The rules can be created via user interface. The list of events N2Sky receive via its service, which fetch information from Alert System. 
+ 
 \subsubsection{Alerting System Design}\label{Alerting System Design}
-\hl{TODO}
+
+Developing Alerting System UI it was keep the same design as in entire application. The N2Sky UI components were reused and none of new components were created. The main component is a grid item which contains information about event, which is occurred  ``Fig.~\ref{fig:alert_grid}''.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.7]{components/3/alerts/alert_grid.png}
+  \caption{N2Sky Alerting Management System Event representation.}
+  \label{fig:alert_grid}
+\end{center}
+\end{figure}
+
+Following information is shown:
+
+\begin{description}
+\item[Title.] The name of alert.
+\item[Summary.]   Short is a description of alert. If summary is too long it will be cut.
+\item[Description.] The whole description of alert.
+\item[Starts at.] Timestamp when event occurred. 
+\item[Ends at.] Timestamp when event is no more valid. If the timestamp is a current day and time, then problem still not fixed. 
+\item[Status.] Actual status of event. Can be active and inactive.
+\item[Receiver.] The group of receivers. Normally group contains multiple receivers emails. 
+\item[Location.] The endpoint of server where monitoring system installed. 
+\end{description}
+
+Every alert has its severity level. Depending on it the fired events will be represented differently. Every severity level has own colour on N2Sky as it shown in ``Fig.~\ref{fig:alert_severity}''.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/3/alerts/alert_severity.png}
+  \caption{N2Sky Alerting Management System Severity Level}
+  \label{fig:alert_severity}
+\end{center}
+\end{figure}
+
+There are three types of severity levels:
+\begin{itemize}
+\item Critical, which shows that crucial event is occurred. For example if server goes down it is critical severity level.  In N2Sky UI it has red colour. 
+\item Warning, which shows that something goes wrong. For example not enough disk space on server. In N2Sky UI it has orange colour. 
+\item Page, which shows that some information. For example lots of request occurred. In N2Sky UI it has white colour.  
+\end{itemize}
+ 
 
 
 

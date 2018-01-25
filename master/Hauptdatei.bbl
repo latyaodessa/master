@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{wiki:frs}
+Systems and software engineering -- vocabulary, 2010.
+
 \bibitem{wiki:typeface}
 Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock [Online; accessed 20-December-2016].
@@ -16,6 +19,14 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock {\em The Foundations of SVG}.
 \newblock Springer London, London, 2005, pp.~21--62.
 
+\bibitem{frs_1}
+{\sc Goubali, O., Girard, P., Guittet, L., Bignon, A., Kesraoui, D., Berruet,
+  P., and Bouillon, J.-F.}
+\newblock Designing functional specifications for complex systems.
+\newblock In {\em Human-Computer Interaction. Theory, Design, Development and
+  Practice\/} (Cham, 2016), M.~Kurosu, Ed., Springer International Publishing,
+  pp.~166--177.
+
 \bibitem{intelligent_support}
 {\sc Mac{\'i}as, J.~A., and Patern{\`o}, F.}
 \newblock Intelligent support for end-user web interface customization.
@@ -30,9 +41,21 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
   Design}.
 \newblock Springer International Publishing, Cham, 2017, pp.~81--106.
 
+\bibitem{alert_overview}
+{\sc Matt T.~Proud, J.~V.}
+\newblock Overview. what is prometheus? --- prometheus, 2017.
+\newblock [Online; accessed 2017].
+
+\bibitem{alert_send}
+{\sc Matt T.~Proud, J.~V.}
+\newblock Sending alerts --- prometheus, 2017.
+\newblock [Online; accessed 2017].
+
 \bibitem{mobile_resolution}
 {\sc Morgan, D.}
-\newblock How mobile web traffic has affected screen resolution --- spindogs.
+\newblock How mobile web traffic has affected screen resolution --- spindogs,
+  2017.
+\newblock [Online; accessed 21-September-2017].
 
 \bibitem{dashboards_book}
 {\sc Patern{\`o}, F., Santoro, C., and Scorcia, A.}
@@ -59,6 +82,12 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
   transactions.
 \newblock In {\em Middleware 2000\/} (Berlin, Heidelberg, 2000), J.~Sventek and
   G.~Coulson, Eds., Springer Berlin Heidelberg, pp.~308--330.
+
+\bibitem{frs_3}
+{\sc Weyers, B., Bowen, J., Dix, A., and Palanque, P.}
+\newblock The handbook of formal methods in human-computer interaction.
+\newblock In {\em The Handbook of Formal Methods in Human-Computer
+  Interaction\/} (Cham, 2017), Springer International Publishing.
 
 \bibitem{responsive_book}
 {\sc Zeng, Y., Gao, J., and Wu, C.}
