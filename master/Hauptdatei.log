@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  25 JAN 2018 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  27 JAN 2018 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,6 +918,9 @@ Writing nomenclature file Hauptdatei.nlo
 
 LaTeX Warning: Label `N2Sky Components' multiply defined.
 
+
+LaTeX Warning: Label `fig:openstack_dashboard_projects' multiply defined.
+
 )
 \openout1 = `Hauptdatei.aux'.
 
@@ -1026,7 +1029,7 @@ LaTeX Info: Redefining \nameref on input line 61.
 \c@lstlisting=\count125
  (./latex_einstellungen/trennung.tex)
 (./components/core/deckblatt.tex
-<components/core/uni_logo.png, id=292, 1757.56625pt x 478.78876pt>
+<components/core/uni_logo.png, id=316, 1757.56625pt x 478.78876pt>
 File: components/core/uni_logo.png Graphic file (type png)
 
 <use components/core/uni_logo.png>
@@ -1083,19 +1086,19 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 1.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [2]
-(./Hauptdatei.toc [3])
+(./Hauptdatei.toc [3] [4])
 \tf@toc=\write7
 \openout7 = `Hauptdatei.toc'.
 
- [4] (./components/1_introduction.tex)
+ [5] (./components/1_introduction.tex)
 (./components/2/2_n2sky_architecure.tex
-<components/2/old_arch.png, id=393, 682.55pt x 384.43625pt>
+<components/2/old_arch.png, id=427, 682.55pt x 384.43625pt>
 File: components/2/old_arch.png Graphic file (type png)
 
 <use components/2/old_arch.png>
 Package pdftex.def Info: components/2/old_arch.png used on input line 25.
 (pdftex.def)             Requested size: 441.01773pt x 248.40236pt.
- [5]
+ [6]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 42.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
@@ -1103,30 +1106,30 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 42.
- [6 <./components/2/old_arch.png>] [7] [8] [9]
-<components/2/new_arch.png, id=418, 4693.535pt x 3858.415pt>
+ [7 <./components/2/old_arch.png>] [8] [9] [10]
+<components/2/new_arch.png, id=452, 4693.535pt x 3858.415pt>
 File: components/2/new_arch.png Graphic file (type png)
 
 <use components/2/new_arch.png>
 Package pdftex.def Info: components/2/new_arch.png used on input line 123.
 (pdftex.def)             Requested size: 441.01773pt x 362.49089pt.
- [10 <./components/2/new_arch.png>]
-<components/2/frontend_arch.png, id=426, 1716.4125pt x 1445.4pt>
+ [11 <./components/2/new_arch.png>]
+<components/2/frontend_arch.png, id=460, 1716.4125pt x 1445.4pt>
 File: components/2/frontend_arch.png Graphic file (type png)
 
 <use components/2/frontend_arch.png>
 Package pdftex.def Info: components/2/frontend_arch.png used on input line 160.
 
 (pdftex.def)             Requested size: 441.01773pt x 371.36209pt.
- [11] [12 <./components/2/frontend_arch.png>] <components/2/modular_design.png,
- id=439, 2589.675pt x 1535.7375pt>
+ [12] [13 <./components/2/frontend_arch.png>] <components/2/modular_design.png,
+ id=475, 2589.675pt x 1535.7375pt>
 File: components/2/modular_design.png Graphic file (type png)
 
 <use components/2/modular_design.png>
 Package pdftex.def Info: components/2/modular_design.png used on input line 182
 .
 (pdftex.def)             Requested size: 441.01773pt x 261.51715pt.
- [13 <./components/2/modular_design.png>]
+ [14 <./components/2/modular_design.png>]
 Overfull \hbox (6.40247pt too wide) in paragraph at lines 197--198
 []\T1/lmr/m/n/12 The main ap-pli-ca-tion mod-ule is the cen-tral mod-ule of N2S
 ky.
@@ -1138,16 +1141,16 @@ Overfull \hbox (2.93558pt too wide) in paragraph at lines 208--209
 -po-nents. Vaadin
  []
 
-[14]) (./components/3/3_n2ky_components.tex [15] [16]
-<components/3/components/layout_basic.png, id=467, 2372.865pt x 1598.97375pt>
+[15]) (./components/3/3_n2ky_components.tex [16] [17]
+<components/3/components/layout_basic.png, id=501, 2372.865pt x 1598.97375pt>
 File: components/3/components/layout_basic.png Graphic file (type png)
 
 <use components/3/components/layout_basic.png>
 Package pdftex.def Info: components/3/components/layout_basic.png used on input
  line 57.
 (pdftex.def)             Requested size: 441.01773pt x 297.17181pt.
- [17]
-<components/3/components/layout_main.png, id=474, 2673.99pt x 1565.85pt>
+ [18]
+<components/3/components/layout_main.png, id=508, 2673.99pt x 1565.85pt>
 File: components/3/components/layout_main.png Graphic file (type png)
 
 <use components/3/components/layout_main.png>
@@ -1155,14 +1158,14 @@ Package pdftex.def Info: components/3/components/layout_main.png used on input
 line 83.
 (pdftex.def)             Requested size: 441.01773pt x 258.23463pt.
 
-<components/3/components/layout_mobile.png, id=476, 1830.84pt x 1668.2325pt>
+<components/3/components/layout_mobile.png, id=510, 1830.84pt x 1668.2325pt>
 File: components/3/components/layout_mobile.png Graphic file (type png)
 
 <use components/3/components/layout_mobile.png>
 Package pdftex.def Info: components/3/components/layout_mobile.png used on inpu
 t line 95.
 (pdftex.def)             Requested size: 441.01773pt x 401.83493pt.
- [18 <./components/3/components/layout_basic.png>]
+ [19 <./components/3/components/layout_basic.png>]
 Overfull \hbox (20.98697pt too wide) in paragraph at lines 115--116
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -1177,7 +1180,7 @@ Overfull \hbox (14.98691pt too wide) in paragraph at lines 121--122
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[19 <./components/3/components/layout_main.png>] [20 <./components/3/components
+[20 <./components/3/components/layout_main.png>] [21 <./components/3/components
 /layout_mobile.png>]
 Overfull \hbox (44.98721pt too wide) in paragraph at lines 134--135
 [][][][][][][][][][][][][][][][] 
@@ -1193,7 +1196,7 @@ Overfull \hbox (4.15202pt too wide) in paragraph at lines 161--162
 []\T1/lmr/m/n/12 Route to the Open-Stack
  []
 
-[21]
+[22]
 Overfull \hbox (20.05988pt too wide) in paragraph at lines 162--163
 []\T1/lmr/m/n/12 This view
  []
@@ -1233,16 +1236,16 @@ Overfull \hbox (13.10365pt too wide) in paragraph at lines 177--178
 []\T1/lmr/m/n/12 This view shows the neu-
  []
 
-[22]
-<components/3/components/dashboard_template.png, id=547, 1942.25626pt x 1445.4p
+[23]
+<components/3/components/dashboard_template.png, id=581, 1942.25626pt x 1445.4p
 t>
 File: components/3/components/dashboard_template.png Graphic file (type png)
  <use components/3/components/dashboard_template.png>
 Package pdftex.def Info: components/3/components/dashboard_template.png used on
  input line 202.
 (pdftex.def)             Requested size: 441.01773pt x 328.17839pt.
- [23 <./components/3/components/dashboard_template.png>]
-<components/3/components/typo.png, id=559, 656.4525pt x 364.36125pt>
+ [24 <./components/3/components/dashboard_template.png>]
+<components/3/components/typo.png, id=593, 656.4525pt x 364.36125pt>
 File: components/3/components/typo.png Graphic file (type png)
 
 <use components/3/components/typo.png>
@@ -1250,20 +1253,20 @@ Package pdftex.def Info: components/3/components/typo.png used on input line 22
 0.
 (pdftex.def)             Requested size: 426.68907pt x 236.832pt.
 
-<components/3/components/screen.png, id=562, 675.52374pt x 261.97874pt>
+<components/3/components/screen.png, id=596, 675.52374pt x 261.97874pt>
 File: components/3/components/screen.png Graphic file (type png)
 
 <use components/3/components/screen.png>
 Package pdftex.def Info: components/3/components/screen.png used on input line 
 230.
 (pdftex.def)             Requested size: 439.08524pt x 170.28416pt.
- [24 <./components/3/components/typo.png>]
+ [25 <./components/3/components/typo.png>]
 Overfull \hbox (0.59128pt too wide) in paragraph at lines 254--255
 []\T1/lmr/m/n/12 Navigation be-tween page views. Nav-i-ga-tional com-po-nents
  []
 
-[25 <./components/3/components/screen.png>]
-<components/3/components/accordion.png, id=582, 378.41376pt x 281.05pt>
+[26 <./components/3/components/screen.png>]
+<components/3/components/accordion.png, id=617, 378.41376pt x 281.05pt>
 File: components/3/components/accordion.png Graphic file (type png)
 
 <use components/3/components/accordion.png>
@@ -1271,7 +1274,7 @@ Package pdftex.def Info: components/3/components/accordion.png used on input li
 ne 289.
 (pdftex.def)             Requested size: 283.80962pt x 210.78697pt.
 
-<components/3/components/button_inactive.png, id=585, 335.2525pt x 65.24374pt>
+<components/3/components/button_inactive.png, id=620, 335.2525pt x 65.24374pt>
 File: components/3/components/button_inactive.png Graphic file (type png)
 
 <use components/3/components/button_inactive.png>
@@ -1279,7 +1282,7 @@ Package pdftex.def Info: components/3/components/button_inactive.png used on in
 put line 301.
 (pdftex.def)             Requested size: 184.38943pt x 35.88416pt.
 
-<components/3/components/button_active.png, id=586, 338.26375pt x 65.24374pt>
+<components/3/components/button_active.png, id=621, 338.26375pt x 65.24374pt>
 File: components/3/components/button_active.png Graphic file (type png)
 
 <use components/3/components/button_active.png>
@@ -1287,14 +1290,14 @@ Package pdftex.def Info: components/3/components/button_active.png used on inpu
 t line 310.
 (pdftex.def)             Requested size: 186.04562pt x 35.88416pt.
 
-<components/3/components/logo.png, id=589, 203.76125pt x 120.45pt>
+<components/3/components/logo.png, id=624, 203.76125pt x 120.45pt>
 File: components/3/components/logo.png Graphic file (type png)
 
 <use components/3/components/logo.png>
 Package pdftex.def Info: components/3/components/logo.png used on input line 32
 0.
 (pdftex.def)             Requested size: 112.06902pt x 66.2477pt.
- [26] [27 <./components/3/components/accordion.png> <./components/3/components/
+ [27] [28 <./components/3/components/accordion.png> <./components/3/components/
 button_inactive.png> <./components/3/components/button_active.png> <./component
 s/3/components/logo.png>]
 Overfull \hbox (38.36154pt too wide) in paragraph at lines 338--339
@@ -1367,7 +1370,7 @@ Overfull \hbox (32.36148pt too wide) in paragraph at lines 358--359
 ][][][][][] 
  []
 
-<components/3/components/notif_warning.png, id=610, 517.935pt x 102.3825pt>
+<components/3/components/notif_warning.png, id=644, 517.935pt x 102.3825pt>
 File: components/3/components/notif_warning.png Graphic file (type png)
 
 <use components/3/components/notif_warning.png>
@@ -1375,15 +1378,15 @@ Package pdftex.def Info: components/3/components/notif_warning.png used on inpu
 t line 373.
 (pdftex.def)             Requested size: 336.65375pt x 66.54782pt.
 
-<components/3/components/notif_info.png, id=611, 554.07pt x 86.3225pt>
+<components/3/components/notif_info.png, id=645, 554.07pt x 86.3225pt>
 File: components/3/components/notif_info.png Graphic file (type png)
 
 <use components/3/components/notif_info.png>
 Package pdftex.def Info: components/3/components/notif_info.png used on input l
 ine 381.
 (pdftex.def)             Requested size: 360.14124pt x 56.10893pt.
- [28]
-<components/3/components/nav.png, id=653, 237.88875pt x 85.31876pt>
+ [29]
+<components/3/components/nav.png, id=687, 237.88875pt x 85.31876pt>
 File: components/3/components/nav.png Graphic file (type png)
 
 <use components/3/components/nav.png>
@@ -1391,7 +1394,7 @@ Package pdftex.def Info: components/3/components/nav.png used on input line 393
 .
 (pdftex.def)             Requested size: 154.62584pt x 55.45651pt.
 
-<components/3/components/nav_bar.png, id=655, 684.5575pt x 157.58875pt>
+<components/3/components/nav_bar.png, id=689, 684.5575pt x 157.58875pt>
 File: components/3/components/nav_bar.png Graphic file (type png)
 
 <use components/3/components/nav_bar.png>
@@ -1403,25 +1406,25 @@ Overfull \hbox (3.93936pt too wide) in paragraph at lines 403--404
  [] 
  []
 
-<components/3/components/grid_item.png, id=657, 552.0625pt x 401.5pt>
+<components/3/components/grid_item.png, id=691, 552.0625pt x 401.5pt>
 File: components/3/components/grid_item.png Graphic file (type png)
 
 <use components/3/components/grid_item.png>
 Package pdftex.def Info: components/3/components/grid_item.png used on input li
 ne 418.
 (pdftex.def)             Requested size: 358.83636pt x 260.9719pt.
- [29 <./components/3/components/notif_warning.png> <./components/3/components/n
-otif_info.png> <./components/3/components/nav.png>] [30 <./components/3/compone
+ [30 <./components/3/components/notif_warning.png> <./components/3/components/n
+otif_info.png> <./components/3/components/nav.png>] [31 <./components/3/compone
 nts/nav_bar.png> <./components/3/components/grid_item.png>]
-<components/3/components/menu_user.png, id=674, 323.2075pt x 343.2825pt>
+<components/3/components/menu_user.png, id=709, 323.2075pt x 343.2825pt>
 File: components/3/components/menu_user.png Graphic file (type png)
 
 <use components/3/components/menu_user.png>
 Package pdftex.def Info: components/3/components/menu_user.png used on input li
 ne 450.
 (pdftex.def)             Requested size: 210.08238pt x 223.13097pt.
- [31 <./components/3/components/menu_user.png>]
-<components/3/components/menu_admin.png, id=684, 324.21124pt x 481.8pt>
+ [32 <./components/3/components/menu_user.png>]
+<components/3/components/menu_admin.png, id=718, 324.21124pt x 481.8pt>
 File: components/3/components/menu_admin.png Graphic file (type png)
 
 <use components/3/components/menu_admin.png>
@@ -1429,7 +1432,7 @@ Package pdftex.def Info: components/3/components/menu_admin.png used on input l
 ine 468.
 (pdftex.def)             Requested size: 210.7348pt x 313.16628pt.
 
-<components/3/components/modal.png, id=686, 728.7225pt x 655.44875pt>
+<components/3/components/modal.png, id=720, 728.7225pt x 655.44875pt>
 File: components/3/components/modal.png Graphic file (type png)
 
 <use components/3/components/modal.png>
@@ -1441,103 +1444,97 @@ Overfull \hbox (32.64629pt too wide) in paragraph at lines 483--484
  [] 
  []
 
-[32 <./components/3/components/menu_admin.png>] [33 <./components/3/components/
+[33 <./components/3/components/menu_admin.png>] [34 <./components/3/components/
 modal.png>]
-<components/3/components/user_serivice.png, id=699, 1671.24374pt x 927.465pt>
+<components/3/components/user_serivice.png, id=733, 1671.24374pt x 927.465pt>
 File: components/3/components/user_serivice.png Graphic file (type png)
 
 <use components/3/components/user_serivice.png>
 Package pdftex.def Info: components/3/components/user_serivice.png used on inpu
 t line 522.
 (pdftex.def)             Requested size: 441.01773pt x 244.74396pt.
- [34]
-<components/3/components/model_serivce.png, id=707, 1671.24374pt x 1478.52374pt
+ [35]
+<components/3/components/model_serivce.png, id=742, 1671.24374pt x 1478.52374pt
 >
 File: components/3/components/model_serivce.png Graphic file (type png)
  <use components/3/components/model_serivce.png>
 Package pdftex.def Info: components/3/components/model_serivce.png used on inpu
 t line 547.
 (pdftex.def)             Requested size: 441.01773pt x 390.16002pt.
- [35 <./components/3/components/user_serivice.png>] [36 <./components/3/compone
+ [36 <./components/3/components/user_serivice.png>] [37 <./components/3/compone
 nts/model_serivce.png>]
-[37]
-<components/3/components/cloud_service.png, id=726, 1671.24374pt x 1508.63625pt
+[38]
+<components/3/components/cloud_service.png, id=761, 1671.24374pt x 1508.63625pt
 >
 File: components/3/components/cloud_service.png Graphic file (type png)
  <use components/3/components/cloud_service.png>
 Package pdftex.def Info: components/3/components/cloud_service.png used on inpu
 t line 591.
 (pdftex.def)             Requested size: 441.01773pt x 398.10625pt.
- [38 <./components/3/components/cloud_service.png>]
+ [39 <./components/3/components/cloud_service.png>]
 Overfull \hbox (1.40378pt too wide) in paragraph at lines 624--625
 []\T1/lmr/m/n/12 Since there are go-ing to be mul-
  []
 
-[39]
-Overfull \hbox (15.23824pt too wide) in paragraph at lines 643--646
-\T1/lmr/m/n/12 tool sup-port all re-quested re-quire-ments. One of most in-ter-
-est-ing fea-ture is that Prometheus
- []
-
-<components/3/prometherus_arch.png, id=745, 468.7914pt x 306.9066pt>
+[40] <components/3/prometherus_arch.png, id=779, 468.7914pt x 306.9066pt>
 File: components/3/prometherus_arch.png Graphic file (type png)
 
 <use components/3/prometherus_arch.png>
 Package pdftex.def Info: components/3/prometherus_arch.png used on input line 6
 49.
 (pdftex.def)             Requested size: 441.01773pt x 288.72638pt.
- [40] [41 <./components/3/prometherus_arch.png>]
+ [41] [42 <./components/3/prometherus_arch.png>]
 Overfull \hbox (5.54382pt too wide) in paragraph at lines 669--670
 []\T1/lmr/m/n/12 The met-ric nam-ing is al-ways self-described. Re-quested met-
 ric "node_filesystem_avail"
  []
 
-<components/3/monitoring_req.png, id=758, 881.2925pt x 793.96625pt>
+<components/3/monitoring_req.png, id=792, 881.2925pt x 793.96625pt>
 File: components/3/monitoring_req.png Graphic file (type png)
 
 <use components/3/monitoring_req.png>
 Package pdftex.def Info: components/3/monitoring_req.png used on input line 677
 .
 (pdftex.def)             Requested size: 441.01773pt x 397.32137pt.
- [42 <./components/3/monitoring_req.png>]
+ [43 <./components/3/monitoring_req.png>]
 Overfull \hbox (8.80707pt too wide) in paragraph at lines 695--697
 \T1/lmr/m/n/12 Prometheus sup-ports query lan-guage, which is a key fea-ture fo
 r this tool. The Prometheus
  []
 
-[43]
-<components/3/components/monitoring_dashlet.png, id=779, 580.1675pt x 370.38374
+[44]
+<components/3/components/monitoring_dashlet.png, id=813, 580.1675pt x 370.38374
 pt>
 File: components/3/components/monitoring_dashlet.png Graphic file (type png)
  <use components/3/components/monitoring_dashlet.png>
 Package pdftex.def Info: components/3/components/monitoring_dashlet.png used on
  input line 758.
 (pdftex.def)             Requested size: 377.10439pt x 240.74657pt.
- [44] [45 <./components/3/components/monitoring_dashlet.png>]
-<components/3/alert_arch.png, id=799, 469.2732pt x 239.9364pt>
+ [45] [46 <./components/3/components/monitoring_dashlet.png>]
+<components/3/alert_arch.png, id=833, 469.2732pt x 239.9364pt>
 File: components/3/alert_arch.png Graphic file (type png)
 
 <use components/3/alert_arch.png>
 Package pdftex.def Info: components/3/alert_arch.png used on input line 796.
 (pdftex.def)             Requested size: 441.01773pt x 225.49997pt.
 
-<components/3/alert_details.png, id=802, 1938.24126pt x 1294.8375pt>
+<components/3/alert_details.png, id=836, 1938.24126pt x 1294.8375pt>
 File: components/3/alert_details.png Graphic file (type png)
 
 <use components/3/alert_details.png>
 Package pdftex.def Info: components/3/alert_details.png used on input line 810.
 
 (pdftex.def)             Requested size: 441.01773pt x 294.60562pt.
- [46 <./components/3/alert_arch.png>]
-[47 <./components/3/alert_details.png>]
+ [47 <./components/3/alert_arch.png>]
+[48 <./components/3/alert_details.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 851.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 851.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 851.
- [48]
-<components/3/alerts/alert_grid.png, id=853, 379.4175pt x 303.1325pt>
+ [49]
+<components/3/alerts/alert_grid.png, id=888, 379.4175pt x 303.1325pt>
 File: components/3/alerts/alert_grid.png Graphic file (type png)
 
 <use components/3/alerts/alert_grid.png>
@@ -1545,43 +1542,160 @@ Package pdftex.def Info: components/3/alerts/alert_grid.png used on input line
 889.
 (pdftex.def)             Requested size: 265.59042pt x 212.1913pt.
 
-<components/3/alerts/alert_severity.png, id=855, 1183.42125pt x 320.19624pt>
+<components/3/alerts/alert_severity.png, id=890, 1183.42125pt x 320.19624pt>
 File: components/3/alerts/alert_severity.png Graphic file (type png)
 
 <use components/3/alerts/alert_severity.png>
 Package pdftex.def Info: components/3/alerts/alert_severity.png used on input l
 ine 912.
 (pdftex.def)             Requested size: 441.01773pt x 119.32576pt.
- [49 <./components/3/alerts/alert_grid.png>]) (./components/4/4_frs.tex [50 <./
-components/3/alerts/alert_severity.png>]
-
-LaTeX Warning: Citation `frs_4' on page 51 undefined on input line 12.
-
-<components/4/pics/frs_req.jpg, id=877, 391.4625pt x 368.37625pt>
+ [50 <./components/3/alerts/alert_grid.png>]) (./components/4/4_frs.tex [51 <./
+components/3/alerts/alert_severity.png>] <components/4/pics/frs_req.jpg, id=912
+, 391.4625pt x 368.37625pt>
 File: components/4/pics/frs_req.jpg Graphic file (type jpg)
 
 <use components/4/pics/frs_req.jpg>
 Package pdftex.def Info: components/4/pics/frs_req.jpg used on input line 27.
 (pdftex.def)             Requested size: 293.59615pt x 276.2815pt.
- [51 <./components/4/pics/frs_req.jpg>]
-<components/4/users.png, id=884, 2080.77374pt x 1671.24374pt>
+ [52 <./components/4/pics/frs_req.jpg>]
+<components/4/users.png, id=920, 2080.77374pt x 1671.24374pt>
 File: components/4/users.png Graphic file (type png)
 
 <use components/4/users.png>
 Package pdftex.def Info: components/4/users.png used on input line 43.
 (pdftex.def)             Requested size: 441.01773pt x 354.21019pt.
- [52 <./components/4/users.png>]
+ [53 <./components/4/users.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 65.
 
-[53]
+[54]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 87.
 
-[54]) (./components/5_tutorial.tex) (./components/6_user_cases.tex)
-(./components/7/7_developer_guide.tex [55] [56]
+[55]
+<components/4/pics/admin_dashboard.png, id=941, 1265.72874pt x 681.54625pt>
+File: components/4/pics/admin_dashboard.png Graphic file (type png)
+
+<use components/4/pics/admin_dashboard.png>
+Package pdftex.def Info: components/4/pics/admin_dashboard.png used on input li
+ne 143.
+(pdftex.def)             Requested size: 441.01773pt x 237.46321pt.
+ [56 <./components/4/pics/admin_dashboard.png>]
+<components/4/pics/admin_tools.png, id=953, 1185.42876pt x 211.79124pt>
+File: components/4/pics/admin_tools.png Graphic file (type png)
+
+<use components/4/pics/admin_tools.png>
+Package pdftex.def Info: components/4/pics/admin_tools.png used on input line 1
+73.
+(pdftex.def)             Requested size: 441.01773pt x 78.79134pt.
+
+<components/4/pics/featured_metrics.png, id=955, 1185.42876pt x 449.68pt>
+File: components/4/pics/featured_metrics.png Graphic file (type png)
+
+<use components/4/pics/featured_metrics.png>
+Package pdftex.def Info: components/4/pics/featured_metrics.png used on input l
+ine 184.
+(pdftex.def)             Requested size: 441.01773pt x 167.29158pt.
+ [57 <./components/4/pics/admin_tools.png> <./components/4/pics/featured_metric
+s.png>]
+<components/4/pics/openstack_dashboard.png, id=971, 1284.8pt x 645.41125pt>
+File: components/4/pics/openstack_dashboard.png Graphic file (type png)
+
+<use components/4/pics/openstack_dashboard.png>
+Package pdftex.def Info: components/4/pics/openstack_dashboard.png used on inpu
+t line 200.
+(pdftex.def)             Requested size: 441.01773pt x 221.54443pt.
+
+<components/4/pics/openstack_dashboard_projects.png, id=973, 1190.4475pt x 268.
+00125pt>
+File: components/4/pics/openstack_dashboard_projects.png Graphic file (type png
+)
+ <use components/4/pics/openstack_dashboard_projects.png>
+Package pdftex.def Info: components/4/pics/openstack_dashboard_projects.png use
+d on input line 214.
+(pdftex.def)             Requested size: 441.01773pt x 99.28159pt.
+ [58 <./components/4/pics/openstack_dashboard.png> <./components/4/pics/opensta
+ck_dashboard_projects.png>]
+File: components/4/pics/openstack_dashboard_projects.png Graphic file (type png
+)
+ <use components/4/pics/openstack_dashboard_projects.png>
+Package pdftex.def Info: components/4/pics/openstack_dashboard_projects.png use
+d on input line 260.
+(pdftex.def)             Requested size: 441.01773pt x 99.28159pt.
+ [59]
+<components/4/pics/openstack_servers.png, id=996, 560.0925pt x 238.8925pt>
+File: components/4/pics/openstack_servers.png Graphic file (type png)
+
+<use components/4/pics/openstack_servers.png>
+Package pdftex.def Info: components/4/pics/openstack_servers.png used on input 
+line 280.
+(pdftex.def)             Requested size: 336.05809pt x 143.3366pt.
+
+<components/4/pics/openstack_flavors.png, id=998, 597.23125pt x 401.5pt>
+File: components/4/pics/openstack_flavors.png Graphic file (type png)
+
+<use components/4/pics/openstack_flavors.png>
+Package pdftex.def Info: components/4/pics/openstack_flavors.png used on input 
+line 305.
+(pdftex.def)             Requested size: 358.3415pt x 240.90184pt.
+ [60 <./components/4/pics/openstack_servers.png>]
+<components/4/pics/openstack_neutron.png, id=1008, 1262.7175pt x 642.4pt>
+File: components/4/pics/openstack_neutron.png Graphic file (type png)
+
+<use components/4/pics/openstack_neutron.png>
+Package pdftex.def Info: components/4/pics/openstack_neutron.png used on input 
+line 332.
+(pdftex.def)             Requested size: 441.01773pt x 224.36305pt.
+ [61 <./components/4/pics/openstack_flavors.png>] [62 <./components/4/pics/open
+stack_neutron.png>]
+<components/4/pics/openstack_images.png, id=1037, 1267.73625pt x 831.105pt>
+File: components/4/pics/openstack_images.png Graphic file (type png)
+
+<use components/4/pics/openstack_images.png>
+Package pdftex.def Info: components/4/pics/openstack_images.png used on input l
+ine 377.
+(pdftex.def)             Requested size: 441.01773pt x 289.11568pt.
+ [63 <./components/4/pics/openstack_images.png>]
+<components/4/pics/opentack_vitrage.png, id=1053, 1264.725pt x 976.64874pt>
+File: components/4/pics/opentack_vitrage.png Graphic file (type png)
+
+<use components/4/pics/opentack_vitrage.png>
+Package pdftex.def Info: components/4/pics/opentack_vitrage.png used on input l
+ine 419.
+(pdftex.def)             Requested size: 441.01773pt x 340.55057pt.
+ [64] [65 <./components/4/pics/opentack_vitrage.png>]
+<components/4/pics/openstack_template.png, id=1075, 1042.89626pt x 846.16125pt>
+File: components/4/pics/openstack_template.png Graphic file (type png)
+<use components/4/pics/openstack_template.png>
+Package pdftex.def Info: components/4/pics/openstack_template.png used on input
+ line 452.
+(pdftex.def)             Requested size: 441.01773pt x 357.82555pt.
+ [66] [67 <./components/4/pics/openstack_template.png>]
+<components/4/pics/dashboard_settings.png, id=1109, 862.22125pt x 335.2525pt>
+File: components/4/pics/dashboard_settings.png Graphic file (type png)
+
+<use components/4/pics/dashboard_settings.png>
+Package pdftex.def Info: components/4/pics/dashboard_settings.png used on input
+ line 490.
+(pdftex.def)             Requested size: 441.01773pt x 171.47783pt.
+
+
+LaTeX Warning: Reference `Alert System' on page 68 undefined on input line 501.
+
+
+[68 <./components/4/pics/dashboard_settings.png>]
+<components/4/pics/create_monitoring.png, id=1119, 905.3825pt x 462.72874pt>
+File: components/4/pics/create_monitoring.png Graphic file (type png)
+
+<use components/4/pics/create_monitoring.png>
+Package pdftex.def Info: components/4/pics/create_monitoring.png used on input 
+line 518.
+(pdftex.def)             Requested size: 441.01773pt x 225.39754pt.
+ [69 <./components/4/pics/create_monitoring.png>]) (./components/5_tutorial.tex
+) (./components/6_user_cases.tex)
+(./components/7/7_developer_guide.tex [70] [71]
 Overfull \hbox (50.98727pt too wide) in paragraph at lines 113--114
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1592,19 +1706,25 @@ Overfull \hbox (22.3788pt too wide) in paragraph at lines 119--120
 ch based on Prometheus
  []
 
-[57]) [58] (./Hauptdatei.bbl [59
+[72]) [73] (./Hauptdatei.bbl [74
 
-]) [60] (./anhang/anhang.tex) [61]
+]) [75] (./anhang/anhang.tex) [76]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
- [62]
+ [77]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 
 (./Hauptdatei.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
-Package rerunfilecheck Info: File `Hauptdatei.out' has not changed.
-(rerunfilecheck)             Checksum: 899C56CB46F6CAAE48C38D2889A1EAD6;5853.
 
+
+Package rerunfilecheck Warning: File `Hauptdatei.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Hauptdatei.out':
+(rerunfilecheck)             Before: 8B6C7AFAE545AD1B69502D464A1C88CD;6356
+(rerunfilecheck)             After:  AAD0EEAF38B71E86FDBE3EFCC0EE69E0;6453.
 
 LaTeX Warning: There were undefined references.
 
@@ -1614,10 +1734,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 12980 strings out of 492995
- 205994 string characters out of 6132703
+ 13197 strings out of 492995
+ 210268 string characters out of 6132703
  415929 words of memory out of 5000000
- 15869 multiletter control sequences out of 15000+600000
+ 15958 multiletter control sequences out of 15000+600000
  66591 words of font info for 51 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  42i,12n,72p,8858b,1866s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1634,10 +1754,10 @@ xmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
 lm/lmtt12.pfb>
-Output written on Hauptdatei.pdf (62 pages, 2710987 bytes).
+Output written on Hauptdatei.pdf (77 pages, 3534862 bytes).
 PDF statistics:
- 1114 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
- 357 named destinations out of 1000 (max. 500000)
- 752 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 1182 compressed objects within 12 object streams
+ 472 named destinations out of 1000 (max. 500000)
+ 865 words of extra memory for PDF output out of 10000 (max. 10000000)
 

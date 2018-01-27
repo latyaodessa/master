@@ -7,6 +7,9 @@ Systems and software engineering -- vocabulary, 2010.
 Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock [Online; accessed 20-December-2016].
 
+\bibitem{wiki:vitrage}
+What is vitrage? --- {W}ikipedia{,} the free encyclopedia, 2016.
+
 \bibitem{nagios}
 {\sc Anusas-amornkul, T., and Sangrat, S.}
 \newblock Linux server monitoring and self-healing system using nagios.
@@ -19,6 +22,11 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock {\em The Foundations of SVG}.
 \newblock Springer London, London, 2005, pp.~21--62.
 
+\bibitem{neutron}
+{\sc Denton, J.}
+\newblock {\em Learning OpenStack Networking (Neutron)}.
+\newblock Packt Publishing, 2014.
+
 \bibitem{frs_1}
 {\sc Goubali, O., Girard, P., Guittet, L., Bignon, A., Kesraoui, D., Berruet,
   P., and Bouillon, J.-F.}
@@ -27,12 +35,26 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
   Practice\/} (Cham, 2016), M.~Kurosu, Ed., Springer International Publishing,
   pp.~166--177.
 
+\bibitem{frs_4}
+{\sc Li, F.-L., Horkoff, J., Borgida, A., Guizzardi, G., Liu, L., and
+  Mylopoulos, J.}
+\newblock From stakeholder requirements to formal specifications through
+  refinement.
+\newblock In {\em Requirements Engineering: Foundation for Software Quality\/}
+  (Cham, 2015), S.~A. Fricker and K.~Schneider, Eds., Springer International
+  Publishing.
+
 \bibitem{intelligent_support}
 {\sc Mac{\'i}as, J.~A., and Patern{\`o}, F.}
 \newblock Intelligent support for end-user web interface customization.
 \newblock In {\em Engineering Interactive Systems\/} (Berlin, Heidelberg,
   2008), J.~Gulliksen, M.~B. Harning, P.~Palanque, G.~C. van~der Veer, and
   J.~Wesson, Eds., Springer Berlin Heidelberg, pp.~303--320.
+
+\bibitem{Markelov2016}
+{\sc Markelov, A.}
+\newblock {\em OpenStack Compute}.
+\newblock Apress, Berkeley, CA, 2016, pp.~65--86.
 
 \bibitem{Martinez2017}
 {\sc Martinez, J., Sottet, J.-S., Frey, A.~G., Ziadi, T., Bissyand{\'e}, T.,
@@ -82,6 +104,14 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
   transactions.
 \newblock In {\em Middleware 2000\/} (Berlin, Heidelberg, 2000), J.~Sventek and
   G.~Coulson, Eds., Springer Berlin Heidelberg, pp.~308--330.
+
+\bibitem{images}
+{\sc Vakanas, L., Sotiriadis, S., and Petrakis, E. G.~M.}
+\newblock Implementing the cloud software to data approach for openstack
+  environments.
+\newblock In {\em Adaptive Resource Management and Scheduling for Cloud
+  Computing\/} (Cham, 2015), F.~Pop and M.~Potop-Butucaru, Eds., Springer
+  International Publishing, pp.~103--118.
 
 \bibitem{frs_3}
 {\sc Weyers, B., Bowen, J., Dix, A., and Palanque, P.}
