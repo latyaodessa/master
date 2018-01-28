@@ -241,8 +241,6 @@ Where <id> is OpenStack project ID.
 
 \subsubsection{OpenStack Nova Service}\label{OpenStack Nova Service}
 
-\hl{PROJECT DETAIL VIEW TI NE OPISAL!!!!!}
-
 Nova is a compute service of OpenStack. I gives overview and managing of all existing virtual machine (servers or isntances) \cite{Markelov2016}. 
 
 Following tools for using compute service:
@@ -318,8 +316,17 @@ Following elements are displayed:
 \item SWAP in GB, which is set for particular flavor.
 \end{itemize}
 
-
 \end{description}
+
+When user choose some server (instance), he will be redirected to server details view as it shown in ``Fig.~\ref{fig:openstack_server_details}''.
+
+ \begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/4/pics/openstack_server_details.png}
+  \caption{N2Sky OpenStack Dashboard. Server details view.}
+  \label{fig:openstack_server_details}
+\end{center}
+\end{figure}
 
 \subsubsection{OpenStack Neutron Service}\label{OpenStack Neutron Service}
 
@@ -334,6 +341,20 @@ Neutron Service is integrated in N2Sky and represents overview of networks, subn
   \label{fig:openstack_neutron}
 \end{center}
 \end{figure}
+
+The server details view contains following components:
+\begin{description}
+\item[Header.] Header of this view  contains the name of the server, icon and status, which can be "Running" if instance is available and running on OpenStack environment, "Shutdown" if instance is available but nut running and "Error" in case if an error occurred. 
+\item[Instance information grid]. Following grid represents summary information about server (instance) and consist of following grid items:
+\begin{itemize}
+\item Allocated IP Addresses is a list of assigned to instance IP addresses. Every IP address has a type either "fixed" or "floating".
+\item Instance actions is a list of all action and events, which happened with particular instance. Log information contains action type and timestamp of action.
+\item Interface attachments, which contains fixed IP address, mac address add port state ("ACTIVE" or "INACTIVE") of the instance.
+\item Security groups is a list of security groups which contains the name and description of security group . 
+\end{itemize}
+\item[Monitoring.] The grid of monitoring charts of particular server. Can be removed directly from the view or added via navigation menu or Administration Dashboard.
+\end{description}
+
 
 The grid represents following componsnts besides navigation bar: 
 \begin{description}
@@ -498,7 +519,7 @@ Another one possibility to initiate settings popup is to open it from main navig
 Dashboard Settings popup contains two setting for now:
 \begin{itemize}
 \item Create OpenStack Monitoring Dashlet, which create one more modal popup upon existing and initialise creation monitoring chart, which is described in chapter "Monitoring System" in \autoref{Monitoring System}.
-\item Create an Alert, which also create one more modal popup upon existing and initialise creation alerting rule, which is described in chapter "Alert System" in \autoref{Alert System}.
+\item Create an Alert, which also create one more modal popup upon existing and initialise creation alerting rule, which is described in chapter "Alert System" in \autoref{Alerting System}.
 \end{itemize}
 
 The popup will be automatically closed only after action performed, if action is not performed user can leave the popup manually.
@@ -547,9 +568,83 @@ The popup window has following elements:
 \item Create button, which trigger metrics creation. The view will be reloaded and monitoring chart will appear on this view.
 \end{enumerate}
 
-\subsubsection{Monitoring chart representation}\label{Monitoring chart representation}
+After adding a new monitoring chart, the view will be reloaded and the chart will appear on the view. 
+
+\subsubsection{Monitoring charts representation}\label{Monitoring chart representation}
+
+Every monitoring chart is a grid item of two column responsive grid as it shown in ``Fig.~\ref{fig:moniroting_representation}'' 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/4/pics/moniroting_representation.png}
+  \caption{N2Sky Administration Dashboard. Monitoring charts representation}
+  \label{fig:moniroting_representation}
+\end{center}
+\end{figure}
+
+The grid hast to be responsive in order to support mobile devices. When mobile device is detected the grid should has only one column and grid items has ti be aligned vertically. 
+
+The header of monitoring chart has to contains the name of the metrics and the server (instance) from where this metrics comes.
+
+Every monitoring chart has at list one line graph with a random colour. If there are few line graphs in the chart, then lines has to have a different colour. A chart contains on x-Axis the timestamp and on y-Axis the velocity.  The timestamp in line graph has its own toolkit with additional information about the chart and contains following data:
+
+\begin{itemize}
+\item Timestamp of event
+\item Type of metrics and Id of timestamp
+\item Instance, where monitoring system is running
+\item The name of the job, which is responsible for particular event
+\end{itemize}
 
 
 \subsection{Alert System}\label{Alerting System}
+
+Alert System hat it is own page view. It is possible to redirect to this view from main navigation menu as well as from administration dashboard. The url of the alert page is:
+\begin{lstlisting}
+		<host>/alert
+\end{lstlisting}
+
+\subsubsection{Alerting rule creation}\label{Alerting rule creation}
+
+It is possible to alerting rule directly from alert page view. The button "Create Alert" initiate  the modal popup window as it shown in  ``Fig.~\ref{fig:alert_create}''.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/4/pics/alert_create.png}
+  \caption{N2Sky Administration Dashboard. Alerting rule creation}
+  \label{fig:alert_create}
+\end{center}
+\end{figure}
+
+The modal window has following elements:
+\begin{enumerate}
+\item Modal window title is "Create new alert".
+\item Combobox with available servers with installed monitoring system.
+\item Combobox with a page view, where alert can be shown (optional).
+\item Combobox with a available metrics.
+\item Combobox wth alerting rule severity level. Three values are possible: "page" for information, "waring" and "critical".
+\item Summary information about alerting rule.
+\item Full description about alerting rule.
+\item Expression which will be executed agains chosen metric.
+\item Period, which shows how often will alerting rule validated.
+\end{enumerate}
+
+\subsubsection{Alerts representation}\label{Alerts representation}
+
+The alerts are displayed three column grid as it shown in ``Fig.~\ref{fig:alert_representation}'' 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/4/pics/alert_create.png}
+  \caption{N2Sky Administration Dashboard. Alerts representation}
+  \label{fig:alert_representation}
+\end{center}
+\end{figure}
+
+The view contains:
+
+\begin{description}
+\item[Header.] Header is navigation bar  with a title "Fired alerts" and the button. The button has caption "Create Alert" and on click will initiate creating alert rule popup as it described in \autoref{Alerting rule creation} "Alerting rule creation".
+\item[Alerts Grid] Contains 3 columns of alerts. When alert end date is earlier then current date, then alert will not be shown. Only active alerts are visible. Detailed information about  alert content is described in \autoref{Alerting Management System} "Alerting Management System".
+\end{description}
 
 

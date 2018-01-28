@@ -64,16 +64,18 @@
 \BOOKMARK [2][-]{subsection.4.8}{4.8 Dashboard Settings}{section.4}% 64
 \BOOKMARK [2][-]{subsection.4.9}{4.9 Monitoring System}{section.4}% 65
 \BOOKMARK [3][-]{subsubsection.4.9.1}{4.9.1 Monitoring charts creation}{subsection.4.9}% 66
-\BOOKMARK [3][-]{subsubsection.4.9.2}{4.9.2 Monitoring chart representation}{subsection.4.9}% 67
+\BOOKMARK [3][-]{subsubsection.4.9.2}{4.9.2 Monitoring charts representation}{subsection.4.9}% 67
 \BOOKMARK [2][-]{subsection.4.10}{4.10 Alert System}{section.4}% 68
-\BOOKMARK [1][-]{section.5}{5 Tutorial}{}% 69
-\BOOKMARK [1][-]{section.6}{6 User Cases}{}% 70
-\BOOKMARK [1][-]{section.7}{7 Developer Guide}{}% 71
-\BOOKMARK [2][-]{subsection.7.1}{7.1 System configuration}{section.7}% 72
-\BOOKMARK [3][-]{subsubsection.7.1.1}{7.1.1 Setting up the Monitoring System}{subsection.7.1}% 73
-\BOOKMARK [3][-]{subsubsection.7.1.2}{7.1.2 Setting up Alert Management System}{subsection.7.1}% 74
-\BOOKMARK [2][-]{subsection.7.2}{7.2 Continuous integration}{section.7}% 75
-\BOOKMARK [2][-]{subsection.7.3}{7.3 API Documentation}{section.7}% 76
-\BOOKMARK [3][-]{subsubsection.7.3.1}{7.3.1 N2Sky Monitoring System API Documentation}{subsection.7.3}% 77
-\BOOKMARK [1][-]{subsubsection.7.3.1}{Literaturverzeichnis}{}% 78
-\BOOKMARK [1][-]{section*.5}{Anhang}{}% 79
+\BOOKMARK [3][-]{subsubsection.4.10.1}{4.10.1 Alerting rule creation}{subsection.4.10}% 69
+\BOOKMARK [3][-]{subsubsection.4.10.2}{4.10.2 Alerts representation}{subsection.4.10}% 70
+\BOOKMARK [1][-]{section.5}{5 Tutorial}{}% 71
+\BOOKMARK [1][-]{section.6}{6 User Cases}{}% 72
+\BOOKMARK [1][-]{section.7}{7 Developer Guide}{}% 73
+\BOOKMARK [2][-]{subsection.7.1}{7.1 System configuration}{section.7}% 74
+\BOOKMARK [3][-]{subsubsection.7.1.1}{7.1.1 Setting up the Monitoring System}{subsection.7.1}% 75
+\BOOKMARK [3][-]{subsubsection.7.1.2}{7.1.2 Setting up Alert Management System}{subsection.7.1}% 76
+\BOOKMARK [2][-]{subsection.7.2}{7.2 Continuous integration}{section.7}% 77
+\BOOKMARK [2][-]{subsection.7.3}{7.3 API Documentation}{section.7}% 78
+\BOOKMARK [3][-]{subsubsection.7.3.1}{7.3.1 N2Sky Monitoring System API Documentation}{subsection.7.3}% 79
+\BOOKMARK [1][-]{subsubsection.7.3.1}{Literaturverzeichnis}{}% 80
+\BOOKMARK [1][-]{section*.5}{Anhang}{}% 81
