@@ -4,51 +4,51 @@ The top-level auxiliary file: Hauptdatei.aux
 The style file: acm.bst
 Database file #1: components/core/bibliography.bib
 Warning--entry type for "gui_layout" isn't style-file defined
---line 308 of file components/core/bibliography.bib
+--line 348 of file components/core/bibliography.bib
 Warning--to sort, need author or key in wiki:frs
 Warning--to sort, need author or key in wiki:typeface
 Warning--to sort, need author or key in wiki:vitrage
 Warning--empty chapter and pages in neutron
 Warning--can't use both author and editor fields in Martinez2017
-You've used 22 entries,
+You've used 25 entries,
             2253 wiz_defined-function locations,
-            651 strings with 7651 characters,
-and the built_in function-call counts, 8211 in all, are:
-= -- 766
-> -- 372
+            665 strings with 8007 characters,
+and the built_in function-call counts, 8854 in all, are:
+= -- 826
+> -- 393
 < -- 0
-+ -- 146
-- -- 122
-* -- 563
-:= -- 1242
-add.period$ -- 60
-call.type$ -- 22
-change.case$ -- 113
++ -- 155
+- -- 128
+* -- 603
+:= -- 1352
+add.period$ -- 69
+call.type$ -- 25
+change.case$ -- 125
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 360
-empty$ -- 718
-format.name$ -- 122
-if$ -- 1804
+cite$ -- 30
+duplicate$ -- 386
+empty$ -- 781
+format.name$ -- 128
+if$ -- 1939
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 19
-newline$ -- 107
-num.names$ -- 56
-pop$ -- 193
+int.to.str$ -- 25
+missing$ -- 21
+newline$ -- 122
+num.names$ -- 62
+pop$ -- 206
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 104
 quote$ -- 0
-skip$ -- 265
+skip$ -- 282
 stack$ -- 0
-substring$ -- 468
-swap$ -- 124
+substring$ -- 486
+swap$ -- 130
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 92
 warning$ -- 5
-while$ -- 82
-width$ -- 24
-write$ -- 233
+while$ -- 89
+width$ -- 27
+write$ -- 262
 (There were 6 warnings)
