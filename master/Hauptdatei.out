@@ -14,68 +14,69 @@
 \BOOKMARK [3][-]{subsubsection.2.2.3}{2.2.3 Advanced project management}{subsection.2.2}% 14
 \BOOKMARK [3][-]{subsubsection.2.2.4}{2.2.4 User Roles}{subsection.2.2}% 15
 \BOOKMARK [3][-]{subsubsection.2.2.5}{2.2.5 User Main Functions}{subsection.2.2}% 16
-\BOOKMARK [2][-]{subsection.2.3}{2.3 Contemporary N2Sky Architecture}{section.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.3.1}{2.3.1 Architecture design}{subsection.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3}{2.3 Novel N2Sky Architecture}{section.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.1}{2.3.1 Cloud infrostructure}{subsection.2.3}% 18
 \BOOKMARK [3][-]{subsubsection.2.3.2}{2.3.2 Modular frontend application design}{subsection.2.3}% 19
-\BOOKMARK [3][-]{subsubsection.2.3.3}{2.3.3 Technology Stack}{subsection.2.3}% 20
-\BOOKMARK [1][-]{section.3}{3 N2Sky Components}{}% 21
-\BOOKMARK [2][-]{subsection.3.1}{3.1 N2Sky Frontend Application}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 N2Sky Layouts Design}{subsection.3.1}% 23
-\BOOKMARK [3][-]{subsubsection.3.1.2}{3.1.2 N2Sky Fundamental Layout}{subsection.3.1}% 24
-\BOOKMARK [3][-]{subsubsection.3.1.3}{3.1.3 N2Sky Main Layout}{subsection.3.1}% 25
-\BOOKMARK [3][-]{subsubsection.3.1.4}{3.1.4 N2Sky Mobile Layout}{subsection.3.1}% 26
-\BOOKMARK [3][-]{subsubsection.3.1.5}{3.1.5 N2Sky Page Views}{subsection.3.1}% 27
-\BOOKMARK [3][-]{subsubsection.3.1.6}{3.1.6 N2Sky Dashboards}{subsection.3.1}% 28
-\BOOKMARK [3][-]{subsubsection.3.1.7}{3.1.7 Responsive design}{subsection.3.1}% 29
-\BOOKMARK [3][-]{subsubsection.3.1.8}{3.1.8 User Interface Elements}{subsection.3.1}% 30
-\BOOKMARK [3][-]{subsubsection.3.1.9}{3.1.9 UI Elements in N2Sky}{subsection.3.1}% 31
-\BOOKMARK [3][-]{subsubsection.3.1.10}{3.1.10 UI Components in N2Sky}{subsection.3.1}% 32
-\BOOKMARK [2][-]{subsection.3.2}{3.2 N2Sky Services}{section.3}% 33
-\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 User Management Web Service.}{subsection.3.2}% 34
-\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 Model Repository Web Service.}{subsection.3.2}% 35
-\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 Cloud Management Web Service.}{subsection.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.3}{3.3 Continuous Monitoring System}{section.3}% 37
-\BOOKMARK [3][-]{subsubsection.3.3.1}{3.3.1 Monitoring requirements}{subsection.3.3}% 38
-\BOOKMARK [3][-]{subsubsection.3.3.2}{3.3.2 Applying Monitoring}{subsection.3.3}% 39
-\BOOKMARK [3][-]{subsubsection.3.3.3}{3.3.3 Integration with N2Sky}{subsection.3.3}% 40
-\BOOKMARK [3][-]{subsubsection.3.3.4}{3.3.4 Monitoring dashlet Design}{subsection.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.4}{3.4 Alerting Management System}{section.3}% 42
-\BOOKMARK [3][-]{subsubsection.3.4.1}{3.4.1 Alerting System Architecture}{subsection.3.4}% 43
-\BOOKMARK [3][-]{subsubsection.3.4.2}{3.4.2 Alert Rules}{subsection.3.4}% 44
-\BOOKMARK [3][-]{subsubsection.3.4.3}{3.4.3 Integration with N2Sky}{subsection.3.4}% 45
-\BOOKMARK [3][-]{subsubsection.3.4.4}{3.4.4 Alerting System Design}{subsection.3.4}% 46
-\BOOKMARK [1][-]{section.4}{4 Requirements specification for Administration Module}{}% 47
-\BOOKMARK [2][-]{subsection.4.1}{4.1 General Definition}{section.4}% 48
-\BOOKMARK [2][-]{subsection.4.2}{4.2 Affected users}{section.4}% 49
-\BOOKMARK [2][-]{subsection.4.3}{4.3 Administration Dashboard}{section.4}% 50
-\BOOKMARK [2][-]{subsection.4.4}{4.4 Openstack Dashboard}{section.4}% 51
-\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 OpenStack Nova Service}{subsection.4.4}% 52
-\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 OpenStack Neutron Service}{subsection.4.4}% 53
-\BOOKMARK [3][-]{subsubsection.4.4.3}{4.4.3 OpenStack Images Service}{subsection.4.4}% 54
-\BOOKMARK [3][-]{subsubsection.4.4.4}{4.4.4 OpenStack Vitrage Service}{subsection.4.4}% 55
-\BOOKMARK [2][-]{subsection.4.5}{4.5 Cloudify Dashboard}{section.4}% 56
-\BOOKMARK [2][-]{subsection.4.6}{4.6 Dashboard Settings}{section.4}% 57
-\BOOKMARK [2][-]{subsection.4.7}{4.7 Monitoring System}{section.4}% 58
-\BOOKMARK [3][-]{subsubsection.4.7.1}{4.7.1 Monitoring charts creation}{subsection.4.7}% 59
-\BOOKMARK [3][-]{subsubsection.4.7.2}{4.7.2 Monitoring charts representation}{subsection.4.7}% 60
-\BOOKMARK [2][-]{subsection.4.8}{4.8 Alert System}{section.4}% 61
-\BOOKMARK [3][-]{subsubsection.4.8.1}{4.8.1 Alerting rule creation}{subsection.4.8}% 62
-\BOOKMARK [3][-]{subsubsection.4.8.2}{4.8.2 Alerts representation}{subsection.4.8}% 63
-\BOOKMARK [1][-]{section.5}{5 Requirements specification for Main Application Module}{}% 64
-\BOOKMARK [2][-]{subsection.5.1}{5.1 General Definition}{section.5}% 65
-\BOOKMARK [2][-]{subsection.5.2}{5.2 Affected user groups}{section.5}% 66
-\BOOKMARK [2][-]{subsection.5.3}{5.3 N2Sky Dashboard}{section.5}% 67
-\BOOKMARK [2][-]{subsection.5.4}{5.4 Neural Networks Repository}{section.5}% 68
-\BOOKMARK [2][-]{subsection.5.5}{5.5 Models Repository}{section.5}% 69
-\BOOKMARK [1][-]{section.6}{6 ViNNSL 2.0 extended}{}% 70
-\BOOKMARK [1][-]{section.7}{7 Tutorial}{}% 71
-\BOOKMARK [1][-]{section.8}{8 User Cases}{}% 72
-\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 73
-\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 74
-\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the Monitoring System}{subsection.9.1}% 75
-\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up Alert Management System}{subsection.9.1}% 76
-\BOOKMARK [2][-]{subsection.9.2}{9.2 Continuous integration}{section.9}% 77
-\BOOKMARK [2][-]{subsection.9.3}{9.3 API Documentation}{section.9}% 78
-\BOOKMARK [3][-]{subsubsection.9.3.1}{9.3.1 N2Sky Monitoring System API Documentation}{subsection.9.3}% 79
-\BOOKMARK [1][-]{subsubsection.9.3.1}{Literaturverzeichnis}{}% 80
-\BOOKMARK [1][-]{section*.5}{Anhang}{}% 81
+\BOOKMARK [3][-]{subsubsection.2.3.3}{2.3.3 The sample workflow}{subsection.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.4}{2.3.4 Technology Stack}{subsection.2.3}% 21
+\BOOKMARK [1][-]{section.3}{3 N2Sky Components}{}% 22
+\BOOKMARK [2][-]{subsection.3.1}{3.1 N2Sky Frontend Application}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 N2Sky Layouts Design}{subsection.3.1}% 24
+\BOOKMARK [3][-]{subsubsection.3.1.2}{3.1.2 N2Sky Fundamental Layout}{subsection.3.1}% 25
+\BOOKMARK [3][-]{subsubsection.3.1.3}{3.1.3 N2Sky Main Layout}{subsection.3.1}% 26
+\BOOKMARK [3][-]{subsubsection.3.1.4}{3.1.4 N2Sky Mobile Layout}{subsection.3.1}% 27
+\BOOKMARK [3][-]{subsubsection.3.1.5}{3.1.5 N2Sky Page Views}{subsection.3.1}% 28
+\BOOKMARK [3][-]{subsubsection.3.1.6}{3.1.6 N2Sky Dashboards}{subsection.3.1}% 29
+\BOOKMARK [3][-]{subsubsection.3.1.7}{3.1.7 Responsive design}{subsection.3.1}% 30
+\BOOKMARK [3][-]{subsubsection.3.1.8}{3.1.8 User Interface Elements}{subsection.3.1}% 31
+\BOOKMARK [3][-]{subsubsection.3.1.9}{3.1.9 UI Elements in N2Sky}{subsection.3.1}% 32
+\BOOKMARK [3][-]{subsubsection.3.1.10}{3.1.10 UI Components in N2Sky}{subsection.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.2}{3.2 N2Sky Services}{section.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 User Management Web Service.}{subsection.3.2}% 35
+\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 Model Repository Web Service.}{subsection.3.2}% 36
+\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 Cloud Management Web Service.}{subsection.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.3}{3.3 Continuous Monitoring System}{section.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.1}{3.3.1 Monitoring requirements}{subsection.3.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.3.2}{3.3.2 Applying Monitoring}{subsection.3.3}% 40
+\BOOKMARK [3][-]{subsubsection.3.3.3}{3.3.3 Integration with N2Sky}{subsection.3.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.3.4}{3.3.4 Monitoring dashlet Design}{subsection.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.4}{3.4 Alerting Management System}{section.3}% 43
+\BOOKMARK [3][-]{subsubsection.3.4.1}{3.4.1 Alerting System Architecture}{subsection.3.4}% 44
+\BOOKMARK [3][-]{subsubsection.3.4.2}{3.4.2 Alert Rules}{subsection.3.4}% 45
+\BOOKMARK [3][-]{subsubsection.3.4.3}{3.4.3 Integration with N2Sky}{subsection.3.4}% 46
+\BOOKMARK [3][-]{subsubsection.3.4.4}{3.4.4 Alerting System Design}{subsection.3.4}% 47
+\BOOKMARK [1][-]{section.4}{4 Requirements specification for Administration Module}{}% 48
+\BOOKMARK [2][-]{subsection.4.1}{4.1 General Definition}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Affected users}{section.4}% 50
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Administration Dashboard}{section.4}% 51
+\BOOKMARK [2][-]{subsection.4.4}{4.4 Openstack Dashboard}{section.4}% 52
+\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 OpenStack Nova Service}{subsection.4.4}% 53
+\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 OpenStack Neutron Service}{subsection.4.4}% 54
+\BOOKMARK [3][-]{subsubsection.4.4.3}{4.4.3 OpenStack Images Service}{subsection.4.4}% 55
+\BOOKMARK [3][-]{subsubsection.4.4.4}{4.4.4 OpenStack Vitrage Service}{subsection.4.4}% 56
+\BOOKMARK [2][-]{subsection.4.5}{4.5 Cloudify Dashboard}{section.4}% 57
+\BOOKMARK [2][-]{subsection.4.6}{4.6 Dashboard Settings}{section.4}% 58
+\BOOKMARK [2][-]{subsection.4.7}{4.7 Monitoring System}{section.4}% 59
+\BOOKMARK [3][-]{subsubsection.4.7.1}{4.7.1 Monitoring charts creation}{subsection.4.7}% 60
+\BOOKMARK [3][-]{subsubsection.4.7.2}{4.7.2 Monitoring charts representation}{subsection.4.7}% 61
+\BOOKMARK [2][-]{subsection.4.8}{4.8 Alert System}{section.4}% 62
+\BOOKMARK [3][-]{subsubsection.4.8.1}{4.8.1 Alerting rule creation}{subsection.4.8}% 63
+\BOOKMARK [3][-]{subsubsection.4.8.2}{4.8.2 Alerts representation}{subsection.4.8}% 64
+\BOOKMARK [1][-]{section.5}{5 Requirements specification for Main Application Module}{}% 65
+\BOOKMARK [2][-]{subsection.5.1}{5.1 General Definition}{section.5}% 66
+\BOOKMARK [2][-]{subsection.5.2}{5.2 Affected users}{section.5}% 67
+\BOOKMARK [2][-]{subsection.5.3}{5.3 N2Sky Dashboard}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.4}{5.4 Neural Networks Repository}{section.5}% 69
+\BOOKMARK [2][-]{subsection.5.5}{5.5 Models Repository}{section.5}% 70
+\BOOKMARK [1][-]{section.6}{6 ViNNSL 2.0 extended}{}% 71
+\BOOKMARK [1][-]{section.7}{7 Tutorial}{}% 72
+\BOOKMARK [1][-]{section.8}{8 User Cases}{}% 73
+\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 74
+\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 75
+\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the Monitoring System}{subsection.9.1}% 76
+\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up Alert Management System}{subsection.9.1}% 77
+\BOOKMARK [2][-]{subsection.9.2}{9.2 Continuous integration}{section.9}% 78
+\BOOKMARK [2][-]{subsection.9.3}{9.3 API Documentation}{section.9}% 79
+\BOOKMARK [3][-]{subsubsection.9.3.1}{9.3.1 N2Sky Monitoring System API Documentation}{subsection.9.3}% 80
+\BOOKMARK [1][-]{subsubsection.9.3.1}{Literaturverzeichnis}{}% 81
+\BOOKMARK [1][-]{section*.5}{Anhang}{}% 82

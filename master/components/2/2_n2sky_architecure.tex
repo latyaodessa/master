@@ -141,25 +141,25 @@ FRS is a part of engineering phase. Following qualities for N2Sky were defined a
 
 \subsubsection{User Roles}\label{User Roles}
 
-In order to make the N2Sky user interface understandable for arbitrary users as well as professional for advances users, it was decided to separate the user roles. Every user role has own way of interaction with the application:
+In order to make the N2Sky user interface understandable for arbitrary users as well as professional for advances users, it was decided to separate the user roles. Every user role has own way of interaction with the application.
 
-Every user has some specific area within he works. For example just registered user does not need to know the current environment monitoring information. These restrictions were motivation to create some user roles in order to restrict of grand some functionality of N2Sky as it shown on ``Fig.~\ref{fig:userroles}''.
+Every user has some specific area within he works. For example, just registered user does not need to know the current environment monitoring information. These restrictions were motivation to create some user roles in order to restrict of grand some functionality of N2Sky as it shown on ``Fig.~\ref{fig:userroles}''.
 
 \begin{figure}[htbp]
 \begin{center}
-  \includegraphics[width=\linewidth]{components/4/users.png}
+  \includegraphics[width=\linewidth]{components/4/pics/users.png}
   \caption{User roles hierarchy and modules where they operating on (marked grey)}
   \label{fig:userroles}
 \end{center}
 \end{figure}
 
-\begin{description}
-\item[Contributor.]   The Contributor is an arbitrary user. Such a user has no necessity in having deep knowledge of the neural network field or know any programming language. The main goal of arbitrary user is to study neural networks within N2Sky. The contributor has access only to his own dashboard and public available resources on the main application module. He can perform semantic search for available neural network paradigms and use them. He can also train running neural network instances and test them. This user can share his trained neural network by making it public. 
-\item[Consumer.] The Consumer is an arbitrary user, except he is not creating but using already existing neural networks and trained models. His main purpose is to evaluate trained models or execute training against existing neural networks. This kind of user does not have to use his own training data, he just wants to see the behaviour of neural networks. The Consumer can be converted to Contributor user if he has enough knowledge for it. 
-\item[Developer.] The Developer is an expert user, which has enough knowledge and experience to create his own neural network. This user can create neural network paradigms using the ViNNSL schema and publish them on N2Sky. This user can deploy neural networks on the N2Sky environment as well as on his own environment by providing training and testing endpoints. The goal of the developer is the study how his networks will behave with different network structures, input parameters and training data that is provided by other users.
-\item[System Administrator.] System Administrator is a user who has a full access to application including environment management, monitoring and alerting features. Administrator can manage Openstack and Cloudify instances. He also can shadow any N2Sky user to observe the application from shadowed user perspective. Administrator has access to all dashboards in every module.
-\item[Moderator.] Is a user with a granted permissions. This user can moderate Main Application Module namely neural network instances and  trained models from other users. The Moderator does not have access to Administration Module and can not be converted to System Administrator user role.
-\end{description}
+\begin{itemize}
+\item \emph{Arbitrary User.}  The Arbitrary User a user, who does not have a deep knowledge of the neural network field or know any programming language. His main purpose is not a contribution, but the usage already existing neural networks and trained models. The main goal of the arbitrary user is to study neural networks within N2Sky platform. The arbitrary user can also evaluate the trained models or execute training against existing neural networks. This kind of user does not have to use his own training data, he just wants to see the behavior of neural networks. The arbitrary user can be converted to Neural Network Engineer user if he has enough knowledge of it. 
+\item \emph{Neural Network Engineer.} The Neural Network Engineer is an arbitrary user. The Neural Network Engineer has an access only to his own dashboard and publicly available resources on the main application module. He can perform the semantic search for available neural network paradigms and use them. This user can create own neural network instance from existing neural network paradigm. He can also train the running neural network instances and evaluate their trained models. This user can share his trained neural network by making it public. 
+\item \emph{Contributor.} The Contributor is an expert user, which has enough knowledge and experience to create his own neural network. This user can create neural network paradigms using the ViNNSL template schema and publish them on N2Sky. This user can deploy neural networks on the N2Sky environment as well as on his own environment by providing training and testing endpoints. The goal of the contributor is the study how his networks will behave with different network structures, input parameters and training data that is provided by other users.
+\item \emph{System Administrator.} System Administrator is a user who has a full access to the application including environment management, monitoring and alerting features. The administrator can manage OpenStack and Cloudify instances. He also can shadow any N2Sky user to observe the application from other perspectives. The administrator has access to all dashboards in every module.
+\end{itemize}
+
 
 \subsubsection{User Main Functions}\label{User Permissions}
 
@@ -213,50 +213,52 @@ As it was mentioned before System Administrator as well as Moderator has access 
 
 
 
-\subsection{Contemporary N2Sky Architecture}\label{Contemporary N2Sky Architecture}
+\subsection{Novel N2Sky Architecture}\label{Contemporary N2Sky Architecture}
 
-The user-centered design is a fundamental requirement for N2Sky. Looking back on past experiences with the application, there were identified the real capabilities and needs of a users. N2Sky was moved from a complex monolithic system to an easy understandable application. Every interested user without having a deep knowledge in the neural network field can freely use N2Sky.  The goal was to save and gain the current functionality of the application and decrease the visual complexity of it. 
+N2Sky is a simulation platform, which allows all involved stockholders to use it for computational purposes. In order to achieve high performance and scalability, it was decided to use the microservices architecture. This approach is used not only for backend services but also with frontend and its services.
 
-\subsubsection{Architecture design}
+The user-centered design is a fundamental requirement for N2Sky. Looking back on past experiences with the application, there were identified the real capabilities and needs of users. N2Sky was moved from a complex monolithic system to an easily understandable application. Every interested user without having a deep knowledge in the neural network field can freely use N2Sky.  The goal was to save and gain the current functionality of the application and decrease the visual complexity of it. 
 
-N2Sky is a simulation platform, which allows all involved stockholders to use it for computational purposes. In order to achieve high performance and scalability, it was decided to use the microservices architecture. This approach is used not only on backend services, but also with frontend and its services. 
+\subsubsection{Cloud infrostructure}\label{Cloud infrostructure}
+
+
+Upon the N2Sky microservices the the load balancer located, which includes shared cloud resources. Since in N2Sky environment needs to support thousands of Docker containers \cite{docker} simultaneously, only container orchestration like Cloudify \cite{cloudify} with a microservices architecture can perform this.  Cloudify is a container orchestration tool, which provides communication between cloud platforms and manages container deployment and execution. Docker container is a operating-system-level virtualization. Containers technology used across entire system from frontend and services to monitoring and alert management system. 
+
+The novel N2Sky architecture can be scaled horizontally as well as vertically on demand as it presented in figure \ref{fig:newarch}.
 
 \begin{figure}[htbp]
 \begin{center}
-  \includegraphics[width=\linewidth]{components/2/new_arch.png}
-  \caption{Contemporary N2Sky architecture overview}
+  \includegraphics[width=\linewidth]{components/2/architecture.png}
+  \caption{Novel N2Sky Architecture}
   \label{fig:newarch}
 \end{center}
 \end{figure}
 
-The architecture overview, which shown in ``Fig.~\ref{fig:newarch}'' represents microservices architecture. 
-
-The centred figure is the N2Sky Web/Mobile portal. Is is frontend application of the N2Sky, which consist of modular subsystems. Since the frontend application has responsive design it supports desktop devices as well as mobile devices. 
-To support Software as a Service distribution every web service can work independently. It means that the stackholders can use N2Sky via web portal as well as use N2Sky API.
-N2Sky API allows  stackholders:
-
 \begin{itemize}
-\item Authorise in the System
-\item Create new neural from existing paradigm
-\item Deploy own neural network on N2Sky environment 
-\item Perform training against own as well published neural network
-\item Perform testing against trained models
+\item \emph{Orchestration Tool} is the Cloudify framework, which communicates with a cloud infrastructure namely create and manage new instances. Every instance is a Docker container.
+\item \emph{Internal Controller} is a service, which works directly with the Cloudify tool. This service handles user request in order to create, delete or update Docker container.
+\item \emph{UI Service-Frontend} is a modular application namely it is the Administration Module. The user over UI can request container management, which will be redirected to Internal Controller.
+\item \emph{On-demand services} are not exposed publicly services, which can be controlled only by internal web services.  This approach helps to encapsulate the services pool, which increases security in the entire application. 
+\item \emph{Neural Network Specification Management Service}  is a service, which is responsible for controlling existing neural network paradigms, namely train, retrain and persist trained models.
+\item \emph{Neural Network Data Management Service}, this service located right on top of the database and provides API for adding external data sources.
+\item \emph{Trained Neural Network Management Service} is a service, which responsible for evaluating trained models.
 \end{itemize}
-
-Almost everything is available for arbitrary stackholder, except cloud services. In order to cloud service as a service, the user has to install it on his own cloud environment. This approach supports Platform as a Service distribution. Cloud services only for system administrator and for granted users are available. 
 
 
  
  
 \subsubsection{Modular frontend application design}\label{Modular frontend application design}
-Maintain large application like N2Sky with monolithic approach is unwieldy. Since N2Sky supports microservices approach in backend it was decided to apply the same solution on frontend.  
+
+Maintain large application like N2Sky with the monolithic approach is unwieldy. Since N2Sky supports microservices approach in the backend it was decided to apply the same solution on the frontend.  
 
 Microservices in frontend are small independent web applications, which are consolidated into one application. The main benefits of this approach are:
-\begin{description}
-\item[Maintainability.] It is possible to divide application between different teams. Developers does not event have to have some some knowledge about other parts of the application. 
-\item[Diversity of technologies.] Monolithic approach makes the whole application stick to one framework. Microservices allowing to use any technology without need to rewriting the application.
-\item[Independent deployment.] Every application has some releases periods, every release accompanies with redeployment procedure. There is no need to redeploy the whole application, but just only required components.
-\end{description}
+
+\begin{itemize}
+\item \emph{Maintainability.} It is possible to divide application between different teams. Developers do not even need to have some knowledge about other parts of the application. 
+\item \emph{Diversity of technologies.} Monolithic approach makes the whole application stick to one framework. Microservices allowing to use any technology without the need to rewriting the application.
+\item \emph{Independent deployment.} Every application has some releases periods, every release accompanies with redeployment procedure. There is no need to redeploy the whole application, but just only required components.
+\end{itemize}
+
 
 \begin{figure}[htbp]
 \begin{center}
@@ -267,38 +269,107 @@ Microservices in frontend are small independent web applications, which are cons
 \end{figure}
 
 
-Microservices approach in frontend application is shown in ``Fig.~\ref{fig:frontend_arch}''. This breaks entire application into small micro applications.
+Microservices approach in frontend application is shown in ``Fig.~\ref{fig:frontend_arch}''. This breaks the entire application into small micro applications.
 
-\begin{description}
-\item[Shell.]  is a top level component, which wraps Components picker and Container for component. It contains application configuration.
-\item[Component picker.] Is a router, which manages the micro applications. 
-\item[Container for Component]. Container, where component will be injected.
-\item[Micro Application]. Independent application, which can be written on any programming language but has to use one of the shards.
-\item[Shards.] Is a code base, which is shared between Micro Applications. Shards can have multiple levels. 
-\end{description}
+\begin{itemize}
+\item \emph{Shell.}  is a top-level component, which wraps Components picker and Container for the component. It contains application configuration.
+\item \emph{Component picker.} Is a router, which manages the micro applications. 
+\item \emph{Container for Component.} Container, where the component will be injected.
+\item \emph{Micro Application.} Independent application, which can be written in any programming language but has to use one of the shards.
+\item \emph{Shards.} Is a code base, which is shared between Micro Applications. Shards can have multiple levels. 
+\end{itemize}
  
 
-The central concept of the application is to support the \hl{Software as a Service (SaaS)} and Platform as a Service (PaaS) distributions.  N2Sky consist of two modules: administration module, main application module as it shown in ``Fig.~\ref{fig:modular_design}''.
+The central concept of the application is to support the Software as a Service (SaaS) and Platform as a Service (PaaS) distributions \cite{Walraven2014}.  N2Sky consists of two modules: administration module, main application module as it shown in ``Fig.~\ref{fig:modular_design}''.
 
 \begin{figure}[htbp]
 \begin{center}
-  \includegraphics[width=\linewidth]{components/2/modular_design.png}
+  \includegraphics[width=\linewidth]{components/2/redirector.png}
   \caption{N2Sky frontend application and its services}
   \label{fig:modular_design}
 \end{center}
 \end{figure}
 
-\begin{description}
-\item[Redirector.] When the user goes to N2Sky web portal, first he will be dealing with a redirector. The redirector is a small service, which is build on Nginix server. The purpose of it is to redirect the user depending on URL path.
-\begin{description}
-\item[/cloud] redirects to "Administration module"
-\item[/n2sky] redirects to "Main application module"
-\end{description}
+\begin{itemize}
+\item \emph{N2Sky component picker.} When the user goes to N2Sky web portal, first he will be dealing with a component picker. The component picker is a small service, which redirects the user depending on URL path.
+\begin{itemize}
+\item \emph{/cloud} redirects to "Administration module"
+\item \emph{/n2sky} redirects to "Main application module"
+\end{itemize}
 
 
-\item[Administration module] The administration module allows the system administrator to control the environment. The module supports OpenStack and Cloudify monitoring. Managing is possible through the application dashboard. It also contains custom monitoring and an alerting management system, which can be installed on any server within the N2Sky user interface. The administration module implements PaaS. It is fully configurable and wrapped into the open source project in order to make the module accessible to the third-party applications. 
-\item[Main application module] The main application module is the central module of N2Sky. Within this module, users can use, train and test existing neural networks. It is possible to reuse the neural network paradigms and create own neural network. N2Sky allows to deploy own network and store data in cloud. Module services are supporting the SaaS distribution. Experts can use an application directly through the N2Sky API or they can integrate N2Sky services to their own application. 
-\end{description}
+\item \emph{Administration module} The administration module allows the system administrator to control the environment. The module supports OpenStack and Cloudify monitoring. Managing is possible through the application dashboard. It also contains custom monitoring and an alerting management system, which can be installed on any server within the N2Sky user interface. The administration module implements PaaS. It is fully configurable and wrapped into the open source project in order to make the module accessible to the third-party applications. 
+\item \emph{Main application module} The main application module is the central module of N2Sky. Within this module, users can use, train and test existing neural networks. It is possible to reuse the neural network paradigms and create own neural network. N2Sky allows deploying own network and store data in the cloud. Module services are supporting the SaaS distribution. Experts can use an application directly through the N2Sky API or they can integrate N2Sky services into their own application. 
+\end{itemize}
+
+
+\subsubsection{The sample workflow}
+
+
+The central figure is the N2Sky Web/Mobile portal. Is is frontend application of the N2Sky, which consist of modular subsystems. Since the frontend application has responsive design it supports desktop devices as well as mobile devices. 
+To support Software as a Service distribution every web service can work independently. It means that the stakeholders can use N2Sky via web portal as well as use N2Sky API.
+N2Sky API allows  stakeholders:
+
+\begin{itemize}
+\item Authorise in the System
+\item Create new neural from existing paradigm
+\item Deploy own neural network on N2Sky environment 
+\item Perform training against own as well published neural network
+\item Perform testing against trained models
+\end{itemize}
+
+Almost everything is available for arbitrary stakeholders, except cloud services. In order to cloud service as a service, the user has to install it on his own cloud environment. This approach supports Platform as a Service distribution. Cloud services only for system administrator and for granted users are available. 
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/2/new_arch.png}
+  \caption{The sample workflow}
+  \label{fig:newarch}
+\end{center}
+\end{figure}
+
+
+The sample workflow overview, which shown in ``Fig.~\ref{fig:newarch}'' represents microservices architecture in action:
+
+
+\begin{enumerate}
+\item \emph{Contributor User}
+\begin{enumerate}
+\item The Contributor user authorize in the N2Sky portal using his browser on desktop PC or mobile device. He will be redirected to his own dashboard according to permissions, which will be received from User Management Web Service. 
+\item The user described his own neural network paradigm using the ViNNSL template and deploying it in the N2Sky cloud. 
+\item The Contributor user perform training of his neural network using the N2Sky platform. Since the user is an expert he can perform this operation using Simulation Service via Model Repository Web Service API.
+\item The user publishes his paradigm via N2Sky UI or available API. 
+\item The Contributor user awaiting until other N2Sky users will use his neural network paradigm in order to monitor the behavior of the neural network. 
+\item The user modify, redeploy and retrain his neural network after first results. 
+\end{enumerate}
+\item \emph{Neural Network Engineer User}
+\begin{enumerate}
+\item The neural network engineer user authorize in the N2Sky portal using his browser on desktop PC or mobile device. He will be redirected to his own dashboard according to permissions, which will be received from User Management Web Service. 
+\item From the dashboard, the user creates a neural network from existing paradigm using Model Repository Web Service.
+\item The user perform training against his newly created neural network using the N2Sky platform. 
+\item If the user satisfied with a trained model he can perform testing using the N2Sky platform. 
+\item The neural network engineer user publish his neural network and trained model in order to make it available for other N2Sky users. 
+\end{enumerate}
+\item \emph{Arbitrary User}
+\begin{enumerate}
+\item The arbitrary user authorize in the N2Sky portal using his browser on desktop PC or mobile device. He will be redirected to his own dashboard according to permissions, which will be received from User Management Web Service. 
+\item Since the user does not much knowledge in neural network field, he performs a semantic search in order to find some neural network as well as trained models according to his needs.
+\item The user copy existing neural network and some trained models into his project. 
+\item The user perform training from N2Sky platform against copied neural network with the default input parameters data.
+\item The user evaluate trained neural network model with the default parameters. 
+\end{enumerate}
+\item \emph{System Administrator}
+\begin{enumerate}
+\item The system administrator authorize in the N2Sky portal using his browser on desktop PC or mobile device. He will be redirected to administration dashboard.
+\item The user observes cloud environment.
+\item The system administrator creates the new monitoring chart with a specific metrics and add it to the administration dashboard.
+\item The user creates alert against newly created monitoring
+\item The user is notified by Alert Management System, that some event occurs.
+\end{enumerate}
+\end{enumerate}
+
+
 
 
  

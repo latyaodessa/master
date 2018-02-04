@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Beran2008}
+Peter~Paul Beran, Elisabeth Vinek, Erich Schikuta, and Thomas Weishaupl.
+\newblock Vinnsl - the {V}ienna neural network specification language.
+\newblock In {\em Neural Networks, 2008. IJCNN 2008.(IEEE World Congress on
+  Computational Intelligence). IEEE International Joint Conference on}, pages
+  1872--1879. IEEE, 2008.
+
+\bibitem{frontendMicro}
+Mikki Kobvel.
+\newblock Front-end microservices with web components.
+\newblock [online],
+  \url{https://hackernoon.com/front-end-microservices-with-web-components-597759313393},
+  last visited November 2017, 2017.
+
+\bibitem{Walraven2014}
+Stefan Walraven, Eddy Truyen, and Wouter Joosen.
+\newblock Comparing paas offerings in light of saas development.
+\newblock {\em Computing}, 96(8):669--724, Aug 2014.
+
+\end{thebibliography}

@@ -8,7 +8,7 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock [Online; accessed 20-December-2016].
 
 \bibitem{wiki:vitrage}
-What is vitrage? --- {W}ikipedia{,} the free encyclopedia, 2016.
+What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 
 \bibitem{nagios}
 {\sc Anusas-amornkul, T., and Sangrat, S.}
@@ -112,6 +112,11 @@ What is vitrage? --- {W}ikipedia{,} the free encyclopedia, 2016.
 \newblock In {\em Adaptive Resource Management and Scheduling for Cloud
   Computing\/} (Cham, 2015), F.~Pop and M.~Potop-Butucaru, Eds., Springer
   International Publishing, pp.~103--118.
+
+\bibitem{Walraven2014}
+{\sc Walraven, S., Truyen, E., and Joosen, W.}
+\newblock Comparing paas offerings in light of saas development.
+\newblock {\em Computing 96}, 8 (Aug 2014), 669--724.
 
 \bibitem{frs_3}
 {\sc Weyers, B., Bowen, J., Dix, A., and Palanque, P.}
