@@ -2,29 +2,268 @@
 
 \subsection{System configuration}\label{System configuration}
 
+\subsubsection{Setting up the database}\label{database setup}
+
+N2Sky uses non-relational database MongoDB, which is running in Docker container. 
+
+First of all the developer has to create  the mongo database container:
+
+ \begin{lstlisting}
+	docker run -d -p 27017:27017 --name database \
+	 -v ~/dataMongo:/data/db mongo
+\end{lstlisting}
+
+It will start the mongo database Docker container on port 27017. 
+It is possible to remap ports with the flag "-p".
+
+The second step is to configure N2Sky database:
+
+\emph{Login into container:}  
+ \begin{lstlisting}
+docker exec -it database mongo
+\end{lstlisting}
+
+\emph{Create database superuser:}
+ \begin{lstlisting}
+ 
+db.createUser(
+	{ user: 'admin', pwd: 'password',
+	 roles: [
+	 	{ role: "userAdminAnyDatabase", db: "admin" }
+			 ] });
+
+\end{lstlisting}
+
+
+
+\emph{Create database:}
+ \begin{lstlisting}
+use n2sky;
+\end{lstlisting}
+
+
+\emph{Create database n2sky user:}
+ \begin{lstlisting}
+ 
+db.createUser({user:"n2sky", pwd:"password", roles:['dbOwner']})
+
+\end{lstlisting}
+
+\emph{Exit from container and enable authentication:}
+ \begin{lstlisting}
+ 
+ 	docker rm -f database
+ 
+	docker run -d -p 27017:27017 --name database \
+	 -v ~/dataMongo:/data/db mongo mongod --auth
+
+\end{lstlisting}
+
+
+
+\subsubsection{Setting up the Cloud Web Service}\label{cloud setup}
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/latyaodessa/n2sky-services.git 
+\end{lstlisting}
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd n2sky-services/services
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+FROM node:7
+WORKDIR /app
+COPY package.json .
+RUN npm install
+RUN npm install -g forever
+COPY . /app
+CMD forever -c 'node --harmony'  server.js
+EXPOSE 8080
+\end{lstlisting}
+
+Command: 
+ \begin{lstlisting}
+docker build -t cloud:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9595:8080 --name cloud cloud:1
+\end{lstlisting}
+
+
+Important to check the host and the port of the database. 
+If something goes wrong and the port or the host is changed in n2sky project developer can edit it.
+The rest api endpoint host located in \emph{service/config/database.js}
+
+\subsubsection{Setting up the Model Repository Service}\label{model setup}
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/CN2Sky/modelRepository.git
+\end{lstlisting}
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd modelRepository
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+FROM node:7
+WORKDIR /app
+COPY package.json .
+RUN npm install
+RUN npm install -g forever
+COPY . /app
+CMD forever -c 'node --harmony'  server.js
+EXPOSE 8080
+\end{lstlisting}
+
+Command: 
+
+ \begin{lstlisting}
+docker build -t model:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9092:8080 --name model model:1
+\end{lstlisting}
+
+
+
+\subsubsection{Setting up the User Management Service}\label{user setup}
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/CN2Sky/user-management.git
+\end{lstlisting}
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd user-management
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+FROM node:7
+WORKDIR /app
+COPY package.json .
+RUN npm install
+RUN npm install -g forever
+COPY . /app
+CMD forever -c 'node --harmony'  server.js
+EXPOSE 8080
+\end{lstlisting}
+
+Command: 
+
+ \begin{lstlisting}
+docker build -t user:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9091:8080 --name user user:1
+\end{lstlisting}
+
+
+
+
+
+\subsubsection{Setting up the N2Sky frontend}\label{frontend setup}
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/latyaodessa/n2sky-services.git 
+\end{lstlisting}
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd n2sky-services/frontend
+\end{lstlisting}
+
+\emph{Build the Docker image}
+Dockerfile:
+ \begin{lstlisting}
+FROM node:7
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . /app
+CMD npm run dev
+EXPOSE 9593
+\end{lstlisting}
+
+Command:
+ \begin{lstlisting}
+docker build -t frontend:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9593:9593 --name frontend frontend:1
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
+
 \subsubsection{Setting up the Monitoring System}\label{Monitoring System setup}
 
- In the global configuration is possible to setup scare interval and evaluation interval.global:
+ In the global configuration is possible to setup scare interval and evaluation interval.
+global:
  
  \begin{lstlisting}
-  scrape_interval:     15s   evaluation_interval: 15s 
+  scrape_interval:     15s 
+  evaluation_interval: 15s 
 \end{lstlisting}
 
 Prometheus has to reference on Alert Manager, where messages will be published. 
  \begin{lstlisting}
-alerting:  alertmanagers:  - static_configs:    - targets:       - localhost:9093
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+       - localhost:9093
 \end{lstlisting}
 
 Every machine where Prometheus is installed can has its own alerting rules. In general alerting rules are located in the root folder of Prometheus.
 
  \begin{lstlisting}
-rule_files:   - "alert.rules"   - "node.rules"   - "test.rules"
+rule_files:
+   - "alert.rules"
+   - "node.rules"
+   - "test.rules"
 \end{lstlisting}
 
 Since there is a need to get more specific data, in N2Sky was decided to user Node Exporter Module. The reference on this module has to be added into configuration
 
  \begin{lstlisting}
-- job_name: 'node'    scrape_interval: 5s    target_groups:-	targets: ['localhost:9100']
+- job_name: 'node'
+    scrape_interval: 5s
+    target_groups:
+-	targets: ['localhost:9100']
 \end{lstlisting}
 
 Node Exporter Module has no configuration file. Prometheus listen the modules and scrap the data with a defined interval.
@@ -34,22 +273,33 @@ For deploying alert manager Docker containers technology is used.
 
 \subsubsection{Setting up Alert Management System}\label{Setting up Alert Management System}
 
-All configuration of alert manager are written in YAML file. On the beginning SMTP email sender should be configured. This would be used to sending notifications.
+All configuration of alert manager are written in YAML file. 
+On the beginning SMTP email sender should be configured. This would be used to sending notifications.
 
  \begin{lstlisting}
-global:  smtp_smarthost: 'localhost:25'  smtp_from: 'alertmanager@example.org'  smtp_auth_username: 'alertmanager'  smtp_auth_password: 'password'
+global:
+  smtp_smarthost: 'localhost:25'
+  smtp_from: 'alertmanager@example.org'
+  smtp_auth_username: 'alertmanager'
+  smtp_auth_password: 'password'
 \end{lstlisting}
 
 It is possible to define multiple Email templates and configure which template need to be loaded on which severe level. In configuration the path to templates need to be defined. 
 
  \begin{lstlisting}
-templates: -	'/etc/alertmanager/template/*.tmpl'
+templates: 
+-	'/etc/alertmanager/template/*.tmpl'
 \end{lstlisting}
 
 When alerts are consumed they need to be converted using Email template and fired to the particular route. Every route has a receiver. 
 
  \begin{lstlisting}
-route:group_by: ['alertname', 'cluster', 'service']group_wait: 30sgroup_interval: 5mrepeat_interval: 3h receiver: team-X-mails
+route:
+group_by: ['alertname', 'cluster', 'service']
+group_wait: 30s
+group_interval: 5m
+repeat_interval: 3h 
+receiver: team-X-mails
 \end{lstlisting}
 
 \begin{description}
@@ -62,21 +312,32 @@ route:group_by: ['alertname', 'cluster', 'service']group_wait: 30sgroup_inter
 Receiver it is a group of matching by regular expression events.
 
  \begin{lstlisting}
-  routes:- match_re:      service: ^(foo1|foo2|baz)    receiver: team-X-mails
+  routes:
+- match_re:
+      service: ^(foo1|foo2|baz)
+    receiver: team-X-mails
 \end{lstlisting}
 
 Receiver can be defined by user configuration, it is an email where is alert notification will be send.
 
  \begin{lstlisting}
-receivers:- name: 'team-X-mails'  email_configs:  - to: 'team-X+alerts@example.org'
+receivers:
+- name: 'team-X-mails'
+  email_configs:
+  - to: 'team-X+alerts@example.org'
 \end{lstlisting}
 
 \paragraph{How to write alerting rules} 
 
-The alerting rules are supporting simple query language, which looks very similar to Sequel Query Language.  There is multiple possibilities how work with a alerting rules. The query language allows to use an expression and as a result to check an attribute of time series. 
+The alerting rules are supporting simple query language, which looks very similar to Sequel Query Language.  
+There is multiple possibilities how work with a alerting rules. The query language allows to use an expression and as a result to check an attribute of time series. 
 
  \begin{lstlisting}
-ALERT HighLatency IF api_http_request_latencies_second{quantile="0.7"} > 1 FOR 5m LABELS { severity="critical"} ANNOTATIONS {   summary = "High latency detected ",   description = "over limit? } 
+ALERT HighLatency
+ IF api_http_request_latencies_second{quantile="0.7"} > 1 
+FOR 5m 
+LABELS { severity="critical"} 
+ANNOTATIONS {   summary = "High latency detected ",   description = "over limit? } 
 \end{lstlisting}
 
 Following notations should be considered be creation of alerting rules:

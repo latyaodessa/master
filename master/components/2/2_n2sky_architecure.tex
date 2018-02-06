@@ -2,11 +2,11 @@
 
 \subsection{Current Architecture Analysis}\label{CurrentArchitectureAnalysis}
 
-Current N2Sky architecture a monalitic stand alone application. It was heavily maintainable and not scalable. Before proposing the new architecture design it is important to find the weak parts of the current application and define what functionality is still possible to reuse in order gain new functionality with a reasonable time.  
+Current N2Sky architecture a monolithic standalone application. It was heavily maintainable and not scalable. Before proposing the new architecture design it is important to find the weak parts of the current application and define what functionality is still possible to reuse in order gain new functionality with a reasonable time.
 
 \subsubsection{Architecture design}\label{Architecturedesign}
 
-The current N2Sky design based on RAVO architecture \cite{ravo}, which extends default SPI stack. SPI stack contains Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). The architecture had a two phases of integration.  In the first phase the SPI was extended and applied to N2Sky application. On the last phase all mandatory components were implemented and integrated as it presented in figure \ref{fig:current_arch}.
+The current N2Sky design based on RAVO architecture \cite{ravo}, which extends default SPI stack. SPI stack contains Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). The architecture had two phases of integration.  In the first phase, the SPI was extended and applied to the N2Sky application. On the last phase, all mandatory components were implemented and integrated as it presented in figure \ref{fig:current_arch}.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -18,41 +18,42 @@ The current N2Sky design based on RAVO architecture \cite{ravo}, which extends d
 
 Every service represents the particular layer:
 \begin{itemize}
-\item \emph{IaaS layer}  responsible for managing  the resources. It contains the logical and physical resources of N2Sky components as well as infrastructure enabler like protocols, procures etc. 
-\item \emph{PaaS layer}, which provides an access to resources via API. In previous N2Sky system it served as a domain-independent tool. It also contains the neural network layer.
+\item \emph{IaaS layer}  responsible for managing the resources. It contains the logical and physical resources of N2Sky components as well as infrastructure enabler like protocols, procures etc. 
+\item \emph{PaaS layer}, which provides an access to resources via API. In the previous N2Sky system, it served as a domain-independent tool. It also contains the neural network layer.
 \item \emph{SaaS} is a service, which container the User interfaces (UIs).
 \end{itemize}
 
-Everything as a service is a good idea, but build upon it the layered architecture could cause some issues. Since every layer depending on the layer above there are possibility if the services from bottom layer goes then the application is not usable at all. 
+Everything as a service is a good idea but build upon it the layered architecture could cause some issues. Since every layer depending on the layer above, there a possibility if the services from bottom layer go then the application is not usable at all. 
 
-Besides stand-alone-application design, which was implemented, another one issue is encapsulation. Since every service need to communicate with other services via API the order of layers could be violated. This problem can cause not only security issues, bus also consistency, namely it can breaks the desired workflow process.
+Besides stand-alone-application design, which was implemented, another one issue is encapsulation. Since every service needs to communicate with other services via API the order of layers could be violated. This problem can cause not only security issues, bus also consistency, namely it can break the desired workflow process.
 
-Unfortunately it is impossible to distribute the services, since they are all coupled together into collections of layers.  
+Unfortunately, it is impossible to distribute the services, since they are all coupled together into collections of layers.  
 
 \subsubsection{Components}\label{Components}
 
-N2Sky was an imposing application, which contained multiple services and was working as whole. Following main components were listed in N2Sky:
+N2Sky was an imposing application, which contained multiple services and was working as a whole. Following main components were listed in N2Sky:
 
 \begin{itemize}
 \item \emph{The component archive} was responsible for storage and file management.
 \item \emph{The data archive} is the component, which managed the neural network specific resources in XML and JSON formats. 
-\item \emph{The registry}, which was a base component of N2Sky architecture. This component was responsible for searching of services within the cloud.  It also contained instructions and rules, which were used by users. 
-\item \emph{Monitoring} was divided into two subcategories: business activity monitoring (BAM), which was gather the business data and technical monitoring, which was responsible for environment monitoring and performance statistics. 
+\item \emph{The registry}, which was a base component of the N2Sky architecture. This component was responsible for searching for services within the cloud.  It also contained instructions and rules, which were used by users. 
+\item \emph{Monitoring} was divided into two subcategories: business activity monitoring (BAM), which gathered the business data and technical monitoring, which was responsible for environmental monitoring and performance statistics. 
 \end{itemize}
 
-Considering that the registry is a central components, because it responsible for services management, it can slow down the whole process. All requests are going throw this services. If the services is not accessible or high latency or waiting time occurs, the UI as well as API services would be not available.
+Considering that the registry is a central component, because of it responsible for services management, it can slow down the whole process. All requests are going throw this services. If the services are not accessible or high latency or waiting time occurs, the UI as well as API services would be not available.
 
-It would be great to have the same service, but distribute them on multiple servers. Every service in previous version of N2Sky is  gigantic, it is possible to divide services into microservices and incapsulate sensible components from public access.
+It would be great to have the same service but distribute them on multiple servers. Every service in the previous version of N2Sky is gigantic, it is possible to divide services into microservices and incapsulate sensible components from public access.
+
 
 \subsubsection{Implementation}\label{Implementation}
 
-The previous version of N2Sky is fully written on Java using Spring framework and java servlets. The Tomcat server was used, because of the Java programming language. The  Java Spring framework is good for enterprise application, but the N2Sky needs lots of computations so the  high-end super computers is necessary pre-requirement in this case. 
+The previous version of N2Sky is fully written in Java using Spring framework and Java servlets. The Tomcat server was used, because of the Java programming language. The  Java Spring framework is good for an enterprise application, but the N2Sky needs lots of computations so the high-end supercomputers are necessary pre-requirement in this case. 
 
-Unfortunately it is impossible to map the current architecture into micro-services approach. Only one solution is to make replicas of the application, but then the sessions and data consistency hast to be tracked in every replica. 
+Unfortunately, it is impossible to map the current architecture into the microservices approach. Only one solution is to make replicas of the application, but then the sessions and data consistency have to be tracked in every replica. 
 
-The mobile application of the N2Sky is build with raw HTML5 and JavaScript. Today, looking on this mobile application it is close to impossible to maintain it. Nevertheless,  the mobile version is also wrapped into layered architecture and in implementation it is still one project. The solution to this problem is responsive design. The responsive design could be fully adaptive to multiple devices from desktop PCs to mobile with a small screen resolution.
+The mobile application of the N2Sky is built with raw HTML5 and JavaScript. Today, looking on this mobile application it is close to impossible to maintain it. Nevertheless,  the mobile version is also wrapped into layered architecture and in implementation, it is still one project. The solution to this problem is the responsive design. The responsive design could be fully adaptive to multiple devices from desktop PCs to mobile with a small screen resolution.
 
-The whole system is deployed on Amazon Web Services (AWS), which is good if the owner has enough resource to keep it working. Best solution would be to have a dedicated server with a real physical memory and computational abilities. 
+The whole system is deployed on Amazon Web Services (AWS), which is good if the owner has enough resource to keep it working. The best solution would be to have a dedicated server with a real physical memory and computational abilities.  
 
 
 \subsubsection{Usability and user experience}\label{Usabilityanduserexperience}

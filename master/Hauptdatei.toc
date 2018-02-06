@@ -73,11 +73,16 @@
 \contentsline {section}{\numberline {8}User Cases}{81}{section.8}
 \contentsline {section}{\numberline {9}Developer Guide}{81}{section.9}
 \contentsline {subsection}{\numberline {9.1}System configuration}{81}{subsection.9.1}
-\contentsline {subsubsection}{\numberline {9.1.1}Setting up the Monitoring System}{81}{subsubsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.2}Setting up Alert Management System}{82}{subsubsection.9.1.2}
-\contentsline {paragraph}{\nonumberline How to write alerting rules}{83}{section*.4}
-\contentsline {subsection}{\numberline {9.2}Continuous integration}{83}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}API Documentation}{83}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{83}{subsubsection.9.3.1}
-\contentsline {section}{Literaturverzeichnis}{84}{subsubsection.9.3.1}
-\contentsline {section}{Anhang}{86}{section*.5}
+\contentsline {subsubsection}{\numberline {9.1.1}Setting up the database}{81}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Setting up the Cloud Web Service}{82}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}Setting up the Model Repository Service}{82}{subsubsection.9.1.3}
+\contentsline {subsubsection}{\numberline {9.1.4}Setting up the User Management Service}{83}{subsubsection.9.1.4}
+\contentsline {subsubsection}{\numberline {9.1.5}Setting up the N2Sky frontend}{83}{subsubsection.9.1.5}
+\contentsline {subsubsection}{\numberline {9.1.6}Setting up the Monitoring System}{84}{subsubsection.9.1.6}
+\contentsline {subsubsection}{\numberline {9.1.7}Setting up Alert Management System}{85}{subsubsection.9.1.7}
+\contentsline {paragraph}{\nonumberline How to write alerting rules}{86}{section*.4}
+\contentsline {subsection}{\numberline {9.2}Continuous integration}{86}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}API Documentation}{86}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{86}{subsubsection.9.3.1}
+\contentsline {section}{Literaturverzeichnis}{87}{subsubsection.9.3.1}
+\contentsline {section}{Anhang}{89}{section*.5}
