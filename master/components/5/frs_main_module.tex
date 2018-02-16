@@ -21,7 +21,7 @@ The MAM has one User Interface but users can use it diverse. Only users, which t
 \end{itemize}
 
 \subsection{N2Sky Dashboard}\label{N2Sky Dashboard}
-The N2Sky dashboard is the central component of the MAM module. The dashboard gives brief information about available tools, user's projects and user's neural networks. Every dashboard is unique for every user, namely the content is always differ. As it is displayed in figure \ref{fig:n2skymaindashboard}, the dashboard gives full overview of the components from one page.
+The N2Sky dashboard is the central component of the MAM module. The dashboard gives brief information about available tools, user's projects and user's neural networks. Every dashboard is unique for every user, namely, the content always differs. As it is displayed in figure \ref{fig:n2skymaindashboard}, the dashboard gives a full overview of the components from one page.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -41,7 +41,7 @@ The N2Sky dashboard contains following components:
 
 The dashboard is available under following URL path:
  \begin{lstlisting}
-	<host>/cloud
+    <host>/cloud
 \end{lstlisting}
 
 \subsubsection{Available tools}
@@ -58,7 +58,7 @@ In figure \ref{fig:n2sky_tools} the available tools component is displayed in a 
 \begin{itemize}
 \item \emph{Available neural network.} Reference to the available repositories view.  
 \item \emph{Model repository.} Reference to the model repository view.
-\item \emph{Create new project.} On click of this time the popup window will me initialised as it displayed in figure \ref{fig:popupcreatenewproject}.
+\item \emph{Create a new project.} On click of this time the popup window will be initialized as it displayed in figure \ref{fig:popupcreatenewproject}.
 
 
 \begin{figure}[htbp]
@@ -73,17 +73,17 @@ In figure \ref{fig:n2sky_tools} the available tools component is displayed in a 
 The following popup modal window contains components:
 \begin{itemize}
 \item \emph{Project Name} field, which represents a short title of the project.
-\item \emph{Project Description} field with a short description of the project, which will be user for semantic search.  
+\item \emph{Project Description} field with a short description of the project, which will be used for the semantic search.  
 \item \emph{Create Project} button, which created a project with filled up form.
 \end{itemize}
 
-After creating the project it will be automatically appear in the dashboard. 
+After creating the project it will automatically appear in the dashboard. 
 
 \end{itemize}
 
 \subsubsection{User projects}
 
-User projects is a grid with projects. Every project is represented as a folder with a caption under it as it displayed in figure \ref{fig:n2sky_dashboard_projects}. On click the user will be redirected to the particular project. 
+User projects is a grid with projects. Every project is represented as a folder with a caption under it as it displayed in figure \ref{fig:n2sky_dashboard_projects}. On click, the user will be redirected to the particular project. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -98,7 +98,7 @@ User projects is a grid with projects. Every project is represented as a folder 
  The component is displaying the neural networks of the user, which either created from paradigm or own contributed neural networks. The component contains following subcomponents:
  \begin{itemize}
 \item \emph{Neural networks filtering bar.}
-The filtering bar is a navigation as well as neural networks filtering subcomponent as it shown in figure \ref{fig:n2sky_filtering_bar}. The subcomponent allows user to filter through neural networks depending on permissions. 
+The filtering bar is a navigation as well as neural networks filtering subcomponent as is shown in figure \ref{fig:n2sky_filtering_bar}. The subcomponent allows the user to filter through neural networks depending on permissions. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -113,9 +113,9 @@ The following filters are available:
 \item \emph{Your networks.} The filter shows the running and not running neural networks of the logged in user. 
 \item \emph{Your running networks.} The representation only of the user's running neural networks.
 \item \emph{Saved networks.} Only saved neural networks of the users. The list will show the saved neural networks across all projects of the user.
-\item \emph{All Networks}. List of the all networks on the N2Sky. This filter is available only for system administrator.
+\item \emph{All Networks}. List of all networks on the N2Sky. This filter is available only for the system administrator.
 \end{itemize}
-\item{The neural networks grid.} The grid, which contains custom UI components that represents particular neural network. Every grid item contains following information:
+\item{The neural networks grid.} The grid, which contains custom UI components that the particular neural network. Every grid item contains the following information:
 \begin{itemize}
 \item The title of the neural network
 \item The status tither running or not running. If the instance is running the N2Sky icon will spin, if not it will be grey without movements. 
@@ -130,23 +130,102 @@ The following filters are available:
 \item{Navigation bar.} The bar under neural networks which contains the navigation buttons and "Chained/Unchained" mode.
 \begin{itemize}
 \item \emph{Unchained mode} is a mode where all trained model of displayed neural networks will be shown.
-\item \emph{Chained mode} is a mode where only the trained models of chosen neural network will be shown. In chained mode the user hast to click on particular neural network to see the trained models. 
+\item \emph{Chained mode} is a mode where only the trained models of the chosen neural network will be shown. In the chained mode, the user has to click on the particular neural network to see the trained models. 
 \end{itemize}
 
 \item{Trained models table.} The table with trained models, which contained also filtering and searching bar.
-The filtering and searching bar allows to perform semantic search across trained models and contains following filters:
+The filtering and searching bar allows to perform a semantic search across trained models and contains following filters:
 \begin{itemize}
 \item Trained by field available only for contributor user and system administrator.
 \item Only Copy checkbox
-\item Only Trained checkbox means show only the trained models where the training is finished.
-\item Show others modes checkbox will display the trained models from other users. The checkbox available only to system administrator.
+\item Only Trained checkbox means to show only the trained models where the training is finished.
+\item Show others modes checkbox will display the trained models from other users. The checkbox available only to the system administrator.
 \end{itemize}
 
-The table itself contains short information about the trained models. On click the user will be redirected to detailed overview of the trained model.
-
+The table itself contains short information about the trained models. On click, the user will be redirected to the detailed overview of the trained model.
 
 \end{itemize}
 
+\subsection{The user project dashboard}\label{The user projects dashboard}
+The user project dashboard is the dashboard, which suitable for any types of users. It is possible to create and manage own neural networks directly from the dashboard as it is shown in figure \ref{fig:projects_dsahboard}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/projects_dsahboard.png}
+  \caption{N2Sky User Project Dashboard}
+  \label{fig:projects_dsahboard}
+\end{center}
+\end{figure}
+
+As any other dashboards in N2Sky, the project dashboard contains the available tools and the grid of items.
+On the top of the dashboard, the title and the delete button is located. It is possible to delete project only for project owner or system administrator. 
+
+\subsubsection{Available tools.} 
+
+The available tools is a common functionality, which is necessary for project dashboard. Every tool contains an SVG icon and caption underneath as it displayed in figure \ref{ref:projecttools}. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/project_tools.png}
+  \caption{N2Sky Project Dashboard. Available tools}
+  \label{fig:projecttools}
+\end{center}
+\end{figure}
+
+The following tools are available for all types of users:
+\begin{itemize}
+\item \emph{Available neural network.} Reference to the available repositories view.  
+\item \emph{Model repository.} Reference to the model repository view.
+\item \emph{Add neural network from the paradigm.} Will redirect to the creation of neural network from existing paradigm page. 
+\item \emph{Upload own network in ViNNSL format} is mostly used by contributor user since the user needs to know the ViNNSL language. On click, the popup will be initialized as it is shown in figure \ref{fig:upload_vinnsl_popup}. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.5]{components/5/img/upload_vinnsl_popup.png}
+  \caption{N2Sky Project Dashboard.Upload own network in ViNNSL format}
+  \label{fig:upload_vinnsl_popup}
+\end{center}
+\end{figure}
+
+The popup contains following components:
+\begin{itemize}
+\item The information block about the following operation. The block shows, which fields are going to be overridden namely: the creator field, image information and it will be not running by default. 
+\item The Docker username field, which references on the username in Docker Hub repository. After the name will be entered the available images list will be listed. 
+\item The Docker image combo box is a list of available images of chosen Docker Hub user.  This image will be used for creating neural network paradigm.
+\item The Upload field. The user needs to choose from local machine the neural network paradigm, which is described in ViNNSL XML or JSON format.
+\item The text field will show the preview of uploaded neural network paradigm in ViNNSL format.
+\item Create button will process the form and create the neural network paradigm. After creation, the user will be redirected to the neural network details page. 
+\end{itemize}
+
+\subsubsection{Neural Networks Grid.}
+
+The neural networks grid represents a list all neural network which was created or copied from other users. Every grid item contains brief information about the neural network:
+\begin{itemize}
+\item The title of the neural network
+\item The status tither running or not running. If the instance is running the N2Sky icon will spin, if not it will be grey without movements. 
+\item The short description of the neural network
+\item Application field
+\item Network type
+\item Problem type
+\item Created by user
+\item Details and actions button, which redirect the user to the page with detailed information of the neural network. 
+\end{itemize}
+
+\subsubsection{Saved trained models.}
+
+The table with saved trained models is located at the bottom of project dashboard as it is shown in figure \ref{fig:saved_trained_models_project}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/saved_trained_models_project.png}
+  \caption{N2Sky Project Dashboard. Saved trained models}
+  \label{fig:saved_trained_models_project}
+\end{center}
+\end{figure}
+
+This table represents the copied trained models into the particular project. It is possible to perform the semantic search against trained models, the same approach is used in N2Sky Main Dashboard. 
+
+\end{itemize}
 
 
 \subsection{Neural Networks Repository}\label{Neural Networks Repository}
