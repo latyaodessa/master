@@ -67,22 +67,27 @@
 \contentsline {subsection}{\numberline {6.1}General Definition}{80}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Affected users}{80}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}N2Sky Dashboard}{81}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Neural Networks Repository}{81}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Models Repository}{81}{subsection.6.5}
-\contentsline {section}{\numberline {7}Tutorial}{81}{section.7}
-\contentsline {section}{\numberline {8}User Cases}{81}{section.8}
-\contentsline {section}{\numberline {9}Developer Guide}{81}{section.9}
-\contentsline {subsection}{\numberline {9.1}System configuration}{81}{subsection.9.1}
-\contentsline {subsubsection}{\numberline {9.1.1}Setting up the database}{81}{subsubsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.2}Setting up the Cloud Web Service}{82}{subsubsection.9.1.2}
-\contentsline {subsubsection}{\numberline {9.1.3}Setting up the Model Repository Service}{82}{subsubsection.9.1.3}
-\contentsline {subsubsection}{\numberline {9.1.4}Setting up the User Management Service}{83}{subsubsection.9.1.4}
-\contentsline {subsubsection}{\numberline {9.1.5}Setting up the N2Sky frontend}{83}{subsubsection.9.1.5}
-\contentsline {subsubsection}{\numberline {9.1.6}Setting up the Monitoring System}{84}{subsubsection.9.1.6}
-\contentsline {subsubsection}{\numberline {9.1.7}Setting up Alert Management System}{85}{subsubsection.9.1.7}
-\contentsline {paragraph}{\nonumberline How to write alerting rules}{86}{section*.4}
-\contentsline {subsection}{\numberline {9.2}Continuous integration}{86}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}API Documentation}{86}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{86}{subsubsection.9.3.1}
-\contentsline {section}{Literaturverzeichnis}{87}{subsubsection.9.3.1}
-\contentsline {section}{Anhang}{89}{section*.5}
+\contentsline {subsubsection}{\numberline {6.3.1}Available tools}{81}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}User projects}{83}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}The user neural networks and models overview}{84}{subsubsection.6.3.3}
+\contentsline {subsection}{\numberline {6.4}Neural Networks Repository}{85}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Models Repository}{85}{subsection.6.5}
+\contentsline {section}{\numberline {7}Tutorial}{85}{section.7}
+\contentsline {section}{\numberline {8}User Cases}{85}{section.8}
+\contentsline {section}{\numberline {9}Developer Guide}{85}{section.9}
+\contentsline {subsection}{\numberline {9.1}System configuration}{85}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Setting up the database}{85}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Setting up the Cloud Web Service}{86}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}Setting up the Model Repository Service}{87}{subsubsection.9.1.3}
+\contentsline {subsubsection}{\numberline {9.1.4}Setting up the User Management Service}{88}{subsubsection.9.1.4}
+\contentsline {subsubsection}{\numberline {9.1.5}Setting up the N2Sky frontend}{88}{subsubsection.9.1.5}
+\contentsline {subsubsection}{\numberline {9.1.6}Setting up the Backpropogation Neural Network}{89}{subsubsection.9.1.6}
+\contentsline {subsubsection}{\numberline {9.1.7}Setting up the Monitoring System}{90}{subsubsection.9.1.7}
+\contentsline {subsubsection}{\numberline {9.1.8}Setting up Alert Management System}{91}{subsubsection.9.1.8}
+\contentsline {paragraph}{\nonumberline How to write alerting rules}{92}{section*.4}
+\contentsline {subsection}{\numberline {9.2}Continuous integration}{93}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Create custom image with the monitoring system}{93}{subsubsection.9.2.1}
+\contentsline {subsection}{\numberline {9.3}API Documentation}{94}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{94}{subsubsection.9.3.1}
+\contentsline {section}{Literaturverzeichnis}{95}{subsubsection.9.3.1}
+\contentsline {section}{Anhang}{97}{section*.5}

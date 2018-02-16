@@ -49,7 +49,21 @@ db.createUser({user:"n2sky", pwd:"password", roles:['dbOwner']})
 
 \end{lstlisting}
 
-\emph{Exit from container and enable authentication:}
+\emph{Create system administrator:}
+ \begin{lstlisting}
+ 
+db.users.insert({
+   "name":"admin",
+   "password":"password",
+   "email":"admin@test.com",
+   "type":"admin",
+   "active":true
+});
+
+\end{lstlisting}
+
+
+\emph{For production version it is recommended to enable authentication:}
  \begin{lstlisting}
  
  	docker rm -f database
@@ -183,8 +197,6 @@ docker run -d -p 9091:8080 --name user user:1
 
 
 
-
-
 \subsubsection{Setting up the N2Sky frontend}\label{frontend setup}
 
 \emph{Clone the project from the repository}
@@ -224,12 +236,147 @@ docker run -d -p 9593:9593 --name frontend frontend:1
 
 
 
+\subsubsection{Setting up the Backpropogation Neural Network}\label{backprop setup}
+
+This neural network made for demonstration purposes. 
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/CN2Sky/backprop.git
+\end{lstlisting}
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd backprop
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+FROM debian:8
+
+MAINTAINER Kamil Kwiek <kamil.kwiek@continuum.io>
+
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+
+RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
+    libglib2.0-0 libxext6 libsm6 libxrender1 \
+    git mercurial subversion
+
+RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
+    wget --quiet https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh -O \
+     ~/anaconda.sh && \
+    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
+    rm ~/anaconda.sh
+
+RUN apt-get install -y curl grep sed dpkg && \
+    TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | \
+    grep -o "/v.*\"" | sed 's:^..\(.*\).$:\1:'` && \
+    curl -L "https://github.com/krallin/tini/releases/download/v \
+    ${TINI_VERSION}/tini_${TINI_VERSION}.deb" > tini.deb && \
+    dpkg -i tini.deb && \
+    rm tini.deb && \
+    apt-get clean
+
+ENV PATH /opt/conda/bin:$PATH
+
+# Jupyter has issues with being run directly: https://github.com/ipython/ipython/issues/7062
+COPY backprop /root/
+
+# Expose Ports for TensorBoard (6006), Ipython (8888)
+EXPOSE 6006 8888 5000
+
+WORKDIR "/root"
+
+RUN pip install keras
+RUN pip install tensorflow
+RUN pip install h5json
+
+CMD ["python", "server.py"]
+\end{lstlisting}
+
+Command: 
+
+ \begin{lstlisting}
+docker build -t backprop:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 6006:6006 -p 8888:8888 -p 5000:5000 --name backprop backprop:1
+\end{lstlisting}
+
+
 
 
 
 
 
 \subsubsection{Setting up the Monitoring System}\label{Monitoring System setup}
+
+To create custom image (OS: Ubuntu 16.04 Cloud version) with monitoring setup following steps has to be completed:
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/latyaodessa/n2sky-services.git 
+\end{lstlisting}
+
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd n2sky-services/monitoring/prometheus
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+
+FROM prom/prometheus:v2.0.0-beta.2
+COPY alert.rules /etc/prometheus/alert.rules
+COPY test.rules /etc/prometheus/test.rules
+COPY node.rules /etc/prometheus/node.rules
+COPY ./prometheus.yml /etc/prometheus/prometheus.yml
+
+\end{lstlisting}
+
+Command: 
+
+ \begin{lstlisting}
+docker build -t prometheus:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9090:9090 prometheus:1
+\end{lstlisting}
+
+
+In case if developer want to see full stack he needs to deploy node\_exporter:
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/latyaodessa/n2sky-services.git 
+\end{lstlisting}
+
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd n2sky-services/monitoring/node_exporter 
+\end{lstlisting}
+
+\emph{Run the service Docker container and start Monitoring}
+ \begin{lstlisting}
+docker build -t node_exporter . && \
+docker run -d -p 9100:9100 node_exporter && \
+cd ../prometheus && \
+nohup ./prometheus > /dev/null 2>&1 &
+\end{lstlisting}
+
+
 
  In the global configuration is possible to setup scare interval and evaluation interval.
 global:
@@ -269,7 +416,6 @@ Since there is a need to get more specific data, in N2Sky was decided to user No
 Node Exporter Module has no configuration file. Prometheus listen the modules and scrap the data with a defined interval.
 
 For deploying alert manager Docker containers technology is used.
-\hl{TODO}
 
 \subsubsection{Setting up Alert Management System}\label{Setting up Alert Management System}
 
@@ -356,9 +502,74 @@ Following notations should be considered be creation of alerting rules:
 \end{itemize}
 
 For deploying alert manager Docker containers technology is used.
-\hl{TODO}
+
+\emph{Clone the project from the repository}
+ \begin{lstlisting}
+git clone https://github.com/latyaodessa/n2sky-services.git 
+\end{lstlisting}
+
+
+\emph{Go to service Dockerfile}
+ \begin{lstlisting}
+cd n2sky-services/monitoring/alertmanager
+\end{lstlisting}
+
+\emph{Build the Docker image}
+
+Dockerfile:
+ \begin{lstlisting}
+
+FROM prom/alertmanager:v0.10.0
+COPY alertmanager.yml /etc/alertmanager/config.yml
+ENTRYPOINT [ "/bin/alertmanager" ]
+CMD        [ "-config.file=/etc/alertmanager/config.yml", \
+             "-storage.path=/alertmanager" ]
+
+\end{lstlisting}
+
+Command: 
+
+ \begin{lstlisting}
+docker build -t alertmanager:1 .
+\end{lstlisting}
+
+
+\emph{Run the service Docker container}
+ \begin{lstlisting}
+docker run -d -p 9093:9093 alertmanager:1
+\end{lstlisting}
+
+
 
 \subsection{Continuous integration}\label{Continuous integration}
+
+\subsubsection{Create custom image with the monitoring system}\label{Custom image with the monitoring system}
+
+ \begin{lstlisting}
+
+sudo apt-get update && \
+sudo apt-get install --assume-yes apt-transport-https ca-certificates \
+curl gnupg2 software-properties-common && \
+curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg \
+ | sudo apt-key add - && \
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
+   $(lsb_release -cs) \
+   stable" && \
+sudo apt-get update && \
+sudo apt-get install --assume-yes docker-ce && \
+sudo usermod -a -G docker $USER && \
+sudo bash && \
+git clone https://github.com/latyaodessa/n2sky-services.git && \
+cd n2sky-services/monitoring/node_exporter && \
+docker build -t node_exporter . && \
+docker run -d -p 9100:9100 node_exporter && \
+cd ../prometheus && \
+nohup ./prometheus > /dev/null 2>&1 &
+
+\end{lstlisting}
+
+
 \subsection{API Documentation}\label{API Documentation}
 \subsubsection{N2Sky Monitoring System API Documentation}\label{N2Sky Monitoring System API Documentation}
 
