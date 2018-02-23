@@ -82,21 +82,25 @@
 \contentsline {subsection}{\numberline {6.6}Neural Networks Repository}{96}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Models Repository}{98}{subsection.6.7}
 \contentsline {section}{\numberline {7}Tutorial}{100}{section.7}
-\contentsline {section}{\numberline {8}User Cases}{100}{section.8}
-\contentsline {section}{\numberline {9}Developer Guide}{100}{section.9}
-\contentsline {subsection}{\numberline {9.1}System configuration}{100}{subsection.9.1}
-\contentsline {subsubsection}{\numberline {9.1.1}Setting up the database}{100}{subsubsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.2}Setting up the Cloud Web Service}{101}{subsubsection.9.1.2}
-\contentsline {subsubsection}{\numberline {9.1.3}Setting up the Model Repository Service}{102}{subsubsection.9.1.3}
-\contentsline {subsubsection}{\numberline {9.1.4}Setting up the User Management Service}{102}{subsubsection.9.1.4}
-\contentsline {subsubsection}{\numberline {9.1.5}Setting up the N2Sky frontend}{103}{subsubsection.9.1.5}
-\contentsline {subsubsection}{\numberline {9.1.6}Setting up the Backpropogation Neural Network}{103}{subsubsection.9.1.6}
-\contentsline {subsubsection}{\numberline {9.1.7}Setting up the Monitoring System}{105}{subsubsection.9.1.7}
-\contentsline {subsubsection}{\numberline {9.1.8}Setting up Alert Management System}{106}{subsubsection.9.1.8}
-\contentsline {paragraph}{\nonumberline How to write alerting rules}{107}{section*.4}
-\contentsline {subsection}{\numberline {9.2}Continuous integration}{108}{subsection.9.2}
-\contentsline {subsubsection}{\numberline {9.2.1}Create custom image with the monitoring system}{108}{subsubsection.9.2.1}
-\contentsline {subsection}{\numberline {9.3}API Documentation}{109}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{109}{subsubsection.9.3.1}
-\contentsline {section}{Literaturverzeichnis}{110}{subsubsection.9.3.1}
-\contentsline {section}{Anhang}{112}{section*.5}
+\contentsline {subsection}{\numberline {7.1}Using Network and Model Repositories}{100}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Creation of the neural network from the existing paradigm}{100}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Upload own neural network paradigm}{102}{subsection.7.3}
+\contentsline {section}{\numberline {8}User Cases}{102}{section.8}
+\contentsline {subsection}{\numberline {8.1}N2Sky as learning platform}{102}{subsection.8.1}
+\contentsline {section}{\numberline {9}Developer Guide}{102}{section.9}
+\contentsline {subsection}{\numberline {9.1}System configuration}{102}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Setting up the database}{102}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Setting up the Cloud Web Service}{103}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}Setting up the Model Repository Service}{104}{subsubsection.9.1.3}
+\contentsline {subsubsection}{\numberline {9.1.4}Setting up the User Management Service}{104}{subsubsection.9.1.4}
+\contentsline {subsubsection}{\numberline {9.1.5}Setting up the N2Sky frontend}{105}{subsubsection.9.1.5}
+\contentsline {subsubsection}{\numberline {9.1.6}Setting up the Backpropogation Neural Network}{105}{subsubsection.9.1.6}
+\contentsline {subsubsection}{\numberline {9.1.7}Setting up the Monitoring System}{107}{subsubsection.9.1.7}
+\contentsline {subsubsection}{\numberline {9.1.8}Setting up Alert Management System}{108}{subsubsection.9.1.8}
+\contentsline {paragraph}{\nonumberline How to write alerting rules}{109}{section*.4}
+\contentsline {subsection}{\numberline {9.2}Continuous integration}{110}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Create custom image with the monitoring system}{110}{subsubsection.9.2.1}
+\contentsline {subsection}{\numberline {9.3}API Documentation}{111}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}N2Sky Monitoring System API Documentation}{111}{subsubsection.9.3.1}
+\contentsline {section}{Literaturverzeichnis}{112}{subsubsection.9.3.1}
+\contentsline {section}{Anhang}{114}{section*.5}
