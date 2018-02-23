@@ -228,5 +228,303 @@ This table represents the copied trained models into the particular project. It 
 \end{itemize}
 
 
+\subsection{Three steps view}\label{Three steps view}
+
+Robert Browning in his poem "Andrea del Sarto" said: "Less is mode", which became an inspiration of the "Three steps view". It was derived from the simplicity of the arbitrary user. The idea behind to make possible to create the neural network from the paradigm within only three steps. After creation of the neural network reuse the same three steps to provide the overview of the created neural network.
+
+The following steps have to be achieved in order to create the neural network from the paradigm:  the neural network description, the neural network structure, and the neural network training.
+
+\subsubsection{The Neural Network Description}
+
+When user just entering to three step view, the fist what he will see it is "The Network Description" tab. In this tab user has to choose propagation method which is available on N2Sky. After choosing some propagation method the metadata from ViNNSL template will be loaded. The metadata is represented as a form as it shown in figure \ref{fig:nn_desc_3_steps}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/nn_desc_3_steps.png}
+  \caption{Three Steps View. The Neural Network Description}
+  \label{fig:nn_desc_3_steps}
+\end{center}
+\end{figure}
+
+The mandatory metadata from ViNNSL template is:
+\begin{itemize}
+\item Name of the neural network
+\item Shot description
+\item Propagation type
+\item Learning type
+\item Application field
+\item Problem type
+\end{itemize}
+
+This data can be customised on demand. Any additional field in metadata of ViNNSL template will be reflected in this form.
+
+
+After filling up the form, the user will be redirected to the "Neural Network Structure" tab.
+
+\subsubsection{The Neural Network Structure}
+
+The neural network structure field represents the structure of the neural network, which can be customised. It is also possible to set the connections between the layers and nodes. 
+
+When the user entering to this tab he will so only three types of layers: 
+\begin{itemize}
+\item \emph{Input Layer}, which represents amount of the nodes in the input layer.
+\item \emph{Hidden Layers} can be multidimensional. It has matrix structure, it means it is possible to choose multiple layers and multiple nodes. The amount of nodes does not have to be equal in each layer.
+\item \emph{Output Layer} is a layer, which represents amount of nodes for output. This layer has to validated, because of the difference between neural networks. 
+\end{itemize}
+
+After choosing the correct numbers of the layers and nodes the visual representation will be shown as it displayed in figure \ref{fig:nn_structure_3_steps}.
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/nn_structure_3_steps.png}
+  \caption{Three Steps View. The Neural Network Structure with full connection}
+  \label{fig:nn_structure_3_steps}
+\end{center}
+\end{figure}
+
+The next step is to connect the nodes. Following connections are possible:
+
+\begin{itemize}
+\item \emph{Full Connection}. The nodes are full connected when they have connection to all activation with other layers. This is standard approach in every neural network. The matrix multiplication followed be the bias offset. \cite{nn_connection}. This connection is possible to execute by clicking on "Execute full connection" button as it shown in figure \ref{fig:nn_structure_3_steps}.
+\item \emph{Pure Shortcut.} Shortcut connection is also called skip connection. With this connection enables unimpeded information flow. This connections if adding direct connection to other layers. This approach can gain results by training. \cite{shortcuts_nn} With pure connection it is possible to make some direct connection, it will also remove full connection of chosen node.
+\item \emph{Only shortcut.} It is the same approach as by pure shortcut, except the full connection still enabled. 
+\end{itemize}
+
+In order to make shortcuts connection more understandable they are will be immediately visualised as it shown in figure \ref{fig:connection_3_steps}. In this example the first input node has pure shortcut connection with a second hidden layer and the third input node has only shortcut connection with output layer, the gull connection with this node remain the same.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/connection_3_steps.png}
+  \caption{Three Steps View. The shortcut connections}
+  \label{fig:connection_3_steps}
+\end{center}
+\end{figure}
+
+After creating the neural network the user will be redirected to the "Neural Network Training" tab. The all other tabs are clickable, but is it not possible to change either metadata or the structure of the neural network.
+
+\subsubsection{The Neural Network Training}
+
+On of the most important step in three step view workflow, because from this tab is possible to perform some testing agains newly created neural network. The tab is multifunctional and scalable on permissions of the particular user as it shown in figure \ref{fig:training_3_steps}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/training_3_steps.png}
+  \caption{Three Steps View. The Neural Network Training.}
+  \label{fig:training_3_steps}
+\end{center}
+\end{figure}
+
+There are few components which are available for the user:
+\begin{itemize}
+\item \emph{Administration.} This block is available only to neural network owner and the system administrator. The following operations is possible to perform from this block:
+\begin{itemize}
+\item \emph{Run the instance.} Without running the instance it is not possible to perform any testing. The user can run the neural network instance on N2Sky Cloud or if it his own neural network he can deploy on his own publicly available cloud as it shown in figure \ref{fig:run_instance_3_steps}. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.5]{components/5/img/run_instance_3_steps.png}
+  \caption{Three Steps View. The Neural Network Training. Run instance}
+  \label{fig:run_instance_3_steps}
+\end{center}
+\end{figure}
+
+Only two endpoints are available:
+\begin{itemize}
+\item \emph{/train} - for training the neural network. This endpoint has to accept ViNNSL-formatted neural network description and the training data. 
+\item \emph{/test} - for evaluating the trained model. Has to accept only testing data.
+\end{itemize}
+Detailed information of API can be found in Development chapter \autoref{API Documentation}.
+\item \emph{Stop the instance.} If the instance is running it is possible to stop it. The instance will be removed from N2Sky cloud if it was deployed there.
+\item \emph{Publish the neural network.} The user can publish running neural network. In this case the neural network will be available in neural network repository and its trained models also. The other users can copy published neural networks in their own projects. 
+\item \emph{Delete the neural network.} If the neural network owner or administrator will decide to remove the neural network, then the all trained models and testing data also will be removed. The neural network will not be published anymore and the running instance will be removed.
+\end{itemize}
+\item \emph{Actions.} The actions are available for every user if the neural network is published. The following actions can be performed:
+\begin{itemize}
+\item \emph{Show training form.} On click the training form will be expand as it shown in figure \ref{fig:expand_training_form}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/expand_training_form.png}
+  \caption{Three Steps View. The Neural Network Training. Training form}
+  \label{fig:expand_training_form}
+\end{center}
+\end{figure}
+
+The form data is fetched by reflection from ViNNSL Template, namely from input parameters. If there are possible values set in particular the combobox will be shown, if there is only one default value set, the free text field will be displayed.  On the right side there is training data information box. It is possible to upload own training data or chose default training data.
+
+\item \emph{Download ViNNSL XML format}
+\item \emph{Download ViNNSL JSON format}
+\end{itemize}
+
+\item \emph{Trained Models Table} is the similar to the table in the table in the "Model Repository." It is possible to perform semantic search against existing trained models. The user can see status of the training and on clock of the particular model he will be redirected to the testing view and detailed information about training.
+
+\end{itemize}
+
+\subsubsection{Training Results and the Model Evaluation}\label{Training results and the model evaluation}
+
+The testing is a part of the model evaluation that is why it is under three-step-view workflow. The training results and the model evaluation page is a underline of the workflow. From this page the user can observe chosen training model, study the training graph and evaluate trained model as it shown in figure \ref{fig:testing_model}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/testing_model.png}
+  \caption{Three Steps View. Training Results and the Model Evaluation}
+  \label{fig:testing_model}
+\end{center}
+\end{figure}
+
+The page view contains following elements:
+\begin{itemize}
+\item \emph{Functional bar} consist of the title itself and the functional copy to the project button. The functionality is pretty the same as copying the neural network to the own project from the neural network repository. The user has to choose project in popup modal window and then perform copying as it shown in figure \ref{fig:copy_model}. It is possible to copy the trained model into multiple projects. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.5]{components/5/img/copy_model.png}
+  \caption{Three Steps View. Training Results and the Model Evaluation. Copy model into own project.}
+  \label{fig:copy_model}
+\end{center}
+\end{figure}
+
+\item \emph{Row model in JSON format}, which gives overview of the trained model. The model can be viewed directly from UI as well as it is possible to download it and review from Desktop or mobile device. 
+\item \emph{Training parameters} is the input parameters, with which the neural network was trained. The parameters can difirintiate form paradigm to paradigm.
+\item \emph{Trained model detail} is the metadata of the trained model. Namely timestamp event metadata information. It contains following data:
+\begin{itemize}
+\item Trained by user information
+\item Trained on timestamp
+\item Tests count (the tests, which are already performed)
+\item Is a copy information
+\item Is training finished infromation
+\end{itemize}
+
+\item \emph{Graph}, which represents epochs in  x-axis and error on y-axis. If the neural network still in process of the training the graph will move with it. 
+\item \emph{Test the model} button will initiate the testing popup modal window as it shown in figure \ref{fig:model_testing}. The user has to choose the testing data, it is possible to use the default values.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.5]{components/5/img/model_testing.png}
+  \caption{Three Steps View. Training Results and the Model Evaluation. The model testing.}
+  \label{fig:model_testing}
+\end{center}
+\end{figure}
+
+\item \emph{Testing results} it a table with a testing results. The user can see only his own testing results, if the user is the neural network owner or the system administrator he can see the results from other users also. The table has following columns:
+\begin{itemize}
+\item The user who perform the testing 
+\item The testing data
+\item Results (output)
+\item Testing Date
+\end{itemize}
+
+
+\end{itemize}
+
+
+
+
+
 \subsection{Neural Networks Repository}\label{Neural Networks Repository}
+
+Neural repository is representing a repository, where any user can find and reuse available neural network. The neural network repository contains the search bar and the grid with the published neural networks as it displayed in figure \ref{fig:nn_repository}. If the neural network is published by the neural network owner, it is automatically added to repository. It is important to mention, that only published networks of other users will be displayed. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/nn_repository.png}
+  \caption{N2Sky Neural network repository}
+  \label{fig:nn_repository}
+\end{center}
+\end{figure}
+
+
+\begin{enumerate}
+\item \emph{Searching bar.} With the searching bar is possible to perform semantic search agains available neural networks in the repository. It is possible to search by: 
+\begin{itemize}
+\item Name of the neural network
+\item Description of the neural network
+\item Network Type
+\item Problem Type
+\end{itemize}
+
+Each field is case insensitive. The inquiry will be processed in converted in order to give most reliable results. 
+
+\item \emph{Networks grid} is a grid, which represents the published neural networks. It has 3 columns in Desktop version and 1 in mobile version. Every grid item has an title, which contains following components:
+\begin{itemize}
+\item The save button-icon. The button is displayed as a start. If the star has a colour then the neural network already saved. If the icon is transparent it means that it is possible to save the neural network. On click of the transparent button the popup modal window will appear as it shown in figure \ref{fig:copy_nn}. From modal window the user can choose available projects, where he can copy chosen neural network. 
+
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[scale=0.5]{components/5/img/copy_nn.png}
+  \caption{N2Sky Neural network repository. Copy the neural network.}
+  \label{fig:copy_nn}
+\end{center}
+\end{figure}
+
+\item Availability of the neural network. Can be public (green), private (red) and restricted (yellow). The arbitrary user can observer only public neural networks, the administrator can observe any neural network in N2Sky.  
+
+\item The name of the neural network
+\item The running status. Can be running and not running.
+\item The running icon. Can be spinning icon for running and standing alone is for not running network.
+\end{itemize}
+
+Besides details and actions button, which redirect the user to neural network details, the brief network information is deployed:
+\begin{itemize}
+\item Short description
+\item Application field
+\item Network type
+\item Problem type
+\item Created by
+\end{itemize}
+
+\end{enumerate}
+
 \subsection{Models Repository}\label{Models Repository}
+
+The modal repository is similar to neural networks repository, but contains only trained models. The structure is also different. Because of the big amount of the trained models the models are displayed in the table as it shown in figure \ref{fig:model_repo}. 
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/model_repo.png}
+  \caption{N2Sky Models Repository}
+  \label{fig:model_repo}
+\end{center}
+\end{figure}
+
+The model repository page view contains models table and brief description of  the chosen model:
+\begin{itemize}
+\item \emph{Trained model table} is consist of the search bar and table itself.
+\begin{itemize}
+\item The search bar gives possibility perform semantic search against available trained models. It has following filters:
+\begin{itemize}
+\item Trained by
+\item Only copy checkbox
+\item Show other models checkbox
+\end{itemize}
+\item The table. On clock of the table the short description of the trained model will be opened. The table contains following elements:
+\begin{itemize}
+\item Trained on (timestamp)
+\item User
+\item Tests amount
+\item Is copy
+\item Status
+\item Details and tests
+\end{itemize}
+\end{itemize}
+
+\item \emph{The short description} is located on the right side of the page. When user just entering to the page there will be only notification, which motivates user to chose the model. After choosing it, the view will be replaced with a short description as it shown in figure \ref{fig:short_desc}.
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\linewidth]{components/5/img/short_desc.png}
+  \caption{N2Sky Models Repository. Short Description}
+  \label{fig:short_desc}
+\end{center}
+\end{figure} 
+
+The description contains following components:
+\begin{itemize}
+\item Title, which consist of the ID of the model and button, which will redirect to details of the chosen model.
+\item The list of the input parameters. This list can be differ, depending on neural network paradigm. 
+\item The raw model, which can be downloaded. 
+\end{itemize}
+
+\end{itemize}

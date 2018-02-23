@@ -10,6 +10,17 @@ Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
 \bibitem{wiki:vitrage}
 What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 
+\bibitem{nn_connection}
+{\sc Akbar, S., Peikari, M., Salama, S., Nofech-Mozes, S., and Martel, A.}
+\newblock Transitioning between convolutional and fully connected layers in
+  neural networks.
+\newblock In {\em Deep Learning in Medical Image Analysis and Multimodal
+  Learning for Clinical Decision Support\/} (Cham, 2017), M.~J. Cardoso,
+  T.~Arbel, G.~Carneiro, T.~Syeda-Mahmood, J.~M.~R. Tavares, M.~Moradi,
+  A.~Bradley, H.~Greenspan, J.~P. Papa, A.~Madabhushi, J.~C. Nascimento, J.~S.
+  Cardoso, V.~Belagiannis, and Z.~Lu, Eds., Springer International Publishing,
+  pp.~143--150.
+
 \bibitem{nagios}
 {\sc Anusas-amornkul, T., and Sangrat, S.}
 \newblock Linux server monitoring and self-healing system using nagios.
@@ -141,6 +152,13 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \newblock The handbook of formal methods in human-computer interaction.
 \newblock In {\em The Handbook of Formal Methods in Human-Computer
   Interaction\/} (Cham, 2017), Springer International Publishing.
+
+\bibitem{shortcuts_nn}
+{\sc Wu, H., Zhang, J., and Zong, C.}
+\newblock Shortcut sequence tagging.
+\newblock In {\em Natural Language Processing and Chinese Computing\/} (Cham,
+  2018), X.~Huang, J.~Jiang, D.~Zhao, Y.~Feng, and Y.~Hong, Eds., Springer
+  International Publishing, pp.~196--207.
 
 \bibitem{responsive_book}
 {\sc Zeng, Y., Gao, J., and Wu, C.}
