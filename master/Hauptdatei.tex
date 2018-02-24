@@ -22,7 +22,6 @@
 %CUSTOM PACKAGES
 \usepackage{soul}
 
-
 \fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
 \fancyhead[L]{\nouppercase{\leftmark}} %Kopfzeile links
 \fancyhead[C]{} %zentrierte Kopfzeile
@@ -39,7 +38,8 @@
 \usepackage{setspace}
 \usepackage{capt-of}
 \usepackage{makeidx}
-\usepackage{listings}
+\usepackage{listings, xcolor}
+
 \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, keywordstyle=\color{black}\bfseries, stringstyle=\ttfamily,showstringspaces=false,basicstyle=\footnotesize,captionpos=b}
 \lstset{language=java}
 
@@ -91,7 +91,6 @@
 \input{components/tutorial/tutorial}
 \input{components/6_user_cases}
 \input{components/7/7_developer_guide}
-
 \onecolumn
 % einfacher Zeilenabstand
 \singlespacing
@@ -115,5 +114,8 @@
 \newpage
 \thispagestyle{empty} % erzeugt Seite ohne Kopf- / Fusszeile
 \section*{ }
+
+\input{components/appendix/appendix}
+
 
 \end{document}

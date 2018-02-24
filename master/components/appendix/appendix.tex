@@ -1,0 +1,502 @@
+\appendix
+\section{ViNNSL Backpropagation Template}\label{A}
+\begin{lstlisting}
+{
+	"metadata": {
+		"name": null,
+		"description": null,
+		"paradigm": "Backpropagation"
+	},
+	"creator": {
+		"name": null,
+		"contact": null
+	},
+	"executionEnvironment": {
+		"isRunning": false,
+		"isPublic": false,
+		"hardware": null,
+		"lastRun": null,
+		"image": {
+			"imageType": null,
+			"details": null
+		}
+	},
+	"problemDomain": {
+		"propagationType": {
+			"value": null,
+			"possibleValues": ["feedforward"],
+			"learningType": {
+				"value": null,
+				"possibleValues": ["definedconstructed", "trained", "supervised", "usupervised", "linear"]
+			}
+		},
+		"applicationField": {
+			"value": null,
+			"possibleValues": ["AccFin", "HealthMed", "Marketing", "Retail", "Insur", "Telecom", "Operations", "EMS"]
+		},
+		"problemType": {
+			"value": null,
+			"possibleValues": ["Classifiers", "Approximators", "Memory", "Optimisation", "Clustering"]
+		},
+		"networkType": "Backpropagation"
+	},
+	"endpoints": [{
+		"name": "train",
+		"endpoint": null
+	}, {
+		"name": "test",
+		"endpoint": null
+	}],
+	"structure": {
+		"inputLayer": {
+			"result": {
+				"nodesId": []
+			},
+			"config": {
+				"dimensions": {
+					"min": 1,
+					"max": 1
+				},
+				"size": {
+					"min": 960,
+					"max": 960
+				}
+			}
+		},
+		"hiddenLayer": {
+			"result": {
+				"dimensions": [{
+					"id": null,
+					"nodesId": []
+				}]
+			},
+			"config": {
+				"dimensions": {
+					"min": 1,
+					"max": 1
+				},
+				"size": {
+					"min": 960,
+					"max": 960
+				}
+			}
+		},
+		"outputLayer": {
+			"result": {
+				"nodesId": []
+			},
+			"config": {
+				"dimensions": {
+					"min": 1,
+					"max": 1
+				},
+				"size": {
+					"min": 960,
+					"max": 960
+				}
+			}
+		},
+		"connections": {
+			"fullyConnected": {
+				"isConnected": null
+			},
+			"shortcuts": {
+				"isConnected": null,
+				"connections": [{
+					"from": null,
+					"to": null,
+					"isFullConnected": null
+				}]
+			}
+		}
+	},
+	"parameters": {
+		"input": [
+			{
+				"parameter": "learningrate",
+				"defaultValue": "0.01",
+				"possibleValues": [
+					"0.1",
+					"0.2",
+					"0.3",
+					"0.4"
+				]
+			},
+			{
+				"parameter": "biasInput",
+				"defaultValue": "1",
+				"possibleValues": ["1","2","3"]
+			},
+			{
+				"parameter": "biasHidden",
+				"defaultValue": "1",
+				"possibleValues": ["1","2","3"]
+			},
+			{
+				"parameter": "momentum",
+				"defaultValue": "0.9",
+				"possibleValues": ["0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9"]
+			},
+			{
+				"parameter": "activationFunction",
+				"defaultValue": "sigmoid",
+				"possibleValues": ["sigmoid", "relu", "softmax"]
+			},
+			{
+				"parameter": "activationFunctionHidden",
+				"defaultValue": "relu",
+				"possibleValues": ["sigmoid", "relu"]
+			},
+			{
+				"parameter": "threshold",
+				"defaultValue": "0.000001",
+				"possibleValues": ["0.00001","0.000001"]
+			},
+			{
+				"parameter": "target_data",
+				"defaultValue": "[0],[1],[1],[0]",
+				"possibleValues": []
+			},
+			{
+				"parameter": "epoche",
+				"defaultValue": "100",
+				"possibleValues": []
+			}
+		],
+		"output": "[[0,0],[0,1],[1,0],[1,1]]"
+	},
+	"data": {
+		"description": "[X] for each output",
+		"tableDescription": "[X],[X]",
+		"fileDescription": "TXT"
+	}
+}
+\end{lstlisting}
+
+\section{Generated ViNNSL}\label{B}
+\begin{lstlisting}
+{
+	"_id": "5a900c6b6bb22b64b50327c2",
+	"__v": 0,
+	"executionEnvironment": {
+		"lastRun": null,
+		"isRunning": true,
+		"hardware": null,
+		"isPublic": true,
+		"image": {
+			"imageType": null,
+			"_id": "5a900c6b6bb22b64b50327c3"
+		}
+	},
+	"data": {
+		"description": "[X] for each output",
+		"tableDescription": "[X],[X]",
+		"fileDescription": "TXT"
+	},
+	"parameters": {
+		"output": "[[0,0],[0,1],[1,0],[1,1]]",
+		"input": [
+			{
+				"parameter": "learningrate",
+				"defaultValue": "0.01",
+				"_id": "5a900c6b6bb22b64b50327cc",
+				"possibleValues": [
+					"0.1",
+					"0.2",
+					"0.3",
+					"0.4"
+				]
+			},
+			{
+				"parameter": "biasInput",
+				"defaultValue": "1",
+				"_id": "5a900c6b6bb22b64b50327cb",
+				"possibleValues": [
+					"1",
+					"2",
+					"3"
+				]
+			},
+			{
+				"parameter": "biasHidden",
+				"defaultValue": "1",
+				"_id": "5a900c6b6bb22b64b50327ca",
+				"possibleValues": [
+					"1",
+					"2",
+					"3"
+				]
+			},
+			{
+				"parameter": "momentum",
+				"defaultValue": "0.9",
+				"_id": "5a900c6b6bb22b64b50327c9",
+				"possibleValues": [
+					"0.1",
+					"0.2",
+					"0.3",
+					"0.4",
+					"0.5",
+					"0.6",
+					"0.7",
+					"0.8",
+					"0.9"
+				]
+			},
+			{
+				"parameter": "activationFunction",
+				"defaultValue": "sigmoid",
+				"_id": "5a900c6b6bb22b64b50327c8",
+				"possibleValues": [
+					"sigmoid",
+					"relu",
+					"softmax"
+				]
+			},
+			{
+				"parameter": "activationFunctionHidden",
+				"defaultValue": "relu",
+				"_id": "5a900c6b6bb22b64b50327c7",
+				"possibleValues": [
+					"sigmoid",
+					"relu"
+				]
+			},
+			{
+				"parameter": "threshold",
+				"defaultValue": "0.000001",
+				"_id": "5a900c6b6bb22b64b50327c6",
+				"possibleValues": [
+					"0.00001",
+					"0.000001"
+				]
+			},
+			{
+				"parameter": "target_data",
+				"defaultValue": "[0],[1],[1],[0]",
+				"_id": "5a900c6b6bb22b64b50327c5",
+				"possibleValues": []
+			},
+			{
+				"parameter": "epoche",
+				"defaultValue": "100",
+				"_id": "5a900c6b6bb22b64b50327c4",
+				"possibleValues": []
+			}
+		]
+	},
+	"connections": {
+		"shortcuts": {
+			"isConnected": true,
+			"connections": [
+				{
+					"from": "1-input",
+					"to": "1-hidden-layer",
+					"isFullConnected": false,
+					"_id": "5a900c6b6bb22b64b50327cd"
+				}
+			]
+		},
+		"fullyConnected": {
+			"isConnected": false
+		}
+	},
+	"structure": {
+		"inputLayer": {
+			"amount": 3,
+			"_id": "5a900c6b6bb22b64b50327d1",
+			"nodesId": [
+				"1-input",
+				"2-input",
+				"3-input"
+			]
+		},
+		"outputLayer": {
+			"amount": 1,
+			"_id": "5a900c6b6bb22b64b50327ce",
+			"nodesId": [
+				"1-output"
+			]
+		},
+		"hiddenLayer": [
+			{
+				"id": "1-hidden-layer",
+				"amount": 4,
+				"_id": "5a900c6b6bb22b64b50327d0",
+				"nodesId": [
+					"1-node-1-hidden-layer",
+					"2-node-1-hidden-layer",
+					"3-node-1-hidden-layer",
+					"4-node-1-hidden-layer"
+				]
+			},
+			{
+				"id": "2-hidden-layer",
+				"amount": 4,
+				"_id": "5a900c6b6bb22b64b50327cf",
+				"nodesId": [
+					"1-node-2-hidden-layer",
+					"2-node-2-hidden-layer",
+					"3-node-2-hidden-layer",
+					"4-node-2-hidden-layer"
+				]
+			}
+		]
+	},
+	"endpoints": [
+		{
+			"_id": "5a90124b6bb22b64b50327d8",
+			"endpoint": "http://192.168.0.102:5000/train",
+			"name": "train"
+		},
+		{
+			"_id": "5a90124b6bb22b64b50327d7",
+			"endpoint": "http://192.168.0.102:5000/test",
+			"name": "test"
+		}
+	],
+	"problemDomain": {
+		"problemType": "Classifiers",
+		"networkType": "Backpropagation",
+		"applicationField": [
+			"AccFin"
+		],
+		"propagationType": {
+			"propType": "feedforward",
+			"learningType": "supervised"
+		}
+	},
+	"creator": {
+		"name": "admin",
+		"contact": null
+	},
+	"metadata": {
+		"name": "XOR Test",
+		"description": "test",
+		"paradigm": "Backpropagation",
+		"version": {
+			"major": null,
+			"minor": null
+		}
+	}
+}
+\end{lstlisting}
+
+
+\section{ViNNSL Model}\label{C}
+
+\begin{lstlisting}
+
+[
+    {
+        "isTrainingDone": true,
+        "rawModel": "{// RAW MODEl //}",
+        "vinnslDescriptionId": "5a908d0b5a051c64bf0af3aa",
+        "trainedBy": "admin",
+        "trainedOn": "2018-02-23T21:55:49.280Z",
+        "isCopy": false,
+        "copiedFromModelId": "",
+        "training_data": "[[0,0],[0,1],[1,0],[1,1]]",
+        "logs": [
+            {
+                "binary_accuracy": "0.75",
+                "epoch": "0",
+                "loss": "0.24829554557800293"
+            },
+            {
+                "binary_accuracy": "0.75",
+                "epoch": "1",
+                "loss": "0.24829086661338806"
+            },
+            {
+                "binary_accuracy": "0.75",
+                "epoch": "2",
+                "loss": "0.24828189611434937"
+             }
+
+             ..........
+
+
+            {
+                "binary_accuracy": "0.75",
+                "epoch": "99",
+                "loss": "0.23684203624725342"
+            }
+        ],
+        "__v": 0,
+        "tests": [
+            {
+                "_id": "5a9159865a051c64bf0af47e",
+                "createdOn": "2018-02-24T12:24:38.198Z",
+                "result": "[[0.]\n [1.]\n [1.]\n [1.]]",
+                "testing_data": "[[0,0],[0,1],[1,0],[1,1]]",
+                "user": "admin"
+            }
+        ],
+        "endpoints": [
+            {
+                "_id": "5a908d335a051c64bf0af3bf",
+                "endpoint": "http://192.168.0.102:5000/train",
+                "name": "train"
+            },
+            {
+                "_id": "5a908d335a051c64bf0af3be",
+                "endpoint": "http://192.168.0.102:5000/test",
+                "name": "test"
+            }
+        ],
+        "parameters": {
+            "input": [
+                {
+                    "parameter": "learningrate",
+                    "value": "0.01",
+                    "_id": "5a908de55a051c64bf0af3cc"
+                },
+                {
+                    "parameter": "biasInput",
+                    "value": "1",
+                    "_id": "5a908de55a051c64bf0af3cb"
+                },
+                {
+                    "parameter": "biasHidden",
+                    "value": "1",
+                    "_id": "5a908de55a051c64bf0af3ca"
+                },
+                {
+                    "parameter": "momentum",
+                    "value": "0.9",
+                    "_id": "5a908de55a051c64bf0af3c9"
+                },
+                {
+                    "parameter": "activationFunction",
+                    "value": "sigmoid",
+                    "_id": "5a908de55a051c64bf0af3c8"
+                },
+                {
+                    "parameter": "activationFunctionHidden",
+                    "value": "relu",
+                    "_id": "5a908de55a051c64bf0af3c7"
+                },
+                {
+                    "parameter": "threshold",
+                    "value": "0.000001",
+                    "_id": "5a908de55a051c64bf0af3c6"
+                },
+                {
+                    "parameter": "target_data",
+                    "value": "[0],[1],[1],[0]",
+                    "_id": "5a908de55a051c64bf0af3c5"
+                },
+                {
+                    "parameter": "epoche",
+                    "value": "100",
+                    "_id": "5a908de55a051c64bf0af3c4"
+                }
+            ]
+        }
+    },
+    
+\end{lstlisting}
+
+
+    

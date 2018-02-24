@@ -45,61 +45,74 @@
 \BOOKMARK [3][-]{subsubsection.3.4.2}{3.4.2 Alert Rules}{subsection.3.4}% 45
 \BOOKMARK [3][-]{subsubsection.3.4.3}{3.4.3 Integration with N2Sky}{subsection.3.4}% 46
 \BOOKMARK [3][-]{subsubsection.3.4.4}{3.4.4 Alerting System Design}{subsection.3.4}% 47
-\BOOKMARK [1][-]{section.4}{4 ViNNSL 2.0 extended}{}% 48
-\BOOKMARK [1][-]{section.5}{5 Requirements specification for Administration Module}{}% 49
-\BOOKMARK [2][-]{subsection.5.1}{5.1 General Definition}{section.5}% 50
-\BOOKMARK [2][-]{subsection.5.2}{5.2 Affected users}{section.5}% 51
-\BOOKMARK [2][-]{subsection.5.3}{5.3 Administration Dashboard}{section.5}% 52
-\BOOKMARK [2][-]{subsection.5.4}{5.4 Openstack Dashboard}{section.5}% 53
-\BOOKMARK [3][-]{subsubsection.5.4.1}{5.4.1 OpenStack Nova Service}{subsection.5.4}% 54
-\BOOKMARK [3][-]{subsubsection.5.4.2}{5.4.2 OpenStack Neutron Service}{subsection.5.4}% 55
-\BOOKMARK [3][-]{subsubsection.5.4.3}{5.4.3 OpenStack Images Service}{subsection.5.4}% 56
-\BOOKMARK [3][-]{subsubsection.5.4.4}{5.4.4 OpenStack Vitrage Service}{subsection.5.4}% 57
-\BOOKMARK [2][-]{subsection.5.5}{5.5 Cloudify Dashboard}{section.5}% 58
-\BOOKMARK [2][-]{subsection.5.6}{5.6 Dashboard Settings}{section.5}% 59
-\BOOKMARK [2][-]{subsection.5.7}{5.7 Monitoring System}{section.5}% 60
-\BOOKMARK [3][-]{subsubsection.5.7.1}{5.7.1 Monitoring charts creation}{subsection.5.7}% 61
-\BOOKMARK [3][-]{subsubsection.5.7.2}{5.7.2 Monitoring charts representation}{subsection.5.7}% 62
-\BOOKMARK [2][-]{subsection.5.8}{5.8 Alert System}{section.5}% 63
-\BOOKMARK [3][-]{subsubsection.5.8.1}{5.8.1 Alerting rule creation}{subsection.5.8}% 64
-\BOOKMARK [3][-]{subsubsection.5.8.2}{5.8.2 Alerts representation}{subsection.5.8}% 65
-\BOOKMARK [1][-]{section.6}{6 Requirements specification for Main Application Module}{}% 66
-\BOOKMARK [2][-]{subsection.6.1}{6.1 General Definition}{section.6}% 67
-\BOOKMARK [2][-]{subsection.6.2}{6.2 Affected users}{section.6}% 68
-\BOOKMARK [2][-]{subsection.6.3}{6.3 N2Sky Dashboard}{section.6}% 69
-\BOOKMARK [3][-]{subsubsection.6.3.1}{6.3.1 Available tools}{subsection.6.3}% 70
-\BOOKMARK [3][-]{subsubsection.6.3.2}{6.3.2 User projects}{subsection.6.3}% 71
-\BOOKMARK [3][-]{subsubsection.6.3.3}{6.3.3 The user neural networks and models overview}{subsection.6.3}% 72
-\BOOKMARK [2][-]{subsection.6.4}{6.4 The user project dashboard}{section.6}% 73
-\BOOKMARK [3][-]{subsubsection.6.4.1}{6.4.1 Available tools.}{subsection.6.4}% 74
-\BOOKMARK [3][-]{subsubsection.6.4.2}{6.4.2 Neural Networks Grid.}{subsection.6.4}% 75
-\BOOKMARK [3][-]{subsubsection.6.4.3}{6.4.3 Saved trained models.}{subsection.6.4}% 76
-\BOOKMARK [2][-]{subsection.6.5}{6.5 Three steps view}{section.6}% 77
-\BOOKMARK [3][-]{subsubsection.6.5.1}{6.5.1 The Neural Network Description}{subsection.6.5}% 78
-\BOOKMARK [3][-]{subsubsection.6.5.2}{6.5.2 The Neural Network Structure}{subsection.6.5}% 79
-\BOOKMARK [3][-]{subsubsection.6.5.3}{6.5.3 The Neural Network Training}{subsection.6.5}% 80
-\BOOKMARK [3][-]{subsubsection.6.5.4}{6.5.4 Training Results and the Model Evaluation}{subsection.6.5}% 81
-\BOOKMARK [2][-]{subsection.6.6}{6.6 Neural Networks Repository}{section.6}% 82
-\BOOKMARK [2][-]{subsection.6.7}{6.7 Models Repository}{section.6}% 83
-\BOOKMARK [1][-]{section.7}{7 Tutorial}{}% 84
-\BOOKMARK [2][-]{subsection.7.1}{7.1 Using Network and Model Repositories}{section.7}% 85
-\BOOKMARK [2][-]{subsection.7.2}{7.2 Creation of the neural network from the existing paradigm}{section.7}% 86
-\BOOKMARK [2][-]{subsection.7.3}{7.3 Upload own neural network paradigm}{section.7}% 87
-\BOOKMARK [1][-]{section.8}{8 User Cases}{}% 88
-\BOOKMARK [2][-]{subsection.8.1}{8.1 N2Sky as learning platform}{section.8}% 89
-\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 90
-\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 91
-\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the database}{subsection.9.1}% 92
-\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up the Cloud Web Service}{subsection.9.1}% 93
-\BOOKMARK [3][-]{subsubsection.9.1.3}{9.1.3 Setting up the Model Repository Service}{subsection.9.1}% 94
-\BOOKMARK [3][-]{subsubsection.9.1.4}{9.1.4 Setting up the User Management Service}{subsection.9.1}% 95
-\BOOKMARK [3][-]{subsubsection.9.1.5}{9.1.5 Setting up the N2Sky frontend}{subsection.9.1}% 96
-\BOOKMARK [3][-]{subsubsection.9.1.6}{9.1.6 Setting up the Backpropogation Neural Network}{subsection.9.1}% 97
-\BOOKMARK [3][-]{subsubsection.9.1.7}{9.1.7 Setting up the Monitoring System}{subsection.9.1}% 98
-\BOOKMARK [3][-]{subsubsection.9.1.8}{9.1.8 Setting up Alert Management System}{subsection.9.1}% 99
-\BOOKMARK [2][-]{subsection.9.2}{9.2 Continuous integration}{section.9}% 100
-\BOOKMARK [3][-]{subsubsection.9.2.1}{9.2.1 Create custom image with the monitoring system}{subsection.9.2}% 101
-\BOOKMARK [2][-]{subsection.9.3}{9.3 API Documentation}{section.9}% 102
-\BOOKMARK [3][-]{subsubsection.9.3.1}{9.3.1 N2Sky Monitoring System API Documentation}{subsection.9.3}% 103
-\BOOKMARK [1][-]{subsubsection.9.3.1}{Literaturverzeichnis}{}% 104
-\BOOKMARK [1][-]{section*.5}{Anhang}{}% 105
+\BOOKMARK [1][-]{section.4}{4 Vienna Neural Network Specification Language}{}% 48
+\BOOKMARK [2][-]{subsection.4.1}{4.1 ViNNSL Development}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.2}{4.2 ViNNSL Template}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Metadata template}{subsection.4.2}% 51
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Environment}{subsection.4.2}% 52
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Neural Network Structure Template}{subsection.4.2}% 53
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Parameters Template}{subsection.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.3}{4.3 ViNNSL Generation}{section.4}% 55
+\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 Generated metadata}{subsection.4.3}% 56
+\BOOKMARK [3][-]{subsubsection.4.3.2}{4.3.2 Generated structure}{subsection.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.4}{4.4 ViNNSL Model}{section.4}% 58
+\BOOKMARK [1][-]{section.5}{5 Requirements specification for Administration Module}{}% 59
+\BOOKMARK [2][-]{subsection.5.1}{5.1 General Definition}{section.5}% 60
+\BOOKMARK [2][-]{subsection.5.2}{5.2 Affected users}{section.5}% 61
+\BOOKMARK [2][-]{subsection.5.3}{5.3 Administration Dashboard}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.4}{5.4 Openstack Dashboard}{section.5}% 63
+\BOOKMARK [3][-]{subsubsection.5.4.1}{5.4.1 OpenStack Nova Service}{subsection.5.4}% 64
+\BOOKMARK [3][-]{subsubsection.5.4.2}{5.4.2 OpenStack Neutron Service}{subsection.5.4}% 65
+\BOOKMARK [3][-]{subsubsection.5.4.3}{5.4.3 OpenStack Images Service}{subsection.5.4}% 66
+\BOOKMARK [3][-]{subsubsection.5.4.4}{5.4.4 OpenStack Vitrage Service}{subsection.5.4}% 67
+\BOOKMARK [2][-]{subsection.5.5}{5.5 Cloudify Dashboard}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.6}{5.6 Dashboard Settings}{section.5}% 69
+\BOOKMARK [2][-]{subsection.5.7}{5.7 Monitoring System}{section.5}% 70
+\BOOKMARK [3][-]{subsubsection.5.7.1}{5.7.1 Monitoring charts creation}{subsection.5.7}% 71
+\BOOKMARK [3][-]{subsubsection.5.7.2}{5.7.2 Monitoring charts representation}{subsection.5.7}% 72
+\BOOKMARK [2][-]{subsection.5.8}{5.8 Alert System}{section.5}% 73
+\BOOKMARK [3][-]{subsubsection.5.8.1}{5.8.1 Alerting rule creation}{subsection.5.8}% 74
+\BOOKMARK [3][-]{subsubsection.5.8.2}{5.8.2 Alerts representation}{subsection.5.8}% 75
+\BOOKMARK [1][-]{section.6}{6 Requirements specification for Main Application Module}{}% 76
+\BOOKMARK [2][-]{subsection.6.1}{6.1 General Definition}{section.6}% 77
+\BOOKMARK [2][-]{subsection.6.2}{6.2 Affected users}{section.6}% 78
+\BOOKMARK [2][-]{subsection.6.3}{6.3 N2Sky Dashboard}{section.6}% 79
+\BOOKMARK [3][-]{subsubsection.6.3.1}{6.3.1 Available tools}{subsection.6.3}% 80
+\BOOKMARK [3][-]{subsubsection.6.3.2}{6.3.2 User projects}{subsection.6.3}% 81
+\BOOKMARK [3][-]{subsubsection.6.3.3}{6.3.3 The user neural networks and models overview}{subsection.6.3}% 82
+\BOOKMARK [2][-]{subsection.6.4}{6.4 The user project dashboard}{section.6}% 83
+\BOOKMARK [3][-]{subsubsection.6.4.1}{6.4.1 Available tools.}{subsection.6.4}% 84
+\BOOKMARK [3][-]{subsubsection.6.4.2}{6.4.2 Neural Networks Grid.}{subsection.6.4}% 85
+\BOOKMARK [3][-]{subsubsection.6.4.3}{6.4.3 Saved trained models.}{subsection.6.4}% 86
+\BOOKMARK [2][-]{subsection.6.5}{6.5 Three steps view}{section.6}% 87
+\BOOKMARK [3][-]{subsubsection.6.5.1}{6.5.1 The Neural Network Description}{subsection.6.5}% 88
+\BOOKMARK [3][-]{subsubsection.6.5.2}{6.5.2 The Neural Network Structure}{subsection.6.5}% 89
+\BOOKMARK [3][-]{subsubsection.6.5.3}{6.5.3 The Neural Network Training}{subsection.6.5}% 90
+\BOOKMARK [3][-]{subsubsection.6.5.4}{6.5.4 Training Results and the Model Evaluation}{subsection.6.5}% 91
+\BOOKMARK [2][-]{subsection.6.6}{6.6 Neural Networks Repository}{section.6}% 92
+\BOOKMARK [2][-]{subsection.6.7}{6.7 Models Repository}{section.6}% 93
+\BOOKMARK [1][-]{section.7}{7 Tutorial}{}% 94
+\BOOKMARK [2][-]{subsection.7.1}{7.1 Using Network and Model Repositories}{section.7}% 95
+\BOOKMARK [2][-]{subsection.7.2}{7.2 Creation of the neural network from the existing paradigm}{section.7}% 96
+\BOOKMARK [2][-]{subsection.7.3}{7.3 Upload own neural network paradigm}{section.7}% 97
+\BOOKMARK [1][-]{section.8}{8 User Cases}{}% 98
+\BOOKMARK [2][-]{subsection.8.1}{8.1 N2Sky as learning platform}{section.8}% 99
+\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 100
+\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 101
+\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the database}{subsection.9.1}% 102
+\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up the Cloud Web Service}{subsection.9.1}% 103
+\BOOKMARK [3][-]{subsubsection.9.1.3}{9.1.3 Setting up the Model Repository Service}{subsection.9.1}% 104
+\BOOKMARK [3][-]{subsubsection.9.1.4}{9.1.4 Setting up the User Management Service}{subsection.9.1}% 105
+\BOOKMARK [3][-]{subsubsection.9.1.5}{9.1.5 Setting up the N2Sky frontend}{subsection.9.1}% 106
+\BOOKMARK [3][-]{subsubsection.9.1.6}{9.1.6 Setting up the Backpropogation Neural Network}{subsection.9.1}% 107
+\BOOKMARK [3][-]{subsubsection.9.1.7}{9.1.7 Setting up the Monitoring System}{subsection.9.1}% 108
+\BOOKMARK [3][-]{subsubsection.9.1.8}{9.1.8 Setting up Alert Management System}{subsection.9.1}% 109
+\BOOKMARK [2][-]{subsection.9.2}{9.2 Continuous integration}{section.9}% 110
+\BOOKMARK [3][-]{subsubsection.9.2.1}{9.2.1 Create custom image with the monitoring system}{subsection.9.2}% 111
+\BOOKMARK [2][-]{subsection.9.3}{9.3 API Documentation}{section.9}% 112
+\BOOKMARK [3][-]{subsubsection.9.3.1}{9.3.1 N2Sky Monitoring System API Documentation}{subsection.9.3}% 113
+\BOOKMARK [1][-]{subsubsection.9.3.1}{Literaturverzeichnis}{}% 114
+\BOOKMARK [1][-]{section*.5}{Anhang}{}% 115
+\BOOKMARK [1][-]{appendix.A}{A ViNNSL Backpropagation Template}{}% 116
+\BOOKMARK [1][-]{appendix.B}{B Generated ViNNSL}{}% 117
+\BOOKMARK [1][-]{appendix.C}{C ViNNSL Model}{}% 118
