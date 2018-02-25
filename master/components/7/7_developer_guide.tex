@@ -571,5 +571,875 @@ nohup ./prometheus > /dev/null 2>&1 &
 
 
 \subsection{API Documentation}\label{API Documentation}
+
+The API documentation will consist of three parts:
+\begin{itemize}
+\item Short description
+\item The API endpoint
+\item Example call
+\item Response
+\end{itemize}
+
 \subsubsection{N2Sky Monitoring System API Documentation}\label{N2Sky Monitoring System API Documentation}
+
+\begin{itemize}
+\item \textbf{\textit{Get monitoring data with period from chosen server}}
+\begin{itemize}
+\item \emph{GET: /api/monitoring/:server/:query/:minus/:type/:step}
+\\Parameters:
+\begin{itemize}
+\item :server - The server api or hostname, where monitoring is installed and running.
+\item :query - query against monitoring data.
+\item :minus - difference between current minus desired time.
+\item :type - can be seconds, minutes, hours 
+\item :step - the step between difference time and current time
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/monitoring/192.168.0.105
+/http_request_duration_microseconds/3/hours/15m
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+{
+        "metric": {
+            "__name__": "http_request_duration_microseconds",
+            "handler": "static",
+            "instance": "localhost:9090",
+            "job": "prometheus",
+            "quantile": "0.5"
+        },
+        "values": [
+            [
+                1519558760,
+                "NaN"
+            ],
+            [
+                1519559660,
+                "NaN"
+            ]
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Get possible metrics}}
+\begin{itemize}
+\item \emph{GET: /api/monitoring/metrics/:host}
+\\Parameters:
+\begin{itemize}
+\item :host - The server api or hostname, where monitoring is installed and running.
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/monitoring/metrics/openstack
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    "ALERTS",
+    "go_gc_duration_seconds",
+    "go_gc_duration_seconds_count",
+    "go_gc_duration_seconds_sum",
+    "go_goroutines",
+    "go_info",
+    "go_memstats_alloc_bytes",
+    "go_memstats_alloc_bytes_total",
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Create new monitoring chart of the OpenStack or any instance and put it in chosen dashboard}}
+\begin{itemize}
+\item \emph{POST: /api/user/dashboard/openstack}
+\\Body:
+\begin{itemize}
+\item  user
+\item  metric
+\item  delay
+\item  delaytype
+\item  step
+\item steptype,
+\item server
+\item  show
+\item selectedServerId
+\item selectedServerName
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/user/dashboard/openstack
+\end{lstlisting}
+
+\item \emph{Response:} EMPTY
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Get user metrics config}}
+\begin{itemize}
+\item \emph{GET: /user/dashboard/openstack/:userid/:show}
+\\Parameters:
+\begin{itemize}
+\item :userid - the user unique id
+\item :show - the server 
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/user/dashboard/openstack/admin/openstack
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "user": "admin",
+        "metric": "node_load1",
+        "delay": "15",
+        "delaytype": "minutes",
+        "step": "10s",
+        "steptype": "s",
+        "server": "192.168.0.105",
+        "selectedServerId": "openstack",
+        "selectedServerName": "openstack",
+        "__v": 0,
+        "show": [
+            "all",
+            "openstack"
+        ]
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Delete monitoring chart}}
+\begin{itemize}
+\item \emph{DELETE: /user/dashboard/openstack/:id}
+\\Parameters:
+\begin{itemize}
+\item :id - id of the monitoring chart
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/user/dashboard/openstack/1111
+\end{lstlisting}
+
+\item \emph{Response: EMPTY}
+\end{itemize}
+
+%%
+
+\end{itemize}
+
+
+
+\subsubsection{Alerting Management System API Documentation}\label{Alerting Management System Documentation}
+
+
+\begin{itemize}
+\item \textbf{\textit{Get Occurred Alerts}}
+\begin{itemize}
+\item \emph{GET: /api/alerts}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/alerts
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "labels": {
+            "alertname": "NodeExporterDown",
+            "severity": "warning"
+        },
+        "annotations": {
+            "description": "Prometheus could not scrape a node-exporter 
+            "summary": "node-exporter cannot be scraped"
+        },
+        "startsAt": "2018-02-10T18:24:30.532998966+01:00",
+        "endsAt": "2018-02-25T17:54:00.514487286Z",
+        "status": {
+            "state": "active",
+            "silencedBy": [],
+            "inhibitedBy": []
+        },
+        "receivers": [
+            "team-X-mails"
+        ],
+        "fingerprint": "2cf0947390157d74"
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+\end{itemize}
+
+
+\subsubsection{OpenStack API Documentation}\label{OpenStack API Documentation}
+
+\begin{itemize}
+\item \textbf{\textit{Get OpenStack projects}}
+\begin{itemize}
+\item \emph{GET: /api/projects}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/projects
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+{
+    "links": {
+        "self": "http://192.168.0.105/identity/v3/auth/projects",
+        "previous": null,
+        "next": null
+    },
+    "projects": [
+        {
+            "is_domain": false,
+            "description": "",
+            "links": {
+                "self": "http://192.168.0.105/identity/v3/projects/13f1443509fa496db6e4cad43208170f"
+            },
+            "tags": [],
+            "enabled": true,
+            "domain_id": "default",
+            "parent_id": "default",
+            "id": "13f1443509fa496db6e4cad43208170f",
+            "name": "demo"
+        },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Get OpenStack project by id}}
+\begin{itemize}
+\item \emph{GET: /projects/:id}
+\\Parameters:
+\begin{itemize}
+\item :id - project id
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/projects/1111
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+        {
+            "is_domain": false,
+            "description": "",
+            "links": {
+                "self": "http://192.168.0.105/identity/v3/projects/13f1443509fa496db6e4cad43208170f"
+            },
+            "tags": [],
+            "enabled": true,
+            "domain_id": "default",
+            "parent_id": "default",
+            "id": "13f1443509fa496db6e4cad43208170f",
+            "name": "demo"
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Get OpenStack networks}}
+\begin{itemize}
+\item \emph{GET: /api/networks}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/networks
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+    "networks": [
+        {
+            "status": "ACTIVE",
+            "router:external": true,
+            "availability_zone_hints": [],
+            "availability_zones": [
+                "nova"
+            ],
+            "ipv4_address_scope": null,
+            "description": "",
+            "port_security_enabled": true,
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+
+%%
+
+\item \textbf{\textit{Get OpenStack extentions}}
+\begin{itemize}
+\item \emph{GET: /api/extensions}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/extensions
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+    "extensions": [
+        {
+            "alias": "default-subnetpools",
+            "updated": "2016-02-18T18:00:00-00:00",
+            "name": "Default Subnetpools",
+            "links": [],
+            "description": "Provides ability to mark and use a subnetpool as the default."
+        },
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack subnetpools}}
+\begin{itemize}
+\item \emph{GET: /api/subnetpools}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/subnetpools
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+{
+    "subnetpools": [
+        {
+            "prefixes": [
+                "10.0.0.0/22"
+            ],
+            "description": "",
+            "tags": [],
+            "tenant_id": "cbc8b4a7b24143dfbe87c17a684b5375",
+            "created_at": "2018-02-06T21:58:47Z",
+            "default_quota": null,
+            "updated_at": "2018-02-06T21:58:47Z",
+            "name": "shared-default-subnetpool-v4",
+            "is_default": true,
+            "min_prefixlen": "8",
+            "address_scope_id": null,
+            "revision_number": 0,
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+
+%%
+
+\item \textbf{\textit{Get OpenStack service-providers}}
+\begin{itemize}
+\item \emph{GET: /api/service-providers}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/service-providers
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+    "service_providers": [
+        {
+            "service_type": "L3_ROUTER_NAT",
+            "default": false,
+            "name": "single_node"
+        },
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack images}}
+\begin{itemize}
+\item \emph{GET: /api/images}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/images
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+{
+    "images": [
+        {
+            "status": "active",
+            "name": "cirros-0.3.5-x86_64-disk",
+            "tags": [],
+            "container_format": "bare",
+            "created_at": "2018-02-06T21:58:11Z",
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack Download Image By Id}}
+\begin{itemize}
+\item \emph{GET: /api/images/:id/download}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/images/1111/download
+\end{lstlisting}
+
+\item \emph{Response: bytes file}
+\end{itemize}
+%%
+
+
+%%
+
+\item \textbf{\textit{Get OpenStack VITRAGE templates}}
+\begin{itemize}
+\item \emph{GET: /rca/template}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/rca/template
+\end{lstlisting}
+\item \emph{Response: List of templates}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack VITRAGE resources}}
+\begin{itemize}
+\item \emph{GET: /rca/resources}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/rca/resources
+\end{lstlisting}
+\item \emph{Response: List of resources}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack flavors by project id}}
+\begin{itemize}
+\item \emph{GET: /api/flavors/:id}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/flavors/13f1443509fa496db6e4cad43208170f
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+    "flavors": [
+        {
+            "name": "m1.tiny",
+            "links": [
+                {
+                    "href": "http://192.168.0.105/compute/v2.1/flavors/1",
+                    "rel": "self"
+                },
+                {
+                    "href": "http://192.168.0.105/compute/flavors/1",
+                    "rel": "bookmark"
+                }
+            ],
+            "ram": 512,
+            "OS-FLV-DISABLED:disabled": false,
+            "vcpus": 1,
+            "swap": "",
+            "os-flavor-access:is_public": true,
+            "rxtx_factor": 1,
+            "OS-FLV-EXT-DATA:ephemeral": 0,
+            "disk": 1,
+            "id": "1"
+        },
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+%%
+
+\item \textbf{\textit{Get OpenStack servers by project id}}
+\begin{itemize}
+\item \emph{GET: /api/servers/:id}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9595/api/servers/13f1443509fa496db6e4cad43208170f
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+    "servers": [
+        {
+            "OS-EXT-STS:task_state": null,
+            "addresses": {
+                "private": [
+                    {
+                        "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:59:4c:31",
+                        "version": 4,
+                        "addr": "10.0.0.12",
+                        "OS-EXT-IPS:type": "fixed"
+                    },
+                    {
+                        "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:59:4c:31",
+                        "version": 6,
+                        "addr": "fd5a:ee2f:760e:0:f816:3eff:fe59:4c31",
+                        "OS-EXT-IPS:type": "fixed"
+                    }
+                ]
+            },
+            ...
+\end{lstlisting}
+\end{itemize}
+%%
+
+\end{itemize}
+
+
+
+\subsubsection{User Management API Documentation}\label{User Management Documentation}
+
+
+\begin{itemize}
+\item \textbf{\textit{Get all users}}
+\begin{itemize}
+\item \emph{GET: /users}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9091/api/users
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "name": "test",
+        "password": "5a7c27142f200a53dff94f37",
+        "email": "test@test.com",
+        "type": "user",
+        "active": true,
+        "__v": 0
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+\item \textbf{\textit{Get user by id}}
+\begin{itemize}
+\item \emph{GET: /user/:id}
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9091/api/user/1
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "name": "admin",
+        "password": "5a7c27142f200a53dff94f37",
+        "type": "admin",
+        "active": true,
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+
+%%
+
+\item \textbf{\textit{Login into N2Sky System}}
+\begin{itemize}
+\item \emph{POST: /user/login}
+\\BODY:
+\begin{itemize}
+\item user id
+\item password
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9091/user/login
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "name": "admin",
+        "token": "ad27823yh872y3d828238d872"
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+
+%%
+
+\item \textbf{\textit{Register in N2Sky System}}
+\begin{itemize}
+\item \emph{POST: /user/signup}
+\\BODY:
+\begin{itemize}
+\item username
+\item password
+\item email
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9091/user/signup
+\end{lstlisting}
+
+\item \emph{Response:}
+ \begin{lstlisting}
+[
+    {
+        "name": "admin",
+        "token": "ad27823yh872y3d828238d872"
+    },
+            ...
+\end{lstlisting}
+\end{itemize}
+
+%%
+
+
+%%
+
+\item \textbf{\textit{Delete user from N2Sky System}}
+\begin{itemize}
+\item \emph{DELETE: /user/delete}
+\\BODY:
+\begin{itemize}
+\item username
+\item token
+\end{itemize}
+
+\item \emph{Example call:}
+ \begin{lstlisting}
+http://192.168.0.102:9091/user/delete
+\end{lstlisting}
+
+\item \emph{Response: EMPTY}
+
+\end{itemize}
+
+%%
+
+\end{itemize}
+
+
+\subsubsection{Model Management API Documentation}\label{Model Management Documentation}
+
+Due the large response, the example call will not be shown.
+
+\begin{itemize}
+\item \textbf{\textit{Create user project}}
+\begin{itemize}
+\item \emph{POST: /project/create}
+\\ BODY:
+\begin{itemize}
+\item createdBy
+\item name
+\item description
+\end{itemize}
+
+\end{itemize}
+
+
+
+%%
+
+\item \textbf{\textit{Get user projects}}
+\begin{itemize}
+\item \emph{POST: /projects/:from/:limit}
+\\Parameters:
+\begin{itemize}
+\item from 
+\item limit - offset
+\end{itemize}
+\end{itemize}
+
+%%
+
+%%
+
+\item \textbf{\textit{Get project by id}}
+\begin{itemize}
+\item \emph{GET: /project/id}
+\\Parameters:
+\begin{itemize}
+\item id - project id 
+\end{itemize}
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Add neural network to the project}}
+\begin{itemize}
+\item \emph{POST: /add\_nn\_id/:id}
+\\Parameters:
+\begin{itemize}
+\item id - project id 
+\item nnid - neural network id
+\end{itemize}
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Delete neural network from the project}}
+\begin{itemize}
+\item \emph{POST: /delete\_nn\_id/:id}
+\\Parameters:
+\begin{itemize}
+\item id - project id 
+\item nnid - neural network id
+\end{itemize}
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Add trained model to the project}}
+\begin{itemize}
+\item \emph{POST: /add\_model\_id/:id}
+\\Parameters:
+\begin{itemize}
+\item id - project id 
+\item modelid - model id
+\end{itemize}
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Delete trained model from the project}}
+\begin{itemize}
+\item \emph{POST: /delete\_model\_id/:id}
+\\Parameters:
+\begin{itemize}
+\item id - project id 
+\item modelid - model id
+\end{itemize}
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Create neural network from ViNNSL}}
+\begin{itemize}
+\item \emph{POST: /vinnsl/description/create}
+\\Body: Generated ViNNSL Description
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Upload neural network in ViNNSL format}}
+\begin{itemize}
+\item \emph{POST: /vinnsl/description/upload}
+\\Body:  ViNNSL Description
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Get ViNNSL Description with filters}}
+\begin{itemize}
+\item \emph{POST: /vinnsl/descriptions/:from/:limit}
+\\Body: filter paramteres
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Update ViNNSL Description}}
+\begin{itemize}
+\item \emph{POST: /vinnsl/description/update/:id}
+\\Body: fields to update
+\end{itemize}
+
+
+%%
+
+%%
+
+\item \textbf{\textit{Test neural network}}
+\begin{itemize}
+\item \emph{POST: /nn/test}
+\\Body: 
+\begin{itemize}
+\item vinnslDescriptionId
+\item testing\_data
+\end{itemize}
+
+\end{itemize}
+
+
+%%
+
+
+%%
+
+\item \textbf{\textit{Get training logs}}
+\begin{itemize}
+\item \emph{POST: /nn/logs}
+\\Body: 
+\begin{itemize}
+\item model id
+\end{itemize}
+
+\end{itemize}
+
+
+%%
+
+\end{itemize}
+
+
+
 

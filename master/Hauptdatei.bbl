@@ -28,6 +28,13 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
   2017), M.~Younas, I.~Awan, and I.~Holubova, Eds., Springer International
   Publishing, pp.~290--302.
 
+\bibitem{Beran2008}
+{\sc Beran, P.~P., Vinek, E., Schikuta, E., and Weishaupl, T.}
+\newblock Vinnsl - the {V}ienna neural network specification language.
+\newblock In {\em Neural Networks, 2008. IJCNN 2008.(IEEE World Congress on
+  Computational Intelligence). IEEE International Joint Conference on\/}
+  (2008), IEEE, pp.~1872--1879.
+
 \bibitem{Cagle2005}
 {\sc Cagle, K.}
 \newblock {\em The Foundations of SVG}.
@@ -119,6 +126,19 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \bibitem{gui_layout}
 {\sc Regula~Stopper, R.~S.}
 \newblock {Graphical User Interface} layout and design, 2012.
+
+\bibitem{ijcnn15}
+{\sc Schikuta, E., Huqqani, A., and Kopica, T.}
+\newblock Semantic extensions to the {Vienna Neural Network Specification
+  Language}.
+\newblock In {\em Neural Networks (IJCNN), 2015 International Joint Conference
+  on\/} (2015), IEEE, pp.~1--8.
+
+\bibitem{schikuta2004n2grid}
+{\sc Schikuta, E., and Weishaupl, T.}
+\newblock N2grid: neural networks in the grid.
+\newblock In {\em Neural Networks, 2004. Proceedings. 2004 IEEE International
+  Joint Conference on\/} (2004), vol.~2, IEEE, pp.~1409--1414.
 
 \bibitem{alert_book}
 {\sc Tai, S., and Rouvellou, I.}
