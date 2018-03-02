@@ -115,7 +115,7 @@ docker run -d -p 9595:8080 --name cloud cloud:1
 
 Important to check the host and the port of the database. 
 If something goes wrong and the port or the host is changed in n2sky project developer can edit it.
-The rest api endpoint host located in \emph{service/config/database.js}
+The rest API endpoint host located in \emph{service/config/database.js}
 
 \subsubsection{Setting up the Model Repository Service}\label{model setup}
 
@@ -419,8 +419,8 @@ For deploying alert manager Docker containers technology is used.
 
 \subsubsection{Setting up Alert Management System}\label{Setting up Alert Management System}
 
-All configuration of alert manager are written in YAML file. 
-On the beginning SMTP email sender should be configured. This would be used to sending notifications.
+All configuration of alert manager is written in YAML file. 
+On the beginning SMTP, email sender should be configured. This would be used for sending notifications.
 
  \begin{lstlisting}
 global:
@@ -476,7 +476,7 @@ receivers:
 \paragraph{How to write alerting rules} 
 
 The alerting rules are supporting simple query language, which looks very similar to Sequel Query Language.  
-There is multiple possibilities how work with a alerting rules. The query language allows to use an expression and as a result to check an attribute of time series. 
+There are multiple possibilities how to work with alerting rules. The query language allows to use an expression and as a result to check an attribute of time series. 
 
  \begin{lstlisting}
 ALERT HighLatency
@@ -486,10 +486,10 @@ LABELS { severity="critical"}
 ANNOTATIONS {   summary = "High latency detected ",   description = "over limit? } 
 \end{lstlisting}
 
-Following notations should be considered be creation of alerting rules:
+Following notations should be considered be the creation of alerting rules:
 \begin{itemize}
-\item All queries staring with "ALERT" namespace. After it follows name of alert in this case it is "HighLatency".  
-\item "IF" is a condition "api\_http\_request\_latencies\_second", which based on Prometheus Tool expression.  Set of time series with this expression has one parameter it is "quantile". Reading condition as a whole can be translated in a human language like this: "Send a alert if latency request per second bigger then 0.7". 
+\item All queries starting with "ALERT" namespace. After it follows the name of alert, in this case, it is "HighLatency".  
+\item "IF" is a condition "api\_http\_request\_latencies\_second", which based on Prometheus Tool expression.  Set of time series with this expression has one parameter it is "quantile". Reading condition as a whole can be translated into a human language like this: "Send an alert if latency request per second bigger then 0.7". 
 \item "FOR" it is period of time how often this condition should be checked. 
 \item "LABELS" shows a severity level. There are 3 types of severity:
 \begin{itemize} 
@@ -498,7 +498,7 @@ Following notations should be considered be creation of alerting rules:
         \item Page
      \end{itemize}
 \item Every severity level can be defined on developer needs.
-\item "ANNOTATIONS" shows a readable for human comments. There are two sub sections: summary, which shows a short description of the event and description where detailed information about deviation can be written
+\item "ANNOTATIONS" shows a readable for human comments. There are two subsections: summary, which shows a short description of the event and description where detailed information about deviation can be written
 \end{itemize}
 
 For deploying alert manager Docker containers technology is used.
@@ -537,36 +537,6 @@ docker build -t alertmanager:1 .
 \emph{Run the service Docker container}
  \begin{lstlisting}
 docker run -d -p 9093:9093 alertmanager:1
-\end{lstlisting}
-
-
-
-\subsection{Continuous integration}\label{Continuous integration}
-
-\subsubsection{Create custom image with the monitoring system}\label{Custom image with the monitoring system}
-
- \begin{lstlisting}
-
-sudo apt-get update && \
-sudo apt-get install --assume-yes apt-transport-https ca-certificates \
-curl gnupg2 software-properties-common && \
-curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg \
- | sudo apt-key add - && \
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
-   $(lsb_release -cs) \
-   stable" && \
-sudo apt-get update && \
-sudo apt-get install --assume-yes docker-ce && \
-sudo usermod -a -G docker $USER && \
-sudo bash && \
-git clone https://github.com/latyaodessa/n2sky-services.git && \
-cd n2sky-services/monitoring/node_exporter && \
-docker build -t node_exporter . && \
-docker run -d -p 9100:9100 node_exporter && \
-cd ../prometheus && \
-nohup ./prometheus > /dev/null 2>&1 &
-
 \end{lstlisting}
 
 

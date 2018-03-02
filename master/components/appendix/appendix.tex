@@ -494,9 +494,35 @@
                 }
             ]
         }
-    },
+    }
     
 \end{lstlisting}
+
+\section{Create custom image with the monitoring system}\label{D}
+
+ \begin{lstlisting}
+
+sudo apt-get update && \
+sudo apt-get install --assume-yes apt-transport-https ca-certificates \
+curl gnupg2 software-properties-common && \
+curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg \
+ | sudo apt-key add - && \
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; \
+   echo "$ID") $(lsb_release -cs) stable" && \
+sudo apt-get update && \
+sudo apt-get install --assume-yes docker-ce && \
+sudo usermod -a -G docker $USER && \
+sudo bash && \
+git clone https://github.com/latyaodessa/n2sky-services.git && \
+cd n2sky-services/monitoring/node_exporter && \
+docker build -t node_exporter . && \
+docker run -d -p 9100:9100 node_exporter && \
+cd ../prometheus && \
+nohup ./prometheus > /dev/null 2>&1 &
+
+\end{lstlisting}
+
 
 
     

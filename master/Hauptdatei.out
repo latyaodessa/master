@@ -95,28 +95,28 @@
 \BOOKMARK [2][-]{subsection.7.1}{7.1 Using Network and Model Repositories}{section.7}% 95
 \BOOKMARK [2][-]{subsection.7.2}{7.2 Creation of the neural network from the existing paradigm}{section.7}% 96
 \BOOKMARK [2][-]{subsection.7.3}{7.3 Upload own neural network paradigm}{section.7}% 97
-\BOOKMARK [1][-]{section.8}{8 User Cases}{}% 98
-\BOOKMARK [2][-]{subsection.8.1}{8.1 N2Sky as learning platform}{section.8}% 99
-\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 100
-\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 101
-\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the database}{subsection.9.1}% 102
-\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up the Cloud Web Service}{subsection.9.1}% 103
-\BOOKMARK [3][-]{subsubsection.9.1.3}{9.1.3 Setting up the Model Repository Service}{subsection.9.1}% 104
-\BOOKMARK [3][-]{subsubsection.9.1.4}{9.1.4 Setting up the User Management Service}{subsection.9.1}% 105
-\BOOKMARK [3][-]{subsubsection.9.1.5}{9.1.5 Setting up the N2Sky frontend}{subsection.9.1}% 106
-\BOOKMARK [3][-]{subsubsection.9.1.6}{9.1.6 Setting up the Backpropogation Neural Network}{subsection.9.1}% 107
-\BOOKMARK [3][-]{subsubsection.9.1.7}{9.1.7 Setting up the Monitoring System}{subsection.9.1}% 108
-\BOOKMARK [3][-]{subsubsection.9.1.8}{9.1.8 Setting up Alert Management System}{subsection.9.1}% 109
-\BOOKMARK [2][-]{subsection.9.2}{9.2 Continuous integration}{section.9}% 110
-\BOOKMARK [3][-]{subsubsection.9.2.1}{9.2.1 Create custom image with the monitoring system}{subsection.9.2}% 111
-\BOOKMARK [2][-]{subsection.9.3}{9.3 API Documentation}{section.9}% 112
-\BOOKMARK [3][-]{subsubsection.9.3.1}{9.3.1 N2Sky Monitoring System API Documentation}{subsection.9.3}% 113
-\BOOKMARK [3][-]{subsubsection.9.3.2}{9.3.2 Alerting Management System API Documentation}{subsection.9.3}% 114
-\BOOKMARK [3][-]{subsubsection.9.3.3}{9.3.3 OpenStack API Documentation}{subsection.9.3}% 115
-\BOOKMARK [3][-]{subsubsection.9.3.4}{9.3.4 User Management API Documentation}{subsection.9.3}% 116
-\BOOKMARK [3][-]{subsubsection.9.3.5}{9.3.5 Model Management API Documentation}{subsection.9.3}% 117
-\BOOKMARK [1][-]{subsubsection.9.3.5}{Literaturverzeichnis}{}% 118
-\BOOKMARK [1][-]{section*.5}{Anhang}{}% 119
-\BOOKMARK [1][-]{appendix.A}{A ViNNSL Backpropagation Template}{}% 120
-\BOOKMARK [1][-]{appendix.B}{B Generated ViNNSL}{}% 121
-\BOOKMARK [1][-]{appendix.C}{C ViNNSL Model}{}% 122
+\BOOKMARK [1][-]{section.8}{8 Use Cases}{}% 98
+\BOOKMARK [2][-]{subsection.8.1}{8.1 N2Sky as a learning platform}{section.8}% 99
+\BOOKMARK [2][-]{subsection.8.2}{8.2 Developing the neural network with N2Sky}{section.8}% 100
+\BOOKMARK [1][-]{section.9}{9 Developer Guide}{}% 101
+\BOOKMARK [2][-]{subsection.9.1}{9.1 System configuration}{section.9}% 102
+\BOOKMARK [3][-]{subsubsection.9.1.1}{9.1.1 Setting up the database}{subsection.9.1}% 103
+\BOOKMARK [3][-]{subsubsection.9.1.2}{9.1.2 Setting up the Cloud Web Service}{subsection.9.1}% 104
+\BOOKMARK [3][-]{subsubsection.9.1.3}{9.1.3 Setting up the Model Repository Service}{subsection.9.1}% 105
+\BOOKMARK [3][-]{subsubsection.9.1.4}{9.1.4 Setting up the User Management Service}{subsection.9.1}% 106
+\BOOKMARK [3][-]{subsubsection.9.1.5}{9.1.5 Setting up the N2Sky frontend}{subsection.9.1}% 107
+\BOOKMARK [3][-]{subsubsection.9.1.6}{9.1.6 Setting up the Backpropogation Neural Network}{subsection.9.1}% 108
+\BOOKMARK [3][-]{subsubsection.9.1.7}{9.1.7 Setting up the Monitoring System}{subsection.9.1}% 109
+\BOOKMARK [3][-]{subsubsection.9.1.8}{9.1.8 Setting up Alert Management System}{subsection.9.1}% 110
+\BOOKMARK [2][-]{subsection.9.2}{9.2 API Documentation}{section.9}% 111
+\BOOKMARK [3][-]{subsubsection.9.2.1}{9.2.1 N2Sky Monitoring System API Documentation}{subsection.9.2}% 112
+\BOOKMARK [3][-]{subsubsection.9.2.2}{9.2.2 Alerting Management System API Documentation}{subsection.9.2}% 113
+\BOOKMARK [3][-]{subsubsection.9.2.3}{9.2.3 OpenStack API Documentation}{subsection.9.2}% 114
+\BOOKMARK [3][-]{subsubsection.9.2.4}{9.2.4 User Management API Documentation}{subsection.9.2}% 115
+\BOOKMARK [3][-]{subsubsection.9.2.5}{9.2.5 Model Management API Documentation}{subsection.9.2}% 116
+\BOOKMARK [1][-]{subsubsection.9.2.5}{Literaturverzeichnis}{}% 117
+\BOOKMARK [1][-]{section*.5}{Anhang}{}% 118
+\BOOKMARK [1][-]{appendix.A}{A ViNNSL Backpropagation Template}{}% 119
+\BOOKMARK [1][-]{appendix.B}{B Generated ViNNSL}{}% 120
+\BOOKMARK [1][-]{appendix.C}{C ViNNSL Model}{}% 121
+\BOOKMARK [1][-]{appendix.D}{D Create custom image with the monitoring system}{}% 122

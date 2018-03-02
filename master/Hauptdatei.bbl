@@ -53,6 +53,11 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
   Practice\/} (Cham, 2016), M.~Kurosu, Ed., Springer International Publishing,
   pp.~166--177.
 
+\bibitem{uixagenda}
+{\sc Hassenzahl, M., and Tractinsky, N.}
+\newblock User experienceÂ -Â a research agenda.
+\newblock {\em Behaviour \& Information Technology 25}, 2 (2006), 91--97.
+
 \bibitem{ravo}
 {\sc Khalil, W.}
 \newblock Reference architecture for virtual organization.
@@ -78,6 +83,12 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 {\sc Markelov, A.}
 \newblock {\em OpenStack Compute}.
 \newblock Apress, Berkeley, CA, 2016, pp.~65--86.
+
+\bibitem{cleancode}
+{\sc Martin, R.~C.}
+\newblock Clean code: A handbook of agile software craftsmanship.
+\newblock In {\em Clean Code: A Handbook of Agile Software Craftsmanship\/}
+  (2008), Prentice Hall.
 
 \bibitem{Martinez2017}
 {\sc Martinez, J., Sottet, J.-S., Frey, A.~G., Ziadi, T., Bissyand{\'e}, T.,
@@ -140,6 +151,13 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \newblock In {\em Neural Networks, 2004. Proceedings. 2004 IEEE International
   Joint Conference on\/} (2004), vol.~2, IEEE, pp.~1409--1414.
 
+\bibitem{joel}
+{\sc Spolsky, J.}
+\newblock Things you should never do, part i.
+\newblock [online],
+  \url{https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/},
+  last visited April 2000, 2000.
+
 \bibitem{alert_book}
 {\sc Tai, S., and Rouvellou, I.}
 \newblock Strategies for integrating messaging and distributed object
@@ -153,6 +171,12 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \newblock [online],
   \url{http://docs.getcloudify.org/3.4.1/intro/what-is-cloudify/}, last visited
   January 2018, 2017.
+
+\bibitem{humanpc}
+{\sc Tom~Gross, Jan~Gulliksen, P.~K.}
+\newblock Human-computer interaction.
+\newblock In {\em Human-Computer Interaction – INTERACT\/} (2009), IFIP
+  International Federation for Information Processing 2009.
 
 \bibitem{images}
 {\sc Vakanas, L., Sotiriadis, S., and Petrakis, E. G.~M.}

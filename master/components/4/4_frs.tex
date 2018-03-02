@@ -1,13 +1,12 @@
-
 \section{Requirements specification for Administration Module}\label{Administration components}
 
 \subsection{General Definition}\label{General Definition AMC}
 
-Administration Module Component (AMC) is an application, which is responsible for managing OpenStack and Cloudify. It embeds Monitoring System and Alert Management System. AMC is integrated in N2Sky cloud platform in order to support N2Sky environment and services. This component is implementing Platform as a service approach, hence it can be installed on any cloud server. 
+Administration Module Component (AMC) is an application, which is responsible for managing OpenStack and Cloudify. It embeds Monitoring System and Alert Management System. AMC is integrated into N2Sky cloud platform in order to support N2Sky environment and services. This component is implementing Platform as a service approach, hence it can be installed on any cloud server. 
 
 \subsection{Affected users}\label{Affected users}
 
-The users, who has full knowledge about domain with corespondent permissions or domain owner can has an access to AMC.
+The users, who have full knowledge about the domain with corespondent permissions or domain owner can have an access to AMC.
 
 In N2Sky only System Administrator has a proper main function in order to manage AMC.
 Following functions are available for System Administrator:
@@ -17,7 +16,7 @@ Following functions are available for System Administrator:
 \item Control Cloudify Dashboard and its services
 \item Manage monitoring charts
 \item Manage alerts and alerting rules
-\item Managet OpenStack instances (servers)
+\item Managed OpenStack instances (servers)
 \item Has an access to dashboards of other users
 \end{itemize}
 
@@ -25,7 +24,7 @@ Following functions are available for System Administrator:
 
 \subsection{Administration Dashboard}\label{Administration Dashboard}
 
-Administration Dashboard represents overview of administration tools and important metrics, which is desplayed in ``Fig.~\ref{fig:admin_dashboard}''. 
+Administration Dashboard represents the overview of administration tools and important metrics, which is displayed in ``Fig.~\ref{fig:admin_dashboard}''. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -35,29 +34,29 @@ Administration Dashboard represents overview of administration tools and importa
 \end{center}
 \end{figure}
 
-After System Administrator login into system he will be automaticly redirected to Administration Dashboard. By default url link is:
+After System Administrator login into the system, he will be automatically redirected to Administration Dashboard. By default URL link is:
 \begin{lstlisting}
-		<host>/cloud
+        <host>/cloud
 \end{lstlisting}
 
-Administration tools has to be in focus of main dashboard view as it shown in ``Fig.~\ref{fig:admin_tools}''. The collection of elements has to be under the title bar element, which has name "ADMINISTRATION TOOLS". Every element of administration tool has to contain icon in SVG \cite{Cagle2005} format and caption under it. Following administration tools has to be represented: 
+Administration tools have to be in focus of main dashboard view as it is shown in figure \ref{fig:admin_tools}. The collection of elements has to be under the title bar element, which has named "ADMINISTRATION TOOLS". Every element of administration tool has to contain icon in SVG \cite{Cagle2005} format and caption under it. Following administration tools have to be represented: 
 \begin{itemize}
 \item OpenStack Dashboard. Link to view: 
 \begin{lstlisting}
-		<host>/openstack
+        <host>/openstack
 \end{lstlisting}
 \item Cloudify Dashboard. Link to view: 
 \begin{lstlisting}
-		<host>/cloudify
+        <host>/cloudify
 \end{lstlisting}
 \item Alert Management System. Link to view: 
 \begin{lstlisting}
-		<host>/alert
+        <host>/alert
 \end{lstlisting}
 \item Dashboards Settings. Modal popup window without redirection
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/admin_tools.png}
   \caption{N2Sky Administration Dashboard. Administration tools component.}
@@ -65,10 +64,10 @@ Administration tools has to be in focus of main dashboard view as it shown in ``
 \end{center}
 \end{figure}
 
-Next to administration tools the monitoring charts are showing. The title of this block is "FEATURED METRICS", which is the tile of bar upon the metrics.
-Every chart is a grid item element, the grit itself has to contain maximum two grit items in one row as it shown in ``Fig.~\ref{fig:featured_metrics}''. 
+Next, to administration tools, the monitoring charts are showing. The title of this block is "FEATURED METRICS", which is the title bar upon the metrics.
+Every chart is a grid item element, the grit itself has to contain maximum two grit items in one row as it is shown in figure \ref{fig:featured_metrics}. 
  
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/featured_metrics.png}
   \caption{N2Sky Administration Dashboard. Featured Metrics component.}
@@ -77,14 +76,14 @@ Every chart is a grid item element, the grit itself has to contain maximum two g
 \end{figure}
  
  
-The user decides by him self which monitoring charts will be shown. The configuration is located in "Dashboard Settings" administration tool element. More details about creation of monitoring charts is located in \autoref{Monitoring System}. 
+The user decides by himself which monitoring charts will be shown. The configuration is located in "Dashboard Settings" administration tool element. More details about the creation of monitoring charts are located in \autoref{Monitoring System}. 
 
 
 \subsection{Openstack Dashboard}\label{OpenStack Dashboard}
 
-OpenStack Dashboard is the dashboard for managing OpenStack and its services and monitoring OpenStack and its instances. It looks similar to Administration Dashboard, except it is only OpenStack oriented and there is not additional tools as it shown in ``Fig.~\ref{fig:openstack_dashboard}''. 
+OpenStack Dashboard is the dashboard for managing OpenStack and its services and monitoring OpenStack and its instances. It looks similar to Administration Dashboard, except it is the only OpenStack oriented and there are no additional tools as it is shown in  figure \ref{fig:openstack_dashboard}. 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/openstack_dashboard.png}
   \caption{N2Sky OpenStack Dashboard.}
@@ -96,9 +95,9 @@ OpenStack Dashboard is the dashboard for managing OpenStack and its services and
 This dashboard contains two blocks:
 
 \begin{description}
-\item[Project grid.] This block contains projects, which are available on OpenStack as it shown in ``Fig.~\ref{fig:openstack_dashboard_projects}''.
+\item[Project grid.] This block contains projects, which are available on OpenStack as it is shown in figure \ref{fig:openstack_dashboard_projects}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/openstack_dashboard_projects.png}
   \caption{N2Sky OpenStack Dashboard. Projects grid}
@@ -106,41 +105,41 @@ This dashboard contains two blocks:
 \end{center}
 \end{figure}
 
-Every grid item represents brief overview about OpenStack Project:
+Every grid item represents a brief overview of OpenStack Project:
 
 \begin{itemize}
-\item Name of the project, which is header of grid item.
-\item ID of project.
+\item Name of the project, which is the header of grid item.
+\item ID of the project.
 \item Enabled, which stays if available (value YES) or not available (value NO).
 \item Is a domain, also contains simple yes or no values.
 \item Parent, which says if there any parent project which is current project linked.
 \item Button "Open Project", which redirects to project details.
 \end{itemize}
 
-\item[Monitoring Grid.] Similar to Administration Dashboard monitoring grid can be customised by users. Detail information about customisation is written in \autoref{Monitoring System}. 
+\item[Monitoring Grid.] Similar to Administration Dashboard monitoring grid can be customized by users. Detail information about customization is written in \autoref{Monitoring System}. 
 
 \end{description}
 
-After redirecting to project details the user will see information about specific project. Redirection should hast following URL path: 
+After redirecting to project details the user will see information about the specific project. Redirection should hast following URL path: 
 \begin{lstlisting}
-		<host>/openstack/project/<id>
+        <host>/openstack/project/<id>
 \end{lstlisting}
 
 Where <id> is OpenStack project ID.
 
 \subsubsection{OpenStack Nova Service}\label{OpenStack Nova Service}
 
-Nova is a compute service of OpenStack. I gives overview and managing of all existing virtual machine (servers or isntances) \cite{Markelov2016}. 
+Nova is a compute service of OpenStack. I give overview and managing of all existing virtual machine (servers or instances) \cite{Markelov2016}. 
 
 Following tools for using compute service:
 \begin{itemize}
-\item Horizon. Web UI for managing OpenStack projects. It is not used in N2Sky system since N2Sky Web UI has its own interface for managing the OpenStack instances.
-\item OpenStack Client, which is includes commands for nova as well as for OpenStack projects.
-\item Nova Client, which can be use like OpenStack Client, but N2Sky does not use it since OpenStack Client can provide all needed commands for nova service. 
+\item Horizon. Web UI for managing OpenStack projects. It is not used in the N2Sky system since N2Sky Web UI has its own interface for managing the OpenStack instances.
+\item OpenStack Client, which includes commands for Nova as well as for OpenStack projects.
+\item Nova Client, which can be used like OpenStack Client, but N2Sky does not use it since OpenStack Client can provide all needed commands for nova service. 
 \end{itemize}
 
 
-OpenStack project view has detailed description about server and its instances as it shown in ``Fig.~\ref{fig:openstack_dashboard_projects}''. 
+OpenStack project view has detailed description about server and its instances as it is shown in figure \ref{fig:openstack_dashboard_projects}. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -160,7 +159,7 @@ This view contains following components:
 \item VITRAGE
 \end{itemize}
  
- \item[Servers.] Servers item grid is located on the left size of the screen and has an collection of servers (OpenStack instances) as it shown in ``Fig.~\ref{fig:openstack_servers}''. 
+ \item[Servers.] Servers item grid is located on the left side of the screen and has a collection of servers (OpenStack instances) as it is shown in figure \ref{fig:openstack_servers}. 
  
  \begin{figure}[htbp]
 \begin{center}
@@ -176,16 +175,16 @@ The server overview grid contains following elements:
 \item Status, which can be: 
 \begin{itemize}
 \item RUNNING - instance is running and available. 
-\item SHUTOFF - instance is manually or by schedular shuted down. 
-\item ERROR - an error occur during spawning an instance or instance went down during run.
+\item SHUTOFF - instance is manually or by scheduler shut down. 
+\item ERROR - an error occur during spawning an instance or instance went down during the run.
 \end{itemize}
-\item IP Address fixed. The IP Address of instance inside OpenStack Cloud.
-\item IP Address floating. Assigned to instance IP address. Through this IP address an external access to instance is possible. 
-\item Flavor ID. Reference on OpenStack flavor, which is located on the right side of OpenStack project view.
-\item ID of server (OpenStack instance).
-\item Updated is timestamp when instance was last time modified. 
+\item IP Address fixed. The IP Address for instance inside OpenStack Cloud.
+\item IP Address floating. Assigned to instance IP address. Through this IP address, an external access to the instance is possible. 
+\item Flavor ID. Reference to OpenStack flavor, which is located on the right side of OpenStack project view.
+\item ID of the server (OpenStack instance).
+\item Updated is timestamp when the instance was last time modified. 
 \end{itemize}
-\item[Flavors.] A flavor is define an environment configuration. In the project details view there are list of flavors. On click on particular flavor of this list, the flavor details will appear as it shown in ``Fig.~\ref{fig:openstack_flavors}''.
+\item[Flavors.] A flavor is defined an environment configuration. In the project, details view there the list of flavors. On click on the particular flavor of this list, the flavor details will appear as it is shown in figure \ref{fig:openstack_flavors}''.
 
  \begin{figure}[htbp]
 \begin{center}
@@ -198,18 +197,18 @@ The server overview grid contains following elements:
 Following elements are displayed: 
 \begin{itemize}
 \item Type of flavor, which is defined by OpenStack.
-\item ID of flavor. OpenStack instances have a reference on particular flavor ID
+\item ID of flavor. OpenStack instances have a reference to particular flavor ID
 \item RAM. Amount of available memory of particular flavor. 
-\item Disk space in GB, which is available for particular flavor. 
+\item Disk space in GB, which is available for a particular flavor. 
 \item VCPUS. About of CPUs which will be available. 
-\item SWAP in GB, which is set for particular flavor.
+\item SWAP in GB, which is set for the particular flavor.
 \end{itemize}
 
 \end{description}
 
-When user choose some server (instance), he will be redirected to server details view as it shown in ``Fig.~\ref{fig:openstack_server_details}''.
+When user choose some server (instance), he will be redirected to server details view as it is shown in figure \ref{fig:openstack_server_details}.
 
- \begin{figure}[htbp]
+ \begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/openstack_server_details.png}
   \caption{N2Sky OpenStack Dashboard. Server details view.}
@@ -219,11 +218,11 @@ When user choose some server (instance), he will be redirected to server details
 
 \subsubsection{OpenStack Neutron Service}\label{OpenStack Neutron Service}
 
-Neutron is an OpenStack networking service, which provides "network connectivity as a service". Neutron is fully integrated in OpenStack UI, which allows to manage networking directly from there. The networking service is based on quantum architecture, where API clients communicate with virtual switches through Quantum APU and Quantum plugin \cite{neutron}. This service implements Neutron API, which is used by N2Sky Web UI. 
+Neutron is an OpenStack networking service, which provides "network connectivity as a service". Neutron is fully integrated into OpenStack UI, which allows managing networking directly from there. The networking service is based on quantum architecture, where API clients communicate with virtual switches through Quantum APU and Quantum plugin \cite{neutron}. This service implements Neutron API, which is used by N2Sky Web UI. 
 
-Neutron Service is integrated in N2Sky and represents overview of networks, subnet pools and services providers as it shown in ``Fig.~\ref{fig:openstack_neutron}''.
+Neutron Service is integrated into N2Sky and represents the overview of networks, subnet pools, and services providers as it is shown in figure \ref{fig:openstack_neutron}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/openstack_neutron.png}
   \caption{N2Sky OpenStack Dashboard. Neutron Service View}
@@ -233,21 +232,21 @@ Neutron Service is integrated in N2Sky and represents overview of networks, subn
 
 The server details view contains following components:
 \begin{description}
-\item[Header.] Header of this view  contains the name of the server, icon and status, which can be "Running" if instance is available and running on OpenStack environment, "Shutdown" if instance is available but nut running and "Error" in case if an error occurred. 
-\item[Instance information grid]. Following grid represents summary information about server (instance) and consist of following grid items:
+\item[Header.] Header of this view contains the name of the server, icon, and status, which can be "Running" if the instance is available and running on OpenStack environment, "Shutdown" if the instance is available but not running an "Error" in case if an error occurred. 
+\item[Instance information grid]. Following grid represents summary information about the server (instance) and consist of following grid items:
 \begin{itemize}
-\item Allocated IP Addresses is a list of assigned to instance IP addresses. Every IP address has a type either "fixed" or "floating".
-\item Instance actions is a list of all action and events, which happened with particular instance. Log information contains action type and timestamp of action.
+\item Allocated IP Address is a list of assigned to instance IP addresses. Every IP address has a type either "fixed" or "floating".
+\item Instance actions is a list of all activities and events, which happened in the particular instance. Log information contains action type and timestamp of action.
 \item Interface attachments, which contains fixed IP address, mac address add port state ("ACTIVE" or "INACTIVE") of the instance.
-\item Security groups is a list of security groups which contains the name and description of security group . 
+\item Security groups is a list of security groups which contains the name and description of the security group. 
 \end{itemize}
-\item[Monitoring.] The grid of monitoring charts of particular server. Can be removed directly from the view or added via navigation menu or Administration Dashboard.
+\item[Monitoring.] The grid of monitoring charts of the particular server. Can be removed directly from the view or added via navigation menu or Administration Dashboard.
 \end{description}
 
 
-The grid represents following componsnts besides navigation bar: 
+The grid represents following components besides navigation bar: 
 \begin{description}
-\item[OpenStack Networks.]  The list of available networks on OpenStack cloud. Every network contains following information:
+\item[OpenStack Networks.]  The list of available networks on OpenStack cloud. Every network contains the following information:
 \begin{enumerate}
 \item Name of the network
 \item ID of the network
@@ -255,9 +254,9 @@ The grid represents following componsnts besides navigation bar:
 \item Created is timestamp of creation of the network
 \item MTU (Network Service Uses), which are based on physical network in order to calculate MTU of virtual network components. 
 \item Shared. "YES" for shared access and "NO" for not shared accordantly. 
-\item External router. "YES" for external router is attached and "NO" for not attached accordantly. 
+\item External router. "YES" for an external router is attached and "NO" for not attached accordantly. 
 \end{enumerate}
-\item[OpenStack Subnet Pools.] This service provides information about available subnetworks and includes following information on N2Sky application:
+\item[OpenStack Subnet Pools.] This service provides information about available subnetworks and includes following information on the N2Sky application:
 \begin{enumerate}
 \item Name of the subnetwork
 \item ID of the subnetwork
@@ -265,13 +264,13 @@ The grid represents following componsnts besides navigation bar:
 \item Default number prefixlen
 \item Max number of prefixlen
 \item Min number of prefixlen
-\item Prefixlen, which represents a pool profix
+\item Prefixlen, which represents a pool prefix
 \end{enumerate}
-\item[OpenStack Service Providers.] The list of created and available service providers with customised configuration, which contains:
+\item[OpenStack Service Providers.] The list of created and available service providers with customized configuration, which contains:
 \begin{enumerate}
 \item Name of service provider
 \item Service type
-\item Default provider. "YES" if exist, "NO" if not accordantly.  
+\item Default Provider. "YES" if exist, "NO" if not accordantly.  
 \end{enumerate}
 
 \end{description}
@@ -279,10 +278,10 @@ The grid represents following componsnts besides navigation bar:
 
 \subsubsection{OpenStack Images Service}\label{OpenStack Images Service}
 
-In OpenStack is possible to upload customised images of the Virtual Machine to the provider. N2Sky uses Images Service only for representation of images information. It also possible to download image, but it is not possible to upload customised image due expensive process, because of the size of images. It is possible to use template provider with pre-configured virtual machine \cite{images}. 
+In OpenStack is possible to upload customized images of the Virtual Machine to the provider. N2Sky uses Images Service only for representation of images information. It also possible to download an image, but it is not possible to upload customized image due expensive process, because of the size of images. It is possible to use template provider with pre-configured virtual machine \cite{images}. 
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/openstack_images.png}
   \caption{N2Sky OpenStack Dashboard. Images Service View}
@@ -290,7 +289,7 @@ In OpenStack is possible to upload customised images of the Virtual Machine to t
 \end{center}
 \end{figure}
 
-The Image Service view, which shown in ``Fig.~\ref{fig:openstack_images}'' is representing a grid of available images. Every grid item contains following information: 
+The Image Service view, which shown in ``Fig.~\ref{fig:openstack_images}'' is representing a grid of available images. Every grid item contains the following information: 
 \begin{enumerate}
 \item Name of the image
 \item Description of the image
@@ -299,12 +298,12 @@ The Image Service view, which shown in ``Fig.~\ref{fig:openstack_images}'' is re
 \item Container format
 \item Disk format namely format of the image (qcow2 is a typical format for OpenStack instance)
 \item Size of the image in bytes
-\item Status of the image. Active if image is successfully upload and ready to use, inactive if it not
+\item Status of the image. Active if image is successfully uploaded and ready to use, inactive if it not
 \item Visibility. Public for everyone or group name for particular group of OpenStack users
-\item Download image button, which create one more thread an initialise downloading procedure
+\item Download image button, which creates one more thread an initialize downloading procedure
 \end{enumerate}
 
-There are custom OpenStack image templates and configuration created for N2Sky system. Every image has to contain following configuration:
+There are custom OpenStack image templates and configuration created for the N2Sky system. Every image has to contain following configuration:
 \begin{itemize}
 \item Preinstalled Docker CLI
 \item N2Sky Monitoring System instance
@@ -322,9 +321,9 @@ N2Sky templates and configuration has to support following operating systems:
 
 \subsubsection{OpenStack Vitrage Service}\label{OpenStack Vitrage Service}
 
-Vitrage is the OpenStack RCA (Root Cause Analysis) service. Is a build in monitoring system, which helps to analyse and organise OpenStack alarms and events \cite{wiki:vitrage}. In N2Sky platform Vitrage service is used only for representation of  templates and resources, because N2Sky has its own Monitoring System, which can be propagate in all OpenStack instances.  
+Vitrage is the OpenStack RCA (Root Cause Analysis) service. Is a build in the monitoring system, which helps to analyze and organize OpenStack alarms and events \cite{wiki:vitrage}. In the N2Sky platform, Vitrage service is used only for representation of templates and resources because N2Sky has its own Monitoring System, which can be propagated in all OpenStack instances.  
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/opentack_vitrage.png}
   \caption{N2Sky OpenStack Dashboard. Vitrage Service View}
@@ -332,7 +331,7 @@ Vitrage is the OpenStack RCA (Root Cause Analysis) service. Is a build in monito
 \end{center}
 \end{figure}
 
-Two column grid view which is shown in ``Fig.~\ref{fig:opentack_vitrage}'' represents following grid items:
+Two column grid view which it is shown in figure \ref{fig:opentack_vitrage} represents following grid items:
 
 \begin{description}
 \item[OpenStack Templates.]  List of OpenStack templates with following data:
@@ -341,16 +340,16 @@ Two column grid view which is shown in ``Fig.~\ref{fig:opentack_vitrage}'' repre
 \item ID of the template
 \item Status Details, which shows if the template validated 
 \item Date, which shows timestamp of template creation 
-\item Template details button, which redirect in detailed information about chosen template
+\item Template details button, which redirects in detailed information about chosen template
 \end{enumerate}
 
 \item[OpenStack Resources.] List of available OpenStack resources, which contains following data:
 \begin{enumerate}
 \item Name of the resource
 \item ID of the resource
-\item State of the resource, can be available or not available
-\item Vitrage aggregated state, can be available or not available
-\item Vitrage Category, can be resource, alarm or other customised catefory
+\item State of the resource can be available or not available
+\item Vitrage aggregated state can be available or not available
+\item Vitrage Category can be resource, alarm or another customized category
 \item Vitrage ID
 \item Vitrage Operational State
 \item Vitrage Type
@@ -365,9 +364,9 @@ Two column grid view which is shown in ``Fig.~\ref{fig:opentack_vitrage}'' repre
 \end{center}
 \end{figure}
 
-When user click on template details button he will be redirected on particular Vitrage template as it shown in ``Fig.~\ref{fig:openstack_template}''. From here user can observe following information:
+When the user clicks on template details button he will be redirected to the particular Vitrage template as it is shown in figure \ref{fig:openstack_template}. From here the user can observe following information:
 \begin{description}
-\item[Template Entities]. List of entities like alarm or resource. This grid item contains following data
+\item[Template Entities]. List of entities like alarm or resource. This grid item contains the following data
 \begin{enumerate}
 \item Template ID (mandatory)
 \item Name of the template (optional)
@@ -382,7 +381,7 @@ When user click on template details button he will be redirected on particular V
 \end{enumerate}
 \item[Alarm On Host.] The action type of the alarm
 \item[Alarm on host and host contains instance.] Optional item, visible only of host contains instance.
-\item[Alarm on host and host contains instance and alarm on instance.] Optional item, visible only of host contains instance and alarm on instance.
+\item[Alarm on host and host contains instance an alarm on the instance.] Optional item, visible only of host contains instance an alarm on the instance.
 
 \end{description}
 
@@ -393,7 +392,7 @@ When user click on template details button he will be redirected on particular V
 \hl{TODO ????}
 
 \subsection{Dashboard Settings}\label{Dashboard Settings}
-As it was mentioned before in Administration Dashboard chapter \autoref{Administration Dashboard}, the dashboard has the administration tools. One of this tools is Dashboard Settings tool. When user click on this tool the modal popup window will open and available configuration options will appear as it shown in ``Fig.~\ref{fig:openstack_template}''.
+As it was mentioned before in Administration Dashboard chapter \autoref{Administration Dashboard}, the dashboard has the administration tools. One of this tools is Dashboard Settings tool. When the user clicks on this tool the modal popup window will open and available configuration options will appear as it is shown in figure \ref{fig:openstack_template}.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -403,15 +402,15 @@ As it was mentioned before in Administration Dashboard chapter \autoref{Administ
 \end{center}
 \end{figure}
 
-Another one possibility to initiate settings popup is to open it from main navigation menu, which is available across entire application on the left screen of the page view. 
+Another one possibility to initiate settings popup is to open it from the main navigation menu, which is available across an entire application on the left screen of the page view. 
 
 Dashboard Settings popup contains two setting for now:
 \begin{itemize}
-\item Create OpenStack Monitoring Dashlet, which create one more modal popup upon existing and initialise creation monitoring chart, which is described in chapter "Monitoring System" in \autoref{Monitoring System}.
-\item Create an Alert, which also create one more modal popup upon existing and initialise creation alerting rule, which is described in chapter "Alert System" in \autoref{Alerting System}.
+\item Create OpenStack Monitoring Dashlet, which create one more modal popup upon existing and initialize creation monitoring chart, which is described in chapter "Monitoring System" in \autoref{Monitoring System}.
+\item Create an Alert, which also creates one more modal popup upon existing and initialize creation alerting rule, which is described in chapter "Alert System" in \autoref{Alerting System}.
 \end{itemize}
 
-The popup will be automatically closed only after action performed, if action is not performed user can leave the popup manually.
+The popup will be automatically closed only after action performed if action is not performed user can leave the popup manually.
 
 
 
@@ -421,9 +420,9 @@ When Administration Dashboard in general shows overview of the OpenStack and Clo
  
 \subsubsection{Monitoring charts creation}\label{Monitoring charts creation}
 
-After user initialise creation of monitoring metrics at it was described in \autoref{Dashboard Settings} "Dashboard Settings", a new modal window will be opened as it shown in ``Fig.~\ref{fig:create_monitoring}''.
+After user initializes creation of monitoring metrics at it was described in \autoref{Dashboard Settings} "Dashboard Settings", a new modal window will be opened as it is shown in figure \ref{fig:create_monitoring}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
   \includegraphics[width=\linewidth]{components/4/pics/create_monitoring.png}
   \caption{N2Sky Administration Dashboard. Monitoring charts creation modal popup}
@@ -435,18 +434,18 @@ The popup window has following elements:
 
 \begin{enumerate}
 \item "CREATE NEW DASHLET" title of the popup
-\item Combobox with servers, where monitoring system instance is installed. User can choose all available instances, even if they are not running currently. It is also possible to choose OpenStack cloud server itself, because monitoring system instance is preinstalled there.
-\item Combobox with views.  User can choose where combobox will be added. There are few places where chart can be displayed:
+\item Combobox with servers, where monitoring system instance is installed. The user can choose all available instances, even if they are not running currently. It is also possible to choose OpenStack cloud server itself because monitoring system instance is preinstalled there.
+\item Combobox with views.  The user can choose where combo box will be added. There are few places where chart can be displayed:
 \begin{enumerate}
 \item Administration Dashboard
 \item OpenStack Dashboard
 \item Cloudify Dashboard
 \item Servers (OpenStack instances) View. 
 \end{enumerate}
-\item Combobox with metrics. Normally it is more then hundred of available metrics. It is important to mention that every operating system has different naming of metrics.
+\item Combobox with metrics. Normally it is more than hundred of available metrics. It is important to mention that every operating system has different naming of metrics.
 \item Delay input. This input shows the delayed time of metric.
 \item Step input. This input shows the line chart step of chosen metric
-\item Timing combobox. This combobox contains following time options:
+\item Timing combo box. This combo box contains following time options:
 \begin{enumerate}
 \item seconds
 \item minutes
@@ -454,14 +453,14 @@ The popup window has following elements:
 \item days
 \item weeks
 \end{enumerate}
-\item Create button, which trigger metrics creation. The view will be reloaded and monitoring chart will appear on this view.
+\item Create button, which triggers metrics creation. The view will be reloaded and monitoring chart will appear in this view.
 \end{enumerate}
 
 After adding a new monitoring chart, the view will be reloaded and the chart will appear on the view. 
 
 \subsubsection{Monitoring charts representation}\label{Monitoring chart representation}
 
-Every monitoring chart is a grid item of two column responsive grid as it shown in ``Fig.~\ref{fig:moniroting_representation}'' 
+Every monitoring chart is a grid item of two column responsive grid as it is shown in figure \ref{fig:moniroting_representation}
 
 \begin{figure}[htbp]
 \begin{center}
@@ -471,11 +470,11 @@ Every monitoring chart is a grid item of two column responsive grid as it shown 
 \end{center}
 \end{figure}
 
-The grid hast to be responsive in order to support mobile devices. When mobile device is detected the grid should has only one column and grid items has ti be aligned vertically. 
+The grid has to be responsive in order to support mobile devices. When the mobile device is detected the grid should have only one column and grid items have to be aligned vertically. 
 
-The header of monitoring chart has to contains the name of the metrics and the server (instance) from where this metrics comes.
+The header of monitoring chart has to contain the name of the metrics and the server (instance) from where this metrics comes.
 
-Every monitoring chart has at list one line graph with a random colour. If there are few line graphs in the chart, then lines has to have a different colour. A chart contains on x-Axis the timestamp and on y-Axis the velocity.  The timestamp in line graph has its own toolkit with additional information about the chart and contains following data:
+Every monitoring chart has at list one line graph with a random color. If there are few line graphs in the chart, then lines have to have a different color. A chart contains on X-axis the timestamp and on y-Axis the velocity.  The timestamp in line graph has its own toolkit with additional information about the chart and contains following data:
 
 \begin{itemize}
 \item Timestamp of event
@@ -487,14 +486,14 @@ Every monitoring chart has at list one line graph with a random colour. If there
 
 \subsection{Alert System}\label{Alerting System}
 
-Alert System hat it is own page view. It is possible to redirect to this view from main navigation menu as well as from administration dashboard. The url of the alert page is:
+Alert System hat it is own page view. It is possible to redirect to this view from main navigation menu as well as from administration dashboard. The URL of the alert page is:
 \begin{lstlisting}
-		<host>/alert
+        <host>/alert
 \end{lstlisting}
 
 \subsubsection{Alerting rule creation}\label{Alerting rule creation}
 
-It is possible to alerting rule directly from alert page view. The button "Create Alert" initiate  the modal popup window as it shown in  ``Fig.~\ref{fig:alert_create}''.
+It is possible to alert rule directly from alert page view. The button "Create Alert" initiate the modal popup window as it is shown in figure \ref{fig:alert_create}.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -507,19 +506,21 @@ It is possible to alerting rule directly from alert page view. The button "Creat
 The modal window has following elements:
 \begin{enumerate}
 \item Modal window title is "Create new alert".
-\item Combobox with available servers with installed monitoring system.
-\item Combobox with a page view, where alert can be shown (optional).
-\item Combobox with a available metrics.
-\item Combobox wth alerting rule severity level. Three values are possible: "page" for information, "waring" and "critical".
+\item Combobox with available servers with the installed monitoring system.
+\item Combobox with a page view, where an alert can be shown (optional).
+\item Combobox with an available metrics.
+\item Combobox with alerting rule severity level. Three values are possible: "page" for information, "waring" and "critical".
 \item Summary information about alerting rule.
 \item Full description about alerting rule.
-\item Expression which will be executed agains chosen metric.
+\item Expression which will be executed against chosen metric.
 \item Period, which shows how often will alerting rule validated.
 \end{enumerate}
 
+
+
 \subsubsection{Alerts representation}\label{Alerts representation}
 
-The alerts are displayed three column grid as it shown in ``Fig.~\ref{fig:alert_representation}'' 
+The alerts are displayed three column grid as it is shown in figure \ref{fig:alert_representation}'' 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -532,8 +533,8 @@ The alerts are displayed three column grid as it shown in ``Fig.~\ref{fig:alert_
 The view contains:
 
 \begin{description}
-\item[Header.] Header is navigation bar  with a title "Fired alerts" and the button. The button has caption "Create Alert" and on click will initiate creating alert rule popup as it described in \autoref{Alerting rule creation} "Alerting rule creation".
-\item[Alerts Grid] Contains 3 columns of alerts. When alert end date is earlier then current date, then alert will not be shown. Only active alerts are visible. Detailed information about  alert content is described in \autoref{Alerting Management System} "Alerting Management System".
+\item[Header.] Header is navigation bar with a title "Fired alerts" and the button. The button has the caption "Create Alert" and on click will initiate creating alert rule popup as it described in \autoref{Alerting rule creation} "Alerting rule creation".
+\item[Alerts Grid] Contains 3 columns of alerts. When alert end date is earlier than current date, then alert will not be shown. Only active alerts are visible. Detailed information about alert content is described in \autoref{Alerting Management System} "Alerting Management System".
 \end{description}
 
 
