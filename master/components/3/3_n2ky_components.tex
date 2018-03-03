@@ -759,6 +759,16 @@ Since there are multiple machine and services to monitor there was a need to cre
 
 One of the most important parts of application design is to maximize reusability of the components. 
 
+
+The benefit of the microservices architecture is the independence of each service. The good part of it, when one of the services will not be accessible, the rest of them still be up and running. The problem is that in order to make application running correctly all services are required. It is important to detect events and rollbacks the transaction in case if the error or failure occurs. N2Sky system has its own monitoring and alerting system, which notify the system administrator about failures, but how to handle events, which are transactionally dependent from service to service in case if the error occurs and an event is still in the transaction. There is two main kind of events \cite{cs5366}: 
+
+\begin{itemize}
+\item \emph{Intrinsic Events.} Process steps starting and finishing generate events intrinsic to the process model. This kind of events contains the process step or failure. 
+\item \emph{Context Events.} Events stemming from the context of the process.
+\end{itemize}
+
+It is impossible to maintain each event and process an event stream in the N2Sky application because if some other developers forget to put the event into the stream it will not be noticed. That is why in N2Sky is events intrinsic, which are logging every transaction from one service to another. In case if the error occurs the alerting event will be fired with a log data like the step it self and the error. 
+
  
 \begin{figure}[htbp]
 \begin{center}

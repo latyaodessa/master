@@ -35,6 +35,11 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
   Computational Intelligence). IEEE International Joint Conference on\/}
   (2008), IEEE, pp.~1872--1879.
 
+\bibitem{cs5366}
+{\sc Borkowski, M., Fdhila, W., Nardelli, M., Rinderle-Ma, S., and Schulte, S.}
+\newblock Event-based failure prediction in distributed business processes.
+\newblock {\em Information Systems\/} (2018).
+
 \bibitem{Cagle2005}
 {\sc Cagle, K.}
 \newblock {\em The Foundations of SVG}.
@@ -44,6 +49,18 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 {\sc Denton, J.}
 \newblock {\em Learning OpenStack Networking (Neutron)}.
 \newblock Packt Publishing, 2014.
+
+\bibitem{UKeS}
+{\sc {e-Science}, U.}
+\newblock {UK} e-science programme.
+\newblock [online], \url{http://www.escience-grid.org.uk}, last visited January
+  2018, 2016.
+
+\bibitem{Goodfellow}
+{\sc Goodfellow, I., Bengio, Y., and Courville, A.}
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
 
 \bibitem{frs_1}
 {\sc Goubali, O., Girard, P., Guittet, L., Bignon, A., Kesraoui, D., Berruet,
@@ -57,6 +74,18 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 {\sc Hassenzahl, M., and Tractinsky, N.}
 \newblock User experienceÂ -Â a research agenda.
 \newblock {\em Behaviour \& Information Technology 25}, 2 (2006), 91--97.
+
+\bibitem{huqqani2010n2cloud}
+{\sc Huqqani, A.~A., Li, X., Beran, P.~P., and Schikuta, E.}
+\newblock N2cloud: Cloud based neural network simulation application.
+\newblock In {\em Neural Networks (IJCNN), The 2010 International Joint
+  Conference on\/} (2010), IEEE, pp.~1--5.
+
+\bibitem{andrej}
+{\sc Karpathy, A.}
+\newblock Deep reinforcement learning: Pong from pixels.
+\newblock [online], \url{http://karpathy.github.io/2016/05/31/rl/}, last
+  visited May 2016, 2017.
 
 \bibitem{ravo}
 {\sc Khalil, W.}
@@ -145,6 +174,12 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \newblock In {\em Neural Networks (IJCNN), 2015 International Joint Conference
   on\/} (2015), IEEE, pp.~1--8.
 
+\bibitem{N2Sky}
+{\sc Schikuta, E., and Mann, E.}
+\newblock N2sky - neural networks as services in the clouds.
+\newblock In {\em Neural Networks (IJCNN), The 2013 International Joint
+  Conference on\/} (2013), IEEE, pp.~1--8.
+
 \bibitem{schikuta2004n2grid}
 {\sc Schikuta, E., and Weishaupl, T.}
 \newblock N2grid: neural networks in the grid.
@@ -209,5 +244,12 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 \newblock Responsive web design and its use by an e-commerce website.
 \newblock In {\em Cross-Cultural Design\/} (Cham, 2014), P.~L.~P. Rau, Ed.,
   Springer International Publishing, pp.~509--519.
+
+\bibitem{zurada2009building}
+{\sc Zurada, J.~M., Mazurowski, M.~A., Ragade, R., Abdullin, A., Wojtudiak, J.,
+  and Gentle, J.}
+\newblock Building virtual community in computational intelligence and machine
+  learning [research frontier].
+\newblock {\em IEEE Computational Intelligence Magazine 4}, 1 (2009), 43--54.
 
 \end{thebibliography}

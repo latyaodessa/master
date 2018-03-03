@@ -1,9 +1,69 @@
 \section{Introduction}\label{introduction}
 
+The master thesis encapsulates multiple topics in neural networks, language specification for neural networks, cloud computing, microservices, application and infrastructure design. It is based on the concept of the implementation of the ViNNSL (Vienna Neural Network Specification Language) \cite{Beran2008} and on the original idea of the platform for the artificial neural network simulation environment N2Sky \cite{ravo} and N2Grid \cite{schikuta2004n2grid}.
 
+\begin{description}
+\item[Objectives:] Objectives: Build the ready-to-use N2Sky platform, which can be easy to construct from scratch and maintain on purpose. Implement scalable application, which can be used on any device. Introduce ViNNSL template in order to use this language across the whole application. Apply microservices approach on the backend as well as on the frontend side. Organize monitoring and alerting system on N2Sky cloud and its instances. Make a live demo-prototype for testing purposes. 
+\item[Non-objectives:] The thesis contains information how the production system should look like, but during development, there was no goal of implementing the production-ready system.
+\end{description}
 
 \subsection{Motivation}\label{motivation}
 
+Artificial neural networks have a long history. It is referred to cybernetics and connectionism.  After introducing the "deep learning"  the scientists started to use the full potential of the neural networks \cite{Goodfellow}. 
+
+The director of AI (Artificial Intelligence) at Tesla Andrej Karpathy described the main reasons why the AI was held back:
+
+\begin{itemize}
+\item \emph{Compute} (the obvious one: Moore's Law, GPUs, ASICs)
+\item \emph{Algorithms} (in a nice form, not just out there somewhere on the internet)
+\item \emph{Infrastructure}  (software under you - Linux, TCP/IP, Git, ROS, PR2, AWS, AMT, TensorFlow, etc.) \cite{andrej}
+\end{itemize}
+
+These blockers are disappeared today, which gives engineers and scientists possibility to investigate and create projects based on AI. 
+
+Nowadays there is a dozen of different types of neural networks and existing models. There is a need to have a platform to consolidate them all. The platform, which will give an opportunity to simulate own or existing neural networks without any need of buying expensive environment. The platform where neural network engineers can publish own neural network and observe its behavior when other users trying to train it and evaluate the trained model. N2Sky is this kind of platform, which gives a possibility not only to use the N2Sky cloud for their need but also to try out and study neural network field without deep knowledge in this field. 
+
+
+
 \subsection{Terms and definitions}\label{Terms and definitions}
 
+\begin{description}
+\item[N2Sky] is an artificial neural network simulation platform, which implements Neural Network as a Service approach. It is a cloud-based system, which implements microservices architecture on infrastructure as well as on application level. The system was motived by delivering an intuitive tool for different stakeholders. The arbitrary user looking for existing neural network solutions, the neural network engineer creating a neural network based on existing neural network paradigms, the contributor implementing and publishing it on N2Sky repository. Since N2Sky is also simulation platform, every stakeholder can perform training desired neural network as well as evaluate trained models.  N2Sky today provides a virtual collaboration platform to the computational intelligence community.
+\item[ViNNSL template] is an adopted for N2Sky application ViNNSL language \cite{Beran2008} , which contains neural network description, the metadata, the structure of the neural network and its connection. The ViNNSL template used across entire N2Sky application, on the frontend as a representation and on services side as a database model.
+\item[Micro application] is an implementation of the microservices approach, which normally used on the infrastructure side, but on the frontend application. The micro application is a small application, which is responsible for limited and consolidated under one subject workflows. The micro applications can be in the bundle with other applications and work as a whole so that the user has a feeling that he using only one application.
+\end{description}
+
+
+
 \subsection{Related work}\label{Related work}
+
+The basis for development and implementation N2Sky platform were various theoretical concepts, where were reviewed and improved by multiple researchers.
+
+The UK e-Science initiative~\cite{UKeS} describes several goals to be reached by fostering new stimulating techniques:
+
+\begin{itemize}
+  \item Enabling more effective and seamless collaboration of dispersed communities, both scientific and commercial.
+  \item enable large-scale applications comprising of thousands of computers, large-scale pipelines etc.
+  \item Transparent access to "high-end" resources from the desktop.
+  \item Provide a uniform "look \& feel" to a wide range of resources
+  \item Location independence of computational resources as well as data. 
+\end{itemize}
+
+Since there were large numbers of neural networks were developed, especially for a past few years, the authors were motivated to create "everything about sharing" approach, which was implemented in N2Grid~\cite{schikuta2004n2grid} and N2Cloud~\cite{huqqani2010n2cloud}.
+
+Unfortunately, both systems required the deep knowledge in neural network field and were almost not usable by the arbitrary users.  The limited number of simulation and the non-friendly user interface does not attract users, the common problems:
+
+\begin{itemize}
+\item \emph{Complexity.} The tool was too complex and did not have an intuitive user interface. 
+\item \emph{Proprietary system} with missing interconnection and data exchange to other software systems.
+\item \emph{Lack resources} for the routine workflow.
+\end{itemize}
+
+The most related tool, which represents an expert system was the CIML (Computational Intelligence and Machine Learning) ~\cite{zurada2009building}. The main idea of the tool was to create a web-based platform for machine learning, neural networks, and artificial intelligence, where any user could share and obtain resources. The project failed because its targeted too big and diverse community and offered the all-in-one solution. Due to the complexity and lack of guidance, it is failed. 
+
+After this research, the original N2Sky \cite{N2Sky} was released. It was a cloud-based solution and it was oriented only on neural networks. The idea was that any user can run the simulation on any device. The system supported multiple stakeholders with different roles and it is also had a mobile web portal. 
+
+The original N2Sky supported ViNNSL language. ViNNSL is XML-based domain specific language, which was developed as a communication framework to support service-oriented architecture based neural network environments. 
+
+The decision was to take good parts, refactor it, apply the new and trending technologies in order to make close to the production-ready system. In this master thesis, the novel N2Sky system was developed just using the concepts and trial and failures from previous generations. 
+
