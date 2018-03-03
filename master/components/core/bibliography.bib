@@ -25,7 +25,7 @@
 
 @article{uixagenda,
 author = { Marc   Hassenzahl  and  Noam   Tractinsky },
-title = {User experienceÂ -Â a research agenda},
+title = {User experience - a research agenda},
 journal = {Behaviour \& Information Technology},
 volume = {25},
 number = {2},
@@ -248,10 +248,24 @@ doi="10.1007/s00607-013-0346-9",
 url="https://doi.org/10.1007/s00607-013-0346-9"
 }
 
-@misc{ wiki:vitrage,
-  title = "What is {V}itrage?  --- {W}ikipedia{,} The {F}ree {E}ncyclopedia",
-  year = "2016",
-  url = "https://wiki.openstack.org/wiki/Vitrage"}
+  @Article{wiki:vitrage,
+author="Lee, Craig A.
+and Sill, Alan F.",
+title="A design space for dynamic service level agreements in OpenStack",
+journal="Journal of Cloud Computing",
+year="2014",
+month="Nov",
+day="07",
+volume="3",
+number="1",
+pages="17",
+abstract="This paper does a systematic review of the possible design space for cloud-hosted applications that may have changing resource requirements that need to be supported through dynamic service level agreements (SLAs). The fundamental SLA functions are reviewed: Admission Control, Monitoring, SLA Evaluation, and SLA Enforcement - a classic autonomic control cycle. This is followed by an investigation into possible application requirements and SLA enforcement mechanisms. We then identify five basic Load Types that a dynamic SLA system must manage: Best Effort, Throttled, Load Migration, Preemption and Spare Capacity. The key to meeting application SLA requirements under changing surge conditions is to also manage the spare surge capacity. The use of this surge capacity could be managed by one of several identified load migration policies. A more detailed SLA architecture is presented that discusses specific SLA components. This is done in the context of the OpenStack since it is open source with a known architecture. Based on this SLA architecture, a research and development plan is presented wherein fundamental issues are identified that need to be resolved through research and experimentation. Based on successful outcomes, further developments are considered in the plan to produce a complete, end-to-end dynamic SLA capability. Executing on this plan will take significant resources and organization. The NSF Center for Cloud and Autonomic Computing is one possible avenue for pursuing these efforts. Given the growing importance of cloud performance management in the wider marketplace, the cloud community would be well-served to coordinate cloud SLA development across organizations such as the IEEE, Open Grid Forum, and the TeleManagement Forum.",
+issn="2192-113X",
+doi="10.1186/s13677-014-0017-1",
+url="https://doi.org/10.1186/s13677-014-0017-1"
+}
+
+
 
 @InProceedings{images,
 author="Vakanas, Lenos
@@ -314,10 +328,20 @@ isbn="978-3-319-16101-3"
 
 
 
-@misc{ wiki:frs,
-  title = "Systems and software engineering -- Vocabulary",
-  year = "2010",
-  url = "https://en.wikipedia.org/wiki/Functional_specification"}
+ @Inbook{wiki:frs,
+author="Weik, Martin H.",
+title="functional specification",
+bookTitle="Computer Science and Communications Dictionary",
+year="2001",
+publisher="Springer US",
+address="Boston, MA",
+pages="664--664",
+isbn="978-1-4020-0613-5",
+doi="10.1007/1-4020-0613-6_7801",
+url="https://doi.org/10.1007/1-4020-0613-6_7801"
+}
+
+
 
 @InProceedings{frs_3,
 author="Benjamin Weyers and Judy Bowen and Alan Dix and Philippe Palanque",
@@ -367,6 +391,7 @@ isbn="978-3-319-39510-4"
   title = "SENDING ALERTS --- Prometheus",
   author = "Matt T. Proud, Julius Volz.",
   year = "2017",
+  source =       {\url{https://prometheus.io/docs/alerting/clients/}, last viewed September 2017},
   url = "https://prometheus.io/docs/alerting/clients/",
   note = "[Online; accessed 2017]"
 }
@@ -375,6 +400,7 @@ isbn="978-3-319-39510-4"
   title = "OVERVIEW. What is Prometheus? --- Prometheus",
   author = "Matt T. Proud, Julius Volz.",
   year = "2017",
+  source =       {\url{https://prometheus.io/docs/introduction/overview/}, last viewed September 2017},
   url = "https://prometheus.io/docs/introduction/overview/",
   note = "[Online; accessed 2017]"
 }
@@ -417,17 +443,26 @@ isbn="978-3-540-45559-2"
   title = "HOW MOBILE WEB TRAFFIC HAS AFFECTED SCREEN RESOLUTION --- Spindogs",
   author = "Dave Morgan",
   year = "2017",
+  source = {\url{https://www.spindogs.co.uk/blog/2017/09/21/how-mobile-web-traffic-has-affected-screen-resolution/}, last viewed September 2017},
   url = "https://www.spindogs.co.uk/blog/2017/09/21/how-mobile-web-traffic-has-affected-screen-resolution/",
   note = "[Online; accessed 21-September-2017]"
 }
 
 
-@misc{ wiki:typeface,
-  title = "Typeface --- {W}ikipedia{,} The Free Encyclopedia",
-  year = "2016",
-  url = "https://en.wikipedia.org/wiki/Typeface",
-  note = "[Online; accessed 20-December-2016]"
+@Inbook{wiki:typeface,
+author="Weik, Martin H.",
+title="typeface",
+bookTitle="Computer Science and Communications Dictionary",
+year="2001",
+publisher="Springer US",
+address="Boston, MA",
+pages="1850--1850",
+isbn="978-1-4020-0613-5",
+doi="10.1007/1-4020-0613-6_20290",
+url="https://doi.org/10.1007/1-4020-0613-6_20290"
 }
+
+
 
 @InProceedings{responsive_book,
 author="Zeng, Yujing
@@ -537,13 +572,14 @@ abstract="Multimedia applications are a branch of software development with grow
 isbn="978-3-540-32057-9"
 }
 
-@online{gui_layout,
-  author = {Regula Stopper, Rene Sieber},
+@misc{ gui_layout,
   title = {{Graphical User Interface} Layout and Design},
-  year = 2012,
-  url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.527.6895&rep=rep1&type=pdf},
-  urldate = {2012-01-26}
-}
+  author = {Regula Stopper, Rene Sieber},
+  year = "2012",
+  source =       {\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.527.6895&rep=rep1&type=pdf}, last viewed January 2012},
+  url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.527.6895&rep=rep1&type=pdf"
+  }
+
 
 
 

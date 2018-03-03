@@ -1,0 +1,82 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Current N2Sky architecure}}{11}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Current N2Sky User Interface}}{13}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Applied on N2Sky Requirement Specification Quialities}}{18}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces User roles hierarchy and modules where they operating on (marked grey)}}{19}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Novel N2Sky Architecture}}{22}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Microservices approach in frontend application}}{24}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces N2Sky frontend application and its services}}{25}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces The sample workflow}}{27}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces N2Sky Fundamental Layout}}{32}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces N2Sky Main Layout}}{33}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces N2Sky Mobile Layout}}{34}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces N2Sky Dashboard template}}{38}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Difference between sans-serif font Arial (A) and the browser serif font Times New Roman (B) }}{39}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Average screen resolution of mobile, tablet and desktop devices on 2017}}{39}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Customised N2Sky accordion UI element}}{41}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Customised N2Sky button UI element}}{42}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Customised N2Sky button UI element animation}}{42}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Customised N2Sky logo in SVG format}}{42}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Customised N2Sky warning message UI element}}{43}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Customised N2Sky informational message UI element}}{43}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Customised N2Sky navigation UI element}}{44}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Customised N2Sky navigation bar with a table}}{44}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Responsive N2Sky Grid Item UI comonent}}{45}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces N2Sky Main Navigation Menu for arbitrary user}}{46}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces N2Sky Main Navigation Menu for system administrator}}{46}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces N2Sky Modal Window UI component}}{47}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces N2Sky User Management Web Service}}{49}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces N2Sky Model Repository Web Service}}{50}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces N2Sky Cloud Management Web Service}}{52}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Prometheus monitoring architecture}}{55}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Metric response}}{57}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces N2Sky Monitoring Dashlet}}{60}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Alerting System Architecture}}{61}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Communication within Alerting Management System}}{62}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces N2Sky Alerting Management System Event representation.}}{64}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces N2Sky Alerting Management System Severity Level}}{65}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces N2Sky Administration Dashboard.}}{75}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces N2Sky Administration Dashboard. Administration tools component.}}{76}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces N2Sky Administration Dashboard. Featured Metrics component.}}{76}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces N2Sky OpenStack Dashboard.}}{77}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces N2Sky OpenStack Dashboard. Projects grid}}{77}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces N2Sky OpenStack Dashboard. Project view}}{79}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces N2Sky OpenStack Dashboard. Server overview}}{79}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces N2Sky OpenStack Dashboard. Flavors}}{80}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces N2Sky OpenStack Dashboard. Server details view.}}{81}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces N2Sky OpenStack Dashboard. Neutron Service View}}{82}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces N2Sky OpenStack Dashboard. Images Service View}}{84}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces N2Sky OpenStack Dashboard. Vitrage Service View}}{86}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces N2Sky OpenStack Dashboard. Template Details View}}{87}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces N2Sky Administration Dashboard. Dashboard Settings}}{88}{figure.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces N2Sky Administration Dashboard. Monitoring charts creation modal popup}}{89}{figure.51}
+\contentsline {figure}{\numberline {52}{\ignorespaces N2Sky Administration Dashboard. Monitoring charts representation}}{91}{figure.52}
+\contentsline {figure}{\numberline {53}{\ignorespaces N2Sky Administration Dashboard. Alerting rule creation}}{92}{figure.53}
+\contentsline {figure}{\numberline {54}{\ignorespaces N2Sky Administration Dashboard. Alerts representation}}{93}{figure.54}
+\contentsline {figure}{\numberline {55}{\ignorespaces N2Sky User Dashboard}}{95}{figure.55}
+\contentsline {figure}{\numberline {56}{\ignorespaces N2Sky Main Module. Available user tools}}{96}{figure.56}
+\contentsline {figure}{\numberline {57}{\ignorespaces N2Sky Main Module. Create New Project Popup}}{96}{figure.57}
+\contentsline {figure}{\numberline {58}{\ignorespaces N2Sky Main Module. User projects grid}}{97}{figure.58}
+\contentsline {figure}{\numberline {59}{\ignorespaces N2Sky Main Module. Neural networks filtering bar.}}{97}{figure.59}
+\contentsline {figure}{\numberline {60}{\ignorespaces N2Sky User Project Dashboard}}{99}{figure.60}
+\contentsline {figure}{\numberline {61}{\ignorespaces N2Sky Project Dashboard. Available tools}}{99}{figure.61}
+\contentsline {figure}{\numberline {62}{\ignorespaces N2Sky Project Dashboard.Upload own network in ViNNSL format}}{100}{figure.62}
+\contentsline {figure}{\numberline {63}{\ignorespaces N2Sky Project Dashboard. Saved trained models}}{102}{figure.63}
+\contentsline {figure}{\numberline {64}{\ignorespaces Three Steps View. The Neural Network Description}}{103}{figure.64}
+\contentsline {figure}{\numberline {65}{\ignorespaces Three Steps View. The Neural Network Structure with full connection}}{104}{figure.65}
+\contentsline {figure}{\numberline {66}{\ignorespaces Three Steps View. The shortcut connections}}{105}{figure.66}
+\contentsline {figure}{\numberline {67}{\ignorespaces Three Steps View. The Neural Network Training.}}{106}{figure.67}
+\contentsline {figure}{\numberline {68}{\ignorespaces Three Steps View. The Neural Network Training. Run instance}}{106}{figure.68}
+\contentsline {figure}{\numberline {69}{\ignorespaces Three Steps View. The Neural Network Training. Training form}}{107}{figure.69}
+\contentsline {figure}{\numberline {70}{\ignorespaces Three Steps View. Training Results and the Model Evaluation}}{108}{figure.70}
+\contentsline {figure}{\numberline {71}{\ignorespaces Three Steps View. Training Results and the Model Evaluation. Copy model into own project.}}{109}{figure.71}
+\contentsline {figure}{\numberline {72}{\ignorespaces Three Steps View. Training Results and the Model Evaluation. The model testing.}}{110}{figure.72}
+\contentsline {figure}{\numberline {73}{\ignorespaces N2Sky Neural network repository}}{111}{figure.73}
+\contentsline {figure}{\numberline {74}{\ignorespaces N2Sky Neural network repository. Copy the neural network.}}{112}{figure.74}
+\contentsline {figure}{\numberline {75}{\ignorespaces N2Sky Models Repository}}{113}{figure.75}
+\contentsline {figure}{\numberline {76}{\ignorespaces N2Sky Models Repository. Short Description}}{114}{figure.76}
+\contentsline {figure}{\numberline {77}{\ignorespaces Tutorial. Activity Diagram of using Network and Model Repositories}}{115}{figure.77}
+\contentsline {figure}{\numberline {78}{\ignorespaces Tutorial. Login form on the left sight and the signup form on the right.}}{116}{figure.78}
+\contentsline {figure}{\numberline {79}{\ignorespaces Tutorial. Activity Diagram of creation the neural network from the existing paradigm}}{119}{figure.79}
+\contentsline {figure}{\numberline {80}{\ignorespaces Tutorial. Activity Diagram of upload own neural network paradigm}}{121}{figure.80}
+\contentsline {figure}{\numberline {81}{\ignorespaces Use Case of typical arbitrary user behavior}}{123}{figure.81}
+\contentsline {figure}{\numberline {82}{\ignorespaces Use Case. Developing the neural network with N2Sky.}}{124}{figure.82}

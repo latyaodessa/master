@@ -1,15 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{wiki:frs}
-Systems and software engineering -- vocabulary, 2010.
-
-\bibitem{wiki:typeface}
-Typeface --- {W}ikipedia{,} the free encyclopedia, 2016.
-\newblock [Online; accessed 20-December-2016].
-
-\bibitem{wiki:vitrage}
-What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
-
 \bibitem{nn_connection}
 {\sc Akbar, S., Peikari, M., Salama, S., Nofech-Mozes, S., and Martel, A.}
 \newblock Transitioning between convolutional and fully connected layers in
@@ -72,7 +62,7 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 
 \bibitem{uixagenda}
 {\sc Hassenzahl, M., and Tractinsky, N.}
-\newblock User experienceÂ -Â a research agenda.
+\newblock User experience - a research agenda.
 \newblock {\em Behaviour \& Information Technology 25}, 2 (2006), 91--97.
 
 \bibitem{huqqani2010n2cloud}
@@ -91,6 +81,11 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 {\sc Khalil, W.}
 \newblock Reference architecture for virtual organization.
 \newblock {\em PhD thesis, University of Vienna 2012\/} (2012).
+
+\bibitem{wiki:vitrage}
+{\sc Lee, C.~A., and Sill, A.~F.}
+\newblock A design space for dynamic service level agreements in openstack.
+\newblock {\em Journal of Cloud Computing 3}, 1 (Nov 2014), 17.
 
 \bibitem{frs_4}
 {\sc Li, F.-L., Horkoff, J., Borgida, A., Guizzardi, G., Liu, L., and
@@ -225,6 +220,16 @@ What is {V}itrage? --- {W}ikipedia{,} the {F}ree {E}ncyclopedia, 2016.
 {\sc Walraven, S., Truyen, E., and Joosen, W.}
 \newblock Comparing paas offerings in light of saas development.
 \newblock {\em Computing 96}, 8 (Aug 2014), 669--724.
+
+\bibitem{wiki:frs}
+{\sc Weik, M.~H.}
+\newblock {\em functional specification}.
+\newblock Springer US, Boston, MA, 2001, pp.~664--664.
+
+\bibitem{wiki:typeface}
+{\sc Weik, M.~H.}
+\newblock {\em typeface}.
+\newblock Springer US, Boston, MA, 2001, pp.~1850--1850.
 
 \bibitem{frs_3}
 {\sc Weyers, B., Bowen, J., Dix, A., and Palanque, P.}

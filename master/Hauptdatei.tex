@@ -97,6 +97,18 @@
 % einfacher Zeilenabstand
 \singlespacing
 % Literaturliste soll im Inhaltsverzeichnis auftauchen
+
+\cleardoublepage
+\addcontentsline{toc}{section}{List of figures}
+\renewcommand\refname{List of figures}
+\listoffigures
+\newpage
+
+\singlespacing
+
+
+\input{components/appendix/appendix}
+
 \newpage
 \addcontentsline{toc}{section}{Bibliography}
 % Literaturverzeichnis anzeigen
@@ -113,11 +125,11 @@
 
 
 % leere Abschlussseite
-\newpage
-\thispagestyle{empty} % erzeugt Seite ohne Kopf- / Fusszeile
-\section*{ }
+%\newpage
+%\thispagestyle{empty} % erzeugt Seite ohne Kopf- / Fusszeile
+%\section*{ }
 
-\input{components/appendix/appendix}
+
 
 
 \end{document}
