@@ -40,7 +40,7 @@ The idea behind to use the ViNNSL template, which has additional fields for ViNN
 
 As it was mentioned before, the ViNNSL 2.0 contains metadata about the user and neural network.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=ViNNSL template metadata]
 ...
 	"problemDomain": {
 		"propagationType": {
@@ -86,7 +86,7 @@ In previous versions of the ViNNSL language, it was possible to define execution
 
 In the current version of N2Sky, it is possible to deploy neural network on the N2Sky cloud as well as on private cloud of the user. That is was the "endpoints" parameter was added.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=ViNNSL template enviroment]
 ...
     "endpoints": [{
         "name": "train",
@@ -104,7 +104,7 @@ Since it is array parameter it gives room for adding new endpoints in case if it
 
 The structure of the neural network was also changed. The template looks pretty empty, but from this template is possible to generate any type of structure based on ViNNSL language. 
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=ViNNSL template structure]
 ...
 "structure": {
 		"inputLayer": {
@@ -167,7 +167,7 @@ The structure contains input, hidden and the output layer. Hidden layer has "dim
  In structure is important to define the connections between nodes. 
  
 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=ViNNSL template connections]
 ...
 		"connections": {
 			"fullyConnected": {
@@ -196,7 +196,7 @@ There are few types of connections:
 
 To the input parameters, the templating was also applied. The structure of the template is pretty similar to metadata template.
 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=ViNNSL template input paramteres]
 ...
 "parameters": {
 		"input": [
@@ -226,13 +226,13 @@ After the neural network contributor user fills out the template ViNNSL it is po
 
 The contributor user can also user ViNNSL in order to fill out the structure, connection, metadata and parameters of the neural network. If the user manually will do it, without N2Sky "3-step-view" generator, he has to upload his ViNNSL in the N2Sky platform and the neural network will be automatically created. 
 
-\subsubsection{Generated metadata}\label{Generated metadata}
+\subsubsection{Generated Metadata}\label{Generated metadata}
 
 In generated metadata, the information is filled out from N2Sky platform.
 
 All unless fields will be removed automatically, even if the contributor user leave it there. The typical parameters like "possibleValues" will be removed everywhere except the training parameters because it is needed for performing training.
 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=Generated ViNNSL model]
  ...
 	"problemDomain": {
 		"problemType": "Classifiers",
@@ -258,7 +258,7 @@ All unless fields will be removed automatically, even if the contributor user le
 
 The detailed information is shown in \autoref{B}
 
-\subsubsection{Generated structure}\label{Generated structure}
+\subsubsection{Generated Structure}\label{Generated structure}
 
 The structure is the most complicated part of the ViNNSL generation if the user will do it manually without N2Sky generator. 
 
@@ -266,7 +266,7 @@ Every node will receive the id, which will be parsed by N2Sky.
 
 \begin{itemize}
 \item \emph{Input layer as well as output layer} has the same structure of the node ids.
- \begin{lstlisting}
+ \begin{lstlisting}[caption=ViNNSL generated layers]
 ...
 		"inputLayer": {
 			"amount": 3,
@@ -293,7 +293,7 @@ Every node has the amount of the nodes. The nodes id have the following structur
 \item \emph{The hidden layer} can be multidimensional, that is why the id of the layer, as well as the id of nodes, are required.
 
 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=ViNNSL generated hidden layers]
 ...
 		"hiddenLayer": [
 			{
@@ -329,7 +329,7 @@ The ViNNSL Model is a derived from ViNNL Description trained model. Basically, t
 \item \emph{rawModel} is the raw training model, which can be used for the model evaluation. 
 \item \emph{logs.} The logs are appending during the training. When the training has done the logs will be removed from the neural network and added as a parameter to the model.
 \item \emph{test} is the array of performed tests. It was decided to save the test results in the model in order to stop spreading multiple schemas. 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=ViNNSL trained model testing]
 ...
        {
                 "createdOn": "2018-02-24T12:24:38.198Z",

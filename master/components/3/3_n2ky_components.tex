@@ -113,7 +113,7 @@ Additionally next to page view title component is Bullet Menu located. The norma
 
 As it was mentioned in \autoref{Technology Stack} "Technology Stack", N2Sky frontend application developed on the ReactJS framework. Part of the ReactJS framework is React-Router, which contains all page views of the application and redirects it accordantly to URL path:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=React Router]
 <Provider store={store}>
 	<Router history={browserHistory}>
 		<Route path="/" component={Auth}/>
@@ -216,7 +216,7 @@ In the figure \ref{fig:dashboard_template} is shown the typical N2Sky dashboard 
 
 
 
-\subsubsection{Responsive design}\label{Responsive design}
+\subsubsection{Responsive Design}\label{Responsive design}
 
 Since N2Sky is cross-platform application it has to support multiple screen resolutions as well as readability and usability. 
 
@@ -332,7 +332,7 @@ Buttons are using on hover animation. When mouse over the button, then button ic
 
 Is it possible to import code in some graphical vector editor in order change color, path (vector graphic itself), metadata etc. Following code demonstrate N2Sky Logo in SVG format. The whole vector path was shortened.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=XML, caption=SVG example]
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
         "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -618,7 +618,7 @@ Detailed information about web service API and API documentation is written in \
 
 In client-server architecture especially for OpenStack cloud platform, computer servers are important. Servers could go down, but the system-administrator does not have to work 24/7 in order to monitor the system and wait until some problem occurs. A system administrator could use some monitoring tools like Nagios for OpenStack in order to get information about servers state. Monitoring tool can give information about the system, network, and infrastructure \cite{nagios}. The purpose of the monitoring tool to find some problems and inform the system administrator about some problem occurred. This tool cannot solve the problem, but it can give information what went wrong.
  
-\subsubsection{Monitoring requirements}\label{Monitoring requirements}
+\subsubsection{Monitoring Requirements}\label{Monitoring requirements}
 
 The base monitoring system is a readable and understandable representation of the graph. Graphs allow you to see objects beaning monitored and recognize metric from these objects. 
 The good monitoring graph gives the meaningful description, helps quickly to detect and determine issues via representation. This kind of graph should serve as a motivation for action to solve problems. 
@@ -702,7 +702,7 @@ Talking about requirements it is important to mention here that there is a possi
 Prometheus supports query language, which is a key feature of this tool. The Prometheus query language, or promql, is expressive. 
 With Prometheus, the self-described metric name can be chosen. Prometheus converts all metric so that every human can understand what exactly particular metric means. Let's take a previous example with a metric "node\_filesystem\_avail". This metric will show the folders on root and available memory on each of it.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Prometheus query]
     node_filesystem_avail 
         {device="/dev/sdb4",fstype="ext4",
         instance="localhost:9100",job="node",
@@ -713,7 +713,7 @@ Following request means that on "/usr/local" 186.6 GB is available.
 
 There is also the possibility to check a response code, which especially useful for alerting. 
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Prometheus short query]
         node_filesystem_avail {status="500"}
 \end{lstlisting}
 
@@ -733,7 +733,7 @@ For building a proper dashboard for monitoring it is important to provide custom
 Using the time duration with an offset it is possible to get an exact metric on demand. 
 Building query with a Prometheus can bring lots of advantages. For example, there is the query which  a counter with an available node file system metric:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Prometheus alerting rule]
     took( 3, sum(
          rate(api_http_requests_total{status=500}[1h]
     ) )
@@ -748,17 +748,6 @@ First of all the time range add a complexity. It was decided that the user shoul
 The second part is a storing of metric. Instead of every time build a query the monitoring service saving requested by user metric. In this case, every user will get his own customized metric. 
 The service uses Mongo DB for storing the metric configuration. Every collection has its own schema. When a user makes a request to save a metric the schema has to be filled with a requested by user data.
 
-\subsubsection{Monitoring dashlet Design}\label{Monitoring dashlet Design}
-
-Since there are multiple machine and services to monitor there was a need to create a dedicated dashboard design.  At first, let's take a look at the environments we have to monitor: 
-\begin{description}
-\item[Openstack Machine.]  It is dedicated machine, our cloud base for development and running instances.
-\item[Openstack Instances.]   Virtual machines with a different OS.
-\item[Docker Containers.]  Virtual machines in the OpenStack instances.
-\end{description}
-
-One of the most important parts of application design is to maximize reusability of the components. 
-
 
 The benefit of the microservices architecture is the independence of each service. The good part of it, when one of the services will not be accessible, the rest of them still be up and running. The problem is that in order to make application running correctly all services are required. It is important to detect events and rollbacks the transaction in case if the error or failure occurs. N2Sky system has its own monitoring and alerting system, which notify the system administrator about failures, but how to handle events, which are transactionally dependent from service to service in case if the error occurs and an event is still in the transaction. There is two main kind of events \cite{cs5366}: 
 
@@ -768,6 +757,18 @@ The benefit of the microservices architecture is the independence of each servic
 \end{itemize}
 
 It is impossible to maintain each event and process an event stream in the N2Sky application because if some other developers forget to put the event into the stream it will not be noticed. That is why in N2Sky is events intrinsic, which are logging every transaction from one service to another. In case if the error occurs the alerting event will be fired with a log data like the step it self and the error. 
+
+
+\subsubsection{Monitoring Dashlet Design}\label{Monitoring dashlet Design}
+
+Since there are multiple machine and services to monitor there was a need to create a dedicated dashboard design.  At first, let's take a look at the environments we have to monitor: 
+\begin{description}
+\item[Openstack Machine.]  It is dedicated machine, our cloud base for development and running instances.
+\item[Openstack Instances.]   Virtual machines with a different OS.
+\item[Docker Containers.]  Virtual machines in the OpenStack instances.
+\end{description}
+
+One of the most important parts of application design is to maximize reusability of the components. 
 
  
 \begin{figure}[htbp]
@@ -837,7 +838,7 @@ In Prometheus configuration need to be set up only two things: reference on Aler
 \end{lstlisting}
 
 As a response the event information is sent \cite{alert_send}.
- \begin{lstlisting}
+ \begin{lstlisting}[caption=Querying alert]
  [
   {
     "labels": {
@@ -863,7 +864,7 @@ Following response shows timestamp of event, additional information as an annota
 
 As it was mention one of the main changes in Prometheus setup is to configure the alert rules. Every Prometheus Monitoring Tool can have it own alerting rules, which can be defined. There is also a possibility to reference on some common alerting rule for every monitoring system on every machine. 
 
- \begin{lstlisting}
+ \begin{lstlisting}[caption=Alert error response]
         groups:
         - name: test
           rules:

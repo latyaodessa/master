@@ -4,7 +4,7 @@
 
 Current N2Sky architecture a monolithic standalone application. It was heavily maintainable and not scalable. Before proposing the new architecture design it is important to find the weak parts of the current application and define what functionality is still possible to reuse in order gain new functionality with a reasonable time.
 
-\subsubsection{Architecture design}\label{Architecturedesign}
+\subsubsection{Architecture Design}\label{Architecturedesign}
 
 The current N2Sky design based on RAVO architecture \cite{ravo}, which extends default SPI stack. SPI stack contains Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). The architecture had two phases of integration.  In the first phase, the SPI was extended and applied to the N2Sky application. On the last phase, all mandatory components were implemented and integrated as it presented in figure \ref{fig:current_arch}.
 
@@ -56,11 +56,11 @@ The mobile application of the N2Sky is built with raw HTML5 and JavaScript. Toda
 The whole system is deployed on Amazon Web Services (AWS), which is good if the owner has enough resource to keep it working. The best solution would be to have a dedicated server with a real physical memory and computational abilities.  
 
 
-\subsubsection{Usability and user experience}\label{Usabilityanduserexperience}
+\subsubsection{Usability and User Experience}\label{Usabilityanduserexperience}
 
 
 
-\subsection{Redesign motivation}\label{Redesignmotivation}
+\subsection{Redesign Motivation}\label{Redesignmotivation}
 
 Application redesign is a project, which takes a lot of work. But at some point, every designer faced a refactoring project. It has a lot to do with user experience. Bad user experience will make users stop using an application and leave negative feedback on the application in general. 
 
@@ -155,7 +155,7 @@ UI will concentrate on the appearance and design of the product, rather than the
 UX points its focus on the involvement of the user while interacting. It is measured by a variety of tests and researches done to achieve a higher satisfaction on the user's side.
 Though their differences, the only matter which relates both UI and UX is their priority, in other words, the user. When expanding the concept of both these definitions it can be concluded that one co-exists with the other. There would not be user interface without user experience and vice versa. 
 
-\subsubsection{Advanced project management}\label{Advanced project management}
+\subsubsection{Advanced Project Management}\label{Advanced project management}
 
 In order to make N2Sky competitive on the market, the modern approach in the planning of the project has to be done. Today the most common and effective way in development and planning is well-constructed Functional Requirements Specification (FRS), which helps to estimate effort and advice in the future planning. 
 
@@ -269,7 +269,7 @@ N2Sky is a simulation platform, which allows all involved stockholders to use it
 
 The user-centered design is a fundamental requirement for N2Sky. Looking back on past experiences with the application, there were identified the real capabilities and needs of users. N2Sky was moved from a complex monolithic system to an easily understandable application. Every interested user without having a deep knowledge in the neural network field can freely use N2Sky.  The goal was to save and gain the current functionality of the application and decrease the visual complexity of it. 
 
-\subsubsection{Cloud infrostructure}\label{Cloud infrostructure}
+\subsubsection{Cloud Infrastructure}\label{Cloud infrastructure}
 
 
 Upon the N2Sky microservices, the load balancer located, which includes shared cloud resources. Since in N2Sky environment needs to support thousands of Docker containers \cite{docker} simultaneously, only container orchestration like Cloudify \cite{cloudify} with a microservices architecture can perform this.  Cloudify is a container orchestration tool, which provides communication between cloud platforms and manages container deployment and execution. Docker container is a operating-system-level virtualization. Containers technology used across entire system from frontend and services to monitoring and alert management system. 
@@ -297,7 +297,7 @@ The novel N2Sky architecture can be scaled horizontally as well as vertically on
 
  
  
-\subsubsection{Modular frontend application design}\label{Modular frontend application design}
+\subsubsection{Modular Frontend Application Design}\label{Modular frontend application design}
 
 Maintain large application like N2Sky with the monolithic approach is unwieldy. Since N2Sky supports microservices approach in the backend it was decided to apply the same solution on the frontend.  
 
@@ -353,7 +353,7 @@ The central concept of the application is to support the Software as a Service (
 \end{itemize}
 
 
-\subsubsection{The sample workflow}
+\subsubsection{The Sample Workflow}
 
 
 The central figure is the N2Sky Web/Mobile portal. Is is frontend application of the N2Sky, which consist of modular subsystems. Since the frontend application has responsive design it supports desktop devices as well as mobile devices. 

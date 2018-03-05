@@ -24,6 +24,9 @@
 \usepackage{lipsum}
 \usepackage{float}
 
+%\usepackage{caption}
+%\DeclareCaptionType{code}[Code Listing][List of Code Listings] 
+
 \fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
 \fancyhead[L]{\nouppercase{\leftmark}} %Kopfzeile links
 \fancyhead[C]{} %zentrierte Kopfzeile
@@ -70,47 +73,108 @@
 
 \onehalfspacing
 
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\input{components/core/erklr}
+\newpage
 
 \input{components/core/abstract}
 
 \singlespacing
 
+
+
 \newpage
+
 
 %%%% Contents
-\thispagestyle{empty}
+%\thispagestyle{empty}
+\pagestyle{empty}
 \onehalfspacing
 \tableofcontents
+\clearpage
+
 \newpage
 
+\pagestyle{fancy}
 
 \input{components/1_introduction}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/2/2_n2sky_architecure}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/3/3_n2ky_components}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/6/vinnsl}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/4/4_frs}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/5/frs_main_module}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/tutorial/tutorial}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/usecase/6_user_cases}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 \input{components/7/7_developer_guide}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\input{components/conclusion/conclusion}
+
 \onecolumn
 % einfacher Zeilenabstand
 \singlespacing
 % Literaturliste soll im Inhaltsverzeichnis auftauchen
 
-\cleardoublepage
-\addcontentsline{toc}{section}{List of figures}
-\renewcommand\refname{List of figures}
-\listoffigures
-\newpage
+
 
 \singlespacing
 
 
 \input{components/appendix/appendix}
 
+
+\cleardoublepage
+%\addcontentsline{toc}{section}{List of figures}
+\renewcommand\refname{List of figures}
+\listoffigures
 \newpage
-\addcontentsline{toc}{section}{Bibliography}
+
+%\listofcodes
+\lstlistoflistings
+
+
+\singlespacing
+
+\newpage
+%\addcontentsline{toc}{section}{Bibliography}
 % Literaturverzeichnis anzeigen
 \renewcommand\refname{Bibliography}
 \bibliography{components/core/bibliography}

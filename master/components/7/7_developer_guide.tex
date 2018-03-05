@@ -1,8 +1,8 @@
 \section{Developer Guide}\label{Developer Guide}
 
-\subsection{System configuration}\label{System configuration}
+\subsection{System Configuration}\label{System configuration}
 
-\subsubsection{Setting up the database}\label{database setup}
+\subsubsection{Setting Up the Database}\label{database setup}
 
 N2Sky uses non-relational database MongoDB, which is running in Docker container. 
 
@@ -75,7 +75,7 @@ db.users.insert({
 
 
 
-\subsubsection{Setting up the Cloud Web Service}\label{cloud setup}
+\subsubsection{Setting Up the Cloud Web Service}\label{cloud setup}
 
 \emph{Clone the project from the repository}
  \begin{lstlisting}
@@ -117,7 +117,7 @@ Important to check the host and the port of the database.
 If something goes wrong and the port or the host is changed in n2sky project developer can edit it.
 The rest API endpoint host located in \emph{service/config/database.js}
 
-\subsubsection{Setting up the Model Repository Service}\label{model setup}
+\subsubsection{Setting Up the Model Repository Service}\label{model setup}
 
 \emph{Clone the project from the repository}
  \begin{lstlisting}
@@ -157,7 +157,7 @@ docker run -d -p 9092:8080 --name model model:1
 
 
 
-\subsubsection{Setting up the User Management Service}\label{user setup}
+\subsubsection{Setting Up the User Management Service}\label{user setup}
 
 \emph{Clone the project from the repository}
  \begin{lstlisting}
@@ -197,7 +197,7 @@ docker run -d -p 9091:8080 --name user user:1
 
 
 
-\subsubsection{Setting up the N2Sky frontend}\label{frontend setup}
+\subsubsection{Setting Up the N2Sky Frontend}\label{frontend setup}
 
 \emph{Clone the project from the repository}
  \begin{lstlisting}
@@ -236,7 +236,7 @@ docker run -d -p 9593:9593 --name frontend frontend:1
 
 
 
-\subsubsection{Setting up the Backpropogation Neural Network}\label{backprop setup}
+\subsubsection{Setting Up the Backpropogation Neural Network}\label{backprop setup}
 
 This neural network made for demonstration purposes. 
 
@@ -314,7 +314,7 @@ docker run -d -p 6006:6006 -p 8888:8888 -p 5000:5000 --name backprop backprop:1
 
 
 
-\subsubsection{Setting up the Monitoring System}\label{Monitoring System setup}
+\subsubsection{Setting Up the Monitoring System}\label{Monitoring System setup}
 
 To create custom image (OS: Ubuntu 16.04 Cloud version) with monitoring setup following steps has to be completed:
 
@@ -417,7 +417,7 @@ Node Exporter Module has no configuration file. Prometheus listen the modules an
 
 For deploying alert manager Docker containers technology is used.
 
-\subsubsection{Setting up Alert Management System}\label{Setting up Alert Management System}
+\subsubsection{Setting Up Alert Management System}\label{Setting up Alert Management System}
 
 All configuration of alert manager is written in YAML file. 
 On the beginning SMTP, email sender should be configured. This would be used for sending notifications.
