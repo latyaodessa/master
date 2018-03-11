@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  11 MAR 2018 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  12 MAR 2018 00:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2206,7 +2206,7 @@ cate ignored
 l.125 \newpage
                <./components/4/pics/alert_representation.png>] [102]
 (./components/5/frs_main_module.tex [103]
-<components/5/img/n2sky_main_dashboard.png, id=1810, 1048.91875pt x 979.66pt>
+<components/5/img/n2sky_main_dashboard.png, id=1809, 1048.91875pt x 979.66pt>
 File: components/5/img/n2sky_main_dashboard.png Graphic file (type png)
 
 <use components/5/img/n2sky_main_dashboard.png>
@@ -2220,7 +2220,7 @@ t line 28.
                                                   \fi \fi 
 l.37 \item T
             he user projects <./components/5/img/n2sky_main_dashboard.png>]
-<components/5/img/n2sky_tools.png, id=1817, 933.4875pt x 136.51pt>
+<components/5/img/n2sky_tools.png, id=1816, 933.4875pt x 136.51pt>
 File: components/5/img/n2sky_tools.png Graphic file (type png)
 
 <use components/5/img/n2sky_tools.png>
@@ -2232,7 +2232,7 @@ Overfull \hbox (25.72488pt too wide) in paragraph at lines 51--52
  [] 
  []
 
-<components/5/img/popupcreatenewproject.png, id=1820, 664.4825pt x 353.32pt>
+<components/5/img/popupcreatenewproject.png, id=1819, 664.4825pt x 353.32pt>
 File: components/5/img/popupcreatenewproject.png Graphic file (type png)
 
 <use components/5/img/popupcreatenewproject.png>
@@ -2255,7 +2255,7 @@ l.76 \item \emph
                 {Project Description} field with a short description of the ...
  <./components/5/img/n2sky_tools.png> <./components/5/img/popupcreatenewproject
 .png>]
-<components/5/img/n2sky_dashboard_projects.png, id=1832, 971.63pt x 174.6525pt>
+<components/5/img/n2sky_dashboard_projects.png, id=1831, 971.63pt x 174.6525pt>
 File: components/5/img/n2sky_dashboard_projects.png Graphic file (type png)
 <use components/5/img/n2sky_dashboard_projects.png>
 Package pdftex.def Info: components/5/img/n2sky_dashboard_projects.png used on 
@@ -2266,7 +2266,7 @@ Overfull \hbox (44.79608pt too wide) in paragraph at lines 90--91
  [] 
  []
 
-<components/5/img/n2sky_filtering_bar.png, id=1834, 888.31876pt x 70.2625pt>
+<components/5/img/n2sky_filtering_bar.png, id=1833, 888.31876pt x 70.2625pt>
 File: components/5/img/n2sky_filtering_bar.png Graphic file (type png)
 
 <use components/5/img/n2sky_filtering_bar.png>
@@ -2284,17 +2284,17 @@ Overfull \hbox (3.14056pt too wide) in paragraph at lines 105--106
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.115 \item \emph
-                 {Saved networks.} Only saved neural networks of the users. ...
+                 {Saved networks.} Only saved neural networks of the user. T...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.59}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.115 \item \emph
-                 {Saved networks.} Only saved neural networks of the users. ...
+                 {Saved networks.} Only saved neural networks of the user. T...
  <./components/5/img/n2sky_dashboard_projects.png> <./components/5/img/n2sky_fi
 ltering_bar.png>] [107]
-<components/5/img/projects_dsahboard.png, id=1848, 1102.1175pt x 887.315pt>
+<components/5/img/projects_dsahboard.png, id=1847, 1102.1175pt x 887.315pt>
 File: components/5/img/projects_dsahboard.png Graphic file (type png)
 
 <use components/5/img/projects_dsahboard.png>
@@ -2302,114 +2302,114 @@ Package pdftex.def Info: components/5/img/projects_dsahboard.png used on input
 line 154.
 (pdftex.def)             Requested size: 441.01773pt x 355.06865pt.
 
-<components/5/img/project_tools.png, id=1850, 1003.75pt x 155.58125pt>
+<components/5/img/project_tools.png, id=1849, 1003.75pt x 155.58125pt>
 File: components/5/img/project_tools.png Graphic file (type png)
 
 <use components/5/img/project_tools.png>
 Package pdftex.def Info: components/5/img/project_tools.png used on input line 
-169.
+168.
 (pdftex.def)             Requested size: 441.01773pt x 68.35861pt.
  [108pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.178 \item \emph
-                 {Model repository.} Reference to the model repository view. <.
-/components/5/img/projects_dsahboard.png>]
-<components/5/img/upload_vinnsl_popup.png, id=1859, 715.67375pt x 609.27625pt>
+l.176 \item \emph
+                 {Available neural network.} Reference to the available repo...
+ <./components/5/img/projects_dsahboard.png>]
+<components/5/img/upload_vinnsl_popup.png, id=1858, 715.67375pt x 609.27625pt>
 File: components/5/img/upload_vinnsl_popup.png Graphic file (type png)
 
 <use components/5/img/upload_vinnsl_popup.png>
 Package pdftex.def Info: components/5/img/upload_vinnsl_popup.png used on input
- line 184.
+ line 183.
 (pdftex.def)             Requested size: 357.836pt x 304.63737pt.
  [109pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.193 \item T
+l.192 \item T
              he Docker username field, which references on the username in D...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.62}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.193 \item T
+l.192 \item T
              he Docker username field, which references on the username in D...
  <./components/5/img/project_tools.png> <./components/5/img/upload_vinnsl_popup
 .png>]
-<components/5/img/saved_trained_models_project.png, id=1869, 1015.795pt x 316.1
+<components/5/img/saved_trained_models_project.png, id=1868, 1015.795pt x 316.1
 8124pt>
 File: components/5/img/saved_trained_models_project.png Graphic file (type png)
 
  <use components/5/img/saved_trained_models_project.png>
 Package pdftex.def Info: components/5/img/saved_trained_models_project.png used
- on input line 220.
+ on input line 219.
 (pdftex.def)             Requested size: 441.01773pt x 137.27237pt.
  [110]
-<components/5/img/nn_desc_3_steps.png, id=1876, 1172.38pt x 497.86pt>
+<components/5/img/nn_desc_3_steps.png, id=1875, 1172.38pt x 497.86pt>
 File: components/5/img/nn_desc_3_steps.png Graphic file (type png)
 
 <use components/5/img/nn_desc_3_steps.png>
 Package pdftex.def Info: components/5/img/nn_desc_3_steps.png used on input lin
-e 243.
+e 242.
 (pdftex.def)             Requested size: 441.01773pt x 187.27438pt.
  [111pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.248 
+l.247 
        <./components/5/img/saved_trained_models_project.png>] [112pdfTeX warnin
 g (ext4): destination with the same identifier (name{figure.64}) has been alrea
 dy used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 \end{itemize}
+l.272 \end{itemize}
                     <./components/5/img/nn_desc_3_steps.png>]
-<components/5/img/nn_structure_3_steps.png, id=1890, 1237.62375pt x 768.8725pt>
+<components/5/img/nn_structure_3_steps.png, id=1889, 1237.62375pt x 768.8725pt>
 File: components/5/img/nn_structure_3_steps.png Graphic file (type png)
 <use components/5/img/nn_structure_3_steps.png>
 Package pdftex.def Info: components/5/img/nn_structure_3_steps.png used on inpu
-t line 280.
+t line 279.
 (pdftex.def)             Requested size: 441.01773pt x 273.9782pt.
  [113pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.295 
+l.294 
        <./components/5/img/nn_structure_3_steps.png>]
-<components/5/img/connection_3_steps.png, id=1903, 1191.45125pt x 511.9125pt>
+<components/5/img/connection_3_steps.png, id=1902, 1191.45125pt x 511.9125pt>
 File: components/5/img/connection_3_steps.png Graphic file (type png)
 
 <use components/5/img/connection_3_steps.png>
 Package pdftex.def Info: components/5/img/connection_3_steps.png used on input 
-line 298.
+line 297.
 (pdftex.def)             Requested size: 441.01773pt x 189.48277pt.
 
-<components/5/img/training_3_steps.png, id=1905, 1158.3275pt x 662.475pt>
+<components/5/img/training_3_steps.png, id=1904, 1158.3275pt x 662.475pt>
 File: components/5/img/training_3_steps.png Graphic file (type png)
 
 <use components/5/img/training_3_steps.png>
 Package pdftex.def Info: components/5/img/training_3_steps.png used on input li
-ne 312.
+ne 311.
 (pdftex.def)             Requested size: 441.01773pt x 252.22832pt.
  [114pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.317 
+l.316 
        <./components/5/img/connection_3_steps.png>]
-<components/5/img/run_instance_3_steps.png, id=1914, 643.40375pt x 346.29375pt>
+<components/5/img/run_instance_3_steps.png, id=1913, 643.40375pt x 346.29375pt>
 File: components/5/img/run_instance_3_steps.png Graphic file (type png)
 <use components/5/img/run_instance_3_steps.png>
 Package pdftex.def Info: components/5/img/run_instance_3_steps.png used on inpu
-t line 326.
+t line 325.
 (pdftex.def)             Requested size: 321.70108pt x 173.14644pt.
  [115pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 7}) has been already used, duplicate ignored
@@ -2417,99 +2417,100 @@ t line 326.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.334 \item \emph
-                 {/train} - for training the neural network. This endpoint h...
+                 {/test} - for evaluating the trained model. Has to accept o...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.68}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.334 \item \emph
-                 {/train} - for training the neural network. This endpoint h...
+                 {/test} - for evaluating the trained model. Has to accept o...
  <./components/5/img/training_3_steps.png> <./components/5/img/run_instance_3_s
 teps.png>]
-<components/5/img/expand_training_form.png, id=1925, 1214.5375pt x 706.64pt>
+<components/5/img/expand_training_form.png, id=1924, 1214.5375pt x 706.64pt>
 File: components/5/img/expand_training_form.png Graphic file (type png)
 
 <use components/5/img/expand_training_form.png>
 Package pdftex.def Info: components/5/img/expand_training_form.png used on inpu
-t line 348.
+t line 347.
 (pdftex.def)             Requested size: 441.01773pt x 256.58983pt.
  [116pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.355 
+l.354 
        <./components/5/img/expand_training_form.png>]
-<components/5/img/testing_model.png, id=1934, 1227.58624pt x 845.1575pt>
+<components/5/img/testing_model.png, id=1933, 1227.58624pt x 845.1575pt>
 File: components/5/img/testing_model.png Graphic file (type png)
 
 <use components/5/img/testing_model.png>
 Package pdftex.def Info: components/5/img/testing_model.png used on input line 
-370.
+369.
 (pdftex.def)             Requested size: 441.01773pt x 303.62456pt.
- [117pdfTeX warning (ext4): destination with the same identifier (name{figure.7
-0}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.378 \item \emph
-                 {Functional bar} consists of the title itself and the funct...
- <./components/5/img/testing_model.png>]
-<components/5/img/copy_model.png, id=1942, 655.44875pt x 374.39874pt>
+<components/5/img/copy_model.png, id=1935, 655.44875pt x 374.39874pt>
 File: components/5/img/copy_model.png Graphic file (type png)
 
 <use components/5/img/copy_model.png>
-Package pdftex.def Info: components/5/img/copy_model.png used on input line 382
+Package pdftex.def Info: components/5/img/copy_model.png used on input line 381
 .
 (pdftex.def)             Requested size: 327.72357pt x 187.19891pt.
+ [117] [118pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.70}) has been already used, duplicate ignored
 
-<components/5/img/model_testing.png, id=1944, 669.50125pt x 374.39874pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.399 \item \emph
+                 {Test the model} button will initiate the testing popup mod...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.71}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.399 \item \emph
+                 {Test the model} button will initiate the testing popup mod...
+ <./components/5/img/testing_model.png> <./components/5/img/copy_model.png>]
+<components/5/img/model_testing.png, id=1949, 669.50125pt x 374.39874pt>
 File: components/5/img/model_testing.png Graphic file (type png)
 
 <use components/5/img/model_testing.png>
 Package pdftex.def Info: components/5/img/model_testing.png used on input line 
-404.
+403.
 (pdftex.def)             Requested size: 334.7498pt x 187.19891pt.
- [118pdfTeX warning (ext4): destination with the same identifier (name{figure.7
-1}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.408 \end{figure}
-                   <./components/5/img/copy_model.png>]
-<components/5/img/nn_repository.png, id=1952, 1262.7175pt x 782.925pt>
+<components/5/img/nn_repository.png, id=1951, 1262.7175pt x 782.925pt>
 File: components/5/img/nn_repository.png Graphic file (type png)
 
 <use components/5/img/nn_repository.png>
 Package pdftex.def Info: components/5/img/nn_repository.png used on input line 
-431.
+430.
 (pdftex.def)             Requested size: 441.01773pt x 273.44247pt.
  [119pdfTeX warning (ext4): destination with the same identifier (name{figure.7
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.436 
+l.435 
        <./components/5/img/model_testing.png>]
-<components/5/img/copy_nn.png, id=1961, 665.48625pt x 366.36874pt>
+<components/5/img/copy_nn.png, id=1960, 665.48625pt x 366.36874pt>
 File: components/5/img/copy_nn.png Graphic file (type png)
 
 <use components/5/img/copy_nn.png>
-Package pdftex.def Info: components/5/img/copy_nn.png used on input line 456.
+Package pdftex.def Info: components/5/img/copy_nn.png used on input line 455.
 (pdftex.def)             Requested size: 332.74231pt x 183.18391pt.
  [120pdfTeX warning (ext4): destination with the same identifier (name{figure.7
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.464 \item T
+l.463 \item T
              he name of the neural network <./components/5/img/nn_repository.pn
-g>] <components/5/img/model_repo.png, id=1971, 1096.095pt x 760.8425pt>
+g>] <components/5/img/model_repo.png, id=1970, 1096.095pt x 760.8425pt>
 File: components/5/img/model_repo.png Graphic file (type png)
 
 <use components/5/img/model_repo.png>
-Package pdftex.def Info: components/5/img/model_repo.png used on input line 486
+Package pdftex.def Info: components/5/img/model_repo.png used on input line 485
 .
 (pdftex.def)             Requested size: 441.01773pt x 306.13107pt.
  [121pdfTeX warning (ext4): destination with the same identifier (name{figure.7
@@ -2517,20 +2518,20 @@ Package pdftex.def Info: components/5/img/model_repo.png used on input line 486
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.491 
+l.490 
        <./components/5/img/copy_nn.png>] [122pdfTeX warning (ext4): destination
  with the same identifier (name{figure.75}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.514 
+l.513 
        <./components/5/img/model_repo.png>]
-<components/5/img/short_desc.png, id=1985, 1265.72874pt x 695.59875pt>
+<components/5/img/short_desc.png, id=1984, 1265.72874pt x 695.59875pt>
 File: components/5/img/short_desc.png Graphic file (type png)
 
 <use components/5/img/short_desc.png>
-Package pdftex.def Info: components/5/img/short_desc.png used on input line 517
+Package pdftex.def Info: components/5/img/short_desc.png used on input line 516
 .
 (pdftex.def)             Requested size: 441.01773pt x 242.35936pt.
 ) [123pdfTeX warning (ext4): destination with the same identifier (name{figure.
@@ -2541,7 +2542,7 @@ Package pdftex.def Info: components/5/img/short_desc.png used on input line 517
 l.130 \newpage
                <./components/5/img/short_desc.png>] [124]
 (./components/tutorial/tutorial.tex
-<components/tutorial/img/training_arbitrary.jpg, id=1996, 1099.10625pt x 661.47
+<components/tutorial/img/training_arbitrary.jpg, id=1995, 1099.10625pt x 661.47
 125pt>
 File: components/tutorial/img/training_arbitrary.jpg Graphic file (type jpg)
  <use components/tutorial/img/training_arbitrary.jpg>
@@ -2556,7 +2557,7 @@ Package pdftex.def Info: components/tutorial/img/training_arbitrary.jpg used on
 l.30 \item \emph
                 {The arbitrary user} <./components/tutorial/img/training_arbitr
 ary.jpg>]
-<components/tutorial/img/sign_login.jpg, id=2009, 803.0pt x 602.25pt>
+<components/tutorial/img/sign_login.jpg, id=2008, 803.0pt x 602.25pt>
 File: components/tutorial/img/sign_login.jpg Graphic file (type jpg)
 
 <use components/tutorial/img/sign_login.jpg>
@@ -2570,21 +2571,27 @@ ine 37.
                                                   \fi \fi 
 l.48 \end{itemize}
                    <./components/tutorial/img/sign_login.jpg>] [127]
-<components/tutorial/img/tutorial_engeneer.jpg, id=2022, 972.63374pt x 661.4712
+<components/tutorial/img/tutorial_engeneer.jpg, id=2021, 972.63374pt x 661.4712
 5pt>
 File: components/tutorial/img/tutorial_engeneer.jpg Graphic file (type jpg)
  <use components/tutorial/img/tutorial_engeneer.jpg>
 Package pdftex.def Info: components/tutorial/img/tutorial_engeneer.jpg used on 
 input line 103.
 (pdftex.def)             Requested size: 441.01773pt x 299.93028pt.
- [128] [129pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.79}) has been already used, duplicate ignored
+ [128]
+Overfull \hbox (1.09668pt too wide) in paragraph at lines 124--125
+[]\T1/lmr/m/it/12 Select neu-ral net-work paradigm. \T1/lmr/m/n/12 The user can
+ choose avail-able paradigms
+ []
+
+[129pdfTeX warning (ext4): destination with the same identifier (name{figure.79
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.126 \end{itemize}
                     <./components/tutorial/img/tutorial_engeneer.jpg>] [130]
-<components/tutorial/img/tutorial_contribut.jpg, id=2042, 980.66376pt x 630.355
+<components/tutorial/img/tutorial_contribut.jpg, id=2041, 980.66376pt x 630.355
 pt>
 File: components/tutorial/img/tutorial_contribut.jpg Graphic file (type jpg)
  <use components/tutorial/img/tutorial_contribut.jpg>
@@ -2600,7 +2607,7 @@ l.184 \item \emph
                  {Initiate "Upload own neural network"}, which will open the...
  <./components/tutorial/img/tutorial_contribut.jpg>]) [132] [133]
 (./components/usecase/6_user_cases.tex
-<components/usecase/img/use_case_student.png, id=2064, 1987.425pt x 1752.5475pt
+<components/usecase/img/use_case_student.png, id=2063, 1987.425pt x 1752.5475pt
 >
 File: components/usecase/img/use_case_student.png Graphic file (type png)
  <use components/usecase/img/use_case_student.png>
@@ -2615,7 +2622,7 @@ put line 16.
 l.24 T
       his user can create a project, which it will be in the focus after the...
  <./components/usecase/img/use_case_student.png>]
-<components/usecase/img/user_case_engin.png, id=2073, 2137.9875pt x 1421.31pt>
+<components/usecase/img/user_case_engin.png, id=2072, 2137.9875pt x 1421.31pt>
 File: components/usecase/img/user_case_engin.png Graphic file (type png)
 
 <use components/usecase/img/user_case_engin.png>
@@ -2834,7 +2841,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
 Here is how much of TeX's memory you used:
  15857 strings out of 492995
  252377 string characters out of 6132703
- 532526 words of memory out of 5000000
+ 532527 words of memory out of 5000000
  17114 multiletter control sequences out of 15000+600000
  75125 words of font info for 53 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -2853,7 +2860,7 @@ fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Hauptdatei.pdf (175 pages, 6782880 bytes).
+Output written on Hauptdatei.pdf (175 pages, 6782815 bytes).
 PDF statistics:
  3860 PDF objects out of 4296 (max. 8388607)
  3473 compressed objects within 35 object streams
