@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Hauptdatei.aux
+The style file: acm.bst
+Database file #1: components/core/bibliography.bib
+Warning--empty chapter and pages in neutron
+Warning--can't use both author and editor fields in Martinez2017
+You've used 42 entries,
+            2253 wiz_defined-function locations,
+            767 strings with 11602 characters,
+and the built_in function-call counts, 15949 in all, are:
+= -- 1497
+> -- 746
+< -- 0
++ -- 294
+- -- 249
+* -- 1119
+:= -- 2472
+add.period$ -- 126
+call.type$ -- 42
+change.case$ -- 224
+chr.to.int$ -- 0
+cite$ -- 44
+duplicate$ -- 695
+empty$ -- 1352
+format.name$ -- 249
+if$ -- 3470
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 41
+newline$ -- 213
+num.names$ -- 106
+pop$ -- 335
+preamble$ -- 1
+purify$ -- 189
+quote$ -- 0
+skip$ -- 491
+stack$ -- 0
+substring$ -- 892
+swap$ -- 237
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 154
+warning$ -- 2
+while$ -- 165
+width$ -- 44
+write$ -- 458
+(There were 2 warnings)

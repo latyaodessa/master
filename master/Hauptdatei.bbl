@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{adamenko}
+{\sc Adamenko, A., Schikuta, E., and Fedorenko, A.}
+\newblock Towards a modularized cloud container-based problem solving
+  environment.
+\newblock In {\em IEEE SCC2018, The 2018 International Joint Conference on\/}
+  (2013), IEEE, pp.~1--8.
+
 \bibitem{nn_connection}
 {\sc Akbar, S., Peikari, M., Salama, S., Nofech-Mozes, S., and Martel, A.}
 \newblock Transitioning between convolutional and fully connected layers in

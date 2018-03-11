@@ -1,7 +1,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Current N2Sky architecure}}{14}{figure.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Current N2Sky User Interface}}{16}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Applied on N2Sky Requirement Specification Quialities}}{21}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces User roles hierarchy and modules where they operating on (marked grey)}}{22}{figure.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Requirement Specification Qualities}}{21}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces User roles hierarchy and modules where they are operating on (marked grey)}}{22}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Novel N2Sky Architecture}}{25}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Microservices approach in frontend application}}{27}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces N2Sky frontend application and its services}}{28}{figure.7}
@@ -21,10 +21,10 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces Customised N2Sky navigation UI element}}{49}{figure.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Customised N2Sky navigation bar with a table}}{49}{figure.22}
 \contentsline {figure}{\numberline {23}{\ignorespaces Responsive N2Sky Grid Item UI comonent}}{50}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces N2Sky Main Navigation Menu for arbitrary user}}{51}{figure.24}
+\contentsline {figure}{\numberline {24}{\ignorespaces N2Sky Main Navigation Menu for arbitrary user}}{50}{figure.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces N2Sky Main Navigation Menu for system administrator}}{51}{figure.25}
 \contentsline {figure}{\numberline {26}{\ignorespaces N2Sky Modal Window UI component}}{52}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces N2Sky User Management Web Service}}{54}{figure.27}
+\contentsline {figure}{\numberline {27}{\ignorespaces N2Sky User Management Web Service}}{53}{figure.27}
 \contentsline {figure}{\numberline {28}{\ignorespaces N2Sky Model Repository Web Service}}{55}{figure.28}
 \contentsline {figure}{\numberline {29}{\ignorespaces N2Sky Cloud Management Web Service}}{57}{figure.29}
 \contentsline {figure}{\numberline {30}{\ignorespaces Prometheus monitoring architecture}}{60}{figure.30}

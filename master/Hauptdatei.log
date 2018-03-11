@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  4 MAR 2018 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  11 MAR 2018 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1056,7 +1056,7 @@ LaTeX Info: Redefining \nameref on input line 66.
 \c@lstlisting=\count127
  (./latex_einstellungen/trennung.tex)
 (./components/core/deckblatt.tex
-<components/core/uni_logo.png, id=486, 1757.56625pt x 478.78876pt>
+<components/core/uni_logo.png, id=490, 1757.56625pt x 478.78876pt>
 File: components/core/uni_logo.png Graphic file (type png)
 
 <use components/core/uni_logo.png>
@@ -1134,27 +1134,27 @@ Overfull \hbox (1.5877pt too wide) detected at line 100
  []
 
 [7]
-Overfull \hbox (1.5877pt too wide) detected at line 117
+Overfull \hbox (1.5877pt too wide) detected at line 118
  []\T1/lmss/bx/n/12 160
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 118
+Overfull \hbox (1.5877pt too wide) detected at line 119
  []\T1/lmss/bx/n/12 161
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 119
+Overfull \hbox (1.5877pt too wide) detected at line 120
  []\T1/lmss/bx/n/12 163
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 120
+Overfull \hbox (1.5877pt too wide) detected at line 121
  []\T1/lmss/bx/n/12 167
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 121
+Overfull \hbox (1.5877pt too wide) detected at line 122
  []\T1/lmss/bx/n/12 169
  []
 
@@ -1174,7 +1174,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 
 ] [10]) [11]
 [12] (./components/2/2_n2sky_architecure.tex
-<components/2/current_arch.png, id=695, 469.2732pt x 620.0766pt>
+<components/2/current_arch.png, id=696, 469.2732pt x 620.0766pt>
 File: components/2/current_arch.png Graphic file (type png)
 
 <use components/2/current_arch.png>
@@ -1185,43 +1185,37 @@ re.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 \item \emph
-                {The registry}, which was a base component of the N2Sky arch...
+l.38 \item \emph
+                {The data archive} is the component, which managed the neura...
  <./components/2/current_arch.png>] [15]
-<components/2/old_arch.png, id=712, 682.55pt x 384.43625pt>
+<components/2/old_arch.png, id=714, 682.55pt x 384.43625pt>
 File: components/2/old_arch.png Graphic file (type png)
 
 <use components/2/old_arch.png>
 Package pdftex.def Info: components/2/old_arch.png used on input line 77.
 (pdftex.def)             Requested size: 441.01773pt x 248.40236pt.
-
-Overfull \hbox (1.88849pt too wide) in paragraph at lines 84--86
-[]\T1/lmr/m/n/12 After sign-ing in the user get-ting sub-scrip-tion form, parad
-igm ser-vice and paradigm
- []
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.86 
       <./components/2/old_arch.png>] [17] [18] [19] [20]
-<components/4/pics/frs_req.jpg, id=753, 391.4625pt x 368.37625pt>
-File: components/4/pics/frs_req.jpg Graphic file (type jpg)
+<components/4/pics/frs_req.png, id=754, 895.345pt x 465.74pt>
+File: components/4/pics/frs_req.png Graphic file (type png)
 
-<use components/4/pics/frs_req.jpg>
-Package pdftex.def Info: components/4/pics/frs_req.jpg used on input line 185.
-(pdftex.def)             Requested size: 293.59615pt x 276.2815pt.
+<use components/4/pics/frs_req.png>
+Package pdftex.def Info: components/4/pics/frs_req.png used on input line 185.
+(pdftex.def)             Requested size: 441.01773pt x 229.4156pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.196 E
-       very user has some specific area within the works. For example, just ...
- <./components/4/pics/frs_req.jpg>]
-<components/4/pics/users.png, id=761, 2080.77374pt x 1385.175pt>
+       very user has some specific area within the works. For example, autho...
+ <./components/4/pics/frs_req.png>]
+<components/4/pics/users.png, id=764, 2080.77374pt x 1385.175pt>
 File: components/4/pics/users.png Graphic file (type png)
 
 <use components/4/pics/users.png>
@@ -1260,7 +1254,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.260 \end{table}
                  ]
-<components/2/architecture.png, id=778, 1446.40375pt x 1039.885pt>
+<components/2/architecture.png, id=781, 1446.40375pt x 1039.885pt>
 File: components/2/architecture.png Graphic file (type png)
 
 <use components/2/architecture.png>
@@ -1279,7 +1273,7 @@ gure.5}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.295 \end{itemize}
                     <./components/2/architecture.png>]
-<components/2/frontend_arch.png, id=794, 1716.4125pt x 1445.4pt>
+<components/2/frontend_arch.png, id=797, 1716.4125pt x 1445.4pt>
 File: components/2/frontend_arch.png Graphic file (type png)
 
 <use components/2/frontend_arch.png>
@@ -1287,7 +1281,7 @@ Package pdftex.def Info: components/2/frontend_arch.png used on input line 315.
 
 (pdftex.def)             Requested size: 441.01773pt x 371.36209pt.
  [26]
-<components/2/redirector.png, id=803, 2324.685pt x 1174.3875pt>
+<components/2/redirector.png, id=806, 2324.685pt x 1174.3875pt>
 File: components/2/redirector.png Graphic file (type png)
 
 <use components/2/redirector.png>
@@ -1307,7 +1301,7 @@ nored
                                                   \fi \fi 
 l.362 
        <./components/2/redirector.png>]
-<components/2/new_arch.png, id=817, 4693.535pt x 3858.415pt>
+<components/2/new_arch.png, id=820, 4693.535pt x 3858.415pt>
 File: components/2/new_arch.png Graphic file (type png)
 
 <use components/2/new_arch.png>
@@ -1321,9 +1315,9 @@ re.8}) has been already used, duplicate ignored
 l.399 \item F
              rom the dashboard, the user creates a neural network from exist...
  <./components/2/new_arch.png>]
-Overfull \hbox (5.31618pt too wide) in paragraph at lines 399--400
+Overfull \hbox (9.95085pt too wide) in paragraph at lines 399--400
 []\T1/lmr/m/n/12 From the dash-board, the user cre-ates a neu-ral net-work from
- ex-ist-ing paradigm
+ ex-ist-ing paradigms
  []
 
 [31]
@@ -1332,14 +1326,8 @@ Overfull \hbox (2.93558pt too wide) in paragraph at lines 428--429
 -po-nents. Vaadin
  []
 
-[32]
-Overfull \hbox (1.28156pt too wide) in paragraph at lines 458--460
-[]\T1/lmr/m/n/12 As a database, it was de-cided to choose NoSQL one. There were
- two NoSQL databases
- []
-
-) [33] [34] (./components/3/3_n2ky_components.tex [35]
-<components/3/components/layout_basic.png, id=881, 2372.865pt x 1598.97375pt>
+[32]) [33] [34] (./components/3/3_n2ky_components.tex [35]
+<components/3/components/layout_basic.png, id=884, 2372.865pt x 1598.97375pt>
 File: components/3/components/layout_basic.png Graphic file (type png)
 
 <use components/3/components/layout_basic.png>
@@ -1353,7 +1341,7 @@ Package pdftex.def Info: components/3/components/layout_basic.png used on input
                                                   \fi \fi 
 l.59 \item C
             olors <./components/3/components/layout_basic.png>]
-<components/3/components/layout_main.png, id=889, 2673.99pt x 1565.85pt>
+<components/3/components/layout_main.png, id=892, 2673.99pt x 1565.85pt>
 File: components/3/components/layout_main.png Graphic file (type png)
 
 <use components/3/components/layout_main.png>
@@ -1361,7 +1349,7 @@ Package pdftex.def Info: components/3/components/layout_main.png used on input
 line 82.
 (pdftex.def)             Requested size: 441.01773pt x 258.23463pt.
  [37]
-<components/3/components/layout_mobile.png, id=897, 1830.84pt x 1668.2325pt>
+<components/3/components/layout_mobile.png, id=900, 1830.84pt x 1668.2325pt>
 File: components/3/components/layout_mobile.png Graphic file (type png)
 
 <use components/3/components/layout_mobile.png>
@@ -1455,7 +1443,7 @@ Overfull \hbox (13.10365pt too wide) in paragraph at lines 184--185
  []
 
 
-<components/3/components/dashboard_template.png, id=962, 1942.25626pt x 1445.4p
+<components/3/components/dashboard_template.png, id=965, 1942.25626pt x 1445.4p
 t>
 File: components/3/components/dashboard_template.png Graphic file (type png)
  <use components/3/components/dashboard_template.png>
@@ -1463,7 +1451,7 @@ Package pdftex.def Info: components/3/components/dashboard_template.png used on
  input line 209.
 (pdftex.def)             Requested size: 441.01773pt x 328.17839pt.
  [42]
-<components/3/components/typo.png, id=972, 656.4525pt x 364.36125pt>
+<components/3/components/typo.png, id=975, 656.4525pt x 364.36125pt>
 File: components/3/components/typo.png Graphic file (type png)
 
 <use components/3/components/typo.png>
@@ -1477,7 +1465,7 @@ Package pdftex.def Info: components/3/components/typo.png used on input line 22
                                                   \fi \fi 
 l.232 
        <./components/3/components/dashboard_template.png>]
-<components/3/components/screen.png, id=985, 675.52374pt x 261.97874pt>
+<components/3/components/screen.png, id=988, 675.52374pt x 261.97874pt>
 File: components/3/components/screen.png Graphic file (type png)
 
 <use components/3/components/screen.png>
@@ -1502,7 +1490,7 @@ Overfull \hbox (0.59128pt too wide) in paragraph at lines 261--262
 []\T1/lmr/m/n/12 Navigation be-tween page views. Nav-i-ga-tional com-po-nents
  []
 
-[45] <components/3/components/accordion.png, id=1001, 378.41376pt x 281.05pt>
+[45] <components/3/components/accordion.png, id=1004, 378.41376pt x 281.05pt>
 File: components/3/components/accordion.png Graphic file (type png)
 
 <use components/3/components/accordion.png>
@@ -1510,14 +1498,14 @@ Package pdftex.def Info: components/3/components/accordion.png used on input li
 ne 296.
 (pdftex.def)             Requested size: 283.80962pt x 210.78697pt.
 
-<components/3/components/button_inactive.png, id=1004, 335.2525pt x 65.24374pt>
+<components/3/components/button_inactive.png, id=1007, 335.2525pt x 65.24374pt>
 File: components/3/components/button_inactive.png Graphic file (type png)
 <use components/3/components/button_inactive.png>
 Package pdftex.def Info: components/3/components/button_inactive.png used on in
 put line 308.
 (pdftex.def)             Requested size: 184.38943pt x 35.88416pt.
 
-<components/3/components/button_active.png, id=1005, 338.26375pt x 65.24374pt>
+<components/3/components/button_active.png, id=1008, 338.26375pt x 65.24374pt>
 File: components/3/components/button_active.png Graphic file (type png)
 
 <use components/3/components/button_active.png>
@@ -1525,53 +1513,32 @@ Package pdftex.def Info: components/3/components/button_active.png used on inpu
 t line 317.
 (pdftex.def)             Requested size: 186.04562pt x 35.88416pt.
 
-<components/3/components/logo.png, id=1008, 203.76125pt x 120.45pt>
+<components/3/components/logo.png, id=1011, 203.76125pt x 120.45pt>
 File: components/3/components/logo.png Graphic file (type png)
 
 <use components/3/components/logo.png>
 Package pdftex.def Info: components/3/components/logo.png used on input line 32
 7.
 (pdftex.def)             Requested size: 112.06902pt x 66.2477pt.
- [46pdfTeX warning (ext4): destination with the same identifier (name{figure.15
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 \end{figure}
-                   <./components/3/components/accordion.png>]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
+) [46pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.335 ...sting}[language=XML, caption=SVG example]
+                                                   <./components/3/components/a
+ccordion.png>]
 Overfull \hbox (38.36154pt too wide) in paragraph at lines 345--346
 [][][][][][][][][][][][][][][][][] 
  []
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.355 -18 
-          74 -40 36 -22 67 -40 70 -40 11 0 253 -152 269 -169 11 -12 15 -27 12pd
-fTeX warning (ext4): destination with the same identifier (name{figure.17}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.355 -18 
-          74 -40 36 -22 67 -40 70 -40 11 0 253 -152 269 -169 11 -12 15 -27 12pd
-fTeX warning (ext4): destination with the same identifier (name{figure.18}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.355 -18 
-          74 -40 36 -22 67 -40 70 -40 11 0 253 -152 269 -169 11 -12 15 -27 12 <
-./components/3/components/button_inactive.png> <./components/3/components/butto
-n_active.png> <./components/3/components/logo.png>]
 Overfull \hbox (14.3613pt too wide) in paragraph at lines 355--356
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
@@ -1601,7 +1568,29 @@ Overfull \hbox (26.36142pt too wide) in paragraph at lines 359--360
 ][][][] 
  []
 
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.360 57 
+         100 63 116 52 134 -6 9 -22 17 -34 17 -24 0 -47 -33 -130 -180 -75 -132p
+dfTeX warning (ext4): destination with the same identifier (name{figure.17}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.360 57 
+         100 63 116 52 134 -6 9 -22 17 -34 17 -24 0 -47 -33 -130 -180 -75 -132p
+dfTeX warning (ext4): destination with the same identifier (name{figure.18}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.360 57 
+         100 63 116 52 134 -6 9 -22 17 -34 17 -24 0 -47 -33 -130 -180 -75 -132 
+<./components/3/components/button_inactive.png> <./components/3/components/butt
+on_active.png> <./components/3/components/logo.png>]
 Overfull \hbox (20.36136pt too wide) in paragraph at lines 360--361
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
@@ -1637,7 +1626,7 @@ Overfull \hbox (32.36148pt too wide) in paragraph at lines 365--366
 ][][][][][] 
  []
 
-<components/3/components/notif_warning.png, id=1047, 517.935pt x 102.3825pt>
+<components/3/components/notif_warning.png, id=1056, 517.935pt x 102.3825pt>
 File: components/3/components/notif_warning.png Graphic file (type png)
 
 <use components/3/components/notif_warning.png>
@@ -1645,7 +1634,7 @@ Package pdftex.def Info: components/3/components/notif_warning.png used on inpu
 t line 380.
 (pdftex.def)             Requested size: 336.65375pt x 66.54782pt.
 
-<components/3/components/notif_info.png, id=1048, 554.07pt x 86.3225pt>
+<components/3/components/notif_info.png, id=1057, 554.07pt x 86.3225pt>
 File: components/3/components/notif_info.png Graphic file (type png)
 
 <use components/3/components/notif_info.png>
@@ -1653,7 +1642,7 @@ Package pdftex.def Info: components/3/components/notif_info.png used on input l
 ine 388.
 (pdftex.def)             Requested size: 360.14124pt x 56.10893pt.
 
-<components/3/components/nav.png, id=1050, 237.88875pt x 85.31876pt>
+<components/3/components/nav.png, id=1059, 237.88875pt x 85.31876pt>
 File: components/3/components/nav.png Graphic file (type png)
 
 <use components/3/components/nav.png>
@@ -1661,7 +1650,7 @@ Package pdftex.def Info: components/3/components/nav.png used on input line 400
 .
 (pdftex.def)             Requested size: 154.62584pt x 55.45651pt.
 
-<components/3/components/nav_bar.png, id=1052, 684.5575pt x 157.58875pt>
+<components/3/components/nav_bar.png, id=1061, 684.5575pt x 157.58875pt>
 File: components/3/components/nav_bar.png Graphic file (type png)
 
 <use components/3/components/nav_bar.png>
@@ -1678,16 +1667,18 @@ Overfull \hbox (3.93936pt too wide) in paragraph at lines 410--411
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.414 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.20}) has been already used, duplicate ignored
+l.421 \item[Grid Item Component.]
+                                  Grid in N2Sky is responsive. It can change...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.414 \end{figure}
-                   <./components/3/components/notif_warning.png> <./components/
-3/components/notif_info.png>]
-<components/3/components/grid_item.png, id=1079, 552.0625pt x 401.5pt>
+l.421 \item[Grid Item Component.]
+                                  Grid in N2Sky is responsive. It can change...
+ <./components/3/components/notif_warning.png> <./components/3/components/notif
+_info.png>]
+<components/3/components/grid_item.png, id=1083, 552.0625pt x 401.5pt>
 File: components/3/components/grid_item.png Graphic file (type png)
 
 <use components/3/components/grid_item.png>
@@ -1699,15 +1690,16 @@ ne 425.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.446 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-22}) has been already used, duplicate ignored
+l.448 \item P
+             rofilepdfTeX warning (ext4): destination with the same identifier 
+(name{figure.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.446 
-       <./components/3/components/nav.png> <./components/3/components/nav_bar.p
-ng>] <components/3/components/menu_user.png, id=1090, 323.2075pt x 343.2825pt>
+l.448 \item P
+             rofile <./components/3/components/nav.png> <./components/3/compone
+nts/nav_bar.png>]
+<components/3/components/menu_user.png, id=1093, 323.2075pt x 343.2825pt>
 File: components/3/components/menu_user.png Graphic file (type png)
 
 <use components/3/components/menu_user.png>
@@ -1719,74 +1711,74 @@ ne 457.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.462 
-       <./components/3/components/grid_item.png>]
-<components/3/components/menu_admin.png, id=1097, 324.21124pt x 481.8pt>
+l.466 \item O
+             penStack DashboardpdfTeX warning (ext4): destination with the same
+ identifier (name{figure.24}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.466 \item O
+             penStack Dashboard <./components/3/components/grid_item.png> <./co
+mponents/3/components/menu_user.png>]
+<components/3/components/menu_admin.png, id=1101, 324.21124pt x 481.8pt>
 File: components/3/components/menu_admin.png Graphic file (type png)
 
 <use components/3/components/menu_admin.png>
 Package pdftex.def Info: components/3/components/menu_admin.png used on input l
 ine 475.
 (pdftex.def)             Requested size: 162.10522pt x 240.8994pt.
- [51pdfTeX warning (ext4): destination with the same identifier (name{figure.24
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.483 \item T
-             itle (mandatory)pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.25}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.483 \item T
-             itle (mandatory) <./components/3/components/menu_user.png> <./comp
-onents/3/components/menu_admin.png>]
-<components/3/components/modal.png, id=1106, 728.7225pt x 655.44875pt>
+<components/3/components/modal.png, id=1103, 728.7225pt x 655.44875pt>
 File: components/3/components/modal.png Graphic file (type png)
 
 <use components/3/components/modal.png>
 Package pdftex.def Info: components/3/components/modal.png used on input line 4
 90.
 (pdftex.def)             Requested size: 364.36035pt x 327.72357pt.
- [52pdfTeX warning (ext4): destination with the same identifier (name{figure.26
+ [51pdfTeX warning (ext4): destination with the same identifier (name{figure.25
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 \end{itemize}
-                    <./components/3/components/modal.png>]
-<components/3/components/user_serivice.png, id=1114, 1671.24374pt x 927.465pt>
+l.495 
+       <./components/3/components/menu_admin.png>] [52pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.26}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.516 T
+       he above mentioned web services and also the processes and services t...
+ <./components/3/components/modal.png>]
+<components/3/components/user_serivice.png, id=1117, 1671.24374pt x 927.465pt>
 File: components/3/components/user_serivice.png Graphic file (type png)
 
 <use components/3/components/user_serivice.png>
 Package pdftex.def Info: components/3/components/user_serivice.png used on inpu
 t line 529.
 (pdftex.def)             Requested size: 441.01773pt x 244.74396pt.
- [53]
-<components/3/components/model_serivce.png, id=1122, 1671.24374pt x 1478.52374p
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.27
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.539 \item R
+             egister a new user <./components/3/components/user_serivice.png>]
+<components/3/components/model_serivce.png, id=1127, 1671.24374pt x 1478.52374p
 t>
 File: components/3/components/model_serivce.png Graphic file (type png)
  <use components/3/components/model_serivce.png>
 Package pdftex.def Info: components/3/components/model_serivce.png used on inpu
 t line 554.
 (pdftex.def)             Requested size: 441.01773pt x 390.16002pt.
- [54pdfTeX warning (ext4): destination with the same identifier (name{figure.27
-}) has been already used, duplicate ignored
+ [54] [55pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.558 \end{figure}
-                   <./components/3/components/user_serivice.png>] [55pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.28}) has been al
-ready used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.569 \item G
-             et list of projects <./components/3/components/model_serivce.png>]
-[56]
-<components/3/components/cloud_service.png, id=1142, 1671.24374pt x 1508.63625p
+l.573 \end{itemize}
+                    <./components/3/components/model_serivce.png>] [56]
+<components/3/components/cloud_service.png, id=1145, 1671.24374pt x 1508.63625p
 t>
 File: components/3/components/cloud_service.png Graphic file (type png)
  <use components/3/components/cloud_service.png>
@@ -1798,14 +1790,15 @@ t line 598.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.612 \end{itemize}
-                    <./components/3/components/cloud_service.png>]
+l.617 \subsection
+                 {Continuous Monitoring System}\label{Continuous Monitoring ...
+ <./components/3/components/cloud_service.png>]
 Overfull \hbox (2.0606pt too wide) in paragraph at lines 631--632
 []\T1/lmr/m/n/12 Since there are go-ing to be mul-
  []
 
 [58] [59]
-<components/3/prometherus_arch.png, id=1165, 468.7914pt x 306.9066pt>
+<components/3/prometherus_arch.png, id=1168, 468.7914pt x 306.9066pt>
 File: components/3/prometherus_arch.png Graphic file (type png)
 
 <use components/3/prometherus_arch.png>
@@ -1818,14 +1811,14 @@ Package pdftex.def Info: components/3/prometherus_arch.png used on input line 6
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.667 \item [Alert Manager.]
-                              Monitoring consist of multiple metrics, each m...
+                             Monitoring consists of multiple metrics and eac...
  <./components/3/prometherus_arch.png>]
 Overfull \hbox (5.54382pt too wide) in paragraph at lines 676--677
 []\T1/lmr/m/n/12 The met-ric nam-ing is al-ways self-described. Re-quested met-
 ric "node_filesystem_avail"
  []
 
-<components/3/monitoring_req.png, id=1173, 881.2925pt x 793.96625pt>
+<components/3/monitoring_req.png, id=1176, 881.2925pt x 793.96625pt>
 File: components/3/monitoring_req.png Graphic file (type png)
 
 <use components/3/monitoring_req.png>
@@ -1838,15 +1831,15 @@ re.31}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.697 \item[Summary]
-                     The summary is a metric, which is similar to histogram ...
+                     The summary is a metric, which is similar to the histog...
  <./components/3/monitoring_req.png>]
-Overfull \hbox (4.23773pt too wide) in paragraph at lines 702--704
-\T1/lmr/m/n/12 Prometheus sup-ports query lan-guage, which is a key fea-ture of
- this tool. The Prometheus
+Overfull \hbox (14.68205pt too wide) in paragraph at lines 702--704
+\T1/lmr/m/n/12 Prometheus sup-ports query lan-guage, which is the key fea-ture 
+of this tool. The Prometheus
  []
 
 [63] [64]
-<components/3/components/monitoring_dashlet.png, id=1211, 580.1675pt x 370.3837
+<components/3/components/monitoring_dashlet.png, id=1214, 580.1675pt x 370.3837
 4pt>
 File: components/3/components/monitoring_dashlet.png Graphic file (type png)
  <use components/3/components/monitoring_dashlet.png>
@@ -1858,9 +1851,9 @@ Package pdftex.def Info: components/3/components/monitoring_dashlet.png used on
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.794 \item C
-             ron job <./components/3/components/monitoring_dashlet.png>]
-<components/3/alert_arch.png, id=1221, 469.2732pt x 239.9364pt>
+l.795 \item Q
+             uintile. <./components/3/components/monitoring_dashlet.png>]
+<components/3/alert_arch.png, id=1224, 469.2732pt x 239.9364pt>
 File: components/3/alert_arch.png Graphic file (type png)
 
 <use components/3/alert_arch.png>
@@ -1873,7 +1866,7 @@ Package pdftex.def Info: components/3/alert_arch.png used on input line 814.
                                                   \fi \fi 
 l.825 
        <./components/3/alert_arch.png>]
-<components/3/alert_details.png, id=1231, 1938.24126pt x 1294.8375pt>
+<components/3/alert_details.png, id=1234, 1938.24126pt x 1294.8375pt>
 File: components/3/alert_details.png Graphic file (type png)
 
 <use components/3/alert_details.png>
@@ -1885,8 +1878,8 @@ Package pdftex.def Info: components/3/alert_details.png used on input line 828.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.855 \end{lstlisting}
-                       <./components/3/alert_details.png>]
+l.854 ]
+        <./components/3/alert_details.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 869.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1894,7 +1887,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 869.
  [68]
-<components/3/alerts/alert_grid.png, id=1275, 379.4175pt x 303.1325pt>
+<components/3/alerts/alert_grid.png, id=1278, 379.4175pt x 303.1325pt>
 File: components/3/alerts/alert_grid.png Graphic file (type png)
 
 <use components/3/alerts/alert_grid.png>
@@ -1906,10 +1899,9 @@ Package pdftex.def Info: components/3/alerts/alert_grid.png used on input line
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.918 \item[Description.]
-                          The whole description of the alert. <./components/3/a
-lerts/alert_grid.png>]
-<components/3/alerts/alert_severity.png, id=1283, 1183.42125pt x 320.19624pt>
+l.916 \item[Title.]
+                    The name of alert. <./components/3/alerts/alert_grid.png>]
+<components/3/alerts/alert_severity.png, id=1286, 1183.42125pt x 320.19624pt>
 File: components/3/alerts/alert_severity.png Graphic file (type png)
 
 <use components/3/alerts/alert_severity.png>
@@ -1949,7 +1941,7 @@ Overfull \hbox (38.98715pt too wide) in paragraph at lines 206--207
  []
 
 [77] [78] [79]) [80] [81] (./components/4/4_frs.tex
-<components/4/pics/admin_dashboard.png, id=1533, 1265.72874pt x 681.54625pt>
+<components/4/pics/admin_dashboard.png, id=1537, 1265.72874pt x 681.54625pt>
 File: components/4/pics/admin_dashboard.png Graphic file (type png)
 
 <use components/4/pics/admin_dashboard.png>
@@ -1957,7 +1949,7 @@ Package pdftex.def Info: components/4/pics/admin_dashboard.png used on input li
 ne 31.
 (pdftex.def)             Requested size: 441.01773pt x 237.46321pt.
  [82]
-<components/4/pics/admin_tools.png, id=1544, 1185.42876pt x 211.79124pt>
+<components/4/pics/admin_tools.png, id=1548, 1185.42876pt x 211.79124pt>
 File: components/4/pics/admin_tools.png Graphic file (type png)
 
 <use components/4/pics/admin_tools.png>
@@ -1965,7 +1957,7 @@ Package pdftex.def Info: components/4/pics/admin_tools.png used on input line 6
 1.
 (pdftex.def)             Requested size: 441.01773pt x 78.79134pt.
 
-<components/4/pics/featured_metrics.png, id=1546, 1185.42876pt x 449.68pt>
+<components/4/pics/featured_metrics.png, id=1550, 1185.42876pt x 449.68pt>
 File: components/4/pics/featured_metrics.png Graphic file (type png)
 
 <use components/4/pics/featured_metrics.png>
@@ -1986,7 +1978,7 @@ l.77
 l.77 
       <./components/4/pics/admin_dashboard.png> <./components/4/pics/admin_tool
 s.png>]
-<components/4/pics/openstack_dashboard.png, id=1561, 1284.8pt x 645.41125pt>
+<components/4/pics/openstack_dashboard.png, id=1565, 1284.8pt x 645.41125pt>
 File: components/4/pics/openstack_dashboard.png Graphic file (type png)
 
 <use components/4/pics/openstack_dashboard.png>
@@ -2000,7 +1992,7 @@ t line 88.
                                                   \fi \fi 
 l.93 
       <./components/4/pics/featured_metrics.png>]
-<components/4/pics/openstack_dashboard_projects.png, id=1570, 1190.4475pt x 268
+<components/4/pics/openstack_dashboard_projects.png, id=1574, 1190.4475pt x 268
 .00125pt>
 File: components/4/pics/openstack_dashboard_projects.png Graphic file (type png
 )
@@ -2022,7 +2014,7 @@ ier (name{figure.41}) has been already used, duplicate ignored
 l.121 \end{description}
                         <./components/4/pics/openstack_dashboard.png> <./compon
 ents/4/pics/openstack_dashboard_projects.png>]
-<components/4/pics/openstack_project_view.png, id=1582, 1266.7325pt x 693.59125
+<components/4/pics/openstack_project_view.png, id=1586, 1266.7325pt x 693.59125
 pt>
 File: components/4/pics/openstack_project_view.png Graphic file (type png)
  <use components/4/pics/openstack_project_view.png>
@@ -2030,7 +2022,7 @@ Package pdftex.def Info: components/4/pics/openstack_project_view.png used on i
 nput line 146.
 (pdftex.def)             Requested size: 441.01773pt x 241.4694pt.
  [86]
-<components/4/pics/openstack_servers.png, id=1593, 560.0925pt x 238.8925pt>
+<components/4/pics/openstack_servers.png, id=1596, 560.0925pt x 238.8925pt>
 File: components/4/pics/openstack_servers.png Graphic file (type png)
 
 <use components/4/pics/openstack_servers.png>
@@ -2052,7 +2044,7 @@ uplicate ignored
 l.177 \item R
              UNNING - instance is running and available. <./components/4/pics/o
 penstack_project_view.png> <./components/4/pics/openstack_servers.png>]
-<components/4/pics/openstack_flavors.png, id=1602, 597.23125pt x 401.5pt>
+<components/4/pics/openstack_flavors.png, id=1605, 597.23125pt x 401.5pt>
 File: components/4/pics/openstack_flavors.png Graphic file (type png)
 
 <use components/4/pics/openstack_flavors.png>
@@ -2066,7 +2058,7 @@ line 191.
                                                   \fi \fi 
 l.205 \end{itemize}
                     <./components/4/pics/openstack_flavors.png>]
-<components/4/pics/openstack_server_details.png, id=1610, 1187.43625pt x 794.97
+<components/4/pics/openstack_server_details.png, id=1613, 1187.43625pt x 794.97
 pt>
 File: components/4/pics/openstack_server_details.png Graphic file (type png)
  <use components/4/pics/openstack_server_details.png>
@@ -2074,7 +2066,7 @@ Package pdftex.def Info: components/4/pics/openstack_server_details.png used on
  input line 213.
 (pdftex.def)             Requested size: 441.01773pt x 295.25027pt.
 
-<components/4/pics/openstack_neutron.png, id=1613, 1262.7175pt x 642.4pt>
+<components/4/pics/openstack_neutron.png, id=1616, 1262.7175pt x 642.4pt>
 File: components/4/pics/openstack_neutron.png Graphic file (type png)
 
 <use components/4/pics/openstack_neutron.png>
@@ -2095,7 +2087,7 @@ sed, duplicate ignored
                                                   \fi \fi 
 l.251 \item N
              ame of the network <./components/4/pics/openstack_neutron.png>]
-<components/4/pics/openstack_images.png, id=1628, 1267.73625pt x 831.105pt>
+<components/4/pics/openstack_images.png, id=1631, 1267.73625pt x 831.105pt>
 File: components/4/pics/openstack_images.png Graphic file (type png)
 
 <use components/4/pics/openstack_images.png>
@@ -2109,7 +2101,7 @@ re.47}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.304 \end{enumerate}
                       <./components/4/pics/openstack_images.png>]
-<components/4/pics/opentack_vitrage.png, id=1670, 1264.725pt x 976.64874pt>
+<components/4/pics/opentack_vitrage.png, id=1673, 1264.725pt x 976.64874pt>
 File: components/4/pics/opentack_vitrage.png Graphic file (type png)
 
 <use components/4/pics/opentack_vitrage.png>
@@ -2123,7 +2115,7 @@ re.48}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.353 \item V
              itrage ID <./components/4/pics/opentack_vitrage.png>]
-<components/4/pics/openstack_template.png, id=1692, 1042.89626pt x 846.16125pt>
+<components/4/pics/openstack_template.png, id=1695, 1042.89626pt x 846.16125pt>
 File: components/4/pics/openstack_template.png Graphic file (type png)
 <use components/4/pics/openstack_template.png>
 Package pdftex.def Info: components/4/pics/openstack_template.png used on input
@@ -2140,7 +2132,7 @@ Overfull \hbox (11.88612pt too wide) in paragraph at lines 384--385
 []\T1/lmr/m/n/12 Optional item,
  []
 
-<components/4/pics/dashboard_settings.png, id=1709, 862.22125pt x 335.2525pt>
+<components/4/pics/dashboard_settings.png, id=1712, 862.22125pt x 335.2525pt>
 File: components/4/pics/dashboard_settings.png Graphic file (type png)
 
 <use components/4/pics/dashboard_settings.png>
@@ -2153,9 +2145,9 @@ Package pdftex.def Info: components/4/pics/dashboard_settings.png used on input
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.410 \item C
-             reate an Alert, which also creates one more modal popup upon ex...
+             reate an Alert, which also creates another modal popup upon the...
  <./components/4/pics/dashboard_settings.png>]
-<components/4/pics/create_monitoring.png, id=1725, 905.3825pt x 462.72874pt>
+<components/4/pics/create_monitoring.png, id=1728, 905.3825pt x 462.72874pt>
 File: components/4/pics/create_monitoring.png Graphic file (type png)
 
 <use components/4/pics/create_monitoring.png>
@@ -2168,9 +2160,9 @@ line 427.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.438 \item C
-             ombobox with views.  The user can choose where combo box will b...
+             ombobox with views.  The user can choose where the combo box wi...
  <./components/4/pics/create_monitoring.png>]
-<components/4/pics/moniroting_representation.png, id=1735, 1082.0425pt x 452.69
+<components/4/pics/moniroting_representation.png, id=1738, 1082.0425pt x 452.69
 125pt>
 File: components/4/pics/moniroting_representation.png Graphic file (type png)
  <use components/4/pics/moniroting_representation.png>
@@ -2178,7 +2170,7 @@ Package pdftex.def Info: components/4/pics/moniroting_representation.png used o
 n input line 467.
 (pdftex.def)             Requested size: 441.01773pt x 184.50632pt.
  [98]
-<components/4/pics/alert_create.png, id=1759, 943.525pt x 584.1825pt>
+<components/4/pics/alert_create.png, id=1762, 943.525pt x 584.1825pt>
 File: components/4/pics/alert_create.png Graphic file (type png)
 
 <use components/4/pics/alert_create.png>
@@ -2192,7 +2184,7 @@ Package pdftex.def Info: components/4/pics/alert_create.png used on input line
                                                   \fi \fi 
 l.505 
        <./components/4/pics/moniroting_representation.png>]
-<components/4/pics/alert_representation.png, id=1769, 1254.6875pt x 778.91pt>
+<components/4/pics/alert_representation.png, id=1772, 1254.6875pt x 778.91pt>
 File: components/4/pics/alert_representation.png Graphic file (type png)
 
 <use components/4/pics/alert_representation.png>
@@ -2214,7 +2206,7 @@ cate ignored
 l.125 \newpage
                <./components/4/pics/alert_representation.png>] [102]
 (./components/5/frs_main_module.tex [103]
-<components/5/img/n2sky_main_dashboard.png, id=1807, 1048.91875pt x 979.66pt>
+<components/5/img/n2sky_main_dashboard.png, id=1810, 1048.91875pt x 979.66pt>
 File: components/5/img/n2sky_main_dashboard.png Graphic file (type png)
 
 <use components/5/img/n2sky_main_dashboard.png>
@@ -2228,7 +2220,7 @@ t line 28.
                                                   \fi \fi 
 l.37 \item T
             he user projects <./components/5/img/n2sky_main_dashboard.png>]
-<components/5/img/n2sky_tools.png, id=1814, 933.4875pt x 136.51pt>
+<components/5/img/n2sky_tools.png, id=1817, 933.4875pt x 136.51pt>
 File: components/5/img/n2sky_tools.png Graphic file (type png)
 
 <use components/5/img/n2sky_tools.png>
@@ -2240,7 +2232,7 @@ Overfull \hbox (25.72488pt too wide) in paragraph at lines 51--52
  [] 
  []
 
-<components/5/img/popupcreatenewproject.png, id=1817, 664.4825pt x 353.32pt>
+<components/5/img/popupcreatenewproject.png, id=1820, 664.4825pt x 353.32pt>
 File: components/5/img/popupcreatenewproject.png Graphic file (type png)
 
 <use components/5/img/popupcreatenewproject.png>
@@ -2263,7 +2255,7 @@ l.76 \item \emph
                 {Project Description} field with a short description of the ...
  <./components/5/img/n2sky_tools.png> <./components/5/img/popupcreatenewproject
 .png>]
-<components/5/img/n2sky_dashboard_projects.png, id=1829, 971.63pt x 174.6525pt>
+<components/5/img/n2sky_dashboard_projects.png, id=1832, 971.63pt x 174.6525pt>
 File: components/5/img/n2sky_dashboard_projects.png Graphic file (type png)
 <use components/5/img/n2sky_dashboard_projects.png>
 Package pdftex.def Info: components/5/img/n2sky_dashboard_projects.png used on 
@@ -2274,7 +2266,7 @@ Overfull \hbox (44.79608pt too wide) in paragraph at lines 90--91
  [] 
  []
 
-<components/5/img/n2sky_filtering_bar.png, id=1831, 888.31876pt x 70.2625pt>
+<components/5/img/n2sky_filtering_bar.png, id=1834, 888.31876pt x 70.2625pt>
 File: components/5/img/n2sky_filtering_bar.png Graphic file (type png)
 
 <use components/5/img/n2sky_filtering_bar.png>
@@ -2302,7 +2294,7 @@ l.115 \item \emph
                  {Saved networks.} Only saved neural networks of the users. ...
  <./components/5/img/n2sky_dashboard_projects.png> <./components/5/img/n2sky_fi
 ltering_bar.png>] [107]
-<components/5/img/projects_dsahboard.png, id=1845, 1102.1175pt x 887.315pt>
+<components/5/img/projects_dsahboard.png, id=1848, 1102.1175pt x 887.315pt>
 File: components/5/img/projects_dsahboard.png Graphic file (type png)
 
 <use components/5/img/projects_dsahboard.png>
@@ -2310,7 +2302,7 @@ Package pdftex.def Info: components/5/img/projects_dsahboard.png used on input
 line 154.
 (pdftex.def)             Requested size: 441.01773pt x 355.06865pt.
 
-<components/5/img/project_tools.png, id=1847, 1003.75pt x 155.58125pt>
+<components/5/img/project_tools.png, id=1850, 1003.75pt x 155.58125pt>
 File: components/5/img/project_tools.png Graphic file (type png)
 
 <use components/5/img/project_tools.png>
@@ -2325,7 +2317,7 @@ Package pdftex.def Info: components/5/img/project_tools.png used on input line
 l.178 \item \emph
                  {Model repository.} Reference to the model repository view. <.
 /components/5/img/projects_dsahboard.png>]
-<components/5/img/upload_vinnsl_popup.png, id=1856, 715.67375pt x 609.27625pt>
+<components/5/img/upload_vinnsl_popup.png, id=1859, 715.67375pt x 609.27625pt>
 File: components/5/img/upload_vinnsl_popup.png Graphic file (type png)
 
 <use components/5/img/upload_vinnsl_popup.png>
@@ -2348,7 +2340,7 @@ l.193 \item T
              he Docker username field, which references on the username in D...
  <./components/5/img/project_tools.png> <./components/5/img/upload_vinnsl_popup
 .png>]
-<components/5/img/saved_trained_models_project.png, id=1866, 1015.795pt x 316.1
+<components/5/img/saved_trained_models_project.png, id=1869, 1015.795pt x 316.1
 8124pt>
 File: components/5/img/saved_trained_models_project.png Graphic file (type png)
 
@@ -2357,7 +2349,7 @@ Package pdftex.def Info: components/5/img/saved_trained_models_project.png used
  on input line 220.
 (pdftex.def)             Requested size: 441.01773pt x 137.27237pt.
  [110]
-<components/5/img/nn_desc_3_steps.png, id=1873, 1172.38pt x 497.86pt>
+<components/5/img/nn_desc_3_steps.png, id=1876, 1172.38pt x 497.86pt>
 File: components/5/img/nn_desc_3_steps.png Graphic file (type png)
 
 <use components/5/img/nn_desc_3_steps.png>
@@ -2378,7 +2370,7 @@ dy used, duplicate ignored
                                                   \fi \fi 
 l.273 \end{itemize}
                     <./components/5/img/nn_desc_3_steps.png>]
-<components/5/img/nn_structure_3_steps.png, id=1887, 1237.62375pt x 768.8725pt>
+<components/5/img/nn_structure_3_steps.png, id=1890, 1237.62375pt x 768.8725pt>
 File: components/5/img/nn_structure_3_steps.png Graphic file (type png)
 <use components/5/img/nn_structure_3_steps.png>
 Package pdftex.def Info: components/5/img/nn_structure_3_steps.png used on inpu
@@ -2391,7 +2383,7 @@ t line 280.
                                                   \fi \fi 
 l.295 
        <./components/5/img/nn_structure_3_steps.png>]
-<components/5/img/connection_3_steps.png, id=1900, 1191.45125pt x 511.9125pt>
+<components/5/img/connection_3_steps.png, id=1903, 1191.45125pt x 511.9125pt>
 File: components/5/img/connection_3_steps.png Graphic file (type png)
 
 <use components/5/img/connection_3_steps.png>
@@ -2399,7 +2391,7 @@ Package pdftex.def Info: components/5/img/connection_3_steps.png used on input
 line 298.
 (pdftex.def)             Requested size: 441.01773pt x 189.48277pt.
 
-<components/5/img/training_3_steps.png, id=1902, 1158.3275pt x 662.475pt>
+<components/5/img/training_3_steps.png, id=1905, 1158.3275pt x 662.475pt>
 File: components/5/img/training_3_steps.png Graphic file (type png)
 
 <use components/5/img/training_3_steps.png>
@@ -2413,7 +2405,7 @@ ne 312.
                                                   \fi \fi 
 l.317 
        <./components/5/img/connection_3_steps.png>]
-<components/5/img/run_instance_3_steps.png, id=1911, 643.40375pt x 346.29375pt>
+<components/5/img/run_instance_3_steps.png, id=1914, 643.40375pt x 346.29375pt>
 File: components/5/img/run_instance_3_steps.png Graphic file (type png)
 <use components/5/img/run_instance_3_steps.png>
 Package pdftex.def Info: components/5/img/run_instance_3_steps.png used on inpu
@@ -2435,7 +2427,7 @@ l.334 \item \emph
                  {/train} - for training the neural network. This endpoint h...
  <./components/5/img/training_3_steps.png> <./components/5/img/run_instance_3_s
 teps.png>]
-<components/5/img/expand_training_form.png, id=1922, 1214.5375pt x 706.64pt>
+<components/5/img/expand_training_form.png, id=1925, 1214.5375pt x 706.64pt>
 File: components/5/img/expand_training_form.png Graphic file (type png)
 
 <use components/5/img/expand_training_form.png>
@@ -2449,7 +2441,7 @@ t line 348.
                                                   \fi \fi 
 l.355 
        <./components/5/img/expand_training_form.png>]
-<components/5/img/testing_model.png, id=1931, 1227.58624pt x 845.1575pt>
+<components/5/img/testing_model.png, id=1934, 1227.58624pt x 845.1575pt>
 File: components/5/img/testing_model.png Graphic file (type png)
 
 <use components/5/img/testing_model.png>
@@ -2464,7 +2456,7 @@ Package pdftex.def Info: components/5/img/testing_model.png used on input line
 l.378 \item \emph
                  {Functional bar} consists of the title itself and the funct...
  <./components/5/img/testing_model.png>]
-<components/5/img/copy_model.png, id=1939, 655.44875pt x 374.39874pt>
+<components/5/img/copy_model.png, id=1942, 655.44875pt x 374.39874pt>
 File: components/5/img/copy_model.png Graphic file (type png)
 
 <use components/5/img/copy_model.png>
@@ -2472,7 +2464,7 @@ Package pdftex.def Info: components/5/img/copy_model.png used on input line 382
 .
 (pdftex.def)             Requested size: 327.72357pt x 187.19891pt.
 
-<components/5/img/model_testing.png, id=1941, 669.50125pt x 374.39874pt>
+<components/5/img/model_testing.png, id=1944, 669.50125pt x 374.39874pt>
 File: components/5/img/model_testing.png Graphic file (type png)
 
 <use components/5/img/model_testing.png>
@@ -2486,7 +2478,7 @@ Package pdftex.def Info: components/5/img/model_testing.png used on input line
                                                   \fi \fi 
 l.408 \end{figure}
                    <./components/5/img/copy_model.png>]
-<components/5/img/nn_repository.png, id=1949, 1262.7175pt x 782.925pt>
+<components/5/img/nn_repository.png, id=1952, 1262.7175pt x 782.925pt>
 File: components/5/img/nn_repository.png Graphic file (type png)
 
 <use components/5/img/nn_repository.png>
@@ -2500,7 +2492,7 @@ Package pdftex.def Info: components/5/img/nn_repository.png used on input line
                                                   \fi \fi 
 l.436 
        <./components/5/img/model_testing.png>]
-<components/5/img/copy_nn.png, id=1958, 665.48625pt x 366.36874pt>
+<components/5/img/copy_nn.png, id=1961, 665.48625pt x 366.36874pt>
 File: components/5/img/copy_nn.png Graphic file (type png)
 
 <use components/5/img/copy_nn.png>
@@ -2513,7 +2505,7 @@ Package pdftex.def Info: components/5/img/copy_nn.png used on input line 456.
                                                   \fi \fi 
 l.464 \item T
              he name of the neural network <./components/5/img/nn_repository.pn
-g>] <components/5/img/model_repo.png, id=1968, 1096.095pt x 760.8425pt>
+g>] <components/5/img/model_repo.png, id=1971, 1096.095pt x 760.8425pt>
 File: components/5/img/model_repo.png Graphic file (type png)
 
 <use components/5/img/model_repo.png>
@@ -2534,7 +2526,7 @@ nored
                                                   \fi \fi 
 l.514 
        <./components/5/img/model_repo.png>]
-<components/5/img/short_desc.png, id=1982, 1265.72874pt x 695.59875pt>
+<components/5/img/short_desc.png, id=1985, 1265.72874pt x 695.59875pt>
 File: components/5/img/short_desc.png Graphic file (type png)
 
 <use components/5/img/short_desc.png>
@@ -2549,7 +2541,7 @@ Package pdftex.def Info: components/5/img/short_desc.png used on input line 517
 l.130 \newpage
                <./components/5/img/short_desc.png>] [124]
 (./components/tutorial/tutorial.tex
-<components/tutorial/img/training_arbitrary.jpg, id=1993, 1099.10625pt x 661.47
+<components/tutorial/img/training_arbitrary.jpg, id=1996, 1099.10625pt x 661.47
 125pt>
 File: components/tutorial/img/training_arbitrary.jpg Graphic file (type jpg)
  <use components/tutorial/img/training_arbitrary.jpg>
@@ -2564,7 +2556,7 @@ Package pdftex.def Info: components/tutorial/img/training_arbitrary.jpg used on
 l.30 \item \emph
                 {The arbitrary user} <./components/tutorial/img/training_arbitr
 ary.jpg>]
-<components/tutorial/img/sign_login.jpg, id=2006, 803.0pt x 602.25pt>
+<components/tutorial/img/sign_login.jpg, id=2009, 803.0pt x 602.25pt>
 File: components/tutorial/img/sign_login.jpg Graphic file (type jpg)
 
 <use components/tutorial/img/sign_login.jpg>
@@ -2578,7 +2570,7 @@ ine 37.
                                                   \fi \fi 
 l.48 \end{itemize}
                    <./components/tutorial/img/sign_login.jpg>] [127]
-<components/tutorial/img/tutorial_engeneer.jpg, id=2020, 972.63374pt x 661.4712
+<components/tutorial/img/tutorial_engeneer.jpg, id=2022, 972.63374pt x 661.4712
 5pt>
 File: components/tutorial/img/tutorial_engeneer.jpg Graphic file (type jpg)
  <use components/tutorial/img/tutorial_engeneer.jpg>
@@ -2592,7 +2584,7 @@ gure.79}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.126 \end{itemize}
                     <./components/tutorial/img/tutorial_engeneer.jpg>] [130]
-<components/tutorial/img/tutorial_contribut.jpg, id=2039, 980.66376pt x 630.355
+<components/tutorial/img/tutorial_contribut.jpg, id=2042, 980.66376pt x 630.355
 pt>
 File: components/tutorial/img/tutorial_contribut.jpg Graphic file (type jpg)
  <use components/tutorial/img/tutorial_contribut.jpg>
@@ -2608,7 +2600,7 @@ l.184 \item \emph
                  {Initiate "Upload own neural network"}, which will open the...
  <./components/tutorial/img/tutorial_contribut.jpg>]) [132] [133]
 (./components/usecase/6_user_cases.tex
-<components/usecase/img/use_case_student.png, id=2061, 1987.425pt x 1752.5475pt
+<components/usecase/img/use_case_student.png, id=2064, 1987.425pt x 1752.5475pt
 >
 File: components/usecase/img/use_case_student.png Graphic file (type png)
  <use components/usecase/img/use_case_student.png>
@@ -2623,7 +2615,7 @@ put line 16.
 l.24 T
       his user can create a project, which it will be in the focus after the...
  <./components/usecase/img/use_case_student.png>]
-<components/usecase/img/user_case_engin.png, id=2070, 2137.9875pt x 1421.31pt>
+<components/usecase/img/user_case_engin.png, id=2073, 2137.9875pt x 1421.31pt>
 File: components/usecase/img/user_case_engin.png Graphic file (type png)
 
 <use components/usecase/img/user_case_engin.png>
@@ -2637,109 +2629,117 @@ igure.82}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.140 \newpage
                <./components/usecase/img/user_case_engin.png>] [137]
-(./components/7/7_developer_guide.tex [138] [139] [140]
-Overfull \hbox (56.98734pt too wide) in paragraph at lines 263--264
+(./components/7/7_developer_guide.tex [138pdfTeX warning (ext4): destination wi
+th the same identifier (name{table.3}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 db.
+        createUser({user:"n2sky", pwd:"password", roles:['dbOwner']})] [139]
+[140]
+Overfull \hbox (56.98734pt too wide) in paragraph at lines 287--288
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (2.98679pt too wide) in paragraph at lines 267--268
+[141]
+Overfull \hbox (2.98679pt too wide) in paragraph at lines 291--292
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (80.98758pt too wide) in paragraph at lines 268--269
+Overfull \hbox (80.98758pt too wide) in paragraph at lines 292--293
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (2.98679pt too wide) in paragraph at lines 274--275
+Overfull \hbox (2.98679pt too wide) in paragraph at lines 298--299
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (110.98788pt too wide) in paragraph at lines 284--285
+Overfull \hbox (110.98788pt too wide) in paragraph at lines 308--309
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[141]
-Overfull \hbox (32.98709pt too wide) in paragraph at lines 308--309
+
+Overfull \hbox (32.98709pt too wide) in paragraph at lines 332--333
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[142] [143]
-Overfull \hbox (50.98727pt too wide) in paragraph at lines 486--487
+[142] [143] [144]
+Overfull \hbox (50.98727pt too wide) in paragraph at lines 510--511
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[144]
-Overfull \hbox (22.3788pt too wide) in paragraph at lines 492--493
+
+Overfull \hbox (22.3788pt too wide) in paragraph at lines 516--517
 []\T1/lmr/m/n/12 "IF" is a con-di-tion "api_http_request_latencies_second", whi
 ch based on Prometheus
  []
 
 [145] [146] [147]
-Overfull \hbox (34.21092pt too wide) in paragraph at lines 667--668
+Overfull \hbox (34.21092pt too wide) in paragraph at lines 687--688
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 [148]
-Overfull \hbox (40.21098pt too wide) in paragraph at lines 738--739
+Overfull \hbox (40.21098pt too wide) in paragraph at lines 758--759
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [149]
-Overfull \hbox (4.21062pt too wide) in paragraph at lines 776--777
+Overfull \hbox (4.21062pt too wide) in paragraph at lines 796--797
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (214.21275pt too wide) in paragraph at lines 785--786
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (214.21275pt too wide) in paragraph at lines 819--820
+Overfull \hbox (214.21275pt too wide) in paragraph at lines 805--806
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [150]
-Overfull \hbox (154.21214pt too wide) in paragraph at lines 878--879
+Overfull \hbox (214.21275pt too wide) in paragraph at lines 839--840
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[151]
+Overfull \hbox (154.21214pt too wide) in paragraph at lines 898--899
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[151] [152]
-Overfull \hbox (34.21092pt too wide) in paragraph at lines 1016--1017
+[152]
+Overfull \hbox (34.21092pt too wide) in paragraph at lines 1036--1037
 [][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (58.21117pt too wide) in paragraph at lines 1026--1027
+[153]
+Overfull \hbox (58.21117pt too wide) in paragraph at lines 1046--1047
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (28.21086pt too wide) in paragraph at lines 1030--1031
+Overfull \hbox (28.21086pt too wide) in paragraph at lines 1050--1051
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[153]
-Overfull \hbox (34.21092pt too wide) in paragraph at lines 1056--1057
+
+Overfull \hbox (34.21092pt too wide) in paragraph at lines 1076--1077
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (40.21098pt too wide) in paragraph at lines 1067--1068
+Overfull \hbox (40.21098pt too wide) in paragraph at lines 1087--1088
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (40.21098pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (40.21098pt too wide) in paragraph at lines 1093--1094
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (40.21098pt too wide) in paragraph at lines 1075--1076
+Overfull \hbox (40.21098pt too wide) in paragraph at lines 1095--1096
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -2810,13 +2810,13 @@ Class scrartcl Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `Hauptdatei.lol'.
 
- [172] (./Hauptdatei.bbl [173]
-Underfull \hbox (badness 10000) in paragraph at lines 185--190
+ [172] (./Hauptdatei.bbl [173] [174]
+Underfull \hbox (badness 10000) in paragraph at lines 192--197
 \T1/lmtt/m/n/12 joelonsoftware . com / 2000 / 04 / 06 / things -[] you -[] shou
 ld -[] never -[] do -[] part -[] i/$[]\T1/lmr/m/n/12 ,
  []
 
-[174])
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
  [175]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
@@ -2824,7 +2824,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `Hauptdatei.out' has not changed.
-(rerunfilecheck)             Checksum: 4127C25339AD8A6F48730CB547423812;9971.
+(rerunfilecheck)             Checksum: 9B4F76E386EB9A23A864C225239F395C;10053.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2832,10 +2832,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 15853 strings out of 492995
- 252335 string characters out of 6132703
- 530838 words of memory out of 5000000
- 17109 multiletter control sequences out of 15000+600000
+ 15857 strings out of 492995
+ 252377 string characters out of 6132703
+ 532526 words of memory out of 5000000
+ 17114 multiletter control sequences out of 15000+600000
  75125 words of font info for 53 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  42i,12n,72p,8858b,2076s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2853,10 +2853,10 @@ fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Hauptdatei.pdf (175 pages, 6747970 bytes).
+Output written on Hauptdatei.pdf (175 pages, 6782880 bytes).
 PDF statistics:
  3860 PDF objects out of 4296 (max. 8388607)
- 3474 compressed objects within 35 object streams
- 1897 named destinations out of 2073 (max. 500000)
- 1376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3473 compressed objects within 35 object streams
+ 1896 named destinations out of 2073 (max. 500000)
+ 1384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

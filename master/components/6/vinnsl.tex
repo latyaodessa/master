@@ -1,9 +1,9 @@
 \section{Vienna Neural Network Specification Language}\label{ViNNSL 2.0 extended}
 
-In this chapter will be described the history if the ViNNSL language, its development, and new features, which are applied in the current N2Sky system.
+In this chapter will be described the history of the ViNNSL language, its development, and new features, which are applied in the current N2Sky System.
 
 \subsection{ViNNSL Development}\label{ViNNSL Development}
-Vienna Neural Network Specification Language (ViNNSL) is the language, which used for a description of the semantic and behavior of the neural network paradigm. ViNNSL gives a possibility to create dynamic services, which can differentiate the behavior. The ViNNSL have been seen as a semantic language standard. The language uses schemas, which helps users to describe attributes like service capabilities, semantic, functions, and parameters \cite{Beran2008}.
+Vienna Neural Network Specification Language (ViNNSL) is the language, which is used for the description of the semantic and behaviour of the neural network paradigm. ViNNSL gives the possibility to create dynamic services, which can differentiate the behaviour. The ViNNSL has been seen as a semantic language standard. The language uses schemas, which help users to describe attributes like service capabilities, semantic, functions, and parameters \cite{Beran2008}.
 
 ViNNSL consist of five parts:
 \begin{itemize}
@@ -13,9 +13,9 @@ ViNNSL consist of five parts:
 \item Result Schema
 \end{itemize}
 
-This approach with multiple schemas was used in Neural Network Cube (N2Grid) System. This system is a web-based neural network simulator used by students and researchers \cite{schikuta2004n2grid}. Today N2Sky is the follower of the N2Grid ideas. 
+This approach with multiple schemas was used in Neural Network Cube (N2Grid) System. This system is a web-based neural network simulator used by students and researchers \cite{schikuta2004n2grid}. Today, N2Sky is the follower of the N2Grid ideas. 
 
-In 2015 the ViNNSL 2.0 was released, which was the extension of the previous version \cite{ijcnn15}. Basically, almost nothing changed only additional fields were added:
+In 2015, the ViNNSL 2.0 was released, which was an extension of the previous version \cite{ijcnn15}. Basically, almost nothing changed, only additional fields were added:
 \begin{itemize}
 \item \emph{Creator}
 \item \emph{Problem Domain}
@@ -24,21 +24,21 @@ In 2015 the ViNNSL 2.0 was released, which was the extension of the previous ver
 \item \emph{Application Field}
 \item \emph{Network Type}
 \item \emph{Problem Type}
-\item \emph{Execution Environment} The idea was proposed back then by the concept of the N2Grid \cite{schikuta2004n2grid}. It is possible to define the environment, which is needed for particular neural network instance. 
-\item \emph{Execution Type.} It became possible to define how neural network will be executed either sequential or parallel. In detailed, it was possible to define perform processing and the type of the architecture.
-\item \emph{Result Schema} became a part of the ViNNSL Description. Earlier it was separated schema, but data schema and instance schema still remain the same.
-\item \emph{Parameters} The user could define input as well as output parameters. It was possible to define also file for neural network training.
+\item \emph{Execution Environment} The idea was proposed by the concept of the N2Grid \cite{schikuta2004n2grid}. It is possible to define the environment, which is needed for particular neural network instances. 
+\item \emph{Execution Type.} Neural networks will be executed either sequential or parallel. Additionally, the neural networks architecture and metadata could be defined. 
+\item \emph{Result Schema} became part of the ViNNSL Description. Earlier, it was a separated schema, but the data schema and instance schema still remained the same.
+\item \emph{Parameters} The user could define input as well as output parameters. The training file and the file type could also be determined in the schema.
 \end{itemize}
 
 \subsection{ViNNSL Template}\label{ViNNSL Template}
 
-After studying ViNNSL with its extension it was decided to simplify the whole schemas and most importantly adapt it to the current N2Sky system.
+After studying ViNNSL with its extension, it was decided to simplify all schemas and most importantly adapt it to the current N2Sky System.
 
-The idea behind to use the ViNNSL template, which has additional fields for ViNNSL 2.0, but they can be fully processed and taking away after creating the neural network. No more extra objects or fields in other application. ViNNSL template allows the user to apply the ViNNSL language across the whole N2Sky platform. The detailed information is shown in \autoref{A}
+The idea behind is to use the ViNNSL template, which has additional fields from ViNNSL 2.0. The fields can be fully processed and be removed after creating the neural network. No more extra objects or fields in other application. ViNNSL template allows users to apply the ViNNSL language across the whole N2Sky platform. The detailed information is shown in \autoref{A}
 
 \subsubsection{Metadata template}\label{Metadata template}
 
-As it was mentioned before, the ViNNSL 2.0 contains metadata about the user and neural network.
+As before mentioned, the ViNNSL 2.0 contains metadata about the user and neural network.
 
 \begin{lstlisting}[caption=ViNNSL template metadata]
 ...
@@ -67,26 +67,26 @@ As it was mentioned before, the ViNNSL 2.0 contains metadata about the user and 
 ...
 \end{lstlisting}
 
-From code above it is possible to spot some additional values:
+From the code above, it is possible to spot additional values:
 \begin{itemize}
 \item \emph{value} is the default value of the object. 
-\item \emph{possibleValues} parameter, which contains the array of possible value. The user can choose one of the value. 
+\item \emph{possibleValues} parameter, which contains an array of possible value. The user can choose one of the value. 
 \end{itemize}
 
-This approach not only helps to add templating into the current ViNNSL schema but also add some rules upon it:
+This approach not only helps to add templating into the current ViNNSL schema, but also adds some rules upon it:
 \begin{itemize}
-\item If default value set and there are no more values under "possibleValues" parameter, then the value is impossible to change.
-\item If there is no value for "possibleValues" and "value" fields than the user can type customized value.
-\item If the "value" has some parameter and "possibleValues" field is also not empty it means that the "value" parameter is the default value and it can be changed by "possibleValues".
+\item If the default value is set and there are no more values under "possibleValues" parameter, then the value is impossible to change.
+\item If there is no value for "possibleValues" and "value" fields, then the user can type a customized value.
+\item If the "value" has some parameter and "possibleValues" field is also not empty, it means the "value" parameter is the default value and it can be changed by "possibleValues".
 \end{itemize}
 
 \subsubsection{Environment}\label{Environment}
 
-In previous versions of the ViNNSL language, it was possible to define execution environment. This possibility is still available, but some additional value was added in order to apply templates. 
+In previous versions of the ViNNSL language was possible to define the execution environment. This possibility is still available, but some additional values were added in order to apply the templating approach. 
 
-In the current version of N2Sky, it is possible to deploy neural network on the N2Sky cloud as well as on private cloud of the user. That is was the "endpoints" parameter was added.
+In the current version of N2Sky, the user can deploy neural network on the N2Sky cloud as well as on the private cloud. The "endpoints" parameter was added.
 
-\begin{lstlisting}[caption=ViNNSL template enviroment]
+\begin{lstlisting}[caption=ViNNSL template environment]
 ...
     "endpoints": [{
         "name": "train",
@@ -98,11 +98,11 @@ In the current version of N2Sky, it is possible to deploy neural network on the 
 ...
 \end{lstlisting}
 
-Since it is array parameter it gives room for adding new endpoints in case if it will be needed in future versions of the N2Sky.
+Since it is an array parameter, it gives room for adding new endpoints in case that it will be needed in future versions of N2Sky.
 
 \subsubsection{Neural Network Structure Template}\label{Neural Network Structure Template}
 
-The structure of the neural network was also changed. The template looks pretty empty, but from this template is possible to generate any type of structure based on ViNNSL language. 
+The structure of the neural network was also changed. The template looks pretty empty, but from that is possible to generate any type of structure based on ViNNSL language. 
 
 \begin{lstlisting}[caption=ViNNSL template structure]
 ...
@@ -158,13 +158,13 @@ The structure of the neural network was also changed. The template looks pretty 
 ...
 \end{lstlisting}
 
-The structure contains input, hidden and the output layer. Hidden layer has "dimensions" parameter, which allows creating multiple hidden layers.
+The structure contains input, hidden and output layer. The hidden layer has "dimensions" parameter, which allows creating multiple hidden layers.
 
- Every layer has "config" property, which shows how many dimensions is possible to use. This config is scalable, it is possible to add additional configuration or use none of them.
+Every layer has "config" property, which shows how many dimensions can be used. This config is scalable and additional configuration can be added. 
  
- Additionally, every layer has a number of nodes, namely the neutrons id.  
+ Furthermore, every layer has a number of nodes, namely the neurons id.  
  
- In structure is important to define the connections between nodes. 
+ In the structure, it is important to define the connections between nodes. 
  
 
  \begin{lstlisting}[caption=ViNNSL template connections]
@@ -188,15 +188,15 @@ The structure contains input, hidden and the output layer. Hidden layer has "dim
 
 There are few types of connections:
 \begin{itemize}
-\item \emph{fullyConnected} parameter, which has boolean "isConnected" in case if the neural network fully connected or not.
-\item \emph{shortcuts} is a parameter, which also has boolean flag parameter. If there are any types of the shortcuts is will be set to true. Inside of this parameter is an array field "connections". This array has from and to node id parameter and in case if the full connection remains the same this "isFullConnected" will set on true.
+\item \emph{fullyConnected} parameter, which has boolean "isConnected" in case that the neural network is fully connected or not.
+\item \emph{shortcuts} is a parameter, which also has boolean flag parameter. If there are any types of the shortcuts, it will be set to true. Inside of this parameter, the array field "connections" has "from" and "to" nodes id parameter. In case that the full connection remains the same "isFullConnected" will be set to true.
 \end{itemize}
 
 \subsubsection{Parameters Template}\label{Parameters Template}
 
-To the input parameters, the templating was also applied. The structure of the template is pretty similar to metadata template.
+ The templating was also applied to the input parameters. The structure of the template is pretty similar to metadata template.
 
- \begin{lstlisting}[caption=ViNNSL template input paramteres]
+ \begin{lstlisting}[caption=ViNNSL template input parameters]
 ...
 "parameters": {
 		"input": [
@@ -213,24 +213,24 @@ To the input parameters, the templating was also applied. The structure of the t
 ...
 \end{lstlisting}
 
-Additionally in this template used the "parameter" field. This field defines actual input parameter and has to be unique.
+Additionally, in this template the "parameter" field is used. This field defines an actual input parameter and has to be unique.
 
-The output parameter is fixed and can not be changed. This parameter will be used for trained model evaluation in case if the user does not want to type own testing data.
+The output parameter is fixed and can not be changed. This parameter will be used for trained model evaluation in case that the user does not want to type his own testing data.
 
-The training file information also defined under parameters and can be changed only by neural network owner.
+The training file information is also defined under parameters and can be changed only by the neural network owner.
 
 
 \subsection{ViNNSL Generation}\label{ViNNSL Generation}
 
-After the neural network contributor user fills out the template ViNNSL it is possible to generate the ViNNSL Description schema. This schema will be used for neural network training. The generation is happening  on the N2Sky platform and the ViNNSL Description file can be totally different, but the rules will be followed. The user now has a possibility to customize the structure, connection, metadata and parameters of the neural network. It is impossible to do something wrong because permissions are restricted by ViNNSL Template. 
+After the neural network contributor user fills out the ViNNSL template, the user can generate the ViNNSL Description schema. This schema will be used for neural network training. The generation happens on the N2Sky platform and the ViNNSL Description file can be totally different, but the rules will be followed. The user now has a possibility to customize the structure, connection, metadata and parameters of the neural network. Due to restricted permissions of the ViNNSL template, it is impossible to mistype the schema.
 
-The contributor user can also user ViNNSL in order to fill out the structure, connection, metadata and parameters of the neural network. If the user manually will do it, without N2Sky "3-step-view" generator, he has to upload his ViNNSL in the N2Sky platform and the neural network will be automatically created. 
+The contributor user can also use ViNNSL in order to fill out the structure, connection, metadata and parameters of the neural network. If the user does it manually, without the N2Sky "3-step-view" generator, he has to upload his ViNNSL description in the N2Sky platform and the neural network will be automatically created. 
 
 \subsubsection{Generated Metadata}\label{Generated metadata}
 
-In generated metadata, the information is filled out from N2Sky platform.
+In the generated metadata, the information is filled out from N2Sky platform.
 
-All unless fields will be removed automatically, even if the contributor user leave it there. The typical parameters like "possibleValues" will be removed everywhere except the training parameters because it is needed for performing training.
+All unused fields will be removed automatically. The typical parameters, like "possibleValues", will be removed everywhere. The training parameters will remain the same.
 
  \begin{lstlisting}[caption=Generated ViNNSL model]
  ...
@@ -260,12 +260,12 @@ The detailed information is shown in \autoref{B}
 
 \subsubsection{Generated Structure}\label{Generated structure}
 
-The structure is the most complicated part of the ViNNSL generation if the user will do it manually without N2Sky generator. 
+The structure is the most complicated part of the ViNNSL generation if the user does it manually without N2Sky generator. 
 
 Every node will receive the id, which will be parsed by N2Sky.
 
 \begin{itemize}
-\item \emph{Input layer as well as output layer} has the same structure of the node ids.
+\item \emph{Input layer as well as output layer} have the same structure of the node ids.
  \begin{lstlisting}[caption=ViNNSL generated layers]
 ...
 		"inputLayer": {
@@ -285,7 +285,7 @@ Every node will receive the id, which will be parsed by N2Sky.
 ...
 \end{lstlisting}
 
-Every node has the amount of the nodes. The nodes id have the following structure: 
+The amount of the nodes will be added. The nodes id has the following structure: 
 \begin{enumerate}
 \item The unique id of the node, which also defines the order
 \item The name of the layer
@@ -309,9 +309,9 @@ Every node has the amount of the nodes. The nodes id have the following structur
 ...
 \end{lstlisting}
 
-The id of the layer dined by the first number, which is also the order of the layer.
+The id of the layer is defined by the first number, which is also the order of the layer.
 
-The id of the nodes defined by following rules:
+The id of the nodes is defined by the following rules:
 \begin{enumerate}
 \item The unique id of the node, which also defines the order
 \item The id of the layer
@@ -323,12 +323,12 @@ The id of the nodes defined by following rules:
 
 \subsection{ViNNSL Model}\label{ViNNSL Model}
 
-The ViNNSL Model is a derived from ViNNL Description trained model. Basically, the input parameters were taken from the ViNNSL Description and default values were replaced with the trained data. Additionally, it was decided to put following parameters:
+The ViNNSL Model derives from the ViNNL Description trained model. Basically, the input parameters were taken from the ViNNSL Description and default values were replaced with the trained data. Additionally, it was decided to put the following parameters:
 
 \begin{itemize}
 \item \emph{rawModel} is the raw training model, which can be used for the model evaluation. 
-\item \emph{logs.} The logs are appending during the training. When the training has done the logs will be removed from the neural network and added as a parameter to the model.
-\item \emph{test} is the array of performed tests. It was decided to save the test results in the model in order to stop spreading multiple schemas. 
+\item \emph{logs.} The logs are appending during training. When the training is done, the logs will be removed from the neural network and added as a parameter to the model.
+\item \emph{test} is the array of performed tests. The test results are saved in the model in order to stop spreading multiple schemas. 
  \begin{lstlisting}[caption=ViNNSL trained model testing]
 ...
        {

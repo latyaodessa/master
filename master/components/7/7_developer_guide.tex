@@ -2,6 +2,30 @@
 
 \subsection{System Configuration}\label{System configuration}
 
+\subsubsection{Prerequirements}\label{Prerequirements}
+
+Following technologies has been used:
+
+\begin{table}[H]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Technology} & \textbf{Version} \\ \hline
+Docker CE           & 17.12.1-ce       \\ \hline
+MongoDB             & 3.6              \\ \hline
+NodeJS              & 7.0.0            \\ \hline
+npm                 & 4.2.0            \\ \hline
+Prometheus          & 2.0.0            \\ \hline
+node\_exporter      & 0.16.0-rc.0      \\ \hline
+Alertmanager        & 0.15.0-rc.0      \\ \hline
+React               & 15.6.1           \\ \hline
+Redux               & 3.7.2            \\ \hline
+\end{tabular}
+\end{table}
+
+Every N2Sky service has "package.json" file on the root of the project. This file contains versions of all used packages in particular service.
 \subsubsection{Setting Up the Database}\label{database setup}
 
 N2Sky uses non-relational database MongoDB, which is running in Docker container. 
@@ -584,10 +608,6 @@ http://192.168.0.102:9595/api/monitoring/192.168.0.105
         "values": [
             [
                 1519558760,
-                "NaN"
-            ],
-            [
-                1519559660,
                 "NaN"
             ]
             ...
